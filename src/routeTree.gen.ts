@@ -10,33 +10,91 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AboutRouteImport } from './routes/about'
+import { Route as AbundanceRouteImport } from './routes/abundance'
+import { Route as CommunityRouteImport } from './routes/community'
+import { Route as CoursesRouteImport } from './routes/courses'
+import { Route as TarotRouteImport } from './routes/tarot'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AbundanceRoute = AbundanceRouteImport.update({
+  id: '/abundance',
+  path: '/abundance',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CommunityRoute = CommunityRouteImport.update({
+  id: '/community',
+  path: '/community',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CoursesRoute = CoursesRouteImport.update({
+  id: '/courses',
+  path: '/courses',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TarotRoute = TarotRouteImport.update({
+  id: '/tarot',
+  path: '/tarot',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/abundance': typeof AbundanceRoute
+  '/community': typeof CommunityRoute
+  '/courses': typeof CoursesRoute
+  '/tarot': typeof TarotRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/abundance': typeof AbundanceRoute
+  '/community': typeof CommunityRoute
+  '/courses': typeof CoursesRoute
+  '/tarot': typeof TarotRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/abundance': typeof AbundanceRoute
+  '/community': typeof CommunityRoute
+  '/courses': typeof CoursesRoute
+  '/tarot': typeof TarotRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    '/' | '/about' | '/abundance' | '/community' | '/courses' | '/tarot'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/about' | '/abundance' | '/community' | '/courses' | '/tarot'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/abundance'
+    | '/community'
+    | '/courses'
+    | '/tarot'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  AbundanceRoute: typeof AbundanceRoute
+  CommunityRoute: typeof CommunityRoute
+  CoursesRoute: typeof CoursesRoute
+  TarotRoute: typeof TarotRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +106,51 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/abundance': {
+      id: '/abundance'
+      path: '/abundance'
+      fullPath: '/abundance'
+      preLoaderRoute: typeof AbundanceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/community': {
+      id: '/community'
+      path: '/community'
+      fullPath: '/community'
+      preLoaderRoute: typeof CommunityRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/courses': {
+      id: '/courses'
+      path: '/courses'
+      fullPath: '/courses'
+      preLoaderRoute: typeof CoursesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tarot': {
+      id: '/tarot'
+      path: '/tarot'
+      fullPath: '/tarot'
+      preLoaderRoute: typeof TarotRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  AbundanceRoute: AbundanceRoute,
+  CommunityRoute: CommunityRoute,
+  CoursesRoute: CoursesRoute,
+  TarotRoute: TarotRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
