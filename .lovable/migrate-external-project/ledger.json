@@ -55,5 +55,12 @@
     "iPhone WebP branch tested with iPhone user-agent/mobile Chromium emulation, not a physical iPhone/Safari.",
     "Mobile Chromium reported 'Transition was skipped' during rapid navigation; pages, media and pan state still worked. Supplied transition code was preserved unchanged.",
     "Exact turn credit attribution unavailable: detailed billing access denied; observed workspace usage increased from 18.8424 to 21.2424 credits (2.4000) between available readings, not a final turn invoice."
-  ]
+  ],
+  "guided_arrival": {
+    "capability": "bounded ten-file guided arrival correction",
+    "source": "Carla-Guided-Arrival-Final-Fixes.zip",
+    "outcome": "Ten supplied files installed byte-identically with ten backups; owner SEO intro/styles identical; all 55 other production files preserved. Browser fresh 24.764s natural welcome to boutique, Stop and full replay staying HQ, pointer/keyboard/tabhide/delayed cancellation, cat early exit/back seated, Chromium iPhone-UA WebP, 390px bookmark\u2192library\u2192book\u2192HQ, visible anchors, planet playback, HTTP hashes passed; 26 tests passed; build OK.",
+    "status": "verified",
+    "next_action": null
+  }
 }

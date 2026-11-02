@@ -10,3 +10,9 @@
 - [x] Back up overwritten source and install the 16 supplied corrections byte-identically, retaining unchanged routes and media.
 - [x] Verify routes, one-tap welcome/Stop, transparent phone-visible cats, planet playback, transitions and pan persistence.
 - [x] Record tests, commit availability and credit evidence; no publishing or settings changes.
+
+# Guided arrival final corrections
+
+- [x] Back up and install all ten supplied files byte-identically, preserving the owner SEO layer and unchanged source/media/routes.
+- [x] Verify fresh arrival, full natural end, cancellation/replay, cat early exit/return, room navigation and book anchors.
+- [x] Record manifest hashes, tests, available commit and actual credit evidence; no publication.

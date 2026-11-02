@@ -1,0 +1,52 @@
+{
+  "HTTP_hashes": "All ten plus / match manifest",
+  "fresh_readiness": {
+    "images": [
+      {
+        "src": "./assets/sanctuary-polished-v5.png",
+        "complete": true,
+        "width": 1672
+      },
+      {
+        "src": "./assets/celestial-wall-chart.svg",
+        "complete": true,
+        "width": 267
+      },
+      {
+        "src": "./assets/observatory-slender-refractor-v4.png",
+        "complete": true,
+        "width": 1024
+      },
+      {
+        "src": "./assets/ringo-seated-v2.png",
+        "complete": true,
+        "width": 640
+      },
+      {
+        "src": "./assets/cosmic-guide-organic-v5.png",
+        "complete": true,
+        "width": 1024
+      }
+    ],
+    "audio": 4,
+    "status": "Your welcome begins when you enter."
+  },
+  "welcome_duration": 24.764063,
+  "natural_end_to_boutique_seconds": 3.81,
+  "stop-replay": "passed",
+  "pointer": "passed",
+  "keyboard": "passed",
+  "tabhide": "passed",
+  "after-ended": "passed",
+  "cat_early_exit_return": "real navigation/back seated; persisted pageshow simulated",
+  "phone_navigation_anchors": "book tab \u2192 library \u2192 book, #inside/#release/#main opacity 1, HQ return; no signup input",
+  "runtime_errors": [],
+  "tests": "26 passing",
+  "build": "build OK",
+  "limitations": [
+    "Chromium iPhone user-agent/mobile emulation, not physical iPhone/Safari",
+    "Real cat early-exit/back navigation checked; persisted pageshow explicitly simulated, not confirmed native BFCache",
+    "No publishing or service activation"
+  ],
+  "preservation": "Ten source hashes exact; ten prior versions backed up; 55 unchanged production files including sitemap/robots/media/chunks/routes"
+}
