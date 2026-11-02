@@ -18,7 +18,7 @@
   let phoneBlob=null,phoneURL=null,phoneLoading=null;
   function preparePhone(){return phoneLoading||(phoneLoading=fetch('./assets/naomi-full-phone.webp').then(r=>{if(!r.ok)throw Error('Animation unavailable');return r.blob()}).then(b=>{phoneBlob=b;return b}).catch(()=>{phoneLoading=null;return null}));}
   if(phoneAnimation){performanceVideo.removeAttribute('src');performanceVideo.load();preparePhone();}
-  function showPhone(){if(!phoneBlob)return false;if(phoneURL)URL.revokeObjectURL(phoneURL);phoneURL=URL.createObjectURL(phoneBlob);phoneImage.onload=()=>{if(!speaking)return;figure.classList.add('is-animated','is-phone-animated');audio.play().catch(()=>{allowRetry();halt('Tap the guide again to begin the welcome.');});};phoneImage.onerror=()=>{allowRetry();halt('The moving welcome could not display. Please try again.');};phoneImage.src=phoneURL;return true;}
+  function showPhone(){if(!phoneBlob)return false;if(phoneURL)URL.revokeObjectURL(phoneURL);phoneURL=URL.createObjectURL(phoneBlob);phoneImage.onload=()=>{if(!speaking)return;figure.classList.add('is-animated','is-phone-animated');};phoneImage.onerror=()=>{figure.classList.remove('is-animated','is-phone-animated');status.textContent='Welcome playing · the moving image is unavailable. Stop is available.';};phoneImage.src=phoneURL;return true;}
   let nativeLoading=null,nativeReady=false;
   function prepareNative(){if(phoneAnimation)return Promise.resolve(false);return nativeLoading||(nativeLoading=window.academyMedia.load('guide').then(url=>new Promise((resolve,reject)=>{performanceVideo.addEventListener('loadeddata',()=>{nativeReady=true;resolve(true);},{once:true});performanceVideo.addEventListener('error',reject,{once:true});performanceVideo.src=url;performanceVideo.load();})).catch(()=>{nativeLoading=null;return false;}));}
   let alphaSupported=null;
@@ -28,7 +28,8 @@
     return alphaSupported;
   }
   async function animateWelcome(){
-    if(phoneAnimation){audio.pause();audio.currentTime=0;showPhone();return;}
+    if(phoneAnimation){if(!showPhone())status.textContent='Welcome playing · the moving image is still loading. Stop is available.';return;}
+    if(!nativeReady)return;
     if(alphaSupported===false||!performanceVideo.canPlayType('video/webm; codecs="vp9"'))return;
     try{performanceVideo.currentTime=audio.currentTime;await performanceVideo.play();if(!speaking){performanceVideo.pause();return;}if(confirmAlpha()){if(Math.abs(performanceVideo.currentTime-audio.currentTime)>.15)performanceVideo.currentTime=audio.currentTime;figure.classList.add('is-animated');}else performanceVideo.pause();}catch{figure.classList.remove('is-animated');}
   }
@@ -40,8 +41,8 @@
   text.querySelector('.guide-welcome').textContent = welcome;
   (document.querySelector('.room-menu-content')||document.body).append(text);
   const status = document.querySelector('#scene-status');
-  figure.addEventListener('focus',()=>{if(!speaking&&performance.now()>(window.academyInfoLockUntil||0))status.textContent=consumed?'Welcome complete · explore the room at your own pace.':'Tap the guide to enter and hear the welcome once.'});
-  figure.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse'&&!speaking&&performance.now()>(window.academyInfoLockUntil||0))status.textContent=consumed?'Welcome complete · explore the room at your own pace.':'Tap the guide to enter and hear the welcome once.'});
+  figure.addEventListener('focus',()=>{if(!speaking&&performance.now()>(window.academyInfoLockUntil||0))status.textContent=consumed?'Tap the guide to replay the welcome.':'Tap the guide to hear the welcome.'});
+  figure.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse'&&!speaking&&performance.now()>(window.academyInfoLockUntil||0))status.textContent=consumed?'Tap the guide to replay the welcome.':'Tap the guide to hear the welcome.'});
   const audio = document.createElement('audio');
   audio.id = 'cosmic-guide-audio'; audio.src = './assets/naomi-voidwalker-academy-welcome.mp3';
   audio.preload = 'auto'; stage.append(audio);
@@ -54,7 +55,7 @@
   function state(active) {
     speaking = active; stop.disabled = !active;if(!active){performanceVideo.pause();figure.classList.remove('is-animated','is-phone-animated');phoneImage.removeAttribute('src');if(phoneURL){URL.revokeObjectURL(phoneURL);phoneURL=null;}try{performanceVideo.currentTime=0;}catch{}}
     figure.setAttribute('aria-disabled', String(active));
-    label.textContent = active ? 'Speaking…' : 'Hear welcome';
+    label.textContent = active ? 'Speaking…' : consumed ? 'Replay welcome' : 'Hear welcome';
   }
   function halt(message = 'Guide stopped.') {
     serial++; audio.pause();
@@ -63,9 +64,8 @@
   }
   function beginWelcome(){
     if (speaking) return;
-    if(consumed){status.textContent='Welcome complete · explore the room at your own pace.';return;}
-    if(!phoneAnimation&&!nativeReady){status.textContent='Loading the moving welcome…';prepareNative().then(ok=>{status.textContent=ok?'Welcome ready · tap the guide to begin.':'The moving welcome could not load. Please try again.'});return;}
-    if(phoneAnimation&&!phoneBlob){status.textContent='Loading the moving welcome…';preparePhone().then(b=>{status.textContent=b?'Welcome ready · tap the guide to begin.':'The moving welcome could not load. Please try again.'});return;}
+    if(!phoneAnimation&&!nativeReady)prepareNative().then(ok=>{if(ok&&speaking)animateWelcome();});
+    if(phoneAnimation&&!phoneBlob)preparePhone();
     const token = ++serial;
     state(true); status.textContent = 'Starting welcome…';
     try { audio.currentTime = 0; } catch {}
@@ -75,8 +75,8 @@
       if (token === serial) { state(false); status.textContent = 'Audio could not play. Read welcome is in the Room menu.'; }
     });
   }
-  figure.addEventListener('click',beginWelcome);
-  audio.addEventListener('ended', () => { state(false); status.textContent = 'Welcome complete · explore the room at your own pace.'; });
+  figure.addEventListener('click',()=>beginWelcome());
+  audio.addEventListener('ended', () => { state(false); status.textContent = 'Welcome complete · tap the guide to replay, or explore the room.'; });
   audio.addEventListener('error', () => { consumed=false;try{sessionStorage.removeItem(visitKey);}catch{}state(false); status.textContent = 'Audio is unavailable. Read welcome is in the Room menu.'; });
   stop.addEventListener('click', () => { halt(); figure.focus({preventScroll:true}); });
   document.addEventListener('visibilitychange', () => { if (document.hidden && speaking) halt(); });
