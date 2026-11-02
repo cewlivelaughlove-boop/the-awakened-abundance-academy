@@ -1,0 +1,214 @@
+[
+  {
+    "installed": "public/favicon.ico",
+    "sha256": "dd821076a9b03adc2173c93956226aea3d92482d7578fc4339c5d3a2e9c24586"
+  },
+  {
+    "installed": "public/robots.txt",
+    "sha256": "fa8e510d4d0dd3dfc3eef879e09dfed9a8f47d6dbc7caa6df81988982bfc61dc"
+  },
+  {
+    "installed": "public/sitemap.xml",
+    "sha256": "99ecd8c69a44cef906a0d70797d3ee794a849ac5ce81d9f9b5877dca19985ca8"
+  },
+  {
+    "installed": "public/assets/arrival.css",
+    "sha256": "87722ee14ffcad88ef1be44d1dbe63901480ef46fe523e66ffdb370981b89fc1"
+  },
+  {
+    "installed": "public/assets/beyond-the-script-cover-v2.png",
+    "sha256": "ae77c9150cff7551e6348ca1ff16e307c6b936edb94d16fe17e5ded0f881d4b7"
+  },
+  {
+    "installed": "public/assets/beyond-the-script-public-cover.png",
+    "sha256": "034befc686d09a7be74ca87d57ebff4c8573cc84f14714195ea3a313a425b7ae"
+  },
+  {
+    "installed": "public/assets/books.css",
+    "sha256": "a1c4daf05a543f3dd1393c968c048652fb5c156e6f67fc9ecaca2fc1622f9863"
+  },
+  {
+    "installed": "public/assets/boutique-architecture-v2.png",
+    "sha256": "127ba1dc54c5457ae6353e75e7720feab1425950ae979945d8b679a711409857"
+  },
+  {
+    "installed": "public/assets/boutique-connected-hq-v1.png",
+    "sha256": "f46a602d6e791f29be2c58cb3896246354ee5e377afeb76e12d425a111879319"
+  },
+  {
+    "installed": "public/assets/boutique-journals-tree-v3.png",
+    "sha256": "5c39a486cd85cb617e5103a3290457ec675444d3bd64eca58c0a78e7b7cb64a2"
+  },
+  {
+    "installed": "public/assets/boutique-polished-hq-v2.png",
+    "sha256": "748dd526cb76ca24f04f4ee727984f2dbccffa1a848bfef5eeb0ae8056627795"
+  },
+  {
+    "installed": "public/assets/boutique.css",
+    "sha256": "107c5ce6f22726ad69f65d20d77a6bccbdb0665d31316821575323d2fc18051a"
+  },
+  {
+    "installed": "public/assets/cat.css",
+    "sha256": "4c62db4aade9d1d3a41b0f4d913eb9b3f9644d3016062c4a00af0ccea57b662d"
+  },
+  {
+    "installed": "public/assets/celestial-wall-chart.svg",
+    "sha256": "85a30b639fa10437daad2b36151d454713faa66ffb51194ab1224f91b94e00ca"
+  },
+  {
+    "installed": "public/assets/cosmic-guide-front-v2.png",
+    "sha256": "fd0f819c868fe6b4d1e7838472f61c41ca89bc0b81d2ec20a1cb7d4758205030"
+  },
+  {
+    "installed": "public/assets/cosmic-guide-organic-v5.png",
+    "sha256": "7329ba4542eeb4a7d1aecf69fa36f1cb65e1bea88d2539f56c9742c18263a2a2"
+  },
+  {
+    "installed": "public/assets/editorial-serif.ttf",
+    "sha256": "8cb29f7db250ebb2551a6ce2c1e0bfd5a0eb520e9e233370db0493e82e1f36f7"
+  },
+  {
+    "installed": "public/assets/guide.css",
+    "sha256": "702b59b2e33ffd852d9d19389e8d1ea139ba3ba22a047ad9e3d0f3a9c51fd681"
+  },
+  {
+    "installed": "public/assets/journey-state.js",
+    "sha256": "4cfeeb5a48b3a6e9717e88b90c3cda653f64bda8919cbea52c7974459724b8d3"
+  },
+  {
+    "installed": "public/assets/media-loader.js",
+    "sha256": "491a7987bf733da7138457a83aea61f1d6528c0ee496c5b15564cde4da367374"
+  },
+  {
+    "installed": "public/assets/naomi-academy-welcome.mp3",
+    "sha256": "6580194e91a2d7015f6fcbcebd8d26cb686c3804d4081df252aea7074b12a9e4"
+  },
+  {
+    "installed": "public/assets/naomi-full-phone.webp",
+    "sha256": "d124c1dc0fa070dfaa827a64f919518a1386ce66c3d9c9d9064cb012a32ea99d"
+  },
+  {
+    "installed": "public/assets/naomi-voidwalker-academy-welcome.mp3",
+    "sha256": "98740b34d842e7b7d727622b6c2eda875d91a6ab66af0b559f6400da6114e1b5"
+  },
+  {
+    "installed": "public/assets/observatory-slender-refractor-v4.png",
+    "sha256": "be37cc3dcb07cb71d38f231f8753e127501c9d7ec903f947c194ebf8c515cdec"
+  },
+  {
+    "installed": "public/assets/observatory-telescope-pedestal-v2.png",
+    "sha256": "5e63bd7a3f6f4efd0fd1fd16c90e982d46303b5432f144c9c1fc7a1d34c1d355"
+  },
+  {
+    "installed": "public/assets/observatory-telescope-rear-facing-v3.png",
+    "sha256": "012c301da8bcdbb5bf5810e0ee89ad89b3519c3d8f4357e66747c02a03496b4d"
+  },
+  {
+    "installed": "public/assets/open-sans-regular.ttf",
+    "sha256": "e64e508b2aa2880f907e470c4550980ec4c0694d103a43f36150ac3f93189bee"
+  },
+  {
+    "installed": "public/assets/open-sans-semibold.ttf",
+    "sha256": "aa3b0ef53db12e3d45094030cac0e69d384e44cc5978643dd4390041cad546e2"
+  },
+  {
+    "installed": "public/assets/planet-journey-poster-v4.png",
+    "sha256": "b38d530b9d7abb7f00b918676268ae797916326c677a26704885ff819d0a5507"
+  },
+  {
+    "installed": "public/assets/ringo-seated-clean.png",
+    "sha256": "4cddeeaf132546356315ca89dd7d0214d87abf41325feca06b6c249b35e2882d"
+  },
+  {
+    "installed": "public/assets/ringo-seated-v2.png",
+    "sha256": "45de8efdd988258661c1e170f2ccc8ed2596a4cdb0fad0590ff9a3a69adf2c63"
+  },
+  {
+    "installed": "public/assets/ringo-walk-sit-clean-once.webp",
+    "sha256": "89ffc50e623ae72c2f03d2790d5bddce1cb5c80bc46ea84a5eee3bf1cc79f803"
+  },
+  {
+    "installed": "public/assets/ringo-walk-sit-v2-once.webp",
+    "sha256": "fd6674991a59a4f8bb8af6ac259e97a68601cd1c8305477865f54d5c4703884d"
+  },
+  {
+    "installed": "public/assets/sanctuary-furnished-v4.png",
+    "sha256": "dd8a7e3f4a6f571cf41c068407b0b04e83b6f0ece7920678a0fce1ce756a8910"
+  },
+  {
+    "installed": "public/assets/sanctuary-polished-v5.png",
+    "sha256": "2e3e0e6a44a05406ee4cb73cad49343b8d2e1d32d00d3deef3c89d65326b18dc"
+  },
+  {
+    "installed": "public/assets/transitions.css",
+    "sha256": "3ff0f4225f6276bd7809dfd2d33f11367f4e30008ba4bc6f8c2c07528858d389"
+  },
+  {
+    "installed": "public/assets/media-parts/naomi-full-alpha.webm.part0",
+    "sha256": "7b91d3fd050b61f96bcb8aae0f0737fd8f03417e0ac0cfba99f8bc515dbbe257"
+  },
+  {
+    "installed": "public/assets/media-parts/naomi-full-alpha.webm.part1",
+    "sha256": "1b16cf3e727694ee11bc708ee4763a7acb1417a80b4e0c7c1983463f00ab3046"
+  },
+  {
+    "installed": "public/assets/media-parts/naomi-full-alpha.webm.part2",
+    "sha256": "8b66f85af6de4057fedf55b26b7102d0243b0e9e46bf4113ea488bf79291777b"
+  },
+  {
+    "installed": "public/assets/media-parts/planet-journey-v4.mp4.part0",
+    "sha256": "b23506ae4709600cd64743b7b410366c89c4ed7ebffd7460c0bdfee41e6254c5"
+  },
+  {
+    "installed": "public/assets/media-parts/planet-journey-v4.mp4.part1",
+    "sha256": "be5e8506ebd20d7cf3d52febe1a52ae678f6c4b4d4e415deecfa1635bb98c50f"
+  },
+  {
+    "installed": "src/routes/README.md",
+    "sha256": "5c8187dbe79dac7a3c494f2600585508f5d15e75f04f21ea364d0de14de10575"
+  },
+  {
+    "installed": "src/routes/__root.tsx",
+    "sha256": "ddc96369486022ca252f115a1ba0c9eaabed289a8e41cca27b670e431f7d3c96"
+  },
+  {
+    "installed": "src/routes/about.tsx",
+    "sha256": "2eb5fcfa2052eef00ba37c49e714245e35f36f8c59aada9c761022da225e3c6b"
+  },
+  {
+    "installed": "src/routes/abundance.tsx",
+    "sha256": "e2405e471aa15b94cea4455ab527a02691c36ecd722ed1dbc1f56a514b319e19"
+  },
+  {
+    "installed": "src/routes/books[.]html.ts",
+    "sha256": "4a055045403ed7c1debc7773ce3a3c98b0acd107411bd4f4968abecf07cc6a60"
+  },
+  {
+    "installed": "src/routes/boutique[.]html.ts",
+    "sha256": "49ebdf560686f0894f7f8e64d066565fe0d9785f210cc5fc9ec7bdc89de49824"
+  },
+  {
+    "installed": "src/routes/community.tsx",
+    "sha256": "e5011d20006bd5bdcaf70f8c43a71007566ce167b3a22c08d82dc1f244e159eb"
+  },
+  {
+    "installed": "src/routes/courses.tsx",
+    "sha256": "120d25820dff5c1dc6afacf57db6b0bb5c9408e428abebd9bd55c2d2bf1156c7"
+  },
+  {
+    "installed": "src/routes/index.tsx",
+    "sha256": "73549e21b9b0248fbe47d3b49f6fd1e1302b3dd16a865db18d9cde1b59eacba4"
+  },
+  {
+    "installed": "src/routes/index[.]html.ts",
+    "sha256": "adf54dceec5e7f24553903f21570752f6e215fdb53c07db4b5625bfceda6185f"
+  },
+  {
+    "installed": "src/routes/library[.]html.ts",
+    "sha256": "08bee070917b65e66d0f1295b5f9a6ccb34d2485033b3c13b417b2d504bd79d3"
+  },
+  {
+    "installed": "src/routes/tarot.tsx",
+    "sha256": "f94ca8680d86a7390697f9975f98f28b7be1907f2d5d2105c6910fc9e3ad0ba6"
+  }
+]

@@ -36,6 +36,8 @@
   performanceVideo.addEventListener('error',()=>{alphaSupported=false;figure.classList.remove('is-animated');});
 
   const stop = document.createElement('button'); stop.id = 'cosmic-guide-stop'; stop.type = 'button'; stop.textContent = 'Stop'; stop.setAttribute('aria-label', 'Stop guide voice'); (document.querySelector('.room-info-dock')||stage).append(stop);
+  const welcomeAction=document.createElement('button');welcomeAction.id='hear-guide-welcome';welcomeAction.type='button';welcomeAction.textContent='Hear her welcome';welcomeAction.setAttribute('aria-label','Hear her recorded welcome');(document.querySelector('.room-info-dock')||stage).append(welcomeAction);
+  welcomeAction.addEventListener('click',()=>{window.dispatchEvent(new Event('academy-welcome-manual'));window.academyWelcome.play();});
   const text = document.createElement('details'); text.id = 'cosmic-guide-transcript';
   text.innerHTML = '<summary>Read welcome</summary><p class="guide-note">AI guide · recorded welcome. No microphone or live conversation.</p><p class="guide-welcome"></p>';
   text.querySelector('.guide-welcome').textContent = welcome;
@@ -53,7 +55,7 @@
   function rememberWelcome(){consumed=true;try{sessionStorage.setItem(visitKey,'played');}catch{}}
   let serial = 0, speaking = false;
   function state(active) {
-    speaking = active; stop.disabled = !active;if(!active){performanceVideo.pause();figure.classList.remove('is-animated','is-phone-animated');phoneImage.removeAttribute('src');if(phoneURL){URL.revokeObjectURL(phoneURL);phoneURL=null;}try{performanceVideo.currentTime=0;}catch{}}
+    speaking = active; stop.disabled = !active;stop.hidden=!active;welcomeAction.hidden=active;welcomeAction.textContent=consumed?'Hear again':'Hear her welcome';welcomeAction.setAttribute('aria-label',consumed?'Hear the recorded welcome again':'Hear her recorded welcome');if(!active){performanceVideo.pause();figure.classList.remove('is-animated','is-phone-animated');phoneImage.removeAttribute('src');if(phoneURL){URL.revokeObjectURL(phoneURL);phoneURL=null;}try{performanceVideo.currentTime=0;}catch{}}
     figure.setAttribute('aria-disabled', String(active));
     label.textContent = active ? 'Speaking…' : consumed ? 'Replay welcome' : 'Hear welcome';
   }
@@ -75,10 +77,10 @@
       if (token === serial) { state(false); status.textContent = 'Audio could not play. Read welcome is in the Room menu.'; }
     });
   }
-  figure.addEventListener('click',()=>beginWelcome());
-  audio.addEventListener('ended', () => { state(false); status.textContent = 'Welcome complete · tap the guide to replay, or explore the room.'; });
+  figure.addEventListener('click',()=>{window.dispatchEvent(new Event('academy-welcome-manual'));beginWelcome();});
+  audio.addEventListener('ended', () => { state(false); status.textContent = 'Welcome complete · choose Hear again, or explore the room.'; });
   audio.addEventListener('error', () => { consumed=false;try{sessionStorage.removeItem(visitKey);}catch{}state(false); status.textContent = 'Audio is unavailable. Read welcome is in the Room menu.'; });
-  stop.addEventListener('click', () => { halt(); figure.focus({preventScroll:true}); });
+  stop.addEventListener('click', () => { halt(); welcomeAction.focus({preventScroll:true}); });
   document.addEventListener('visibilitychange', () => { if (document.hidden && speaking) halt(); });
   document.addEventListener('click', e => { if (e.target.closest?.('a[href]') && speaking) halt(); }, true);
   window.addEventListener('pagehide', () => halt());

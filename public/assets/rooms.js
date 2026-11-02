@@ -6,13 +6,28 @@ const tools=document.querySelector('.room-tools');if(tools)for(const button of [
 const portalArt=['./assets/sanctuary-polished-v5.png','./assets/boutique-polished-hq-v2.png','./assets/beyond-the-script-public-cover.png'];
 const portalNotes=['Return to the sanctuary','Explore the collection','Books & new perspectives'];
 [...nav.querySelectorAll('a')].forEach((a,index)=>{const name=a.textContent;a.classList.add('room-portal');a.innerHTML=`<img src="${portalArt[index]}" alt=""><span><strong>${name}</strong><small>${portalNotes[index]}</small></span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>`;});
-for(const button of menuContent.querySelectorAll('[data-open-station]'))if(button.dataset.openStation!=='resources')button.textContent+=' · Coming soon';
+for(const button of menuContent.querySelectorAll('[data-open-station]')){if(button.dataset.openStation==='reflect')button.textContent='Start Here · Reflection desk';else if(button.dataset.openStation!=='resources')button.textContent+=' · Coming soon';}
 const objectOptions=document.createElement('details');objectOptions.className='room-object-options';objectOptions.innerHTML='<summary>Room objects</summary>';
 for(const group of menuContent.querySelectorAll('.sanctuary-nav,nav[aria-label="Boutique collections"]'))objectOptions.append(group);
 const rail=document.createElement('div');rail.className='room-control-rail';rail.setAttribute('aria-label','Scene controls');
 for(const control of menuContent.querySelectorAll('#reset-view,#motion-toggle,#lights-toggle,#boutique-motion,#center-view,#wide-view'))rail.append(control);
 for(const empty of menuContent.querySelectorAll('.scene-controls'))if(!empty.children.length)empty.remove();
 menuContent.append(rail,objectOptions);
+const closeMenu=document.createElement('button');closeMenu.type='button';closeMenu.className='close-room-menu';closeMenu.setAttribute('aria-label','Close Room menu');closeMenu.textContent='Close ×';menuContent.prepend(closeMenu);closeMenu.onclick=()=>{menu.open=false;menu.querySelector('summary').focus()};document.addEventListener('pointerdown',e=>{if(menu.open&&!menu.contains(e.target))menu.open=false;});const startLink=document.createElement('a');startLink.href='./start.html';startLink.className='start-practice-link';startLink.textContent='Start Here · a quiet practice';nav.after(startLink);
+// Restart deliberately clears only this experience's per-tab progress.
+const restart=document.createElement('button');restart.type='button';restart.id='restart-experience';restart.textContent='Restart experience';restart.setAttribute('aria-label','Restart the experience from the galaxy entrance');rail.append(restart);
+restart.addEventListener('click',()=>{
+ if(restart.disabled)return;restart.disabled=true;menu.open=false;
+ window.dispatchEvent(new Event('academy-restart'));
+ window.academyWelcome?.stop('Restarting the experience…');
+ const keys=['academy-arrived','voidwalker-cat-arrived-v2','voidwalker-welcome-once-v1','academy-hq-pan','academy-boutique-pan','academy-journey','academy-boutique-tour'];
+ const clearProgress=()=>{try{for(const key of keys)sessionStorage.removeItem(key);}catch{}};
+ clearProgress();
+ // Existing journey/pagehide handlers save progress. Clear after them too.
+ window.addEventListener('pagehide',clearProgress,{once:true});
+ if(window.academyNavigate)window.academyNavigate('./index.html');else location.assign('./index.html');
+});
+
 menu.addEventListener('keydown',e=>{if(e.key==='Escape'){menu.open=false;if(!e.target.closest('button[data-open-station]'))menu.querySelector('summary').focus()}});
 menuContent.addEventListener('click',e=>{if(e.target.closest('button[data-category],button[data-open-station],a')){menu.open=false;if(!e.target.closest('button[data-open-station]'))menu.querySelector('summary').focus()}});
 
@@ -30,7 +45,7 @@ const info=document.createElement('div');info.className='room-info-copy';
 if(note){note.textContent='Explore the room · touch an object, or drag to look around.';info.append(note)}
 dock.append(info,menu);document.body.append(dock);
 document.addEventListener('click',event=>{if(event.target.closest?.('.object-point,.point,.journal-display,[data-open-station],[data-category],.sanctuary-telescope'))window.academyInfoLockUntil=performance.now()+5000;},true);
-const tips={reflect:'Reflection desk · Coming soon',watch:'Viewing screen · Coming soon',resources:'The Library · Explore the book collection',apparel:'Apparel · Coming soon',crystals:'Crystals & objects · Coming soon',art:'Art & atmosphere · Coming soon',journals:'The Library · Explore the book collection'};
+const tips={reflect:'Start Here · a quiet reflection practice',watch:'Viewing screen · Coming soon',resources:'The Library · Explore the book collection',apparel:'Apparel · Coming soon',crystals:'Crystals & objects · Coming soon',art:'Art & atmosphere · Coming soon',journals:'The Library · Explore the book collection'};
 for(const object of document.querySelectorAll('.object-point,.point,.journal-display')){
  const show=()=>{if(performance.now()<(window.academyInfoLockUntil||0))return;if(note)note.textContent=tips[object.dataset.station||object.dataset.category]||'Explore this room object';};
  object.addEventListener('focus',show);
