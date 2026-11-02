@@ -12,13 +12,15 @@
   const label = document.createElement('span'); label.textContent = 'Hear welcome';
   figure.append(image, label); stage.append(figure);
   const moving=document.createElement('span');moving.className='guide-animation-crop';moving.setAttribute('aria-hidden','true');
-  const performanceVideo=document.createElement('video');performanceVideo.src='./assets/naomi-full-alpha.webm';performanceVideo.muted=true;performanceVideo.defaultMuted=true;performanceVideo.playsInline=true;performanceVideo.preload='metadata';performanceVideo.disablePictureInPicture=true;moving.append(performanceVideo);figure.append(moving);
+  const performanceVideo=document.createElement('video');performanceVideo.muted=true;performanceVideo.defaultMuted=true;performanceVideo.playsInline=true;performanceVideo.preload='metadata';performanceVideo.disablePictureInPicture=true;moving.append(performanceVideo);figure.append(moving);
   const phoneAnimation = /iPhone|iPad|iPod/.test(navigator.userAgent) || (navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
   const phoneImage=document.createElement('img');phoneImage.className='guide-phone-performance';phoneImage.alt='';phoneImage.draggable=false;moving.append(phoneImage);
   let phoneBlob=null,phoneURL=null,phoneLoading=null;
   function preparePhone(){return phoneLoading||(phoneLoading=fetch('./assets/naomi-full-phone.webp').then(r=>{if(!r.ok)throw Error('Animation unavailable');return r.blob()}).then(b=>{phoneBlob=b;return b}).catch(()=>{phoneLoading=null;return null}));}
   if(phoneAnimation){performanceVideo.removeAttribute('src');performanceVideo.load();preparePhone();}
   function showPhone(){if(!phoneBlob)return false;if(phoneURL)URL.revokeObjectURL(phoneURL);phoneURL=URL.createObjectURL(phoneBlob);phoneImage.onload=()=>{if(!speaking)return;figure.classList.add('is-animated','is-phone-animated');audio.play().catch(()=>{allowRetry();halt('Tap the guide again to begin the welcome.');});};phoneImage.onerror=()=>{allowRetry();halt('The moving welcome could not display. Please try again.');};phoneImage.src=phoneURL;return true;}
+  let nativeLoading=null,nativeReady=false;
+  function prepareNative(){if(phoneAnimation)return Promise.resolve(false);return nativeLoading||(nativeLoading=window.academyMedia.load('guide').then(url=>new Promise((resolve,reject)=>{performanceVideo.addEventListener('loadeddata',()=>{nativeReady=true;resolve(true);},{once:true});performanceVideo.addEventListener('error',reject,{once:true});performanceVideo.src=url;performanceVideo.load();})).catch(()=>{nativeLoading=null;return false;}));}
   let alphaSupported=null;
   function confirmAlpha(){
     if(performanceVideo.readyState<2)return false;
@@ -62,6 +64,7 @@
   function beginWelcome(){
     if (speaking) return;
     if(consumed){status.textContent='Welcome complete · explore the room at your own pace.';return;}
+    if(!phoneAnimation&&!nativeReady){status.textContent='Loading the moving welcome…';prepareNative().then(ok=>{status.textContent=ok?'Welcome ready · tap the guide to begin.':'The moving welcome could not load. Please try again.'});return;}
     if(phoneAnimation&&!phoneBlob){status.textContent='Loading the moving welcome…';preparePhone().then(b=>{status.textContent=b?'Welcome ready · tap the guide to begin.':'The moving welcome could not load. Please try again.'});return;}
     const token = ++serial;
     state(true); status.textContent = 'Starting welcome…';
