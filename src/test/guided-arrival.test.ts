@@ -35,6 +35,8 @@ describe("Supplied guided arrival rules", () => {
     new Function("window", "document", "matchMedia", "sessionStorage", source)(
       win, doc, () => ({ matches: false }), window.sessionStorage,
     );
+    const universe = doc.querySelector<HTMLVideoElement>(".arrival-universe");
+    if (universe) universe.pause = vi.fn();
     await vi.advanceTimersByTimeAsync(0);
   }
   function enter() {

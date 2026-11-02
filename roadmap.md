@@ -14,5 +14,5 @@
 # Guided arrival final corrections
 
 - [x] Back up and install all ten supplied files byte-identically, preserving the owner SEO layer and unchanged source/media/routes.
-- [ ] Verify fresh arrival, full natural end, cancellation/replay, cat early exit/return, room navigation and book anchors.
-- [ ] Record manifest hashes, tests, available commit and actual credit evidence; no publication.
+- [x] Verify fresh arrival, full natural end, cancellation/replay, cat early exit/return, room navigation and book anchors.
+- [x] Record manifest hashes, tests, available commit and actual credit evidence; no publication.
