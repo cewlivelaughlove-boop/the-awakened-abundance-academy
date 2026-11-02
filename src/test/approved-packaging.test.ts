@@ -5,6 +5,7 @@ import { describe, expect, it } from "vitest";
 import manifest from "../../.lovable/migrate-external-project/continuation-installed-files.json";
 import corrections from "../../.lovable/migrate-external-project/arrival-installed-files.json";
 import cacheFix from "../../.lovable/migrate-external-project/cache-sightline-installed-files.json";
+import welcomeFix from "../../.lovable/migrate-external-project/welcome-replay-installed-files.json";
 import { approvedDocument } from "../lib/approved-website";
 
 describe("Approved V23 static packaging", () => {
@@ -21,7 +22,8 @@ describe("Approved V23 static packaging", () => {
   it("installs the 4 cache/sightline HTML files exactly with backups", () => {
     expect(cacheFix).toHaveLength(4);
     for (const file of cacheFix) {
-      const bytes = readFileSync(file.installed);
+      const newer = welcomeFix.find((entry) => entry.installed === file.installed);
+      const bytes = readFileSync(newer?.backup ?? file.installed);
       expect(bytes.byteLength).toBe(file.bytes);
       expect(createHash("sha256").update(bytes).digest("hex")).toBe(file.sha256);
       expect(createHash("sha256").update(readFileSync(file.backup)).digest("hex")).toBe(file.previousSha256);
@@ -32,12 +34,23 @@ describe("Approved V23 static packaging", () => {
     expect(corrections).toHaveLength(16);
     for (const file of corrections) {
       const later = cacheFix.find((entry) => entry.installed === file.installed);
-      const bytes = readFileSync(later?.backup ?? file.installed);
+      const newer = welcomeFix.find((entry) => entry.installed === file.installed);
+      const bytes = readFileSync(later?.backup ?? newer?.backup ?? file.installed);
       expect(bytes.byteLength).toBe(file.bytes);
       expect(createHash("sha256").update(bytes).digest("hex")).toBe(file.sha256);
       if (file.backup) {
         expect(createHash("sha256").update(readFileSync(file.backup)).digest("hex")).toBe(file.previousSha256);
       }
+    }
+  });
+  it("installs the 6 welcome-replay files exactly with backups", () => {
+    expect(welcomeFix).toHaveLength(6);
+    for (const file of welcomeFix) {
+      const bytes = readFileSync(file.installed);
+      expect(createHash("sha256").update(bytes).digest("hex")).toBe(file.sha256);
+      expect(createHash("sha256").update(readFileSync(file.backup)).digest("hex")).toBe(file.previousSha256);
+      if (file.installed.endsWith(".html"))
+        expect(bytes.toString()).not.toMatch(/assets\/[\w-]+\.(js|css)(?!\?v=welcome-20261102-3)["?]/);
     }
   });
   it.each([

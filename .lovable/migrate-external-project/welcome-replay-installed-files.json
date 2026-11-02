@@ -1,0 +1,50 @@
+[
+  {
+    "source": "index.html",
+    "installed": "src/approved/v23/index.html",
+    "bytes": 19006,
+    "sha256": "6e9bb45e324eafb9a281bdee3db54c575d0a5f229117db65b88f6fd81d7c0dd8",
+    "backup": ".lovable/migrate-external-project/before-welcome-replay/src/approved/v23/index.html",
+    "previousSha256": "292fc3bf74c4ee19ba9dda93f95a5ff8e802fa29c54a0b60722f1f31c2ab43f6"
+  },
+  {
+    "source": "boutique.html",
+    "installed": "src/approved/v23/boutique.html",
+    "bytes": 4300,
+    "sha256": "39522d52647380e895ca8062f7a8de4914a7f719d0d7d2275e02f5cc40046737",
+    "backup": ".lovable/migrate-external-project/before-welcome-replay/src/approved/v23/boutique.html",
+    "previousSha256": "8ec53b88a0a424972caf323259fb0b45525ae2690b9c0a296eba2324007e3da4"
+  },
+  {
+    "source": "library.html",
+    "installed": "src/approved/v23/library.html",
+    "bytes": 3907,
+    "sha256": "857f75ac98e9543e2b2c20bb2205c60783aefa6f742055835bb9f6213aff991c",
+    "backup": ".lovable/migrate-external-project/before-welcome-replay/src/approved/v23/library.html",
+    "previousSha256": "540865bcc0e83292b99c0ec39a683fe1cd1ecd297076725d415da285d6d0c2cd"
+  },
+  {
+    "source": "books.html",
+    "installed": "src/approved/v23/books.html",
+    "bytes": 5287,
+    "sha256": "bff0593632e487d4132b54cf76c02a6bc4c8607c168b6fb382089965d4a97ca1",
+    "backup": ".lovable/migrate-external-project/before-welcome-replay/src/approved/v23/books.html",
+    "previousSha256": "826d043044b4c11eeda5570114299585553a701a1cc77d9c9c7d4ca222f197fe"
+  },
+  {
+    "source": "assets/guide.js",
+    "installed": "public/assets/guide.js",
+    "bytes": 8649,
+    "sha256": "8ffee771787e8a6021586683c7b6b67f591655dddd1fc6d4c4b48eb5787003b1",
+    "backup": ".lovable/migrate-external-project/before-welcome-replay/public/assets/guide.js",
+    "previousSha256": "aab831e1d7a4a9fdf8066c67da91755d08290312b71b41133b0b312e36d2e4ae"
+  },
+  {
+    "source": "assets/transitions.js",
+    "installed": "public/assets/transitions.js",
+    "bytes": 1178,
+    "sha256": "fc4176f20c763ffa070bf573eff36c7b4fe7bb09c3f78321cc92148c4e823e7c",
+    "backup": ".lovable/migrate-external-project/before-welcome-replay/public/assets/transitions.js",
+    "previousSha256": "dc4ae7219b54d24a80e2cec3ae98197bc5bd75c7e0bf08ec3a0cf233340cbe60"
+  }
+]
