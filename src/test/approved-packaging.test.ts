@@ -6,6 +6,7 @@ import manifest from "../../.lovable/migrate-external-project/continuation-insta
 import corrections from "../../.lovable/migrate-external-project/arrival-installed-files.json";
 import cacheFix from "../../.lovable/migrate-external-project/cache-sightline-installed-files.json";
 import welcomeFix from "../../.lovable/migrate-external-project/welcome-replay-installed-files.json";
+import boutiqueIntro from "../../.lovable/migrate-external-project/boutique-intro-installed-files.json";
 import { approvedDocument } from "../lib/approved-website";
 
 describe("Approved V23 static packaging", () => {
