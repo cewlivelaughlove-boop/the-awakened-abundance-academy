@@ -12,3 +12,5 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+Sitemap: https://awakened-abundance-academy.lovable.app/sitemap.xml
