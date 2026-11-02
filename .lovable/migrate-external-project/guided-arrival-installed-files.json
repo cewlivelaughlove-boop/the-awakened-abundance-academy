@@ -1,0 +1,82 @@
+[
+  {
+    "source": "assets/arrival.css",
+    "installed": "public/assets/arrival.css",
+    "backup": ".lovable/migrate-external-project/before-guided-arrival/public/assets/arrival.css",
+    "bytes": 2055,
+    "sha256": "87722ee14ffcad88ef1be44d1dbe63901480ef46fe523e66ffdb370981b89fc1",
+    "previousSha256": "d558bacebe13845d117475255c6fe812e794aedc952ba673144526e192191607"
+  },
+  {
+    "source": "assets/arrival.js",
+    "installed": "public/assets/arrival.js",
+    "backup": ".lovable/migrate-external-project/before-guided-arrival/public/assets/arrival.js",
+    "bytes": 3585,
+    "sha256": "32efbf86c576b5175e0c616487e5b17dae92d318af55f1072a6c4501b32bf3f3",
+    "previousSha256": "a5f2518be5f7469003f35b2ed2ef604e720a25224a3e554f49e8433efb1556cb"
+  },
+  {
+    "source": "assets/cat.js",
+    "installed": "public/assets/cat.js",
+    "backup": ".lovable/migrate-external-project/before-guided-arrival/public/assets/cat.js",
+    "bytes": 1220,
+    "sha256": "3f58f238b0620c7d0e971098c72669210b0ca5adedecf19995928ff8d034685e",
+    "previousSha256": "89e580fe79ddffa927b5b3dda4e6e7eae09cd7ac76ba9a6181530a7a57d8a875"
+  },
+  {
+    "source": "assets/rooms.css",
+    "installed": "public/assets/rooms.css",
+    "backup": ".lovable/migrate-external-project/before-guided-arrival/public/assets/rooms.css",
+    "bytes": 14084,
+    "sha256": "ba643ed556258a30f62a05824d07759189b9046512468476967acb1a6791c2cb",
+    "previousSha256": "4f45cbd62e7dc9150512572547dfd6db50c5b62b1795ed669bcbcec46e65552c"
+  },
+  {
+    "source": "assets/transitions.css",
+    "installed": "public/assets/transitions.css",
+    "backup": ".lovable/migrate-external-project/before-guided-arrival/public/assets/transitions.css",
+    "bytes": 296,
+    "sha256": "3ff0f4225f6276bd7809dfd2d33f11367f4e30008ba4bc6f8c2c07528858d389",
+    "previousSha256": "6c2b66fe21952bc7736829b134a7e1daf924ae09479d4b754c527c1b37060467"
+  },
+  {
+    "source": "assets/transitions.js",
+    "installed": "public/assets/transitions.js",
+    "backup": ".lovable/migrate-external-project/before-guided-arrival/public/assets/transitions.js",
+    "bytes": 1348,
+    "sha256": "53adb09eaff36cec0bd9b2f5b8771cf89b711d09cfb7277c46b2ada72776394e",
+    "previousSha256": "fc4176f20c763ffa070bf573eff36c7b4fe7bb09c3f78321cc92148c4e823e7c"
+  },
+  {
+    "source": "books.html",
+    "installed": "src/approved/v23/books.html",
+    "backup": ".lovable/migrate-external-project/before-guided-arrival/src/approved/v23/books.html",
+    "bytes": 5308,
+    "sha256": "50c6691547f59085de28701f472d93ecb5433f70b6e64b1d5ea5c8868eab68f5",
+    "previousSha256": "bff0593632e487d4132b54cf76c02a6bc4c8607c168b6fb382089965d4a97ca1"
+  },
+  {
+    "source": "boutique.html",
+    "installed": "src/approved/v23/boutique.html",
+    "backup": ".lovable/migrate-external-project/before-guided-arrival/src/approved/v23/boutique.html",
+    "bytes": 5199,
+    "sha256": "71d2b30a335e9bcb7de75749f3fea18ba5514379c33bf8244c6ac282b8789ef1",
+    "previousSha256": "d56ddc9bebf47561fb04c99787cc991f567cad66a4785135a6b7cc041937c2f2"
+  },
+  {
+    "source": "index.html",
+    "installed": "src/approved/v23/index.html",
+    "backup": ".lovable/migrate-external-project/before-guided-arrival/src/approved/v23/index.html",
+    "bytes": 19090,
+    "sha256": "8d73ef56ec1a0215baa6c94818cd5e8302d05b086f4c6caab3bec5bd377c5d01",
+    "previousSha256": "6e9bb45e324eafb9a281bdee3db54c575d0a5f229117db65b88f6fd81d7c0dd8"
+  },
+  {
+    "source": "library.html",
+    "installed": "src/approved/v23/library.html",
+    "backup": ".lovable/migrate-external-project/before-guided-arrival/src/approved/v23/library.html",
+    "bytes": 3928,
+    "sha256": "b67f9f086990066648f47b671a0212cd8c5dd3ce7d3248469f2b2a133bc2ac9b",
+    "previousSha256": "857f75ac98e9543e2b2c20bb2205c60783aefa6f742055835bb9f6213aff991c"
+  }
+]

@@ -92,3 +92,5 @@ body>.fruitful-credit{display:flex!important;pointer-events:auto}
 .compact-room-menu,.compact-room-menu *{touch-action:pan-y pinch-zoom}
 .journal-display .book-open-tab{position:absolute;right:19%;bottom:28%;padding:3px 7px;background:#beb0c8;color:#20192a;font:600 clamp(7px,.6cqw,12px)/1.4 system-ui;letter-spacing:.03em;transform:rotate(-7deg);box-shadow:1px 2px 2px #0008;border-radius:1px;pointer-events:none;z-index:2}
 .journal-display .book-open-tab{right:auto;left:38%;bottom:30%;transform:rotate(-2deg)}
+
+.journal-display .book-open-tab{left:20%;bottom:16%;padding:2px 5px;background:linear-gradient(135deg,#38313e,#201c25);color:#e1d7e8;border:1px solid #75677e;border-radius:0;transform:rotate(-2deg);box-shadow:0 1px 2px #000a;font-weight:500}
