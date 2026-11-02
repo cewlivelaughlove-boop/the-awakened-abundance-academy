@@ -10,6 +10,8 @@ import boutiqueIntro from "../../.lovable/migrate-external-project/boutique-intr
 import guidedArrival from "../../.lovable/migrate-external-project/guided-arrival-installed-files.json";
 import experience from "../../.lovable/migrate-external-project/experience-content-installed-files.json";
 import preserved from "../../.lovable/migrate-external-project/experience-content-preserved-files.json";
+import polish from "../../.lovable/migrate-external-project/celestial-reading-installed-files.json";
+import polishPreserved from "../../.lovable/migrate-external-project/celestial-reading-preserved-files.json";
 import { approvedDocument } from "../lib/approved-website";
 
 describe("Approved V23 static packaging", () => {
@@ -93,7 +95,8 @@ describe("Approved V23 static packaging", () => {
   it("installs all twenty experience files exactly and keeps overwritten backups", () => {
     expect(experience).toHaveLength(20);
     for (const file of experience) {
-      const bytes = readFileSync(file.installed);
+      const newer = polish.find((entry) => entry.installed === file.installed);
+      const bytes = readFileSync(newer?.backup ?? file.installed);
       expect(bytes.byteLength).toBe(file.bytes);
       expect(createHash("sha256").update(bytes).digest("hex")).toBe(file.sha256);
       if (file.backup) expect(createHash("sha256").update(readFileSync(file.backup)).digest("hex")).toBe(file.previousSha256);
@@ -103,6 +106,24 @@ describe("Approved V23 static packaging", () => {
     expect(preserved.length).toBeGreaterThan(50);
     for (const file of preserved) {
       expect(createHash("sha256").update(readFileSync(file.installed)).digest("hex")).toBe(file.sha256);
+    }
+  });
+  it("installs exactly seven owner-hashed polish files and preserves all four overwritten documents", () => {
+    expect(polish).toHaveLength(7);
+    expect(polish.filter((file) => "backup" in file)).toHaveLength(4);
+    for (const file of polish) {
+      const bytes = readFileSync(file.installed);
+      expect(bytes.byteLength).toBe(file.bytes);
+      expect(createHash("sha256").update(bytes).digest("hex")).toBe(file.sha256);
+      if ("backup" in file && file.backup) expect(createHash("sha256").update(readFileSync(file.backup)).digest("hex")).toBe(file.previousSha256);
+    }
+  });
+  it("keeps all 75 other production files byte-identical after the polish", () => {
+    expect(polishPreserved).toHaveLength(75);
+    for (const file of polishPreserved) {
+      const bytes = readFileSync(file.installed);
+      expect(bytes.byteLength).toBe(file.bytes);
+      expect(createHash("sha256").update(bytes).digest("hex")).toBe(file.sha256);
     }
   });
   it.each([
