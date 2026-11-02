@@ -66,8 +66,8 @@
   "celestial_reading": {
     "capability": "exact seven-file celestial reading polish",
     "source": "Carla-Celestial-Reading-Polish.zip",
-    "outcome": "Hash-validated; installation and preview checks in progress",
-    "status": "pending",
-    "next_action": "Complete targeted preview verification"
+    "outcome": "7/7 supplied files and HTTP hashes exact; four backups; 75 other production files unchanged; 39 tests pass. Desktop/Chromium iPhone-UA reading playback/Pause persistence/reduced-motion still, reader/menu/practice/navigation and plaque on wall after room panning verified; prior text/links/SEO/voice/referral unchanged. No publication.",
+    "status": "verified",
+    "next_action": null
   }
 }
