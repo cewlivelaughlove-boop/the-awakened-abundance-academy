@@ -47,11 +47,27 @@ describe("Approved V23 static packaging", () => {
   it("installs the 6 welcome-replay files exactly with backups", () => {
     expect(welcomeFix).toHaveLength(6);
     for (const file of welcomeFix) {
-      const bytes = readFileSync(file.installed);
+      const newer = boutiqueIntro.find((entry) => entry.installed === file.installed);
+      const bytes = readFileSync(newer?.backup ?? file.installed);
       expect(createHash("sha256").update(bytes).digest("hex")).toBe(file.sha256);
       expect(createHash("sha256").update(readFileSync(file.backup)).digest("hex")).toBe(file.previousSha256);
       if (file.installed.endsWith(".html"))
-        expect(bytes.toString()).not.toMatch(/assets\/[\w-]+\.(js|css)(?!\?v=welcome-20261102-3)["?]/);
+        expect(readFileSync(file.installed).toString()).not.toMatch(/assets\/[\w-]+\.(js|css)(?!\?v=welcome-20261102-3)["?]/);
+    }
+  });
+  it("installs the boutique intro copy update exactly with a backup", () => {
+    expect(boutiqueIntro).toHaveLength(1);
+    for (const file of boutiqueIntro) {
+      const bytes = readFileSync(file.installed);
+      expect(bytes.byteLength).toBe(file.bytes);
+      expect(createHash("sha256").update(bytes).digest("hex")).toBe(file.sha256);
+      expect(createHash("sha256").update(readFileSync(file.backup)).digest("hex")).toBe(file.previousSha256);
+      const html = bytes.toString();
+      expect(html).toMatch(/class="boutique-intro-title"/);
+      expect(html).toMatch(/class="boutique-intro-copy"/);
+      expect(html).toMatch(/The Awakened Abundance Academy/);
+      expect(html).toMatch(/nothing is for sale yet/);
+      expect(html).not.toMatch(/assets\/[\w-]+\.(js|css)(?!\?v=welcome-20261102-3)["?]/);
     }
   });
   it.each([
