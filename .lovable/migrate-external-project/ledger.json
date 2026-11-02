@@ -1,0 +1,11 @@
+{
+  "source": "Carla-V23-Exact-Website.zip",
+  "capabilities": [
+    {"capability":"code and artwork","source":"four HTML documents and 35 assets","outcome":"37 files staged unchanged; two oversized video copies rejected and removed","status":"blocked","next_action":"Owner decision: permit project-managed asset storage for naomi-full-alpha.webm (20,127,686 bytes) and planet-journey-v4.mp4 (13,031,218 bytes), or supply smaller approved originals. Direct repository storage exceeds the 10 MiB per-file limit."},
+    {"capability":"navigation and media behavior","source":"supplied browser scripts","outcome":"not activated; original React headquarters remains unchanged","status":"blocked","next_action":"Resolve local-media constraint before routing or browser verification"},
+    {"capability":"schema, records, auth identities, authorization","source":"static archive; no data store detected","outcome":"not applicable","status":"not applicable","next_action":null},
+    {"capability":"email, payments, chat, microphone","source":"owner requires inactive services","outcome":"keep inactive; connect nothing","status":"pending","next_action":"confirm source makes no service requests"},
+    {"capability":"callbacks, webhooks, schedules, secrets","source":"static archive","outcome":"not applicable","status":"not applicable","next_action":null},
+    {"capability":"cutover and publishing","source":"preview-only owner instruction","outcome":"not requested","status":"not applicable","next_action":null}
+  ]
+}
