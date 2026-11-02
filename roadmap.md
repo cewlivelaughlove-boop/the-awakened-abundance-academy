@@ -20,6 +20,6 @@
 # Experience and content update
 
 - [x] Back up and install twenty exact supplied files; retain all unchanged production bytes and SEO.
-- [ ] Add Start Here using the existing standalone GET pattern and update preservation tests.
-- [ ] Verify preview reader, practice, menu, restart, welcome/Stop, cat reveal and room navigation.
-- [ ] Record hashes, tests, final available commit and cost evidence; no publication.
+- [x] Add Start Here using the existing standalone GET pattern and update preservation tests.
+- [x] Verify preview reader, practice, menu, restart, welcome/Stop, cat reveal and room navigation.
+- [x] Record supplied hashes and browser evidence; read final available commit after saved changes. Exact turn cost unavailable; no publication.

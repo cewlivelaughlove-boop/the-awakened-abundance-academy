@@ -54,4 +54,28 @@ describe("Approved experience rules", () => {
     expect(localSpy).not.toHaveBeenCalled();
     localSpy.mockRestore();
   });
+  it("exposes exactly interior pages 3–5 with bounded previous and next navigation", () => {
+    document.body.innerHTML = '<a href="#preview">Open</a><dialog id="book-preview"><img id="preview-page-image"><div id="preview-transcript"></div><div id="preview-viewport"></div><span id="preview-count"></span><span id="preview-caption"></span><button id="preview-previous"></button><button id="preview-next"></button><button id="preview-text"></button><button id="preview-zoom"></button><button id="preview-close"></button></dialog>';
+    const dialog = document.querySelector<HTMLDialogElement>("dialog");
+    if (!dialog) throw new Error("Reader missing");
+    dialog.showModal = () => { dialog.open = true; };
+    dialog.close = () => { dialog.open = false; };
+    new Function("document", "window", "history", "location", readFileSync("public/assets/book-preview.js", "utf8"))(
+      document, window, history, location,
+    );
+    document.querySelector<HTMLAnchorElement>("a")?.click();
+    const next = document.querySelector<HTMLButtonElement>("#preview-next");
+    const previous = document.querySelector<HTMLButtonElement>("#preview-previous");
+    if (!next || !previous) throw new Error("Reader navigation missing");
+    expect(previous.disabled).toBe(true);
+    expect(document.querySelector("#preview-count")?.textContent).toBe("1 of 3 · Book page 3");
+    next.click();
+    expect(document.querySelector("#preview-count")?.textContent).toBe("2 of 3 · Book page 4");
+    next.click(); next.click();
+    expect(next.disabled).toBe(true);
+    expect(document.querySelector("#preview-count")?.textContent).toBe("3 of 3 · Book page 5");
+    previous.click();
+    expect(document.querySelector("#preview-count")?.textContent).toBe("2 of 3 · Book page 4");
+    history.replaceState(null, "", "/");
+  });
 });
