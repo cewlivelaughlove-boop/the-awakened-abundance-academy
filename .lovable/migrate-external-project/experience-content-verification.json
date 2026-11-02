@@ -1,0 +1,26 @@
+{
+  "http_hashes_and_routes": "20 exact hashes; six addresses 200",
+  "reader": "3 pages, Next/Previous bounds, text, Close, Escape, hash reopen and visible anchors passed",
+  "practice": "inline completion; storage unchanged",
+  "library": "physical Open enters preview; Explore opens introduction",
+  "welcome": "Enter audio, revealed cat full walk, no HQ speech pan, Stop/manual replay, menu Close, Restart, natural full end to boutique",
+  "returning": "room\u2192practice\u2192HQ; arrival once per visit",
+  "chromium_iphone_ua": "phone reader, original WebP welcome/Stop/replay, look-around stopped by menu, Apparel rack centered",
+  "reduced_motion": "no boutique tour",
+  "page_errors": [],
+  "tests": "34 tests passed across four files",
+  "build": "Harness build OK",
+  "extraChecks": "Planet moving/pause/resume; keyboard stops tour; returning visit no tour; phone practice completion passed",
+  "manifest": ".lovable/migrate-external-project/experience-content-installed-files.json",
+  "backup": ".lovable/migrate-external-project/before-experience-content",
+  "unchangedProductionFiles": 53,
+  "startAlias": "Not added: existing approved standalone pages use .html addresses only",
+  "differences": [
+    "No supplied file changed; Apparel centering reaches the room\u2019s left edge, leaving rack center about 18px left of screen center at 390px."
+  ],
+  "limits": [
+    "Chromium desktop and iPhone-UA, not physical iPhone or Safari",
+    "Exact final turn credit cost unavailable"
+  ],
+  "publication": "Not published; no providers or services enabled"
+}

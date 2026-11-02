@@ -8,6 +8,8 @@ import cacheFix from "../../.lovable/migrate-external-project/cache-sightline-in
 import welcomeFix from "../../.lovable/migrate-external-project/welcome-replay-installed-files.json";
 import boutiqueIntro from "../../.lovable/migrate-external-project/boutique-intro-installed-files.json";
 import guidedArrival from "../../.lovable/migrate-external-project/guided-arrival-installed-files.json";
+import experience from "../../.lovable/migrate-external-project/experience-content-installed-files.json";
+import preserved from "../../.lovable/migrate-external-project/experience-content-preserved-files.json";
 import { approvedDocument } from "../lib/approved-website";
 
 describe("Approved V23 static packaging", () => {
@@ -16,7 +18,8 @@ describe("Approved V23 static packaging", () => {
     for (const file of manifest) {
       const replacement = corrections.find((entry) => entry.installed === file.installed);
       const latest = guidedArrival.find((entry) => entry.installed === file.installed);
-      const bytes = readFileSync(replacement?.backup ?? latest?.backup ?? file.installed);
+      const update = experience.find((entry) => entry.installed === file.installed);
+      const bytes = readFileSync(replacement?.backup ?? latest?.backup ?? update?.backup ?? file.installed);
       expect(bytes.byteLength).toBe(file.bytes);
       expect(bytes.byteLength).toBeLessThan(10 * 1024 * 1024);
       expect(createHash("sha256").update(bytes).digest("hex")).toBe(file.sha256);
@@ -39,7 +42,8 @@ describe("Approved V23 static packaging", () => {
       const later = cacheFix.find((entry) => entry.installed === file.installed);
       const newer = welcomeFix.find((entry) => entry.installed === file.installed);
       const latest = guidedArrival.find((entry) => entry.installed === file.installed);
-      const bytes = readFileSync(later?.backup ?? newer?.backup ?? latest?.backup ?? file.installed);
+      const update = experience.find((entry) => entry.installed === file.installed);
+      const bytes = readFileSync(later?.backup ?? newer?.backup ?? latest?.backup ?? update?.backup ?? file.installed);
       expect(bytes.byteLength).toBe(file.bytes);
       expect(createHash("sha256").update(bytes).digest("hex")).toBe(file.sha256);
       if (file.backup) {
@@ -52,7 +56,8 @@ describe("Approved V23 static packaging", () => {
     for (const file of welcomeFix) {
       const newer = boutiqueIntro.find((entry) => entry.installed === file.installed);
       const latest = guidedArrival.find((entry) => entry.installed === file.installed);
-      const bytes = readFileSync(newer?.backup ?? latest?.backup ?? file.installed);
+      const update = experience.find((entry) => entry.installed === file.installed);
+      const bytes = readFileSync(newer?.backup ?? latest?.backup ?? update?.backup ?? file.installed);
       expect(createHash("sha256").update(bytes).digest("hex")).toBe(file.sha256);
       expect(createHash("sha256").update(readFileSync(file.backup)).digest("hex")).toBe(file.previousSha256);
       if (file.installed.endsWith(".html"))
@@ -78,10 +83,26 @@ describe("Approved V23 static packaging", () => {
   it("installs exactly ten guided-arrival files with exact backups", () => {
     expect(guidedArrival).toHaveLength(10);
     for (const file of guidedArrival) {
-      const bytes = readFileSync(file.installed);
+      const update = experience.find((entry) => entry.installed === file.installed);
+      const bytes = readFileSync(update?.backup ?? file.installed);
       expect(bytes.byteLength).toBe(file.bytes);
       expect(createHash("sha256").update(bytes).digest("hex")).toBe(file.sha256);
       expect(createHash("sha256").update(readFileSync(file.backup)).digest("hex")).toBe(file.previousSha256);
+    }
+  });
+  it("installs all twenty experience files exactly and keeps overwritten backups", () => {
+    expect(experience).toHaveLength(20);
+    for (const file of experience) {
+      const bytes = readFileSync(file.installed);
+      expect(bytes.byteLength).toBe(file.bytes);
+      expect(createHash("sha256").update(bytes).digest("hex")).toBe(file.sha256);
+      if (file.backup) expect(createHash("sha256").update(readFileSync(file.backup)).digest("hex")).toBe(file.previousSha256);
+    }
+  });
+  it("preserves every other production document, asset, route and SEO file", () => {
+    expect(preserved.length).toBeGreaterThan(50);
+    for (const file of preserved) {
+      expect(createHash("sha256").update(readFileSync(file.installed)).digest("hex")).toBe(file.sha256);
     }
   });
   it.each([

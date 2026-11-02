@@ -18,6 +18,7 @@ import { Route as CommunityRouteImport } from './routes/community'
 import { Route as CoursesRouteImport } from './routes/courses'
 import { Route as IndexDothtmlRouteImport } from './routes/index[.]html'
 import { Route as LibraryDothtmlRouteImport } from './routes/library[.]html'
+import { Route as StartDothtmlRouteImport } from './routes/start[.]html'
 import { Route as TarotRouteImport } from './routes/tarot'
 
 const IndexRoute = IndexRouteImport.update({
@@ -65,6 +66,11 @@ const LibraryDothtmlRoute = LibraryDothtmlRouteImport.update({
   path: '/library.html',
   getParentRoute: () => rootRouteImport,
 } as any)
+const StartDothtmlRoute = StartDothtmlRouteImport.update({
+  id: '/start.html',
+  path: '/start.html',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const TarotRoute = TarotRouteImport.update({
   id: '/tarot',
   path: '/tarot',
@@ -81,6 +87,7 @@ export interface FileRoutesByFullPath {
   '/courses': typeof CoursesRoute
   '/index.html': typeof IndexDothtmlRoute
   '/library.html': typeof LibraryDothtmlRoute
+  '/start.html': typeof StartDothtmlRoute
   '/tarot': typeof TarotRoute
 }
 export interface FileRoutesByTo {
@@ -93,6 +100,7 @@ export interface FileRoutesByTo {
   '/courses': typeof CoursesRoute
   '/index.html': typeof IndexDothtmlRoute
   '/library.html': typeof LibraryDothtmlRoute
+  '/start.html': typeof StartDothtmlRoute
   '/tarot': typeof TarotRoute
 }
 export interface FileRoutesById {
@@ -106,6 +114,7 @@ export interface FileRoutesById {
   '/courses': typeof CoursesRoute
   '/index.html': typeof IndexDothtmlRoute
   '/library.html': typeof LibraryDothtmlRoute
+  '/start.html': typeof StartDothtmlRoute
   '/tarot': typeof TarotRoute
 }
 export interface FileRouteTypes {
@@ -120,6 +129,7 @@ export interface FileRouteTypes {
     | '/courses'
     | '/index.html'
     | '/library.html'
+    | '/start.html'
     | '/tarot'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -132,6 +142,7 @@ export interface FileRouteTypes {
     | '/courses'
     | '/index.html'
     | '/library.html'
+    | '/start.html'
     | '/tarot'
   id:
     | '__root__'
@@ -144,6 +155,7 @@ export interface FileRouteTypes {
     | '/courses'
     | '/index.html'
     | '/library.html'
+    | '/start.html'
     | '/tarot'
   fileRoutesById: FileRoutesById
 }
@@ -157,6 +169,7 @@ export interface RootRouteChildren {
   CoursesRoute: typeof CoursesRoute
   IndexDothtmlRoute: typeof IndexDothtmlRoute
   LibraryDothtmlRoute: typeof LibraryDothtmlRoute
+  StartDothtmlRoute: typeof StartDothtmlRoute
   TarotRoute: typeof TarotRoute
 }
 
@@ -225,6 +238,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LibraryDothtmlRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/start.html': {
+      id: '/start.html'
+      path: '/start.html'
+      fullPath: '/start.html'
+      preLoaderRoute: typeof StartDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/tarot': {
       id: '/tarot'
       path: '/tarot'
@@ -245,6 +265,7 @@ const rootRouteChildren: RootRouteChildren = {
   CoursesRoute: CoursesRoute,
   IndexDothtmlRoute: IndexDothtmlRoute,
   LibraryDothtmlRoute: LibraryDothtmlRoute,
+  StartDothtmlRoute: StartDothtmlRoute,
   TarotRoute: TarotRoute,
 }
 export const routeTree = rootRouteImport

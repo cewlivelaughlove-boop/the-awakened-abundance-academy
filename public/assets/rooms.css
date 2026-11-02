@@ -94,3 +94,14 @@ body>.fruitful-credit{display:flex!important;pointer-events:auto}
 .journal-display .book-open-tab{right:auto;left:38%;bottom:30%;transform:rotate(-2deg)}
 
 .journal-display .book-open-tab{left:20%;bottom:16%;padding:2px 5px;background:linear-gradient(135deg,#38313e,#201c25);color:#e1d7e8;border:1px solid #75677e;border-radius:0;transform:rotate(-2deg);box-shadow:0 1px 2px #000a;font-weight:500}
+
+/* One discreet welcome action inside the existing dock; Stop replaces it while speaking. */
+.room-info-dock #hear-guide-welcome{position:static;flex-shrink:0;order:1;max-width:124px;min-width:44px;min-height:44px;padding:7px 8px;border:0;background:transparent;color:#eee4f4;border-radius:6px;font:12px/1.25 system-ui;touch-action:manipulation;text-align:center;cursor:pointer}
+.room-info-dock #hear-guide-welcome:hover{background:#b78bcb18}
+.room-info-dock #hear-guide-welcome:focus-visible{outline:3px solid #d8baff;outline-offset:2px}
+.room-info-dock #hear-guide-welcome[hidden],.room-info-dock #cosmic-guide-stop[hidden]{display:none!important}
+@media(max-width:700px){.room-info-dock #hear-guide-welcome{max-width:94px;font-size:11px;padding:7px 4px}}
+
+.close-room-menu{position:sticky;top:0;z-index:2;display:block;margin:0 0 8px auto;min-height:44px;padding:8px 14px;border:1px solid #998ca855;background:#17141fee;color:#f4edf9;border-radius:6px}.start-practice-link{display:block;padding:13px 4px;color:#eee6f5;text-decoration:none;border-bottom:1px solid #87779444}.compact-room-menu[open]>.room-menu-content{max-height:calc(100dvh - 150px);overflow:auto;overscroll-behavior:contain}
+
+.point.object-selected{outline:1px solid #c9bedb;outline-offset:5px;box-shadow:0 0 22px #c6b7e12b;border-radius:12px}

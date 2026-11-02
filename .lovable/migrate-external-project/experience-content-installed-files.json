@@ -1,0 +1,146 @@
+[
+  {
+    "source": "start.html",
+    "installed": "src/approved/v23/start.html",
+    "bytes": 6499,
+    "sha256": "ab2cfca22609e6d0c7115a707c3e87aba5c337a49cfd6389ef3aed1ec90a3eb3"
+  },
+  {
+    "source": "index.html",
+    "installed": "src/approved/v23/index.html",
+    "bytes": 19231,
+    "sha256": "d952829ed5eb62e7435b83ae3b4255349ce9e93fa81d1067877ec312fef6e2b0",
+    "backup": ".lovable/migrate-external-project/before-experience-content/src/approved/v23/index.html",
+    "previousSha256": "8d73ef56ec1a0215baa6c94818cd5e8302d05b086f4c6caab3bec5bd377c5d01"
+  },
+  {
+    "source": "books.html",
+    "installed": "src/approved/v23/books.html",
+    "bytes": 8807,
+    "sha256": "837ba8f2f6ec19579d91e77b7b0bee2da7b0a324cad5104cda4c0c202b5614f0",
+    "backup": ".lovable/migrate-external-project/before-experience-content/src/approved/v23/books.html",
+    "previousSha256": "50c6691547f59085de28701f472d93ecb5433f70b6e64b1d5ea5c8868eab68f5"
+  },
+  {
+    "source": "boutique.html",
+    "installed": "src/approved/v23/boutique.html",
+    "bytes": 5235,
+    "sha256": "e5d02d5350a85f554a4530603ea2b213f61f0080afea65a946e50c05d70c5791",
+    "backup": ".lovable/migrate-external-project/before-experience-content/src/approved/v23/boutique.html",
+    "previousSha256": "71d2b30a335e9bcb7de75749f3fea18ba5514379c33bf8244c6ac282b8789ef1"
+  },
+  {
+    "source": "library.html",
+    "installed": "src/approved/v23/library.html",
+    "bytes": 5623,
+    "sha256": "bd7c6fa144b3e48154dc21d7f54fcca87b1631876d3526f339dc4fcd0c862092",
+    "backup": ".lovable/migrate-external-project/before-experience-content/src/approved/v23/library.html",
+    "previousSha256": "b67f9f086990066648f47b671a0212cd8c5dd3ce7d3248469f2b2a133bc2ac9b"
+  },
+  {
+    "source": "assets/cat.js",
+    "installed": "public/assets/cat.js",
+    "bytes": 1480,
+    "sha256": "09ef55b088ae218830e14aa56c58665f429b0297f6d3ab9a18ba5af99dc15b94",
+    "backup": ".lovable/migrate-external-project/before-experience-content/public/assets/cat.js",
+    "previousSha256": "3f58f238b0620c7d0e971098c72669210b0ca5adedecf19995928ff8d034685e"
+  },
+  {
+    "source": "assets/guide.js",
+    "installed": "public/assets/guide.js",
+    "bytes": 9384,
+    "sha256": "e56676e5c820e0daab57dd1f6ba26196ad458e11ab4a86952b3948ecffe77776",
+    "backup": ".lovable/migrate-external-project/before-experience-content/public/assets/guide.js",
+    "previousSha256": "8ffee771787e8a6021586683c7b6b67f591655dddd1fc6d4c4b48eb5787003b1"
+  },
+  {
+    "source": "assets/reading-room.css",
+    "installed": "public/assets/reading-room.css",
+    "bytes": 28607,
+    "sha256": "0feb3e79cb8175335f7a73b64ae0ccc2ba702142bcfe0804df1983d0a49d1e3f",
+    "backup": ".lovable/migrate-external-project/before-experience-content/public/assets/reading-room.css",
+    "previousSha256": "0cf828978f53d5331999d08e9e81af1a5d3d61ae7d6fa26503dbe16a25651750"
+  },
+  {
+    "source": "assets/transitions.js",
+    "installed": "public/assets/transitions.js",
+    "bytes": 1354,
+    "sha256": "d0ee2137d08e80192dee6de03c3cc2b3c7ee76dcc7df5198d14a75d9b280cc4a",
+    "backup": ".lovable/migrate-external-project/before-experience-content/public/assets/transitions.js",
+    "previousSha256": "53adb09eaff36cec0bd9b2f5b8771cf89b711d09cfb7277c46b2ada72776394e"
+  },
+  {
+    "source": "assets/rooms.js",
+    "installed": "public/assets/rooms.js",
+    "bytes": 8897,
+    "sha256": "b560c0bce408dfbd2c30526fa0f84b8eaaeb2268775eaa3f48e3750bc72260de",
+    "backup": ".lovable/migrate-external-project/before-experience-content/public/assets/rooms.js",
+    "previousSha256": "d950aa1253c7f5cfe05304f6b8c6c79924f192b6a70fba9d2923cfcc36312ed0"
+  },
+  {
+    "source": "assets/start-here.js",
+    "installed": "public/assets/start-here.js",
+    "bytes": 410,
+    "sha256": "4a6f1a7387c86b0249e4ede6337807fde4b8dd6b0477bb2bd980ee49d884344b"
+  },
+  {
+    "source": "assets/start-here.css",
+    "installed": "public/assets/start-here.css",
+    "bytes": 4401,
+    "sha256": "1efc7f35cfcad354de187a52721cbeedc66b195c03c8a6b5c18db7a9b5666a47"
+  },
+  {
+    "source": "assets/rooms.css",
+    "installed": "public/assets/rooms.css",
+    "bytes": 15399,
+    "sha256": "b1af2a9ab1322e5bd1be55d4007efc5fa5b2a836de9df77a5e8f0dbfdac3d335",
+    "backup": ".lovable/migrate-external-project/before-experience-content/public/assets/rooms.css",
+    "previousSha256": "ba643ed556258a30f62a05824d07759189b9046512468476967acb1a6791c2cb"
+  },
+  {
+    "source": "assets/arrival.js",
+    "installed": "public/assets/arrival.js",
+    "bytes": 3781,
+    "sha256": "52b3a477b4bee233b1540ee8785c3bc47acd36a9d55e49910116537009464305",
+    "backup": ".lovable/migrate-external-project/before-experience-content/public/assets/arrival.js",
+    "previousSha256": "32efbf86c576b5175e0c616487e5b17dae92d318af55f1072a6c4501b32bf3f3"
+  },
+  {
+    "source": "assets/boutique.js",
+    "installed": "public/assets/boutique.js",
+    "bytes": 8916,
+    "sha256": "11b3f158da40253771ba148a08318264ddeb437178f104de3fede29aeaf862cb",
+    "backup": ".lovable/migrate-external-project/before-experience-content/public/assets/boutique.js",
+    "previousSha256": "823054743678aedd220f770680661aeda211772cfd33ecacd37e1cc9c087b3fe"
+  },
+  {
+    "source": "assets/book-preview.js",
+    "installed": "public/assets/book-preview.js",
+    "bytes": 10393,
+    "sha256": "71bb2379d130b436861aec80bf3a5e48c889196cad955c976ab814a71d2c2779"
+  },
+  {
+    "source": "assets/book-preview.css",
+    "installed": "public/assets/book-preview.css",
+    "bytes": 3721,
+    "sha256": "b1852a0d3f40d21aeb20edcd0f2b1cf5d3987031f39ac439daee1b35997f27bd"
+  },
+  {
+    "source": "assets/book-preview-03.jpg",
+    "installed": "public/assets/book-preview-03.jpg",
+    "bytes": 332228,
+    "sha256": "02a25f571e963778a0c8eb97f81f062557462b66edfffed30b7376024dce7b32"
+  },
+  {
+    "source": "assets/book-preview-04.jpg",
+    "installed": "public/assets/book-preview-04.jpg",
+    "bytes": 344419,
+    "sha256": "132d90400f105970e54e08a73b81a654a10478e2fde4ffb9a9a14995e9669c1b"
+  },
+  {
+    "source": "assets/book-preview-05.jpg",
+    "installed": "public/assets/book-preview-05.jpg",
+    "bytes": 333308,
+    "sha256": "74eb6d04735fa6c9a518120ada810885c5d7719fe0b1919daa1dc12fcdbfc167"
+  }
+]

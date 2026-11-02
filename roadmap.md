@@ -16,3 +16,10 @@
 - [x] Back up and install all ten supplied files byte-identically, preserving the owner SEO layer and unchanged source/media/routes.
 - [x] Verify fresh arrival, full natural end, cancellation/replay, cat early exit/return, room navigation and book anchors.
 - [x] Record manifest hashes, tests, available commit and actual credit evidence; no publication.
+
+# Experience and content update
+
+- [x] Back up and install twenty exact supplied files; retain all unchanged production bytes and SEO.
+- [x] Add Start Here using the existing standalone GET pattern and update preservation tests.
+- [x] Verify preview reader, practice, menu, restart, welcome/Stop, cat reveal and room navigation.
+- [x] Record supplied hashes and browser evidence; read final available commit after saved changes. Exact turn cost unavailable; no publication.
