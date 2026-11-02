@@ -1,0 +1,11 @@
+{
+  "source": "Carla-V23-Exact-Website.zip",
+  "capabilities": [
+    {"capability":"code and artwork","source":"four HTML documents and 35 assets","outcome":"migrate unchanged into existing tooling","status":"inspected","next_action":"install local assets and exact documents"},
+    {"capability":"navigation and media behavior","source":"supplied browser scripts","outcome":"preserve","status":"pending","next_action":"verify same-origin pages, guide, cat, journey and phone framing"},
+    {"capability":"schema, records, auth identities, authorization","source":"static archive; no data store detected","outcome":"not applicable","status":"not applicable","next_action":null},
+    {"capability":"email, payments, chat, microphone","source":"owner requires inactive services","outcome":"keep inactive; connect nothing","status":"pending","next_action":"confirm source makes no service requests"},
+    {"capability":"callbacks, webhooks, schedules, secrets","source":"static archive","outcome":"not applicable","status":"not applicable","next_action":null},
+    {"capability":"cutover and publishing","source":"preview-only owner instruction","outcome":"not requested","status":"not applicable","next_action":null}
+  ]
+}
