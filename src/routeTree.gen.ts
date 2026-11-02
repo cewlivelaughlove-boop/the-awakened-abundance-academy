@@ -12,8 +12,12 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as AbundanceRouteImport } from './routes/abundance'
+import { Route as BooksDothtmlRouteImport } from './routes/books[.]html'
+import { Route as BoutiqueDothtmlRouteImport } from './routes/boutique[.]html'
 import { Route as CommunityRouteImport } from './routes/community'
 import { Route as CoursesRouteImport } from './routes/courses'
+import { Route as IndexDothtmlRouteImport } from './routes/index[.]html'
+import { Route as LibraryDothtmlRouteImport } from './routes/library[.]html'
 import { Route as TarotRouteImport } from './routes/tarot'
 
 const IndexRoute = IndexRouteImport.update({
@@ -31,6 +35,16 @@ const AbundanceRoute = AbundanceRouteImport.update({
   path: '/abundance',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BooksDothtmlRoute = BooksDothtmlRouteImport.update({
+  id: '/books.html',
+  path: '/books.html',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BoutiqueDothtmlRoute = BoutiqueDothtmlRouteImport.update({
+  id: '/boutique.html',
+  path: '/boutique.html',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const CommunityRoute = CommunityRouteImport.update({
   id: '/community',
   path: '/community',
@@ -39,6 +53,16 @@ const CommunityRoute = CommunityRouteImport.update({
 const CoursesRoute = CoursesRouteImport.update({
   id: '/courses',
   path: '/courses',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const IndexDothtmlRoute = IndexDothtmlRouteImport.update({
+  id: '/index.html',
+  path: '/index.html',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LibraryDothtmlRoute = LibraryDothtmlRouteImport.update({
+  id: '/library.html',
+  path: '/library.html',
   getParentRoute: () => rootRouteImport,
 } as any)
 const TarotRoute = TarotRouteImport.update({
@@ -51,16 +75,24 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/abundance': typeof AbundanceRoute
+  '/books.html': typeof BooksDothtmlRoute
+  '/boutique.html': typeof BoutiqueDothtmlRoute
   '/community': typeof CommunityRoute
   '/courses': typeof CoursesRoute
+  '/index.html': typeof IndexDothtmlRoute
+  '/library.html': typeof LibraryDothtmlRoute
   '/tarot': typeof TarotRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/abundance': typeof AbundanceRoute
+  '/books.html': typeof BooksDothtmlRoute
+  '/boutique.html': typeof BoutiqueDothtmlRoute
   '/community': typeof CommunityRoute
   '/courses': typeof CoursesRoute
+  '/index.html': typeof IndexDothtmlRoute
+  '/library.html': typeof LibraryDothtmlRoute
   '/tarot': typeof TarotRoute
 }
 export interface FileRoutesById {
@@ -68,23 +100,50 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/abundance': typeof AbundanceRoute
+  '/books.html': typeof BooksDothtmlRoute
+  '/boutique.html': typeof BoutiqueDothtmlRoute
   '/community': typeof CommunityRoute
   '/courses': typeof CoursesRoute
+  '/index.html': typeof IndexDothtmlRoute
+  '/library.html': typeof LibraryDothtmlRoute
   '/tarot': typeof TarotRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
-    '/' | '/about' | '/abundance' | '/community' | '/courses' | '/tarot'
+    | '/'
+    | '/about'
+    | '/abundance'
+    | '/books.html'
+    | '/boutique.html'
+    | '/community'
+    | '/courses'
+    | '/index.html'
+    | '/library.html'
+    | '/tarot'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/about' | '/abundance' | '/community' | '/courses' | '/tarot'
+  to:
+    | '/'
+    | '/about'
+    | '/abundance'
+    | '/books.html'
+    | '/boutique.html'
+    | '/community'
+    | '/courses'
+    | '/index.html'
+    | '/library.html'
+    | '/tarot'
   id:
     | '__root__'
     | '/'
     | '/about'
     | '/abundance'
+    | '/books.html'
+    | '/boutique.html'
     | '/community'
     | '/courses'
+    | '/index.html'
+    | '/library.html'
     | '/tarot'
   fileRoutesById: FileRoutesById
 }
@@ -92,8 +151,12 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   AbundanceRoute: typeof AbundanceRoute
+  BooksDothtmlRoute: typeof BooksDothtmlRoute
+  BoutiqueDothtmlRoute: typeof BoutiqueDothtmlRoute
   CommunityRoute: typeof CommunityRoute
   CoursesRoute: typeof CoursesRoute
+  IndexDothtmlRoute: typeof IndexDothtmlRoute
+  LibraryDothtmlRoute: typeof LibraryDothtmlRoute
   TarotRoute: typeof TarotRoute
 }
 
@@ -120,6 +183,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AbundanceRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/books.html': {
+      id: '/books.html'
+      path: '/books.html'
+      fullPath: '/books.html'
+      preLoaderRoute: typeof BooksDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/boutique.html': {
+      id: '/boutique.html'
+      path: '/boutique.html'
+      fullPath: '/boutique.html'
+      preLoaderRoute: typeof BoutiqueDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/community': {
       id: '/community'
       path: '/community'
@@ -132,6 +209,20 @@ declare module '@tanstack/react-router' {
       path: '/courses'
       fullPath: '/courses'
       preLoaderRoute: typeof CoursesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/index.html': {
+      id: '/index.html'
+      path: '/index.html'
+      fullPath: '/index.html'
+      preLoaderRoute: typeof IndexDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/library.html': {
+      id: '/library.html'
+      path: '/library.html'
+      fullPath: '/library.html'
+      preLoaderRoute: typeof LibraryDothtmlRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/tarot': {
@@ -148,8 +239,12 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   AbundanceRoute: AbundanceRoute,
+  BooksDothtmlRoute: BooksDothtmlRoute,
+  BoutiqueDothtmlRoute: BoutiqueDothtmlRoute,
   CommunityRoute: CommunityRoute,
   CoursesRoute: CoursesRoute,
+  IndexDothtmlRoute: IndexDothtmlRoute,
+  LibraryDothtmlRoute: LibraryDothtmlRoute,
   TarotRoute: TarotRoute,
 }
 export const routeTree = rootRouteImport
