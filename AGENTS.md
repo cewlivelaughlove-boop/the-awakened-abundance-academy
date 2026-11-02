@@ -11,4 +11,5 @@
 
 - Keep the existing TanStack/React tooling and serve approved standalone documents through minimal GET handlers without React/CSS interference: this preserves document scripts, framing and same-origin navigation.
 - Keep approved source documents unchanged in src/approved/v23 and retain the previous React pages: source fidelity and safe preservation take priority over converting the approved experience to components.
+- Add approved standalone pages with escaped-dot .html GET routes using approvedDocument and approvedHead; match the existing HTML-only address convention without introducing unrelated aliases.
 - Serve the supplied media parts as public static bytes and let the supplied browser loader reconstruct Blob URLs: this preserves original media without oversized repository files or external hosting.

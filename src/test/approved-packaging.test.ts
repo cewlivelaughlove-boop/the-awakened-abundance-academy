@@ -90,6 +90,21 @@ describe("Approved V23 static packaging", () => {
       expect(createHash("sha256").update(readFileSync(file.backup)).digest("hex")).toBe(file.previousSha256);
     }
   });
+  it("installs all twenty experience files exactly and keeps overwritten backups", () => {
+    expect(experience).toHaveLength(20);
+    for (const file of experience) {
+      const bytes = readFileSync(file.installed);
+      expect(bytes.byteLength).toBe(file.bytes);
+      expect(createHash("sha256").update(bytes).digest("hex")).toBe(file.sha256);
+      if (file.backup) expect(createHash("sha256").update(readFileSync(file.backup)).digest("hex")).toBe(file.previousSha256);
+    }
+  });
+  it("preserves every other production document, asset, route and SEO file", () => {
+    expect(preserved.length).toBeGreaterThan(50);
+    for (const file of preserved) {
+      expect(createHash("sha256").update(readFileSync(file.installed)).digest("hex")).toBe(file.sha256);
+    }
+  });
   it.each([
     ["naomi-full-alpha.webm", 3, "37117549279f15157d5356fd244217d4490dd28283235b3c7ae7b3050ee1f364"],
     ["planet-journey-v4.mp4", 2, "59698ecdd53ae96ce656a2920b9bf2ef085d8916e29442adcf599d0c516d040f"],
