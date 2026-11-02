@@ -1,0 +1,10 @@
+[
+  {
+    "installed": "src/approved/v23/boutique.html",
+    "backup": ".lovable/migrate-external-project/before-boutique-intro/boutique.html",
+    "bytes": 5136,
+    "sha256": "d56ddc9bebf47561fb04c99787cc991f567cad66a4785135a6b7cc041937c2f2",
+    "previousSha256": "39522d52647380e895ca8062f7a8de4914a7f719d0d7d2275e02f5cc40046737",
+    "note": "SEO fix: added visible intro heading and copy to the boutique footer (finding agent_content:content)"
+  }
+]
