@@ -1,0 +1,31 @@
+{
+  "source": "Carla-Arrival-Navigation-Corrections.zip",
+  "installed_exact_files": 16,
+  "overwritten_backups": 9,
+  "http_sha256_checks": 16,
+  "tests_passed": 13,
+  "build": "build OK at 2026-11-02T01:03:39Z",
+  "desktop": "1280x1800 Chromium",
+  "phone": "390x844 iPhone user-agent Chromium emulation",
+  "verified": [
+    "Same-document full-screen galaxy arrival with video rendered",
+    "One Enter click starts welcome audio and animation on desktop and phone",
+    "Stop pauses and resets audio",
+    "Natural full welcome completion without replay",
+    "Phone WebP guide path",
+    "HQ cat animation begins on entry then seats",
+    "HQ floor cat and boutique doorway cat visibly render on phone",
+    "Seated PNG and all 72 animated cat frames have transparent pixels and zero opaque green pixels",
+    "90-second planet video playback and seeking",
+    "Paused HQ-to-boutique and playing boutique-to-HQ continuity",
+    "HQ and boutique pan persistence",
+    "Doorway and room menu navigation; library, book and headquarters return",
+    "Inactive email signup; no outside requests during full welcome",
+    "Unchanged original video parts, media loader and iPhone WebP hashes",
+    "No publishing, Cloud, providers, DNS or domain changes"
+  ],
+  "warnings": ["Mobile Chromium emitted Transition was skipped during rapid navigation; supplied source preserved"],
+  "limitations": ["No physical iPhone/Safari check", "Exact final turn billing unavailable"],
+  "credit_evidence": {"workspace_usage_before": 18.8424, "workspace_usage_after": 21.2424, "observed_delta": 2.4},
+  "observed_implementation_commit": "d2de7dcdbf3be0655867d11d67d82d68129b8769"
+}

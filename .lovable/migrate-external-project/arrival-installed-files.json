@@ -1,0 +1,130 @@
+[
+  {
+    "source": "assets/arrival.css",
+    "installed": "public/assets/arrival.css",
+    "bytes": 2053,
+    "sha256": "d558bacebe13845d117475255c6fe812e794aedc952ba673144526e192191607",
+    "backup": null,
+    "previousSha256": null
+  },
+  {
+    "source": "assets/arrival.js",
+    "installed": "public/assets/arrival.js",
+    "bytes": 2548,
+    "sha256": "a5f2518be5f7469003f35b2ed2ef604e720a25224a3e554f49e8433efb1556cb",
+    "backup": null,
+    "previousSha256": null
+  },
+  {
+    "source": "assets/boutique.js",
+    "installed": "public/assets/boutique.js",
+    "bytes": 6256,
+    "sha256": "823054743678aedd220f770680661aeda211772cfd33ecacd37e1cc9c087b3fe",
+    "backup": ".lovable/migrate-external-project/before-arrival-corrections/public/assets/boutique.js",
+    "previousSha256": "8bb85711897d0e410b9d080faf0faab7103a08202a287f37a1a91029016edc3c"
+  },
+  {
+    "source": "assets/cat.css",
+    "installed": "public/assets/cat.css",
+    "bytes": 549,
+    "sha256": "4c62db4aade9d1d3a41b0f4d913eb9b3f9644d3016062c4a00af0ccea57b662d",
+    "backup": ".lovable/migrate-external-project/before-arrival-corrections/public/assets/cat.css",
+    "previousSha256": "40bb6f65154ef46acef0ee7cf6890a947cc3fcae646b13fb6fb3f6fc0eca0e29"
+  },
+  {
+    "source": "assets/cat.js",
+    "installed": "public/assets/cat.js",
+    "bytes": 1071,
+    "sha256": "89e580fe79ddffa927b5b3dda4e6e7eae09cd7ac76ba9a6181530a7a57d8a875",
+    "backup": ".lovable/migrate-external-project/before-arrival-corrections/public/assets/cat.js",
+    "previousSha256": "5e224547e570eb61dede9bbb29fa50fae73b28d0e899be9ed99966215c347c1d"
+  },
+  {
+    "source": "assets/guide.js",
+    "installed": "public/assets/guide.js",
+    "bytes": 9030,
+    "sha256": "aab831e1d7a4a9fdf8066c67da91755d08290312b71b41133b0b312e36d2e4ae",
+    "backup": ".lovable/migrate-external-project/before-arrival-corrections/public/assets/guide.js",
+    "previousSha256": "ab7d60c734a2598dd565aee5add8c6c7c069f86f54e14547a8a64fe97293fcd0"
+  },
+  {
+    "source": "assets/observatory-slender-refractor-v4.png",
+    "installed": "public/assets/observatory-slender-refractor-v4.png",
+    "bytes": 1656694,
+    "sha256": "be37cc3dcb07cb71d38f231f8753e127501c9d7ec903f947c194ebf8c515cdec",
+    "backup": null,
+    "previousSha256": null
+  },
+  {
+    "source": "assets/ringo-seated-v2.png",
+    "installed": "public/assets/ringo-seated-v2.png",
+    "bytes": 88168,
+    "sha256": "45de8efdd988258661c1e170f2ccc8ed2596a4cdb0fad0590ff9a3a69adf2c63",
+    "backup": null,
+    "previousSha256": null
+  },
+  {
+    "source": "assets/ringo-walk-sit-v2-once.webp",
+    "installed": "public/assets/ringo-walk-sit-v2-once.webp",
+    "bytes": 3627832,
+    "sha256": "fd6674991a59a4f8bb8af6ac259e97a68601cd1c8305477865f54d5c4703884d",
+    "backup": null,
+    "previousSha256": null
+  },
+  {
+    "source": "assets/rooms.js",
+    "installed": "public/assets/rooms.js",
+    "bytes": 7108,
+    "sha256": "d950aa1253c7f5cfe05304f6b8c6c79924f192b6a70fba9d2923cfcc36312ed0",
+    "backup": ".lovable/migrate-external-project/before-arrival-corrections/public/assets/rooms.js",
+    "previousSha256": "87da29d497591417547fcca8b05869350a35c731de8d6d60a6612c376f0aead1"
+  },
+  {
+    "source": "assets/transitions.css",
+    "installed": "public/assets/transitions.css",
+    "bytes": 540,
+    "sha256": "6c2b66fe21952bc7736829b134a7e1daf924ae09479d4b754c527c1b37060467",
+    "backup": null,
+    "previousSha256": null
+  },
+  {
+    "source": "assets/transitions.js",
+    "installed": "public/assets/transitions.js",
+    "bytes": 1104,
+    "sha256": "dc4ae7219b54d24a80e2cec3ae98197bc5bd75c7e0bf08ec3a0cf233340cbe60",
+    "backup": null,
+    "previousSha256": null
+  },
+  {
+    "source": "books.html",
+    "installed": "src/approved/v23/books.html",
+    "bytes": 5235,
+    "sha256": "e652d7bea7c44324c0ac2e5d9c8c9095e1f4dcb11e85a4afe3df4eb820cf24ca",
+    "backup": ".lovable/migrate-external-project/before-arrival-corrections/src/approved/v23/books.html",
+    "previousSha256": "a0717655876fa6b3224da804577d8bfc0db6c1b70ad43c1d6989474aad3c46a6"
+  },
+  {
+    "source": "boutique.html",
+    "installed": "src/approved/v23/boutique.html",
+    "bytes": 3801,
+    "sha256": "cc0afc76367a5c4b58fefaff53143319281f0f3f289a141c074b8232e193a4e5",
+    "backup": ".lovable/migrate-external-project/before-arrival-corrections/src/approved/v23/boutique.html",
+    "previousSha256": "b1f76f91868dc8b0594f3718413c313c1a41e666a5461799eab630db21a1dfde"
+  },
+  {
+    "source": "index.html",
+    "installed": "src/approved/v23/index.html",
+    "bytes": 18802,
+    "sha256": "65403c1bdcb229940236374ef84beacd00cf379fbf066336c57de74441a1835a",
+    "backup": ".lovable/migrate-external-project/before-arrival-corrections/src/approved/v23/index.html",
+    "previousSha256": "a20e041ede1234cda6260fd4ec9f01a6b00f833d6e3e986d9053708413b5baa5"
+  },
+  {
+    "source": "library.html",
+    "installed": "src/approved/v23/library.html",
+    "bytes": 3855,
+    "sha256": "093a61d3c567686e12e58ad359e23595256ce643591e3b1ededdeb43f9214cd0",
+    "backup": ".lovable/migrate-external-project/before-arrival-corrections/src/approved/v23/library.html",
+    "previousSha256": "3dc71fdadaa10981eeb53256a51d5df04e50cd4ab32fe49bd15ff49a08f37dce"
+  }
+]
