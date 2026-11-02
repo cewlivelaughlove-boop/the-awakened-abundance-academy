@@ -1,0 +1,41 @@
+#cosmic-guide-launch{position:absolute;left:43%;top:32%;width:17%;height:46%;min-width:58px;padding:0;border:0;background:transparent;box-shadow:none;z-index:3;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;cursor:pointer;pointer-events:auto;touch-action:pan-y pinch-zoom}
+#cosmic-guide-launch:hover{background:transparent}
+#cosmic-guide-launch img{display:block;width:100%;height:100%;object-fit:contain;pointer-events:none;-webkit-user-drag:none;user-select:none}
+#cosmic-guide-launch span{position:absolute;bottom:-22px;min-height:44px;display:flex;align-items:center;padding:8px 11px;background:#171120ec;border:1px solid #bca0d76b;border-radius:10px;color:#eee6fa;font:11px/1.35 ui-sans-serif,system-ui,sans-serif;white-space:nowrap}
+#cosmic-guide-launch:focus-visible{outline:3px solid #d8baff;outline-offset:4px;border-radius:12px}
+
+#cosmic-guide-stop{position:absolute;left:61%;top:76%;z-index:4;min-width:52px;min-height:44px;padding:8px 12px;background:#171120ec;border:1px solid #bca0d76b;border-radius:10px;color:#eee6fa;font:12px/1.35 system-ui;touch-action:manipulation;cursor:pointer}
+#cosmic-guide-stop:disabled{opacity:.5;cursor:default}
+#cosmic-guide-stop:focus-visible,#cosmic-guide-transcript summary:focus-visible{outline:3px solid #d8baff;outline-offset:3px}
+#cosmic-guide-transcript{position:fixed;right:20px;top:90px;z-index:12;max-width:min(340px,calc(100vw - 40px));max-height:40dvh;overflow:auto;color:#d6c9e0;font:12px/1.65 system-ui}
+#cosmic-guide-transcript summary{min-height:44px;align-content:center;cursor:pointer;color:#d8c1ee;text-align:right;padding:0 10px}
+#cosmic-guide-transcript[open]{background:#14101cf2;border:1px solid #bca0d744;border-radius:10px;padding:0 12px}
+#cosmic-guide-transcript p{margin:8px 0 16px}
+#cosmic-guide-transcript .guide-note{font-size:11px;color:#b6a5c2}
+#cosmic-guide-status{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+@media(max-width:700px){#cosmic-guide-launch span{font-size:10px;padding:7px;bottom:-20px}#cosmic-guide-stop{font-size:11px;padding:7px}#cosmic-guide-transcript{top:102px;right:14px}}
+#cosmic-guide-transcript{top:125px}
+#cosmic-guide-status:not(:empty){position:fixed;right:24px;top:166px;width:auto;max-width:280px;height:auto;clip-path:none;white-space:normal;z-index:11;color:#ddd0ec;font:11px/1.5 system-ui;text-shadow:0 1px 4px #000;pointer-events:none}
+#cosmic-guide-transcript[open]~#cosmic-guide-status{display:none}
+@media(max-width:700px){#cosmic-guide-transcript{top:132px}#cosmic-guide-status:not(:empty){top:174px;right:16px;max-width:220px}}
+/* Approved organic figure: gown meets the floor; its alpha is preserved. */
+#cosmic-guide-launch{left:41.5%;top:32%;width:20%;height:46%}
+#cosmic-guide-launch::before{content:"";position:absolute;bottom:0;left:25%;width:50%;height:5%;border-radius:50%;background:#0008;filter:blur(5px);z-index:-1;pointer-events:none}
+/* V15: human scale, same grounded floor line (top + height = 78%). */
+#cosmic-guide-launch{left:39%;top:20.5%;width:25%;height:57.5%}
+#cosmic-guide-stop:disabled{visibility:hidden;pointer-events:none}
+.compact-room-menu #cosmic-guide-transcript{position:static;max-width:none;max-height:none;margin:0;font-size:12px}
+.compact-room-menu #cosmic-guide-transcript summary{text-align:left;padding:10px 8px}
+#cosmic-guide-launch .guide-animation-crop{display:none;position:absolute;inset:0 auto 0 50%;height:100%;width:auto;aspect-ratio:630/930;max-width:100%;transform:translateX(-50%);overflow:hidden;opacity:1!important;pointer-events:none;background:transparent!important}
+#cosmic-guide-launch .guide-animation-crop video{position:absolute;width:114.286%;height:137.634%;left:-7.143%;top:-18.817%;max-width:none;object-fit:fill;pointer-events:none}
+#cosmic-guide-launch.is-animated>img{visibility:hidden}
+#cosmic-guide-launch.is-animated .guide-animation-crop{display:block}
+/* Match the visible animated gown hem to the still guide's floor contact. */
+#cosmic-guide-launch.is-animated .guide-animation-crop{transform:translate(-50%,2.5%)}
+
+#cosmic-guide-launch .guide-phone-performance{display:none;position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:fill;opacity:1!important;filter:none!important}
+#cosmic-guide-launch.is-phone-animated .guide-animation-crop video{display:none}
+#cosmic-guide-launch.is-phone-animated .guide-phone-performance{display:block}
+
+/* Draft: a modest step toward the foreground, with the gown on clear floor. */
+#cosmic-guide-launch{left:38%;top:20.5%;width:27%;height:62%}
