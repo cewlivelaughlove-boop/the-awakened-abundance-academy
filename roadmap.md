@@ -26,6 +26,6 @@
 
 # Celestial reading polish
 
-- [ ] Install seven files against owner-supplied hashes with backups; preserve all other production bytes.
-- [ ] Verify reading navigation, reader/menu, galaxy playback/Pause/reduced motion and desktop/phone plaque placement.
-- [ ] Record manifest, test/browser evidence and final available commit; no publication.
+- [x] Install seven files against owner-supplied hashes with four backups; preserve all 75 other production files.
+- [x] Verify reading navigation, reader/menu, galaxy playback/Pause/reduced motion and desktop/Chromium iPhone-UA plaque placement after room panning.
+- [x] Record manifest, 39 passing tests, browser evidence and screenshots; read final available commit after saved changes; no publication.
