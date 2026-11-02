@@ -23,3 +23,9 @@
 - [x] Add Start Here using the existing standalone GET pattern and update preservation tests.
 - [x] Verify preview reader, practice, menu, restart, welcome/Stop, cat reveal and room navigation.
 - [x] Record supplied hashes and browser evidence; read final available commit after saved changes. Exact turn cost unavailable; no publication.
+
+# Celestial reading polish
+
+- [x] Install seven files against owner-supplied hashes with four backups; preserve all 75 other production files.
+- [x] Verify reading navigation, reader/menu, galaxy playback/Pause/reduced motion and desktop/Chromium iPhone-UA plaque placement after room panning.
+- [x] Record manifest, 39 passing tests, browser evidence and screenshots; read final available commit after saved changes; no publication.

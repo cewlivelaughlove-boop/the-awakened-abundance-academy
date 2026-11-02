@@ -1,0 +1,98 @@
+[
+  {
+    "viewport": "desktop",
+    "galaxy": {
+      "time": 0.317467,
+      "duration": 90,
+      "muted": true,
+      "paused": false,
+      "src": "blob:http://localhost:8080/dddc4d65-ac44-4619-8b94-ccb71f9cb83e"
+    },
+    "plaque": {
+      "plaque": {
+        "x": 814.859375,
+        "y": 437.8169250488281,
+        "width": 387.078125,
+        "height": 391.0692443847656
+      },
+      "stage": {
+        "x": -964.609375,
+        "y": 64,
+        "width": 2835.8125,
+        "height": 1596
+      },
+      "loaded": true,
+      "pointerEvents": "none",
+      "z": "3"
+    },
+    "passed": [
+      "playback",
+      "one-video-per-reading-document",
+      "pause across Library/book/Start",
+      "resume",
+      "reader next/text/close",
+      "visible book anchors",
+      "practice",
+      "room menu",
+      "plaque in room and panned phone viewport",
+      "boutique-book-HQ navigation"
+    ]
+  },
+  {
+    "viewport": "phone",
+    "galaxy": {
+      "time": 0.222982,
+      "duration": 90,
+      "muted": true,
+      "paused": false,
+      "src": "blob:http://localhost:8080/c6aea118-c474-46d4-8078-8d434fde2fa2"
+    },
+    "plaque": {
+      "plaque": {
+        "x": 163.859375,
+        "y": 226.14512634277344,
+        "width": 151.328125,
+        "height": 152.8972625732422
+      },
+      "stage": {
+        "x": -531.859375,
+        "y": 80,
+        "width": 1108.734375,
+        "height": 624
+      },
+      "loaded": true,
+      "pointerEvents": "none",
+      "z": "3"
+    },
+    "passed": [
+      "playback",
+      "one-video-per-reading-document",
+      "pause across Library/book/Start",
+      "resume",
+      "reader next/text/close",
+      "visible book anchors",
+      "practice",
+      "room menu",
+      "plaque in room and panned phone viewport",
+      "boutique-book-HQ navigation"
+    ]
+  },
+  {
+    "reduced_motion": "all three documents use still and never load/play journey"
+  },
+  {
+    "http_hashes": "7/7 supplied hashes match served bytes",
+    "page_errors": []
+  },
+  {
+    "tests": "39 passed in five test files",
+    "build": "build OK 2026-11-02T03:11:08Z",
+    "preservation": "75 unchanged production files; all prior document text/links/meta identical",
+    "limitations": [
+      "Phone checked in Chromium with iPhone UA, not physical Safari",
+      "Existing draggable room requires panning for full plaque at tall desktop and phone dimensions",
+      "Start Here supplied smoky panel selector applies to direct sections; practice steps remain transparent as supplied; no CSS altered"
+    ],
+    "published": false
+  }
+]
