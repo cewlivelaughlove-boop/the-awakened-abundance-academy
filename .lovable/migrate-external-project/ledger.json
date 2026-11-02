@@ -1,5 +1,12 @@
 {
-  "source": "Carla-V23-Compatible-Continuation.zip",
+  "source": "Carla-V23-Compatible-Continuation.zip + Carla-Arrival-Navigation-Corrections.zip",
+  "arrival_corrections": {
+    "capability": "bounded arrival, cat, telescope and navigation corrections",
+    "source": "16 owner-supplied files",
+    "outcome": "Install exact supplied files with overwritten source backed up; retain original GET routes and all unchanged media",
+    "status": "in progress",
+    "next_action": "Verify exact installation, one-tap welcome/Stop, phone cats, routes and planet playback"
+  },
   "capabilities": [
     {
       "capability": "code and artwork",
