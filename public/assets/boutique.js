@@ -17,7 +17,7 @@ scene.addEventListener('pointerdown',e=>{if(dialog.open||e.button!==0||!e.isPrim
  if(!video||!button)return;
  const reduced=matchMedia('(prefers-reduced-motion: reduce)');
  let paused=reduced.matches||window.academyJourney?.paused===true,attempt=0;
- const restoring=()=>video.dataset.journeyRestore==='loading-same-video';
+ const restoring=()=>video.dataset.mediaState==='loading'||video.dataset.journeyRestore==='loading-same-video';
  function label(){button.textContent=paused?'Resume motion':'Pause motion';button.setAttribute('aria-pressed',String(paused));}
  function blocked(){paused=true;label();status.textContent='Tap Resume motion in the Room menu to start the window view.';}
  function sync(){
@@ -38,6 +38,7 @@ scene.addEventListener('pointerdown',e=>{if(dialog.open||e.button!==0||!e.isPrim
  reduced.addEventListener('change',e=>{if(e.matches){paused=true;sync()}});
  document.addEventListener('visibilitychange',sync);
  video.addEventListener('academy-journey-ready',sync);
+ video.addEventListener('loadeddata',sync);
  video.addEventListener('academy-journey-play-blocked',()=>{if(!video.paused||paused||document.hidden||restoring())return;blocked();});
  video.addEventListener('pause',()=>{if(!paused&&!document.hidden&&!restoring()&&video.readyState>=2)blocked();});
  video.addEventListener('playing',()=>{if(paused||document.hidden){video.pause();return;}label();status.textContent='The window view is moving. Choose a collection to explore.';});
