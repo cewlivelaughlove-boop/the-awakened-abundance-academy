@@ -23,3 +23,9 @@
 - [x] Add Start Here using the existing standalone GET pattern and update preservation tests.
 - [x] Verify preview reader, practice, menu, restart, welcome/Stop, cat reveal and room navigation.
 - [x] Record supplied hashes and browser evidence; read final available commit after saved changes. Exact turn cost unavailable; no publication.
+
+# Celestial reading polish
+
+- [ ] Install seven files against owner-supplied hashes with backups; preserve all other production bytes.
+- [ ] Verify reading navigation, reader/menu, galaxy playback/Pause/reduced motion and desktop/phone plaque placement.
+- [ ] Record manifest, test/browser evidence and final available commit; no publication.

@@ -1,0 +1,377 @@
+[
+  {
+    "installed": "public/assets/arrival.css",
+    "bytes": 2055,
+    "sha256": "87722ee14ffcad88ef1be44d1dbe63901480ef46fe523e66ffdb370981b89fc1"
+  },
+  {
+    "installed": "public/assets/arrival.js",
+    "bytes": 3781,
+    "sha256": "52b3a477b4bee233b1540ee8785c3bc47acd36a9d55e49910116537009464305"
+  },
+  {
+    "installed": "public/assets/beyond-the-script-cover-v2.png",
+    "bytes": 2942393,
+    "sha256": "ae77c9150cff7551e6348ca1ff16e307c6b936edb94d16fe17e5ded0f881d4b7"
+  },
+  {
+    "installed": "public/assets/beyond-the-script-public-cover.png",
+    "bytes": 2572647,
+    "sha256": "034befc686d09a7be74ca87d57ebff4c8573cc84f14714195ea3a313a425b7ae"
+  },
+  {
+    "installed": "public/assets/book-preview-03.jpg",
+    "bytes": 332228,
+    "sha256": "02a25f571e963778a0c8eb97f81f062557462b66edfffed30b7376024dce7b32"
+  },
+  {
+    "installed": "public/assets/book-preview-04.jpg",
+    "bytes": 344419,
+    "sha256": "132d90400f105970e54e08a73b81a654a10478e2fde4ffb9a9a14995e9669c1b"
+  },
+  {
+    "installed": "public/assets/book-preview-05.jpg",
+    "bytes": 333308,
+    "sha256": "74eb6d04735fa6c9a518120ada810885c5d7719fe0b1919daa1dc12fcdbfc167"
+  },
+  {
+    "installed": "public/assets/book-preview.css",
+    "bytes": 3721,
+    "sha256": "b1852a0d3f40d21aeb20edcd0f2b1cf5d3987031f39ac439daee1b35997f27bd"
+  },
+  {
+    "installed": "public/assets/book-preview.js",
+    "bytes": 10393,
+    "sha256": "71bb2379d130b436861aec80bf3a5e48c889196cad955c976ab814a71d2c2779"
+  },
+  {
+    "installed": "public/assets/books.css",
+    "bytes": 8203,
+    "sha256": "a1c4daf05a543f3dd1393c968c048652fb5c156e6f67fc9ecaca2fc1622f9863"
+  },
+  {
+    "installed": "public/assets/boutique-architecture-v2.png",
+    "bytes": 2234029,
+    "sha256": "127ba1dc54c5457ae6353e75e7720feab1425950ae979945d8b679a711409857"
+  },
+  {
+    "installed": "public/assets/boutique-connected-hq-v1.png",
+    "bytes": 2225044,
+    "sha256": "f46a602d6e791f29be2c58cb3896246354ee5e377afeb76e12d425a111879319"
+  },
+  {
+    "installed": "public/assets/boutique-journals-tree-v3.png",
+    "bytes": 1536981,
+    "sha256": "5c39a486cd85cb617e5103a3290457ec675444d3bd64eca58c0a78e7b7cb64a2"
+  },
+  {
+    "installed": "public/assets/boutique-polished-hq-v2.png",
+    "bytes": 2135061,
+    "sha256": "748dd526cb76ca24f04f4ee727984f2dbccffa1a848bfef5eeb0ae8056627795"
+  },
+  {
+    "installed": "public/assets/boutique.css",
+    "bytes": 4818,
+    "sha256": "107c5ce6f22726ad69f65d20d77a6bccbdb0665d31316821575323d2fc18051a"
+  },
+  {
+    "installed": "public/assets/boutique.js",
+    "bytes": 8916,
+    "sha256": "11b3f158da40253771ba148a08318264ddeb437178f104de3fede29aeaf862cb"
+  },
+  {
+    "installed": "public/assets/cat.css",
+    "bytes": 549,
+    "sha256": "4c62db4aade9d1d3a41b0f4d913eb9b3f9644d3016062c4a00af0ccea57b662d"
+  },
+  {
+    "installed": "public/assets/cat.js",
+    "bytes": 1480,
+    "sha256": "09ef55b088ae218830e14aa56c58665f429b0297f6d3ab9a18ba5af99dc15b94"
+  },
+  {
+    "installed": "public/assets/celestial-wall-chart.svg",
+    "bytes": 1407,
+    "sha256": "85a30b639fa10437daad2b36151d454713faa66ffb51194ab1224f91b94e00ca"
+  },
+  {
+    "installed": "public/assets/cosmic-guide-front-v2.png",
+    "bytes": 1648385,
+    "sha256": "fd0f819c868fe6b4d1e7838472f61c41ca89bc0b81d2ec20a1cb7d4758205030"
+  },
+  {
+    "installed": "public/assets/cosmic-guide-organic-v5.png",
+    "bytes": 2940105,
+    "sha256": "7329ba4542eeb4a7d1aecf69fa36f1cb65e1bea88d2539f56c9742c18263a2a2"
+  },
+  {
+    "installed": "public/assets/editorial-serif.ttf",
+    "bytes": 380660,
+    "sha256": "8cb29f7db250ebb2551a6ce2c1e0bfd5a0eb520e9e233370db0493e82e1f36f7"
+  },
+  {
+    "installed": "public/assets/guide.css",
+    "bytes": 4572,
+    "sha256": "702b59b2e33ffd852d9d19389e8d1ea139ba3ba22a047ad9e3d0f3a9c51fd681"
+  },
+  {
+    "installed": "public/assets/guide.js",
+    "bytes": 9384,
+    "sha256": "e56676e5c820e0daab57dd1f6ba26196ad458e11ab4a86952b3948ecffe77776"
+  },
+  {
+    "installed": "public/assets/journey-state.js",
+    "bytes": 3448,
+    "sha256": "4cfeeb5a48b3a6e9717e88b90c3cda653f64bda8919cbea52c7974459724b8d3"
+  },
+  {
+    "installed": "public/assets/media-loader.js",
+    "bytes": 1334,
+    "sha256": "491a7987bf733da7138457a83aea61f1d6528c0ee496c5b15564cde4da367374"
+  },
+  {
+    "installed": "public/assets/media-parts/naomi-full-alpha.webm.part0",
+    "bytes": 8388608,
+    "sha256": "7b91d3fd050b61f96bcb8aae0f0737fd8f03417e0ac0cfba99f8bc515dbbe257"
+  },
+  {
+    "installed": "public/assets/media-parts/naomi-full-alpha.webm.part1",
+    "bytes": 8388608,
+    "sha256": "1b16cf3e727694ee11bc708ee4763a7acb1417a80b4e0c7c1983463f00ab3046"
+  },
+  {
+    "installed": "public/assets/media-parts/naomi-full-alpha.webm.part2",
+    "bytes": 3350470,
+    "sha256": "8b66f85af6de4057fedf55b26b7102d0243b0e9e46bf4113ea488bf79291777b"
+  },
+  {
+    "installed": "public/assets/media-parts/planet-journey-v4.mp4.part0",
+    "bytes": 8388608,
+    "sha256": "b23506ae4709600cd64743b7b410366c89c4ed7ebffd7460c0bdfee41e6254c5"
+  },
+  {
+    "installed": "public/assets/media-parts/planet-journey-v4.mp4.part1",
+    "bytes": 4642610,
+    "sha256": "be5e8506ebd20d7cf3d52febe1a52ae678f6c4b4d4e415deecfa1635bb98c50f"
+  },
+  {
+    "installed": "public/assets/naomi-academy-welcome.mp3",
+    "bytes": 416749,
+    "sha256": "6580194e91a2d7015f6fcbcebd8d26cb686c3804d4081df252aea7074b12a9e4"
+  },
+  {
+    "installed": "public/assets/naomi-full-phone.webp",
+    "bytes": 10303790,
+    "sha256": "d124c1dc0fa070dfaa827a64f919518a1386ce66c3d9c9d9064cb012a32ea99d"
+  },
+  {
+    "installed": "public/assets/naomi-voidwalker-academy-welcome.mp3",
+    "bytes": 396269,
+    "sha256": "98740b34d842e7b7d727622b6c2eda875d91a6ab66af0b559f6400da6114e1b5"
+  },
+  {
+    "installed": "public/assets/observatory-slender-refractor-v4.png",
+    "bytes": 1656694,
+    "sha256": "be37cc3dcb07cb71d38f231f8753e127501c9d7ec903f947c194ebf8c515cdec"
+  },
+  {
+    "installed": "public/assets/observatory-telescope-pedestal-v2.png",
+    "bytes": 1893831,
+    "sha256": "5e63bd7a3f6f4efd0fd1fd16c90e982d46303b5432f144c9c1fc7a1d34c1d355"
+  },
+  {
+    "installed": "public/assets/observatory-telescope-rear-facing-v3.png",
+    "bytes": 2059472,
+    "sha256": "012c301da8bcdbb5bf5810e0ee89ad89b3519c3d8f4357e66747c02a03496b4d"
+  },
+  {
+    "installed": "public/assets/open-sans-regular.ttf",
+    "bytes": 217360,
+    "sha256": "e64e508b2aa2880f907e470c4550980ec4c0694d103a43f36150ac3f93189bee"
+  },
+  {
+    "installed": "public/assets/open-sans-semibold.ttf",
+    "bytes": 221328,
+    "sha256": "aa3b0ef53db12e3d45094030cac0e69d384e44cc5978643dd4390041cad546e2"
+  },
+  {
+    "installed": "public/assets/planet-journey-poster-v4.png",
+    "bytes": 1802413,
+    "sha256": "b38d530b9d7abb7f00b918676268ae797916326c677a26704885ff819d0a5507"
+  },
+  {
+    "installed": "public/assets/reading-room.css",
+    "bytes": 28607,
+    "sha256": "0feb3e79cb8175335f7a73b64ae0ccc2ba702142bcfe0804df1983d0a49d1e3f"
+  },
+  {
+    "installed": "public/assets/ringo-seated-clean.png",
+    "bytes": 122210,
+    "sha256": "4cddeeaf132546356315ca89dd7d0214d87abf41325feca06b6c249b35e2882d"
+  },
+  {
+    "installed": "public/assets/ringo-seated-v2.png",
+    "bytes": 88168,
+    "sha256": "45de8efdd988258661c1e170f2ccc8ed2596a4cdb0fad0590ff9a3a69adf2c63"
+  },
+  {
+    "installed": "public/assets/ringo-walk-sit-clean-once.webp",
+    "bytes": 1190654,
+    "sha256": "89ffc50e623ae72c2f03d2790d5bddce1cb5c80bc46ea84a5eee3bf1cc79f803"
+  },
+  {
+    "installed": "public/assets/ringo-walk-sit-v2-once.webp",
+    "bytes": 3627832,
+    "sha256": "fd6674991a59a4f8bb8af6ac259e97a68601cd1c8305477865f54d5c4703884d"
+  },
+  {
+    "installed": "public/assets/rooms.css",
+    "bytes": 15399,
+    "sha256": "b1af2a9ab1322e5bd1be55d4007efc5fa5b2a836de9df77a5e8f0dbfdac3d335"
+  },
+  {
+    "installed": "public/assets/rooms.js",
+    "bytes": 8897,
+    "sha256": "b560c0bce408dfbd2c30526fa0f84b8eaaeb2268775eaa3f48e3750bc72260de"
+  },
+  {
+    "installed": "public/assets/sanctuary-furnished-v4.png",
+    "bytes": 2406293,
+    "sha256": "dd8a7e3f4a6f571cf41c068407b0b04e83b6f0ece7920678a0fce1ce756a8910"
+  },
+  {
+    "installed": "public/assets/sanctuary-polished-v5.png",
+    "bytes": 2440860,
+    "sha256": "2e3e0e6a44a05406ee4cb73cad49343b8d2e1d32d00d3deef3c89d65326b18dc"
+  },
+  {
+    "installed": "public/assets/start-here.css",
+    "bytes": 4401,
+    "sha256": "1efc7f35cfcad354de187a52721cbeedc66b195c03c8a6b5c18db7a9b5666a47"
+  },
+  {
+    "installed": "public/assets/start-here.js",
+    "bytes": 410,
+    "sha256": "4a6f1a7387c86b0249e4ede6337807fde4b8dd6b0477bb2bd980ee49d884344b"
+  },
+  {
+    "installed": "public/assets/transitions.css",
+    "bytes": 296,
+    "sha256": "3ff0f4225f6276bd7809dfd2d33f11367f4e30008ba4bc6f8c2c07528858d389"
+  },
+  {
+    "installed": "public/assets/transitions.js",
+    "bytes": 1354,
+    "sha256": "d0ee2137d08e80192dee6de03c3cc2b3c7ee76dcc7df5198d14a75d9b280cc4a"
+  },
+  {
+    "installed": "public/favicon.ico",
+    "bytes": 20373,
+    "sha256": "dd821076a9b03adc2173c93956226aea3d92482d7578fc4339c5d3a2e9c24586"
+  },
+  {
+    "installed": "public/robots.txt",
+    "bytes": 229,
+    "sha256": "fa8e510d4d0dd3dfc3eef879e09dfed9a8f47d6dbc7caa6df81988982bfc61dc"
+  },
+  {
+    "installed": "public/sitemap.xml",
+    "bytes": 433,
+    "sha256": "99ecd8c69a44cef906a0d70797d3ee794a849ac5ce81d9f9b5877dca19985ca8"
+  },
+  {
+    "installed": "src/approved/v23/index.html",
+    "bytes": 19231,
+    "sha256": "d952829ed5eb62e7435b83ae3b4255349ce9e93fa81d1067877ec312fef6e2b0"
+  },
+  {
+    "installed": "src/routes/README.md",
+    "bytes": 835,
+    "sha256": "5c8187dbe79dac7a3c494f2600585508f5d15e75f04f21ea364d0de14de10575"
+  },
+  {
+    "installed": "src/routes/__root.tsx",
+    "bytes": 4979,
+    "sha256": "ddc96369486022ca252f115a1ba0c9eaabed289a8e41cca27b670e431f7d3c96"
+  },
+  {
+    "installed": "src/routes/about.tsx",
+    "bytes": 4174,
+    "sha256": "2eb5fcfa2052eef00ba37c49e714245e35f36f8c59aada9c761022da225e3c6b"
+  },
+  {
+    "installed": "src/routes/abundance.tsx",
+    "bytes": 5065,
+    "sha256": "e2405e471aa15b94cea4455ab527a02691c36ecd722ed1dbc1f56a514b319e19"
+  },
+  {
+    "installed": "src/routes/books[.]html.ts",
+    "bytes": 517,
+    "sha256": "4a055045403ed7c1debc7773ce3a3c98b0acd107411bd4f4968abecf07cc6a60"
+  },
+  {
+    "installed": "src/routes/boutique[.]html.ts",
+    "bytes": 471,
+    "sha256": "49ebdf560686f0894f7f8e64d066565fe0d9785f210cc5fc9ec7bdc89de49824"
+  },
+  {
+    "installed": "src/routes/community.tsx",
+    "bytes": 3776,
+    "sha256": "e5011d20006bd5bdcaf70f8c43a71007566ce167b3a22c08d82dc1f244e159eb"
+  },
+  {
+    "installed": "src/routes/courses.tsx",
+    "bytes": 4581,
+    "sha256": "120d25820dff5c1dc6afacf57db6b0bb5c9408e428abebd9bd55c2d2bf1156c7"
+  },
+  {
+    "installed": "src/routes/index.tsx",
+    "bytes": 457,
+    "sha256": "73549e21b9b0248fbe47d3b49f6fd1e1302b3dd16a865db18d9cde1b59eacba4"
+  },
+  {
+    "installed": "src/routes/index[.]html.ts",
+    "bytes": 467,
+    "sha256": "adf54dceec5e7f24553903f21570752f6e215fdb53c07db4b5625bfceda6185f"
+  },
+  {
+    "installed": "src/routes/library[.]html.ts",
+    "bytes": 481,
+    "sha256": "08bee070917b65e66d0f1295b5f9a6ccb34d2485033b3c13b417b2d504bd79d3"
+  },
+  {
+    "installed": "src/routes/start[.]html.ts",
+    "bytes": 509,
+    "sha256": "16615a1a2e2c481741bde2226a232a527847eaf770dc2f540c072df48da76839"
+  },
+  {
+    "installed": "src/routes/tarot.tsx",
+    "bytes": 4066,
+    "sha256": "f94ca8680d86a7390697f9975f98f28b7be1907f2d5d2105c6910fc9e3ad0ba6"
+  },
+  {
+    "installed": "src/lib/approved-website.ts",
+    "bytes": 624,
+    "sha256": "c4e6c0b96889201216f5c4660baa72d318b8e74a58377f17df81566151027987"
+  },
+  {
+    "installed": "src/lib/error-capture.ts",
+    "bytes": 2898,
+    "sha256": "d6fa7756cbc4c399f4e891b174c2dce8160e2354972c2ae68413dfd1db843088"
+  },
+  {
+    "installed": "src/lib/error-page.ts",
+    "bytes": 1371,
+    "sha256": "635915886f5d44a18b6add2a53959dbe2e8ba1bb3f7e597fc714650e74157bb6"
+  },
+  {
+    "installed": "src/lib/lovable-error-reporting.ts",
+    "bytes": 2219,
+    "sha256": "0a2e8b5f3ffd2dd682ab78be1a9b0998b73284a6525080e4960f85827cd608d3"
+  },
+  {
+    "installed": "src/lib/utils.ts",
+    "bytes": 169,
+    "sha256": "d1f1e0d62cb8d8d1e04c26e14de842d8a151f75812d81b046c65b5d1fe8e4b27"
+  }
+]

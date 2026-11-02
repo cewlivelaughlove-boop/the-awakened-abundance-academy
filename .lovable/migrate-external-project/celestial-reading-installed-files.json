@@ -1,0 +1,52 @@
+[
+  {
+    "source": "library.html",
+    "installed": "src/approved/v23/library.html",
+    "bytes": 5878,
+    "sha256": "fdc85f8c46c15a65f26048399fef66c3cc7e217919147683c601d472d07c7bca",
+    "backup": ".lovable/migrate-external-project/before-celestial-reading/library.html",
+    "previousSha256": "bd7c6fa144b3e48154dc21d7f54fcca87b1631876d3526f339dc4fcd0c862092"
+  },
+  {
+    "source": "books.html",
+    "installed": "src/approved/v23/books.html",
+    "bytes": 9062,
+    "sha256": "0ab4f1645d746482ab443e63d2dbc8aa444d2bac330a104becb3198cf395233d",
+    "backup": ".lovable/migrate-external-project/before-celestial-reading/books.html",
+    "previousSha256": "837ba8f2f6ec19579d91e77b7b0bee2da7b0a324cad5104cda4c0c202b5614f0"
+  },
+  {
+    "source": "start.html",
+    "installed": "src/approved/v23/start.html",
+    "bytes": 6754,
+    "sha256": "977db23f73a7459a149a5e5cf90b7814382d7712df31304f6a93cea3ef12140f",
+    "backup": ".lovable/migrate-external-project/before-celestial-reading/start.html",
+    "previousSha256": "ab2cfca22609e6d0c7115a707c3e87aba5c337a49cfd6389ef3aed1ec90a3eb3"
+  },
+  {
+    "source": "boutique.html",
+    "installed": "src/approved/v23/boutique.html",
+    "bytes": 5484,
+    "sha256": "a3419858d173c6a923b0b72cb975e4d45b4b0d32f5d7b3df62d7efd49825251a",
+    "backup": ".lovable/migrate-external-project/before-celestial-reading/boutique.html",
+    "previousSha256": "e5d02d5350a85f554a4530603ea2b213f61f0080afea65a946e50c05d70c5791"
+  },
+  {
+    "source": "assets/celestial-reading.js",
+    "installed": "public/assets/celestial-reading.js",
+    "bytes": 1877,
+    "sha256": "2030938368644a9b77b885c963f4e3c04fe23c99285ee552ef9db2f6fcfd6ce1"
+  },
+  {
+    "source": "assets/celestial-reading.css",
+    "installed": "public/assets/celestial-reading.css",
+    "bytes": 2851,
+    "sha256": "3db579b8df03525d6126e7e9dbd667bc62eed070178bdff32ba31f6a3ef72d5c"
+  },
+  {
+    "source": "assets/voidwalker-wall-plaque.png",
+    "installed": "public/assets/voidwalker-wall-plaque.png",
+    "bytes": 2210441,
+    "sha256": "a7659c24ac4a7150a0033948b21d954d5a860a50cbae4b7402b2363702e22e93"
+  }
+]
