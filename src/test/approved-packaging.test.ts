@@ -15,7 +15,8 @@ describe("Approved V23 static packaging", () => {
     expect(manifest).toHaveLength(43);
     for (const file of manifest) {
       const replacement = corrections.find((entry) => entry.installed === file.installed);
-      const bytes = readFileSync(replacement?.backup ?? file.installed);
+      const latest = guidedArrival.find((entry) => entry.installed === file.installed);
+      const bytes = readFileSync(replacement?.backup ?? latest?.backup ?? file.installed);
       expect(bytes.byteLength).toBe(file.bytes);
       expect(bytes.byteLength).toBeLessThan(10 * 1024 * 1024);
       expect(createHash("sha256").update(bytes).digest("hex")).toBe(file.sha256);
