@@ -1,0 +1,36 @@
+{
+  "all_43_http_hashes": "passed",
+  "exact_documents": "passed",
+  "guide_lazy_before_tap": true,
+  "journey": {
+    "mime": "video/mp4",
+    "bytes": 13031218,
+    "duration": 90,
+    "time": 7.000439,
+    "seekable": 90,
+    "source": "blob"
+  },
+  "paused_continuity_hq_to_boutique": true,
+  "playing_continuity_boutique_to_hq": true,
+  "guide_media": {
+    "mime": "video/webm",
+    "bytes": 20127686,
+    "duration": 24.783,
+    "time": 3
+  },
+  "guide_animated": true,
+  "guide_stop_once_only": true,
+  "cat_seated": true,
+  "library_book_return": true,
+  "guide_natural_completion_once_only": true,
+  "mobile_framing": {
+    "width": 390,
+    "height": 844,
+    "scrollWidth": 390,
+    "scene": 844
+  },
+  "iphone_webp_animation": true,
+  "mobile_drag": true,
+  "runtime_errors": [],
+  "external_requests": []
+}
