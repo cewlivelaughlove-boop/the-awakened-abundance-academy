@@ -44,7 +44,7 @@
   figure.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse'&&!speaking&&performance.now()>(window.academyInfoLockUntil||0))status.textContent=consumed?'Welcome complete · explore the room at your own pace.':'Tap the guide to enter and hear the welcome once.'});
   const audio = document.createElement('audio');
   audio.id = 'cosmic-guide-audio'; audio.src = './assets/naomi-voidwalker-academy-welcome.mp3';
-  audio.preload = 'metadata'; stage.append(audio);
+  audio.preload = 'auto'; stage.append(audio);
   const visitKey='voidwalker-welcome-once-v1';
   let consumed=false;try{consumed=sessionStorage.getItem(visitKey)==='played';}catch{}
   figure.setAttribute('aria-label','Enter the room and hear the welcome');
@@ -82,5 +82,6 @@
   document.addEventListener('visibilitychange', () => { if (document.hidden && speaking) halt(); });
   document.addEventListener('click', e => { if (e.target.closest?.('a[href]') && speaking) halt(); }, true);
   window.addEventListener('pagehide', () => halt());
+  window.academyWelcome={prepare:()=>Promise.all([phoneAnimation?preparePhone():prepareNative(),new Promise(resolve=>{if(audio.readyState>=2)return resolve(true);audio.addEventListener('loadeddata',()=>resolve(true),{once:true});audio.addEventListener('error',()=>resolve(false),{once:true});audio.load();})]).then(results=>results.every(Boolean)),play:beginWelcome,stop:halt};
   state(false);
 })();

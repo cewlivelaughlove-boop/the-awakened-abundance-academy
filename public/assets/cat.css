@@ -1,1 +1,4 @@
 .sanctuary-cat{position:absolute;left:66%;top:72%;width:22%;height:22%;object-fit:contain;z-index:3;pointer-events:none;user-select:none;filter:drop-shadow(0 3px 2px #0005)}
+@media(max-width:700px){.sanctuary-cat{left:47%;top:79%;width:17%;height:17%}}
+.sanctuary-cat{left:47%;top:79%;width:17%;height:17%}.boutique-cat{position:absolute;left:36%;top:56%;width:8%;height:8%;object-fit:contain;pointer-events:none;filter:drop-shadow(0 2px 1px #0005)}
+#boutique-stage>img.boutique-cat{left:34%;top:54%;width:9%;height:9%;object-fit:contain;z-index:3}
