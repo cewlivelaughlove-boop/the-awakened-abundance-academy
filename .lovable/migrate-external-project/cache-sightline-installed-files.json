@@ -1,0 +1,30 @@
+[
+  {
+    "installed": "src/approved/v23/index.html",
+    "bytes": 19006,
+    "sha256": "292fc3bf74c4ee19ba9dda93f95a5ff8e802fa29c54a0b60722f1f31c2ab43f6",
+    "backup": ".lovable/migrate-external-project/before-cache-sightline/src/approved/v23/index.html",
+    "previousSha256": "65403c1bdcb229940236374ef84beacd00cf379fbf066336c57de74441a1835a"
+  },
+  {
+    "installed": "src/approved/v23/boutique.html",
+    "bytes": 4300,
+    "sha256": "8ec53b88a0a424972caf323259fb0b45525ae2690b9c0a296eba2324007e3da4",
+    "backup": ".lovable/migrate-external-project/before-cache-sightline/src/approved/v23/boutique.html",
+    "previousSha256": "cc0afc76367a5c4b58fefaff53143319281f0f3f289a141c074b8232e193a4e5"
+  },
+  {
+    "installed": "src/approved/v23/library.html",
+    "bytes": 3907,
+    "sha256": "540865bcc0e83292b99c0ec39a683fe1cd1ecd297076725d415da285d6d0c2cd",
+    "backup": ".lovable/migrate-external-project/before-cache-sightline/src/approved/v23/library.html",
+    "previousSha256": "093a61d3c567686e12e58ad359e23595256ce643591e3b1ededdeb43f9214cd0"
+  },
+  {
+    "installed": "src/approved/v23/books.html",
+    "bytes": 5287,
+    "sha256": "826d043044b4c11eeda5570114299585553a701a1cc77d9c9c7d4ca222f197fe",
+    "backup": ".lovable/migrate-external-project/before-cache-sightline/src/approved/v23/books.html",
+    "previousSha256": "e652d7bea7c44324c0ac2e5d9c8c9095e1f4dcb11e85a4afe3df4eb820cf24ca"
+  }
+]
