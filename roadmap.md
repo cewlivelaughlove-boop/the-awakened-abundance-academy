@@ -7,6 +7,6 @@
 
 # Arrival and navigation corrections
 
-- [ ] Back up overwritten source and install the 16 supplied corrections byte-identically, retaining unchanged routes and media.
-- [ ] Verify routes, one-tap welcome/Stop, transparent phone-visible cats, planet playback, transitions and pan persistence.
-- [ ] Record tests, commit availability and credit evidence; no publishing or settings changes.
+- [x] Back up overwritten source and install the 16 supplied corrections byte-identically, retaining unchanged routes and media.
+- [x] Verify routes, one-tap welcome/Stop, transparent phone-visible cats, planet playback, transitions and pan persistence.
+- [x] Record tests, commit availability and credit evidence; no publishing or settings changes.
