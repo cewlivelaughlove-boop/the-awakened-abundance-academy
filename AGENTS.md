@@ -9,5 +9,5 @@
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
 
-- Serve owner-approved standalone HTML through TanStack GET handlers with raw build-time imports, and keep its media in public/assets: this preserves document scripts, framing and same-origin navigation without replacing the existing React tooling.
+- Keep the existing TanStack/React tooling and serve approved standalone documents without React/CSS interference when import resumes: this preserves document scripts, framing and same-origin navigation. Routing activation is blocked by two videos exceeding the repository file limit.
 - Keep approved source documents unchanged in src/approved/v23 and retain the previous React pages: source fidelity and safe preservation take priority over converting the approved experience to components.
