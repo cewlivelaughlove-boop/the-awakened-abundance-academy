@@ -1,0 +1,69 @@
+/* Independent tokens: the approved room's styles and artwork remain untouched. */
+:root {
+  --abundance-surface: oklch(0.19 0.018 310);
+  --abundance-back: oklch(0.25 0.035 320);
+  --abundance-deep: oklch(0.13 0.009 310);
+  --abundance-silver: oklch(0.79 0.012 300);
+  --abundance-edge: oklch(0.52 0.012 300);
+  --abundance-ink: oklch(0.95 0.009 300);
+  --abundance-muted: oklch(0.74 0.021 310);
+  --abundance-overlay: oklch(0.08 0.01 310 / 0.79);
+  --abundance-shadow: oklch(0.04 0 0 / 0.65);
+  --abundance-glint: oklch(0.96 0.004 300 / 0.2);
+}
+.abundance-launcher {
+  position:absolute;left:22%;top:68%;width:5.2%;height:5.5%;z-index:5;
+  min-width:44px;min-height:44px;padding:0;border:0;border-radius:0;
+  background:transparent;box-shadow:none;cursor:pointer;touch-action:manipulation;
+}
+.abundance-launcher:hover{background:transparent}
+.abundance-stack{position:absolute;inset:8% 9%;transform:perspective(240px) rotateX(49deg) rotateZ(-17deg);transform-style:preserve-3d;filter:drop-shadow(2px 7px 4px var(--abundance-shadow))}
+.abundance-stack:before,.abundance-stack:after{content:'';position:absolute;inset:0;border:1px solid var(--abundance-silver);border-radius:3px;background:repeating-linear-gradient(0deg,var(--abundance-edge) 0 1px,var(--abundance-silver) 1px 2px);transform:translate(2px,5px)}
+.abundance-stack:after{transform:translate(1px,3px)}
+.abundance-back{position:relative;display:grid;place-items:center;width:100%;height:100%;border:1px solid var(--abundance-silver);border-radius:4px;background:linear-gradient(140deg,var(--abundance-surface),var(--abundance-back));box-shadow:inset 0 0 0 4px var(--abundance-back),inset 0 0 0 5px var(--abundance-edge),inset 0 1px 0 var(--abundance-glint);color:var(--abundance-silver)}
+.abundance-stack>.abundance-back{z-index:1}
+.abundance-ornament{width:61%;height:68%;fill:none;stroke:currentColor;stroke-width:.8;pointer-events:none}
+.abundance-launcher:focus-visible{outline:3px solid var(--abundance-silver);outline-offset:5px}
+dialog.abundance-dialog{width:min(730px,calc(100vw - 24px));max-width:calc(100vw - 24px);max-height:calc(100dvh - 24px);margin:auto;padding:26px;border:1px solid var(--abundance-edge);border-radius:8px;background:var(--abundance-surface);color:var(--abundance-ink);box-shadow:0 28px 90px var(--abundance-shadow);overflow:auto;overscroll-behavior:contain;letter-spacing:0;touch-action:pan-y pinch-zoom}
+.abundance-dialog::backdrop{background:var(--abundance-overlay);backdrop-filter:blur(6px)}
+.abundance-dialog *{box-sizing:border-box;letter-spacing:0}
+.abundance-dialog .abundance-heading{display:flex;align-items:start;justify-content:space-between;gap:12px}
+.abundance-dialog h2{margin:4px 0 8px;font:normal 32px/1.2 Georgia,serif;color:var(--abundance-ink)}
+.abundance-dialog .abundance-caption{margin:0;font:13px/1.5 system-ui;color:var(--abundance-muted)}
+.abundance-dialog button{color:var(--abundance-ink);border:1px solid var(--abundance-edge);background:var(--abundance-back);border-radius:4px;min-height:44px;cursor:pointer;box-shadow:none;font:13px/1.3 system-ui;touch-action:manipulation}
+.abundance-dialog button:hover{border-color:var(--abundance-silver);background:var(--abundance-surface)}
+.abundance-dialog button:focus-visible{outline:2px solid var(--abundance-silver);outline-offset:3px}
+.abundance-dialog .abundance-close{width:44px;flex-shrink:0;padding:10px;display:grid;place-items:center;background:transparent;border:0}
+.abundance-close svg,.abundance-actions svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.5}
+.abundance-hand{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;margin:24px 0 18px;perspective:1000px}
+.abundance-dialog .abundance-choice{padding:0;height:164px;border:0;background:transparent;position:relative;transition:transform .25s ease,opacity .25s ease;transform-style:preserve-3d}
+.abundance-dialog .abundance-choice:hover{background:transparent;transform:translateY(-6px)}
+.abundance-choice:disabled{cursor:default;opacity:.45}
+.abundance-choice[aria-pressed="true"]{opacity:1;transform:translateY(-9px) rotateY(180deg)}
+.abundance-choice>.abundance-back{backface-visibility:hidden;position:absolute;inset:0}
+.abundance-card-front{position:absolute;inset:0;display:grid;place-content:center;gap:12px;padding:12px;background:var(--abundance-deep);color:var(--abundance-silver);border:1px solid var(--abundance-silver);border-radius:4px;backface-visibility:hidden;transform:rotateY(180deg);font:17px/1.3 Georgia,serif;overflow-wrap:anywhere}
+.abundance-card-front svg{width:26px;height:26px;margin:auto}
+.abundance-dialog .abundance-reflection{padding:20px 0 6px;border-top:1px solid var(--abundance-edge);color:var(--abundance-ink);background:transparent}
+.abundance-reflection h3{font:normal 27px/1.2 Georgia,serif;margin:0 0 10px}
+.abundance-reflection p{margin:0 0 14px;font:15px/1.6 system-ui;color:var(--abundance-ink);overflow-wrap:anywhere}
+.abundance-reflection .abundance-action-label{font:11px/1.4 system-ui;color:var(--abundance-muted);margin-bottom:5px}
+.abundance-actions{display:flex;justify-content:center;gap:10px;margin:14px 0}
+.abundance-actions button{display:flex;align-items:center;justify-content:center;gap:8px;padding:10px 14px}
+.abundance-dialog .abundance-preview-label{margin:18px 0 0;text-align:center;font:11px/1.5 system-ui;color:var(--abundance-muted)}
+.abundance-status{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+.abundance-hand.is-shuffling .abundance-choice{animation:abundance-shuffle .45s ease both}
+.abundance-hand.is-shuffling .abundance-choice:nth-child(even){animation-direction:reverse}
+@keyframes abundance-shuffle{0%,100%{transform:translateY(0) rotate(0)}45%{transform:translateY(-8px) rotate(4deg)}}
+@media(max-width:520px){
+  dialog.abundance-dialog{padding:18px}
+  .abundance-dialog h2{font-size:26px}
+  .abundance-hand{grid-template-columns:repeat(6,minmax(0,1fr));gap:14px 12px;margin:22px 0 18px}
+  .abundance-choice{grid-column:span 2}
+  .abundance-choice:nth-child(4){grid-column:2 / span 2}
+  .abundance-choice:nth-child(5){grid-column:4 / span 2}
+  .abundance-dialog .abundance-choice{height:110px}
+  .abundance-card-front{font-size:14px;padding:8px}
+  .abundance-reflection h3{font-size:24px}
+  .abundance-reflection p{font-size:14px}
+}
+@media(prefers-reduced-motion:reduce){.abundance-choice{transition:none!important}.abundance-hand.is-shuffling .abundance-choice{animation:none}.abundance-choice[aria-pressed="true"]{transform:rotateY(180deg)}}

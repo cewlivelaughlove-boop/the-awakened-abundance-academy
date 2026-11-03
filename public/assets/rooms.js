@@ -52,4 +52,9 @@ for(const object of document.querySelectorAll('.object-point,.point,.journal-dis
  object.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse')show()});
 }
 door.addEventListener('focus',()=>{if(note)note.textContent='Visit '+name+' · tap the doorway or swipe from the edge.'});
+// Additive desk preview: approved HTML, room artwork and station behavior stay unchanged.
+if(!boutique){
+ const cardsStyle=document.createElement('link');cardsStyle.rel='stylesheet';cardsStyle.href='./assets/abundance-cards.css?v=preview-20261103-1';document.head.append(cardsStyle);
+ import('./abundance-cards.js?v=preview-20261103-1').then(({mountAbundanceDeck})=>mountAbundanceDeck()).catch(error=>console.error('Abundance Cards preview could not load',error));
+}
 })();

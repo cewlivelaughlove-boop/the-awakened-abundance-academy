@@ -13,6 +13,8 @@ import preserved from "../../.lovable/migrate-external-project/experience-conten
 import polish from "../../.lovable/migrate-external-project/celestial-reading-installed-files.json";
 import polishPreserved from "../../.lovable/migrate-external-project/celestial-reading-preserved-files.json";
 import { approvedDocument } from "../lib/approved-website";
+const roomPreviewOriginal = ".lovable/abundance-cards/rooms.before.js";
+const beforeDeskPreview = (path: string) => path === "public/assets/rooms.js" ? roomPreviewOriginal : path;
 
 describe("Approved V23 static packaging", () => {
   it("retains every supplied file byte-identically below 10 MiB", () => {
@@ -31,7 +33,7 @@ describe("Approved V23 static packaging", () => {
     expect(cacheFix).toHaveLength(4);
     for (const file of cacheFix) {
       const newer = welcomeFix.find((entry) => entry.installed === file.installed);
-      const bytes = readFileSync(newer?.backup ?? file.installed);
+      const bytes = readFileSync(beforeDeskPreview(newer?.backup ?? file.installed));
       expect(bytes.byteLength).toBe(file.bytes);
       expect(createHash("sha256").update(bytes).digest("hex")).toBe(file.sha256);
       expect(createHash("sha256").update(readFileSync(file.backup)).digest("hex")).toBe(file.previousSha256);
@@ -96,7 +98,7 @@ describe("Approved V23 static packaging", () => {
     expect(experience).toHaveLength(20);
     for (const file of experience) {
       const newer = polish.find((entry) => entry.installed === file.installed);
-      const bytes = readFileSync(newer?.backup ?? file.installed);
+      const bytes = readFileSync(beforeDeskPreview(newer?.backup ?? file.installed));
       expect(bytes.byteLength).toBe(file.bytes);
       expect(createHash("sha256").update(bytes).digest("hex")).toBe(file.sha256);
       if (file.backup) expect(createHash("sha256").update(readFileSync(file.backup)).digest("hex")).toBe(file.previousSha256);
@@ -121,7 +123,7 @@ describe("Approved V23 static packaging", () => {
   it("keeps all 75 other production files byte-identical after the polish", () => {
     expect(polishPreserved).toHaveLength(75);
     for (const file of polishPreserved) {
-      const bytes = readFileSync(file.installed);
+      const bytes = readFileSync(beforeDeskPreview(file.installed));
       expect(bytes.byteLength).toBe(file.bytes);
       expect(createHash("sha256").update(bytes).digest("hex")).toBe(file.sha256);
     }
