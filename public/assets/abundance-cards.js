@@ -56,6 +56,8 @@ export function mountAbundanceDeck() {
       // Hidden backs do not expose the draw to assistive technologies or the visible UI.
       button.addEventListener('click', () => {
         if (selected) return;
+        clearTimeout(shuffleTimer);
+        hand.classList.remove('is-shuffling');
         selected = true;
         for (const sibling of hand.children) sibling.disabled = true;
         button.setAttribute('aria-pressed', 'true');
@@ -90,7 +92,7 @@ export function mountAbundanceDeck() {
   // Target listeners stop the approved scene's bubble-phase drag/arrow handlers.
   for (const type of ['pointerdown', 'pointermove', 'pointerup', 'pointercancel', 'keydown']) on(launcher, type, event => event.stopPropagation());
   on(launcher, 'click', () => open(launcher));
-  on(menuLauncher, 'click', () => open(menuLauncher));
+  on(menuLauncher, 'click', event => { event.stopPropagation(); open(menuLauncher); });
   on(dialog.querySelector('.abundance-close'), 'click', () => dialog.close());
   on(dialog.querySelector('.abundance-shuffle'), 'click', () => { fresh(true); hand.firstElementChild?.focus(); });
   on(again, 'click', () => { fresh(); hand.firstElementChild?.focus(); });
@@ -107,6 +109,8 @@ export function mountAbundanceDeck() {
     clearTimeout(shuffleTimer);
     if (returnFocus === menuLauncher) menu.closest('details').open = true;
     returnFocus.focus({ preventScroll: true });
+    // Native dialog close can restore its own previous focus after the close event.
+    queueMicrotask(() => { if (!dialog.open && returnFocus.isConnected) returnFocus.focus({ preventScroll: true }); });
   });
   // Keep BFCache restores usable; actual destruction removes all global listeners.
   on(window, 'pagehide', event => {
