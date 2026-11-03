@@ -29,3 +29,9 @@
 - [x] Install seven files against owner-supplied hashes with four backups; preserve all 75 other production files.
 - [x] Verify reading navigation, reader/menu, galaxy playback/Pause/reduced motion and desktop/Chromium iPhone-UA plaque placement after room panning.
 - [x] Record manifest, 39 passing tests, browser evidence and screenshots; read final available commit after saved changes; no publication.
+
+# Abundance Cards working preview
+
+- [ ] Add an independent sample deck on the existing HQ desk and a Room menu launcher; leave approved documents and media unchanged.
+- [ ] Verify shuffle/draw/replay, accessible modal/focus, reduced motion, desktop and 390px/320px layouts, and existing room navigation.
+- [ ] Record changed files, preservation evidence, tests and available commit; preview only, no publishing.
