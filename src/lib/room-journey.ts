@@ -25,11 +25,11 @@ export function withRoomJourney(html: string): string {
     for (const [before, after] of patches) result = result.replace(before, after);
   }
   if (!result.includes("immersive-proof.js")) {
-    const assetVersion = "phone-20261108-9";
+    const assetVersion = "phone-20261108-10";
     const styles =
       `<link rel="stylesheet" href="./assets/immersive-proof.css?v=${assetVersion}">` +
       (room === "boutique"
-        ? '<link rel="stylesheet" href="./assets/boutique-doorway-proof.css?v=phone-20261108-9">'
+        ? '<link rel="stylesheet" href="./assets/boutique-doorway-proof.css?v=phone-20261108-10">'
         : "");
     result = result.replace("</head>", styles + "</head>");
     result = result.replace(
@@ -39,6 +39,6 @@ export function withRoomJourney(html: string): string {
   }
   return result.replace(
     /(assets\/(?:boutique|celestial-reading)\.(?:js|css))(?:\?[^"'<>\s]*)?/g,
-    "$1?v=phone-20261108-9",
+    "$1?v=phone-20261108-10",
   );
 }

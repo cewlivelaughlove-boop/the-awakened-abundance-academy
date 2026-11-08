@@ -1,0 +1,442 @@
+{
+ "environment": "Chromium headless with iPhone UA mobile emulation (not a physical iPhone/Safari); local preview http://localhost:8080",
+ "commit_tested": "d8b752d04822ae3793b2fb860cf24ff0a52a2248",
+ "landscape_844x390": {
+  "index.html": {
+   "viewport": [
+    844,
+    390
+   ],
+   "stageBounds_xywh": [
+    0,
+    -42,
+    844,
+    475
+   ],
+   "coversViewport": true,
+   "bandsPx": {
+    "left": 0,
+    "right": 0,
+    "top": 0,
+    "bottom": 0
+   },
+   "framingToggleShows": "Whole room",
+   "visibleFloatingLabels": [],
+   "drag": {
+    "startLeft": 0,
+    "afterDragLeft": 0,
+    "afterDragRight": 0,
+    "panned": false,
+    "stillCovers": true
+   },
+   "windowVideo": [
+    {
+     "element": "exterior",
+     "currentTime_t0": 12.654,
+     "currentTime_t1_after2.5s": 15.16,
+     "paused": false,
+     "readyState": 4,
+     "muted": true,
+     "playsInline": true,
+     "advancing": true
+    }
+   ]
+  },
+  "boutique.html": {
+   "viewport": [
+    844,
+    390
+   ],
+   "stageBounds_xywh": [
+    -62,
+    0,
+    968,
+    390
+   ],
+   "coversViewport": true,
+   "bandsPx": {
+    "left": 0,
+    "right": 0,
+    "top": 0,
+    "bottom": 0
+   },
+   "framingToggleShows": "Whole room",
+   "visibleFloatingLabels": [],
+   "drag": {
+    "startLeft": -62,
+    "afterDragLeft": -124,
+    "afterDragRight": 0,
+    "panned": true,
+    "stillCovers": true
+   },
+   "windowVideo": [
+    {
+     "element": "boutique-exterior-window",
+     "currentTime_t0": 21.615,
+     "currentTime_t1_after2.5s": 24.122,
+     "paused": false,
+     "readyState": 4,
+     "muted": true,
+     "playsInline": true,
+     "advancing": true
+    }
+   ]
+  },
+  "voidwalk.html": {
+   "viewport": [
+    844,
+    390
+   ],
+   "stageBounds_xywh": [
+    0,
+    -43,
+    844,
+    475
+   ],
+   "coversViewport": true,
+   "bandsPx": {
+    "left": 0,
+    "right": 0,
+    "top": 0,
+    "bottom": 0
+   },
+   "framingToggleShows": "Whole room",
+   "visibleFloatingLabels": [],
+   "drag": {
+    "startLeft": 0,
+    "afterDragLeft": 0,
+    "afterDragRight": 0,
+    "panned": false,
+    "stillCovers": true
+   },
+   "windowVideo": [
+    {
+     "element": "chamber-exterior-motion",
+     "currentTime_t0": 6.937,
+     "currentTime_t1_after2.5s": 9.443,
+     "paused": false,
+     "readyState": 4,
+     "muted": true,
+     "playsInline": true,
+     "advancing": true
+    }
+   ]
+  }
+ },
+ "portrait_393x658": {
+  "index.html": {
+   "viewport": [
+    393,
+    658
+   ],
+   "stageBounds_xywh": [
+    -388,
+    0,
+    1169,
+    658
+   ],
+   "coversViewport": true,
+   "bandsPx": {
+    "left": 0,
+    "right": 0,
+    "top": 0,
+    "bottom": 0
+   },
+   "framingToggleShows": "Whole room",
+   "visibleFloatingLabels": [],
+   "drag": {
+    "startLeft": -388,
+    "afterDragLeft": -776,
+    "afterDragRight": 0,
+    "panned": true,
+    "stillCovers": true
+   },
+   "windowVideo": [
+    {
+     "element": "exterior",
+     "currentTime_t0": 12.479,
+     "currentTime_t1_after2.5s": 14.987,
+     "paused": false,
+     "readyState": 4,
+     "muted": true,
+     "playsInline": true,
+     "advancing": true
+    }
+   ]
+  },
+  "boutique.html": {
+   "viewport": [
+    393,
+    658
+   ],
+   "stageBounds_xywh": [
+    -620,
+    0,
+    1633,
+    658
+   ],
+   "coversViewport": true,
+   "bandsPx": {
+    "left": 0,
+    "right": 0,
+    "top": 0,
+    "bottom": 0
+   },
+   "framingToggleShows": "Whole room",
+   "visibleFloatingLabels": [],
+   "drag": {
+    "startLeft": -620,
+    "afterDragLeft": -1049,
+    "afterDragRight": -191,
+    "panned": true,
+    "stillCovers": true
+   },
+   "windowVideo": [
+    {
+     "element": "boutique-exterior-window",
+     "currentTime_t0": 29.475,
+     "currentTime_t1_after2.5s": 31.981,
+     "paused": false,
+     "readyState": 4,
+     "muted": true,
+     "playsInline": true,
+     "advancing": true
+    }
+   ]
+  },
+  "voidwalk.html": {
+   "viewport": [
+    393,
+    658
+   ],
+   "stageBounds_xywh": [
+    -388,
+    0,
+    1169,
+    658
+   ],
+   "coversViewport": true,
+   "bandsPx": {
+    "left": 0,
+    "right": 0,
+    "top": 0,
+    "bottom": 0
+   },
+   "framingToggleShows": "Whole room",
+   "visibleFloatingLabels": [],
+   "drag": {
+    "startLeft": -388,
+    "afterDragLeft": -648,
+    "afterDragRight": -128,
+    "panned": true,
+    "stillCovers": true
+   },
+   "windowVideo": [
+    {
+     "element": "chamber-exterior-motion",
+     "currentTime_t0": 6.646,
+     "currentTime_t1_after2.5s": 9.155,
+     "paused": false,
+     "readyState": 4,
+     "muted": true,
+     "playsInline": true,
+     "advancing": true
+    }
+   ]
+  }
+ },
+ "rotation_portrait_landscape_portrait": {
+  "index.html": {
+   "portrait": {
+    "stageBounds_xywh": [
+     0,
+     0,
+     1169,
+     658
+    ],
+    "coversViewport": true
+   },
+   "toLandscape": {
+    "stageBounds_xywh": [
+     0,
+     -42,
+     844,
+     475
+    ],
+    "coversViewport": true
+   },
+   "backToPortrait": {
+    "stageBounds_xywh": [
+     0,
+     0,
+     1169,
+     658
+    ],
+    "coversViewport": true
+   }
+  },
+  "boutique.html": {
+   "portrait": {
+    "stageBounds_xywh": [
+     -191,
+     0,
+     1633,
+     658
+    ],
+    "coversViewport": true
+   },
+   "toLandscape": {
+    "stageBounds_xywh": [
+     -19,
+     0,
+     968,
+     390
+    ],
+    "coversViewport": true
+   },
+   "backToPortrait": {
+    "stageBounds_xywh": [
+     -191,
+     0,
+     1633,
+     658
+    ],
+    "coversViewport": true
+   }
+  },
+  "voidwalk.html": {
+   "portrait": {
+    "stageBounds_xywh": [
+     -388,
+     0,
+     1169,
+     658
+    ],
+    "coversViewport": true
+   },
+   "toLandscape": {
+    "stageBounds_xywh": [
+     0,
+     -43,
+     844,
+     475
+    ],
+    "coversViewport": true
+   },
+   "backToPortrait": {
+    "stageBounds_xywh": [
+     -388,
+     0,
+     1169,
+     658
+    ],
+    "coversViewport": true
+   }
+  }
+ },
+ "desktop_1440x900_unchanged_whole_room": {
+  "index.html": [
+   0,
+   45,
+   1440,
+   810
+  ],
+  "boutique.html": [
+   0,
+   160,
+   1440,
+   580
+  ],
+  "voidwalk.html": [
+   0,
+   45,
+   1440,
+   810
+  ]
+ },
+ "navigation_844x390": {
+  "hq_to_boutique": {
+   "ok": true,
+   "seconds": 5.1
+  },
+  "boutique_overlay_at_1.5s": 1,
+  "boutique_to_darkroom": {
+   "ok": true,
+   "seconds": 9.0
+  },
+  "darkroom_to_boutique": {
+   "ok": true,
+   "seconds": 9.1
+  },
+  "boutique_to_hq": {
+   "ok": true,
+   "seconds": 5.1
+  },
+  "cancel_with_escape_stays_in_boutique": true
+ },
+ "emailSignup_from_room_menu_844x390": {
+  "index.html": {
+   "url": "http://localhost:8080/join.html",
+   "sha256": "807b981a030ba03e99a6060aaa3a7f3e7e9b92d39bbf070ea7f0e7c8be8713b9",
+   "identical": true,
+   "consentUnchecked": true,
+   "emailField": 1
+  },
+  "boutique.html": {
+   "url": "http://localhost:8080/join.html",
+   "sha256": "807b981a030ba03e99a6060aaa3a7f3e7e9b92d39bbf070ea7f0e7c8be8713b9",
+   "identical": true,
+   "consentUnchecked": true,
+   "emailField": 1
+  },
+  "voidwalk.html": {
+   "url": "http://localhost:8080/join.html",
+   "sha256": "807b981a030ba03e99a6060aaa3a7f3e7e9b92d39bbf070ea7f0e7c8be8713b9",
+   "identical": true,
+   "consentUnchecked": true,
+   "emailField": 1
+  }
+ },
+ "join_html_expected_sha256": "807b981a030ba03e99a6060aaa3a7f3e7e9b92d39bbf070ea7f0e7c8be8713b9",
+ "galaxyWindow_menu_action_844x390": {
+  "opened": [
+   "DIALOG.proof-galaxy-view"
+  ],
+  "videoAdvancing": [
+   {
+    "element": "exterior",
+    "t0": 73.406,
+    "t1": 75.414
+   },
+   {
+    "element": "proof-galaxy-view",
+    "t0": 72.886,
+    "t1": 74.893
+   }
+  ],
+  "escapeClosedFocusOn": "SUMMARY"
+ },
+ "separateGalleryControl": "Not found: no element, label or code containing 'gallery' exists in tracked source; the menu's 'Enter the galaxy' window action was tested instead.",
+ "signupPOSTs": 0,
+ "pageErrors": [],
+ "screenshots": {
+  "index.html": {
+   "file": "qa/phone-evidence/portrait-393x658-headquarters.jpg.b64.txt",
+   "format": "JPEG 393x658 base64",
+   "jpeg_sha256": "858ddc1822fbc9b69767db23bb4a5c30d75e5cc9eec8f19dbc66168897af57d6",
+   "jpeg_bytes": 45804
+  },
+  "boutique.html": {
+   "file": "qa/phone-evidence/portrait-393x658-boutique.jpg.b64.txt",
+   "format": "JPEG 393x658 base64",
+   "jpeg_sha256": "1b6ff3f8fd0db87dd133fa5362ab0d42104dd3deb293a6f2828f0b3cd7777876",
+   "jpeg_bytes": 33859
+  },
+  "voidwalk.html": {
+   "file": "qa/phone-evidence/portrait-393x658-dark-room.jpg.b64.txt",
+   "format": "JPEG 393x658 base64",
+   "jpeg_sha256": "5c8e3ed6eb2f130cbb8ec1526f041ff85483b1e56a800f9027eb265e90383c88",
+   "jpeg_bytes": 32871
+  }
+ }
+}
