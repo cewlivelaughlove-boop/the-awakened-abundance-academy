@@ -41,6 +41,13 @@ export function SiteHeader() {
               {item.label}
             </Link>
           ))}
+          {/* Standalone document route: full page load, not client navigation. */}
+          <a
+            href="/academy.html"
+            className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+          >
+            The Academy
+          </a>
         </nav>
 
         <Sheet>
@@ -72,6 +79,14 @@ export function SiteHeader() {
                   </Link>
                 </SheetClose>
               ))}
+              <SheetClose asChild>
+                <a
+                  href="/academy.html"
+                  className="rounded-md px-3 py-3 text-base text-foreground transition-colors hover:bg-secondary"
+                >
+                  The Academy
+                </a>
+              </SheetClose>
             </nav>
           </SheetContent>
         </Sheet>

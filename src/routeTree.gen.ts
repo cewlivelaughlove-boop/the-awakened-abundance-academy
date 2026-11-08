@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as AbundanceRouteImport } from './routes/abundance'
+import { Route as AcademyDothtmlRouteImport } from './routes/academy[.]html'
 import { Route as BooksDothtmlRouteImport } from './routes/books[.]html'
 import { Route as BoutiqueDothtmlRouteImport } from './routes/boutique[.]html'
 import { Route as CommunityRouteImport } from './routes/community'
@@ -34,6 +35,11 @@ const AboutRoute = AboutRouteImport.update({
 const AbundanceRoute = AbundanceRouteImport.update({
   id: '/abundance',
   path: '/abundance',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AcademyDothtmlRoute = AcademyDothtmlRouteImport.update({
+  id: '/academy.html',
+  path: '/academy.html',
   getParentRoute: () => rootRouteImport,
 } as any)
 const BooksDothtmlRoute = BooksDothtmlRouteImport.update({
@@ -81,6 +87,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/abundance': typeof AbundanceRoute
+  '/academy.html': typeof AcademyDothtmlRoute
   '/books.html': typeof BooksDothtmlRoute
   '/boutique.html': typeof BoutiqueDothtmlRoute
   '/community': typeof CommunityRoute
@@ -94,6 +101,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/abundance': typeof AbundanceRoute
+  '/academy.html': typeof AcademyDothtmlRoute
   '/books.html': typeof BooksDothtmlRoute
   '/boutique.html': typeof BoutiqueDothtmlRoute
   '/community': typeof CommunityRoute
@@ -108,6 +116,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/abundance': typeof AbundanceRoute
+  '/academy.html': typeof AcademyDothtmlRoute
   '/books.html': typeof BooksDothtmlRoute
   '/boutique.html': typeof BoutiqueDothtmlRoute
   '/community': typeof CommunityRoute
@@ -123,6 +132,7 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/abundance'
+    | '/academy.html'
     | '/books.html'
     | '/boutique.html'
     | '/community'
@@ -136,6 +146,7 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/abundance'
+    | '/academy.html'
     | '/books.html'
     | '/boutique.html'
     | '/community'
@@ -149,6 +160,7 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/abundance'
+    | '/academy.html'
     | '/books.html'
     | '/boutique.html'
     | '/community'
@@ -163,6 +175,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   AbundanceRoute: typeof AbundanceRoute
+  AcademyDothtmlRoute: typeof AcademyDothtmlRoute
   BooksDothtmlRoute: typeof BooksDothtmlRoute
   BoutiqueDothtmlRoute: typeof BoutiqueDothtmlRoute
   CommunityRoute: typeof CommunityRoute
@@ -194,6 +207,13 @@ declare module '@tanstack/react-router' {
       path: '/abundance'
       fullPath: '/abundance'
       preLoaderRoute: typeof AbundanceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/academy.html': {
+      id: '/academy.html'
+      path: '/academy.html'
+      fullPath: '/academy.html'
+      preLoaderRoute: typeof AcademyDothtmlRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/books.html': {
@@ -259,6 +279,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   AbundanceRoute: AbundanceRoute,
+  AcademyDothtmlRoute: AcademyDothtmlRoute,
   BooksDothtmlRoute: BooksDothtmlRoute,
   BoutiqueDothtmlRoute: BoutiqueDothtmlRoute,
   CommunityRoute: CommunityRoute,
