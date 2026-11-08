@@ -37,6 +37,7 @@ export type Database = {
           consent_version: string
           created_at: string
           email: string
+          first_name: string | null
           id: string
           request_id: string
           source: string
@@ -45,6 +46,7 @@ export type Database = {
           consent_version: string
           created_at?: string
           email: string
+          first_name?: string | null
           id?: string
           request_id: string
           source?: string
@@ -53,6 +55,7 @@ export type Database = {
           consent_version?: string
           created_at?: string
           email?: string
+          first_name?: string | null
           id?: string
           request_id?: string
           source?: string
@@ -69,6 +72,17 @@ export type Database = {
           p_client_hash: string
           p_consent_version: string
           p_email: string
+          p_request_id: string
+          p_source: string
+        }
+        Returns: Json
+      }
+      record_event_signup_named: {
+        Args: {
+          p_client_hash: string
+          p_consent_version: string
+          p_email: string
+          p_first_name: string
           p_request_id: string
           p_source: string
         }
