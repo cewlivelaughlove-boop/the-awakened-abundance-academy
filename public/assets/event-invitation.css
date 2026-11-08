@@ -777,13 +777,13 @@
   position: relative;
   max-width: 480px;
   padding: 40px;
-  background: linear-gradient(145deg, #130d1ce6, #0b0811d9);
+  background: linear-gradient(145deg, #130d1cc9, #0b0811c7);
   border: 1px solid #b99e714d;
   box-shadow:
     0 22px 60px #0008,
     inset 0 1px #e8d6b31a;
   border-radius: 4px;
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(1px);
 }
 @media (min-width: 1500px) {
   .event-page .event-main {
@@ -825,7 +825,7 @@
   .event-page .event-signup {
     max-width: none;
     padding: 27px 24px 20px;
-    background: linear-gradient(145deg, #130d1ce3, #0b0811e6);
+    background: linear-gradient(145deg, #130d1ccc, #0b0811c9);
   }
   .event-page .event-footer {
     padding-top: 13px;
