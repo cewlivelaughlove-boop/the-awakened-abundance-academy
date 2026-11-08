@@ -19,16 +19,16 @@ describe('Sample Abundance Cards rules', () => {
     launcher.click();
     return launcher;
   }
-  it('uses exactly 12 distinct editable sample reflections with messages and practical actions', () => {
-    expect(abundanceCards).toHaveLength(12);
-    expect(new Set(abundanceCards.map(card => card.id)).size).toBe(12);
+  it('uses exactly 78 distinct illustrated tarot reflections with messages and practical actions', () => {
+    expect(abundanceCards).toHaveLength(78);
+    expect(new Set(abundanceCards.map(card => card.id)).size).toBe(78);
     expect(abundanceCards.every(card => card.message.length > 20 && card.action.length > 20)).toBe(true);
   });
-  it('randomizes a copy without losing or duplicating any of the twelve cards', () => {
+  it('randomizes a copy without losing or duplicating any of the 78 cards', () => {
     const shuffled = shuffleDeck(abundanceCards, () => 0);
     expect(shuffled).not.toEqual(abundanceCards);
     expect(shuffled.map(card => card.id).sort()).toEqual(abundanceCards.map(card => card.id).sort());
-    expect(abundanceCards[0]?.id).toBe('opportunity');
+    expect(abundanceCards[0]?.id).toBe('the-fool');
   });
   it('offers five choices, permits one reveal and resets on Draw again and Shuffle', () => {
     mount();
@@ -58,7 +58,7 @@ describe('Sample Abundance Cards rules', () => {
   });
   it('keeps every pre-existing production file unchanged except the backed-up rooms extension', () => {
     for (const file of preservation) {
-      const path = file.path === 'public/assets/rooms.js' ? '.lovable/abundance-cards/rooms.before.js' : file.path;
+      const path = file.path === 'public/assets/rooms.js' ? '.lovable/abundance-cards/rooms.before.js' : file.path === 'public/assets/celestial-reading.css' ? '.lovable/finishing/celestial-reading.before.css' : file.path;
       expect(createHash('sha256').update(readFileSync(path)).digest('hex'), file.path).toBe(file.sha256);
     }
   });

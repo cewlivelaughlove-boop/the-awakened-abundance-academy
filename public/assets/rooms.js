@@ -14,6 +14,13 @@ for(const control of menuContent.querySelectorAll('#reset-view,#motion-toggle,#l
 for(const empty of menuContent.querySelectorAll('.scene-controls'))if(!empty.children.length)empty.remove();
 menuContent.append(rail,objectOptions);
 const closeMenu=document.createElement('button');closeMenu.type='button';closeMenu.className='close-room-menu';closeMenu.setAttribute('aria-label','Close Room menu');closeMenu.textContent='Close ×';menuContent.prepend(closeMenu);closeMenu.onclick=()=>{menu.open=false;menu.querySelector('summary').focus()};document.addEventListener('pointerdown',e=>{if(menu.open&&!menu.contains(e.target))menu.open=false;});const startLink=document.createElement('a');startLink.href='./start.html';startLink.className='start-practice-link';startLink.textContent='Start Here · a quiet practice';nav.after(startLink);
+// Separate room navigation, visitor resources, and optional display controls.
+const resourceLinks=document.createElement('section');resourceLinks.className='room-resource-links';resourceLinks.setAttribute('aria-label','Resources');
+const libraryLink=nav.querySelector('a[href="./library.html"]');if(libraryLink){libraryLink.className='';libraryLink.textContent='Library · books and guides';resourceLinks.append(libraryLink)}
+resourceLinks.append(startLink);nav.after(resourceLinks);
+const chamberLink=document.createElement('a');chamberLink.href='./voidwalk.html';chamberLink.className='room-portal';chamberLink.innerHTML='<img src="./assets/voidwalk-chamber-v3.png" alt=""><span><strong>Voidwalk Chamber</strong><small>A journey through five discoveries</small></span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>';nav.append(chamberLink);
+const displayOptions=document.createElement('details');displayOptions.className='room-display-options';displayOptions.innerHTML='<summary>Display & room controls</summary>';displayOptions.append(rail,objectOptions);menuContent.append(displayOptions);
+const polish=document.createElement('link');polish.rel='stylesheet';polish.href='./assets/room-menu-polish.css';document.head.append(polish);
 // Restart deliberately clears only this experience's per-tab progress.
 const restart=document.createElement('button');restart.type='button';restart.id='restart-experience';restart.textContent='Restart experience';restart.setAttribute('aria-label','Restart the experience from the galaxy entrance');rail.append(restart);
 restart.addEventListener('click',()=>{
@@ -58,3 +65,8 @@ if(!boutique){
  import('./abundance-cards.js?v=preview-20261103-1').then(({mountAbundanceDeck})=>mountAbundanceDeck()).catch(error=>console.error('Abundance Cards preview could not load',error));
 }
 })();
+
+// Focused additions keep approved source HTML and room artwork unchanged.
+if(document.querySelector('#stage'))import('./telescope-journey.js').then(({mountGalaxyJourney})=>mountGalaxyJourney());
+if(document.querySelector('#boutique-stage'))import('./apparel-coming-soon.js').then(({mountApparelComingSoon})=>mountApparelComingSoon());
+{const style=document.createElement('link');style.rel='stylesheet';style.href='./assets/interaction-polish.css';document.head.append(style);}

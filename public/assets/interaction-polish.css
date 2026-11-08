@@ -1,0 +1,4 @@
+/* Pointer/touch selection should not draw a box over artwork. Keyboard focus remains visible. */
+.point.object-selected:not(:focus-visible),.object-point:focus:not(:focus-visible),.point:focus:not(:focus-visible),.sanctuary-telescope:focus:not(:focus-visible),.journal-display:focus:not(:focus-visible){outline:none;box-shadow:none}
+.object-point,.point,.sanctuary-telescope,.journal-display{-webkit-tap-highlight-color:transparent}
+.point:focus-visible,.object-point:focus-visible,.sanctuary-telescope:focus-visible,.journal-display:focus-visible{outline:3px solid #e1bef8;outline-offset:4px}
