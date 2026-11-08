@@ -4,21 +4,21 @@ const catalog={journals:{title:'Journals & books',body:'<p class="coming-soon">C
 const scene=document.querySelector('#boutique-scene'),stage=document.querySelector('#boutique-stage'),dialog=document.querySelector('#collection-dialog'),title=document.querySelector('#collection-title'),content=document.querySelector('#collection-content'),close=document.querySelector('#close-collection'),status=document.querySelector('#room-status'),wide=document.querySelector('#wide-view');
 let pan=Number(sessionStorage.getItem('academy-boutique-pan')??.5),full=innerWidth>=1024,sw=0,drag=null,ignoreClick=0,lastFocus=null;
 // A small phone-camera pullback, not the narrow whole-image overview.
-let camera=.94;try{const saved=Number(sessionStorage.getItem('academy-boutique-camera'));if(saved>=.88&&saved<=1)camera=saved;}catch{}
+let camera=.85;try{const saved=Number(sessionStorage.getItem('academy-boutique-camera-v2'));if(saved>=.76&&saved<=1)camera=saved;}catch{}
 const cameraButtons=[];
 function layout(){
- try{sessionStorage.setItem('academy-boutique-pan',String(pan));sessionStorage.setItem('academy-boutique-camera',String(camera));}catch{}
+ try{sessionStorage.setItem('academy-boutique-pan',String(pan));sessionStorage.setItem('academy-boutique-camera-v2',String(camera));}catch{}
  const w=innerWidth,h=innerHeight,ratio=1976/796,phone=w<1024,scale=phone?camera:1;
  stage.dataset.roomWidth='1976';stage.dataset.roomHeight='796';stage.dataset.portrait='false';stage.dataset.camera=String(scale);
  sw=full?Math.min(w,h*ratio):Math.max(w,h*ratio*scale);const sh=sw/ratio,gap=Math.max(0,(h-sh)/2);
  stage.style.width=sw+'px';stage.style.height=sh+'px';stage.style.left=((w-sw)*(full?.5:pan))+'px';stage.style.top=(!full&&phone&&sh<h?h-sh:(h-sh)/2)+'px';
  // Keep the original floor at the bottom; only a small dark ceiling margin is added.
  stage.dataset.cameraPullback=String(!full&&phone&&gap>=.01);
- cameraButtons.forEach((button,i)=>{button.disabled=!phone||(i===0?camera<=.88001:camera>=.99999);});
+ cameraButtons.forEach((button,i)=>{button.disabled=!phone||(i===0?camera<=.76001||sw<=w+.01:camera>=.99999);});
 }
 function adjustCamera(delta){
  stopTour();const focus=sw?(innerWidth/2-parseFloat(stage.style.left))/sw:.5;
- full=false;camera=Math.max(.88,Math.min(1,Math.round((camera+delta)*100)/100));wide.textContent='Whole room';wide.setAttribute('aria-pressed','false');layout();
+ full=false;camera=Math.max(.76,Math.min(1,Math.round((camera+delta)*100)/100));wide.textContent='Whole room';wide.setAttribute('aria-pressed','false');layout();
  pan=sw>innerWidth?Math.max(0,Math.min(1,(focus*sw-innerWidth/2)/(sw-innerWidth))):.5;layout();
  for(const menu of document.querySelectorAll('.compact-room-menu,.proof-room-menu'))menu.open=false;
  scene.focus({preventScroll:true});status.textContent='Boutique camera adjusted. Drag left or right to look around.';
