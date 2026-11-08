@@ -1,5 +1,11 @@
 # Version23 import
 
+# Event signup
+
+- [ ] Import the supplied signup files while preserving approved documents and unrelated work.
+- [ ] Connect the existing private managed backend, verify real QA persistence, consent/retries/privacy and tests/build; no publishing or emails.
+
+
 - [x] Install authoritative compatible continuation unchanged, preserving prior source and backups; verify all 43 hashes and five static parts.
 - [x] Activate exact same-origin headquarters and companion GET addresses without React/CSS interference.
 - [x] Verify navigation, reconstructed media, guide, cat, journey, iPhone path, mobile framing and inactive services.
