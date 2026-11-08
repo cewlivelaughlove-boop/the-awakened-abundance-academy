@@ -1,0 +1,29 @@
+{
+  "route": "http://localhost:8080/library.html",
+  "viewport": {
+    "width": 393,
+    "height": 658
+  },
+  "sentence": {
+    "x": 48,
+    "y": 336.140625,
+    "width": 297,
+    "height": 15.296875,
+    "right": 345,
+    "bottom": 351.4375,
+    "overflow": false,
+    "text": "Free guide coming soon \u00b7 Email signup is open"
+  },
+  "signup_menu_href": "./join.html",
+  "submitted": false,
+  "source": "preview",
+  "limitation": "Chromium phone emulation, not physical iPhone",
+  "verdict": "PASS: exact corrected sentence visible without clipping or overlap; Email Signup links directly to ./join.html. Existing small muted text styling preserved unchanged.",
+  "jpeg": "library-corrected-393x658.jpg",
+  "sha256_decoded_jpeg": "83e31340a32ca2dc5dde81ad00ef1d1760e175e6bfdf290a6813e74cf2bbbd4b",
+  "import_commit": "dcacb54b1ce656ba8f42a7033c99f1d993912f28",
+  "regression_tests": "86/86 passed",
+  "build": "Automatic build OK, latest 2026-11-08T21:24:22Z",
+  "lint": "room-journey.ts passes default ESLint; supplied compact test file has default Prettier formatting errors. Test ESLint passes with only prettier/prettier disabled; exact source was not reformatted.",
+  "preservation": "Only the two manifest files and this evidence directory differ from pre-import fingerprints."
+}
