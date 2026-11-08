@@ -1,0 +1,845 @@
+/* Carla's event invitation. Isolated from all room and backend styles. */
+.event-page {
+  margin: 0;
+  min-height: 100svh;
+  background:
+    radial-gradient(ellipse at 12% 0, #231b2d66, transparent 50%), #09080d;
+  color: #f5efea;
+  color-scheme: dark;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.event-page * {
+  box-sizing: border-box;
+}
+.event-page a {
+  color: inherit;
+  text-decoration: none;
+}
+.event-page .event-header,
+.event-page .event-footer {
+  width: min(1240px, calc(100% - 80px));
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.event-page .event-header {
+  padding: 25px 0 28px;
+}
+.event-page .event-brand {
+  font:
+    500 12px/1.8 Arial,
+    sans-serif;
+  letter-spacing: 0.26em;
+  min-height: 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.event-page .event-brand span {
+  font-size: 8px;
+  letter-spacing: 0.48em;
+  color: #c8b4ce;
+}
+.event-page .event-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #d1c2d5 !important;
+  min-height: 44px;
+}
+.event-page .event-arrow {
+  display: inline-block;
+  width: 17px;
+  height: 1px;
+  background: currentColor;
+  position: relative;
+  flex: 0 0 17px;
+}
+.event-page .event-arrow:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -3px;
+  width: 6px;
+  height: 6px;
+  border-right: 1px solid currentColor;
+  border-top: 1px solid currentColor;
+  transform: rotate(45deg);
+}
+.event-page .event-main {
+  width: min(1240px, calc(100% - 80px));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: stretch;
+  background: #100d15;
+  border: 1px solid #a8967340;
+  box-shadow: 0 30px 90px #0006;
+  overflow: hidden;
+  position: relative;
+}
+.event-page .event-art {
+  position: relative;
+  isolation: isolate;
+  min-width: 0;
+  min-height: 710px;
+  overflow: hidden;
+  background: #0f0b14;
+}
+.event-page .event-art .event-scene {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: 54% center;
+  z-index: -3;
+}
+.event-page .event-art:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    #08070bb3,
+    transparent 32%,
+    transparent 43%,
+    #08070bf5 100%
+  );
+  z-index: -2;
+}
+.event-page .event-art:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  box-shadow:
+    inset -1px 0 #d5b47b33,
+    inset 0 0 60px #0004;
+  pointer-events: none;
+  z-index: -1;
+}
+.event-page .event-art-top {
+  position: absolute;
+  top: 34px;
+  left: 34px;
+  right: 34px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 13px;
+  color: #f0e4d7;
+  font:
+    10px/1.7 Arial,
+    sans-serif;
+  letter-spacing: 0.21em;
+}
+.event-page .event-art-top > span:last-child {
+  font-size: 8px;
+  letter-spacing: 0.15em;
+  color: #c9bdc5;
+}
+.event-page .event-art-rule {
+  width: 36px;
+  height: 1px;
+  background: #bc9d65;
+}
+.event-page .event-art-copy {
+  position: absolute;
+  left: 40px;
+  right: 32px;
+  bottom: 43px;
+  color: #f7f1ec;
+}
+.event-page .event-art .event-art-kicker {
+  font:
+    10px/1.7 Arial,
+    sans-serif;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #d1b88e;
+  margin: 0 0 17px;
+}
+.event-page .event-art .event-art-title {
+  font:
+    normal clamp(30px, 3vw, 43px)/1.18 Georgia,
+    "Times New Roman",
+    serif;
+  letter-spacing: -0.025em;
+  margin: 0 0 19px;
+  color: #f6ede7;
+}
+.event-page .event-art-title em {
+  font-weight: 400;
+  color: #ddc3a3;
+}
+.event-page .event-art .event-art-caption {
+  font:
+    13px/1.85 Arial,
+    sans-serif;
+  color: #d1c2d1;
+  margin: 0;
+}
+.event-page .event-signup {
+  width: 100%;
+  min-width: 0;
+  color: #f6efe9;
+  color-scheme: dark;
+  padding: 43px clamp(28px, 3.6vw, 51px) 30px;
+  background:
+    radial-gradient(ellipse at 100% 0, #37203d4a, transparent 63%),
+    linear-gradient(120deg, #16111c, #0e0b12);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.event-page .event-signup * {
+  box-sizing: border-box;
+}
+.event-page .event-signup .event-kicker {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font:
+    9px/1.8 Arial,
+    sans-serif;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #cfb993;
+  margin: 0 0 19px;
+}
+.event-page .event-kicker > span {
+  width: 22px;
+  height: 1px;
+  background: #b99c72;
+}
+.event-page .event-signup :is(h1, h2) {
+  font:
+    normal clamp(36px, 4vw, 53px)/1.03 Georgia,
+    "Times New Roman",
+    serif;
+  letter-spacing: -0.035em;
+  color: #f8f0e8;
+  margin: 0 0 22px;
+  scroll-margin-top: 25px;
+}
+.event-page .event-signup :is(h1, h2) em {
+  font-weight: 400;
+  color: #d8c1a1;
+}
+.event-page .event-signup .event-intro {
+  font:
+    14px/1.8 Arial,
+    sans-serif;
+  margin: 0 0 25px;
+  color: #c8bacd;
+  max-width: 440px;
+}
+.event-page .event-signup .event-intro em {
+  font-family: Georgia, serif;
+  color: #e1d3df;
+  font-size: 15px;
+}
+.event-page .event-signup form {
+  margin: 0;
+  padding: 0;
+}
+.event-page .event-signup .event-label {
+  display: block;
+  font:
+    500 12px/1.6 Arial,
+    sans-serif;
+  margin: 0 0 9px;
+  color: #f2e9ed;
+}
+.event-page .event-signup input[type="email"] {
+  width: 100%;
+  display: block;
+  height: 55px;
+  border: 1px solid #807384;
+  border-radius: 3px;
+  background: #09080ecc;
+  color: #faf3f8;
+  padding: 14px 16px;
+  font:
+    16px/1.5 Arial,
+    sans-serif;
+  -webkit-text-fill-color: #faf3f8;
+  box-shadow: inset 0 2px 5px #0006;
+  opacity: 1;
+  transition:
+    border-color 0.18s,
+    box-shadow 0.18s;
+}
+.event-page .event-signup input[type="email"]::placeholder {
+  color: #a296ac;
+  -webkit-text-fill-color: #a296ac;
+}
+.event-page .event-signup input[type="email"]:focus {
+  border-color: #dcc399;
+  box-shadow: 0 0 0 3px #c6ab7226;
+  outline: none;
+}
+.event-page .event-signup .event-consent {
+  display: flex !important;
+  gap: 11px;
+  align-items: flex-start;
+  font:
+    12px/1.7 Arial,
+    sans-serif !important;
+  margin: 17px 0 20px !important;
+  color: #cbbdce;
+  cursor: pointer;
+  min-height: 44px;
+}
+.event-page .event-signup .event-consent input[type="checkbox"] {
+  appearance: auto;
+  display: block;
+  flex: 0 0 18px;
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  margin: 2px 0 0;
+  accent-color: #d9bd8c;
+  -webkit-text-fill-color: initial;
+}
+.event-page .event-signup .event-submit {
+  font:
+    600 13px/1.5 Arial,
+    sans-serif;
+  letter-spacing: 0.025em;
+  min-height: 54px;
+  width: 100%;
+  margin: 0;
+  border: 1px solid #dfc79e;
+  border-radius: 3px;
+  padding: 15px 19px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  color: #211821;
+  background: linear-gradient(110deg, #ebd4ad 0%, #ceb18a 56%, #e4cca5 100%);
+  box-shadow:
+    inset 0 1px 0 #fff6,
+    0 7px 22px #0005;
+  cursor: pointer;
+  transition:
+    filter 0.2s,
+    box-shadow 0.2s;
+}
+.event-page .event-signup .event-submit:hover:not(:disabled) {
+  filter: brightness(1.07);
+  box-shadow:
+    inset 0 1px 0 #fff6,
+    0 8px 24px #0008;
+}
+.event-page .event-signup .event-submit:disabled {
+  opacity: 0.58;
+  cursor: default;
+}
+.event-page .event-signup .event-status {
+  font:
+    11px/1.65 Arial,
+    sans-serif;
+  min-height: 37px;
+  margin: 12px 0 18px;
+  color: #bfb1c7;
+}
+.event-page .event-signup .event-status[data-state="success"] {
+  color: #d1ebd8 !important;
+  padding: 12px;
+  border: 1px solid #89b49555;
+  background: #1b2b204d;
+  border-radius: 3px;
+}
+.event-page .event-signup .event-status[data-state="error"] {
+  color: #f0c4bd !important;
+}
+.event-page .event-signup .event-guide {
+  border-top: 1px solid #a48b6540;
+  border-bottom: 1px solid #a48b6540;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 0 0 10px;
+}
+.event-page .event-signup .event-guide-cover {
+  display: block;
+  flex: 0 0 64px;
+  align-self: center;
+  min-height: 0;
+  box-shadow: 5px 7px 15px #0008;
+}
+.event-page .event-signup .event-guide-cover img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 1px;
+}
+.event-page .event-signup .event-guide-label {
+  font:
+    8px/1.7 Arial,
+    sans-serif;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: #bfaa8c;
+  margin: 0 0 5px;
+}
+.event-page .event-signup .event-guide-title {
+  display: inline-block;
+  font:
+    20px/1.25 Georgia,
+    serif;
+  color: #e5d6c3;
+  text-decoration: none;
+  min-height: 0;
+}
+.event-page .event-signup .event-guide-title:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.event-page .event-signup .event-availability {
+  font:
+    10px/1.7 Arial,
+    sans-serif;
+  color: #b9aabd;
+  margin: 8px 0 0;
+}
+.event-page .event-signup .event-privacy {
+  font:
+    12px/1.75 Arial,
+    sans-serif;
+  color: #c6b4ce;
+}
+.event-page .event-signup .event-privacy summary {
+  cursor: pointer;
+  padding: 10px 0;
+  color: #d2bdd7;
+  min-height: 44px;
+}
+.event-page .event-signup .event-privacy p {
+  font:
+    12px/1.75 Arial,
+    sans-serif !important;
+  margin: 10px 0;
+  color: #c4b5cc !important;
+}
+.event-page .event-signup .event-privacy a {
+  color: #e5c7ef;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  overflow-wrap: anywhere;
+}
+.event-page .event-trap {
+  position: absolute !important;
+  left: -10000px !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+}
+.event-page :focus-visible,
+.event-page .event-signup :focus-visible {
+  outline: 3px solid #e6c994;
+  outline-offset: 4px;
+}
+.event-page .event-footer {
+  padding: 20px 0 28px;
+  color: #a69aae;
+  font:
+    10px/1.7 Arial,
+    sans-serif;
+}
+.event-page .event-footer a {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.event-page .event-footer strong {
+  font-weight: 500;
+  color: #cab7d1;
+}
+.event-page .event-skip {
+  position: absolute;
+  left: 16px;
+  top: -80px;
+  padding: 12px;
+  background: #37233f;
+  z-index: 10;
+}
+.event-page .event-skip:focus {
+  top: 12px;
+}
+@media (min-width: 1500px) {
+  .event-page .event-header {
+    padding-top: 38px;
+    padding-bottom: 34px;
+  }
+  .event-page .event-main .event-art {
+    min-height: 760px;
+  }
+  .event-page .event-main .event-signup {
+    padding-top: 57px;
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 1000px) and (min-width: 761px) {
+  .event-page .event-main {
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1fr);
+  }
+  .event-page .event-art-copy {
+    left: 28px;
+    right: 22px;
+  }
+  .event-page .event-art-top {
+    left: 28px;
+    right: 22px;
+  }
+  .event-page .event-art .event-art-title {
+    font-size: 34px;
+  }
+  .event-page .event-signup {
+    padding: 35px 28px 25px;
+  }
+  .event-page .event-art {
+    min-height: 740px;
+  }
+  .event-page .event-header,
+  .event-page .event-footer,
+  .event-page .event-main {
+    width: calc(100% - 48px);
+  }
+}
+@media (max-width: 760px) {
+  .event-page .event-header,
+  .event-page .event-footer {
+    width: calc(100% - 40px);
+  }
+  .event-page .event-header {
+    padding: 17px 0 18px;
+  }
+  .event-page .event-brand {
+    font-size: 10px;
+  }
+  .event-page .event-brand span {
+    font-size: 7px;
+  }
+  .event-page .event-back {
+    font-size: 10px;
+    gap: 10px;
+  }
+  .event-page .event-main {
+    width: calc(100% - 32px);
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .event-page .event-art {
+    min-height: 0;
+    height: 235px;
+  }
+  .event-page .event-art .event-scene {
+    object-position: 50% 41%;
+  }
+  .event-page .event-art:before {
+    background: linear-gradient(
+      180deg,
+      #08070b69,
+      transparent 32%,
+      #08070be6 100%
+    );
+  }
+  .event-page .event-art-top {
+    top: 20px;
+    left: 22px;
+    right: 22px;
+    gap: 8px;
+  }
+  .event-page .event-art-top > span:first-child {
+    font-size: 8px;
+    letter-spacing: 0.18em;
+  }
+  .event-page .event-art-top > span:last-child,
+  .event-page .event-art-rule {
+    display: none;
+  }
+  .event-page .event-art-copy {
+    left: 22px;
+    right: 22px;
+    bottom: 22px;
+  }
+  .event-page .event-art .event-art-kicker,
+  .event-page .event-art .event-art-caption {
+    display: none;
+  }
+  .event-page .event-art .event-art-title {
+    font-size: 30px;
+    line-height: 1.08;
+    margin: 0;
+  }
+  .event-page .event-signup {
+    padding: 27px 24px 21px;
+  }
+  .event-page .event-signup .event-kicker {
+    font-size: 8px;
+    margin-bottom: 14px;
+  }
+  .event-page .event-signup :is(h1, h2) {
+    font-size: 40px;
+    line-height: 1.05;
+    margin-bottom: 17px;
+  }
+  .event-page .event-signup .event-intro {
+    font-size: 13px;
+    line-height: 1.75;
+    margin-bottom: 23px;
+  }
+  .event-page .event-signup .event-intro em {
+    font-size: 14px;
+  }
+  .event-page .event-signup .event-consent {
+    font-size: 11px !important;
+    line-height: 1.8 !important;
+    margin-bottom: 18px !important;
+  }
+  .event-page .event-signup .event-status {
+    font-size: 10px;
+    min-height: 33px;
+    margin-bottom: 10px;
+  }
+  .event-page .event-signup .event-guide {
+    gap: 13px;
+    padding: 18px 0;
+  }
+  .event-page .event-signup .event-guide-cover {
+    flex-basis: 59px;
+  }
+  .event-page .event-signup .event-guide-label {
+    font-size: 7px;
+  }
+  .event-page .event-signup .event-guide-title {
+    font-size: 20px;
+  }
+  .event-page .event-signup .event-availability {
+    font-size: 10px;
+    line-height: 1.7;
+  }
+  .event-page .event-footer {
+    font-size: 9px;
+    gap: 10px;
+    padding: 16px 0 22px;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 360px) {
+  .event-page .event-main {
+    width: calc(100% - 20px);
+  }
+  .event-page .event-header,
+  .event-page .event-footer {
+    width: calc(100% - 32px);
+  }
+  .event-page .event-signup {
+    padding: 25px 19px 19px;
+  }
+  .event-page .event-signup :is(h1, h2) {
+    font-size: 36px;
+  }
+  .event-page .event-art {
+    height: 205px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .event-page .event-signup input,
+  .event-page .event-signup .event-submit {
+    transition: none;
+  }
+}
+
+/* The event page is a focused invitation, not a second sales page. */
+.event-page .event-main {
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+}
+.event-page .event-art {
+  min-height: 570px;
+}
+.event-page .event-art .event-scene {
+  object-position: 50% center;
+}
+.event-page .event-art:before {
+  background: linear-gradient(180deg, #08070b18, transparent 50%, #08070b36);
+}
+.event-page .event-signup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 44px;
+  padding-bottom: 35px;
+}
+.event-page .event-signup :is(h1, h2) {
+  margin-bottom: 20px;
+}
+.event-page .event-signup .event-intro {
+  margin-bottom: 30px;
+}
+.event-page .event-signup .event-status {
+  margin-bottom: 5px;
+  min-height: 36px;
+}
+.event-page .event-signup .event-privacy {
+  border-top: 1px solid #a48b6533;
+  margin-top: 8px;
+  padding-top: 3px;
+}
+@media (min-width: 1500px) {
+  .event-page .event-main .event-art {
+    min-height: 630px;
+  }
+}
+@media (max-width: 1000px) and (min-width: 761px) {
+  .event-page .event-art {
+    min-height: 590px;
+  }
+}
+@media (max-width: 760px) {
+  .event-page .event-main {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .event-page .event-art {
+    min-height: 0;
+    height: 190px;
+  }
+  .event-page .event-art .event-scene {
+    object-position: 50% 48%;
+  }
+  .event-page .event-signup {
+    padding: 28px 24px 20px;
+  }
+  .event-page .event-signup :is(h1, h2) {
+    font-size: 38px;
+    line-height: 1.08;
+    margin-bottom: 15px;
+  }
+  .event-page .event-signup .event-intro {
+    margin-bottom: 25px;
+  }
+  .event-page .event-signup .event-status {
+    min-height: 32px;
+    margin-bottom: 3px;
+  }
+  .event-page .event-signup .event-privacy {
+    margin-top: 8px;
+  }
+}
+@media (max-width: 360px) {
+  .event-page .event-art {
+    height: 165px;
+  }
+  .event-page .event-signup {
+    padding: 25px 19px 18px;
+  }
+  .event-page .event-signup :is(h1, h2) {
+    font-size: 34px;
+  }
+}
+/* A cosmic view behind the invitation, without touching any shared room. */
+.event-page .event-main {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 660px;
+  padding: 42px;
+  isolation: isolate;
+  background: #0a080f;
+}
+.event-page .event-art {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  height: 100%;
+  min-height: 0;
+}
+.event-page .event-art .event-scene {
+  object-position: 50% 42%;
+}
+.event-page .event-art:before {
+  background: linear-gradient(
+    90deg,
+    #09070d05 0%,
+    #09070d20 48%,
+    #09070d7a 100%
+  );
+}
+.event-page .event-signup {
+  position: relative;
+  max-width: 480px;
+  padding: 40px;
+  background: linear-gradient(145deg, #130d1ce6, #0b0811d9);
+  border: 1px solid #b99e714d;
+  box-shadow:
+    0 22px 60px #0008,
+    inset 0 1px #e8d6b31a;
+  border-radius: 4px;
+  backdrop-filter: blur(3px);
+}
+@media (min-width: 1500px) {
+  .event-page .event-main {
+    min-height: 740px;
+  }
+  .event-page .event-main .event-art {
+    min-height: 0;
+  }
+}
+@media (max-width: 1000px) and (min-width: 761px) {
+  .event-page .event-main {
+    padding: 30px;
+  }
+  .event-page .event-signup {
+    max-width: 440px;
+    padding: 32px;
+  }
+  .event-page .event-art {
+    min-height: 0;
+  }
+}
+@media (max-width: 760px) {
+  .event-page .event-main {
+    display: block;
+    width: calc(100% - 24px);
+    min-height: 0;
+    padding: 145px 16px 20px;
+  }
+  .event-page .event-art {
+    height: 100%;
+    min-height: 0;
+  }
+  .event-page .event-art .event-scene {
+    object-position: 57% 30%;
+  }
+  .event-page .event-art:before {
+    background: linear-gradient(180deg, #09070d00, #09070d15 27%, #09070d77);
+  }
+  .event-page .event-signup {
+    max-width: none;
+    padding: 27px 24px 20px;
+    background: linear-gradient(145deg, #130d1ce3, #0b0811e6);
+  }
+  .event-page .event-footer {
+    padding-top: 13px;
+  }
+}
+@media (max-width: 360px) {
+  .event-page .event-main {
+    padding: 120px 12px 16px;
+    width: calc(100% - 16px);
+  }
+  .event-page .event-signup {
+    padding: 24px 18px 17px;
+  }
+  .event-page .event-art {
+    height: 100%;
+  }
+}
