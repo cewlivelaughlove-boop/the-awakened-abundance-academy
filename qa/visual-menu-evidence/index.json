@@ -3896,5 +3896,109 @@
   "pageErrors": [],
   "blockedNonGET": [],
   "signupSubmissions": 0,
-  "visibleDefects": []
+  "visibleDefects": [
+    {
+      "finding": "Portrait screenshot pixels extend vertically beyond the nominal 40px thumbnail and overlap card edges. Rendered object-fit is cover but computed overflow is visible; exact supplied CSS was not altered.",
+      "affected": "All six thumbnails in reviewed phone and desktop menu captures"
+    },
+    {
+      "finding": "At 320x568 and 844x390, Email Signup shrinks to 56px while the other five cards remain 58px. Thumbnails still measure 40x40, all links and bottom controls/credit remain reachable.",
+      "affected": "All eight pages at short viewports"
+    }
+  ],
+  "acceptance": "FAIL: visible thumbnail overflow and 2px short-viewport card-height mismatch",
+  "tests": {
+    "vitest": {
+      "pass": 84,
+      "fail": 0
+    },
+    "room": {
+      "pass": 82,
+      "fail": 0
+    },
+    "existingNode": {
+      "pass": 14,
+      "fail": 0
+    },
+    "types": "tsgo --noEmit passed",
+    "productionBuild": "automatic build OK 2026-11-08T19:51:49Z"
+  },
+  "hashes": [
+    {
+      "path": "public/assets/site-menu.js",
+      "before": "7994bcd4f3e93315642bf72f80426e40163fe57bcf89df28ed981ae5a09e3111",
+      "final": "df6b3e70e2ed1ad6c81ea3e180f2651c3fa9116fcfd831d19dfe7dbb7fca7e94"
+    },
+    {
+      "path": "public/assets/site-menu.css",
+      "before": "d2ff4db12d42cb0709196e30c4dac98e30d85ab1d4bcab80e0c04b1343c6ce40",
+      "final": "2bc31709a369fe46de539010413db563baa2726c6ede69decc61e28c8da76e86"
+    },
+    {
+      "path": "src/lib/room-journey.ts",
+      "before": "c210babc044c6e2a7ac18422057acca2ac866d6aa1d9d5a34711f439b588b4db",
+      "final": "882d71b25a21df9b6d2ba14dcedb9ace57e3a4454ffa50e6cc68dfff9fb14be9"
+    },
+    {
+      "path": "public/voidwalk.html",
+      "before": "fa2d64e296c6a10e4c5fc58768559d8af50347cebf3825f5ce4c012f83294266",
+      "final": "77e8a4456bcaa3cc0a183b2e3032b3221ae66c21336110db1d8d92033fd67b89"
+    },
+    {
+      "path": "public/shop.html",
+      "before": "ceaeaaab4b8660e7c830f0ba32fa4358db59d06a61568683ea8caf75d2a4b0c3",
+      "final": "e035e4c0cf2f1e6919f306dcef4823342af677946b2dff891f6e291a06393e63"
+    },
+    {
+      "path": "src/content/event-page.ts",
+      "before": "500fa54cf30a9c65622b1729b97010aeffd2bafbb0d8369997023a664981830c",
+      "final": "f7b14137d421cecef10f25ff859501784527b98db770682752d7e59668c1e261"
+    },
+    {
+      "path": "qa/room-tests/site-menu.test.mjs",
+      "before": "661b58566563bf475c3dd1a321270fb39a30b0c168f0c4d5490f8b2f3bf2dd61",
+      "final": "48af11231d827c2e568b596b01bd9ef267701de1a26a3ecb0bfb2bd6984fceca"
+    },
+    {
+      "path": "public/assets/menu-card-headquarters-v1.jpg",
+      "before": null,
+      "final": "7cde8323fe13a9e5e37ee48fe0a087602d91eda4014ce07733057c5643d8f85b"
+    },
+    {
+      "path": "public/assets/menu-card-boutique-v1.jpg",
+      "before": null,
+      "final": "9d75eed3f90506c34be05d723262efb06ee5fdb6e3d4d9c29d30883184262feb"
+    },
+    {
+      "path": "public/assets/menu-card-dark-room-v1.jpg",
+      "before": null,
+      "final": "bb0d78d4034c0c41af3a8e88e701c6774ce0228c56f0a2e74dfd28f77ceed729"
+    },
+    {
+      "path": "public/assets/menu-card-email-signup-v1.jpg",
+      "before": null,
+      "final": "58fe2d855a3ca30578c7e34f021808901251e22536dd5e0189258b869693a973"
+    },
+    {
+      "path": "public/assets/menu-card-library-v1.jpg",
+      "before": null,
+      "final": "17ae4f2ae2ed4d6f5ebe5afa391678183a546e773306debcd886b4969554bcd7"
+    },
+    {
+      "path": "public/assets/menu-card-start-here-v1.jpg",
+      "before": null,
+      "final": "10cf85545a7a7919d2bddfa04254c1eed1ebaebe93f5aaa1837b5b97c151bbf2"
+    }
+  ],
+  "preservation": {
+    "unrelatedTrackedFiles": 515,
+    "changed": 0,
+    "roomResponses": "Identical except supplied site-menu cache versions",
+    "signupFormDOM": "Identical",
+    "nonGETRequestsSent": 0
+  },
+  "limitations": [
+    "Chromium emulation; not physical iPhone/Safari",
+    "No publication or signup submission"
+  ]
 }
