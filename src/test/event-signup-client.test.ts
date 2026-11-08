@@ -3,8 +3,13 @@ import { readFileSync } from "node:fs";
 import { eventSignupMarkup } from "../lib/event-signup-markup";
 const script = readFileSync("public/assets/event-signup.js", "utf8");
 const tick = () => new Promise((resolve) => setTimeout(resolve, 0));
-const getForm = () => document.querySelector<HTMLFormElement>("form")!;
-const status = () => document.querySelector("#event-status")!.textContent;
+function element<T extends Element>(selector: string) {
+  const node=document.querySelector<T>(selector);
+  if (!node) throw new Error("Missing test element: " + selector);
+  return node;
+}
+const getForm = () => element<HTMLFormElement>("form");
+const status = () => element("#event-status").textContent;
 function reply(payload: unknown, status = 200) { return Promise.resolve(new Response(JSON.stringify(payload),{status})); }
 async function setup(postResponse = { ok:true }) {
   document.body.innerHTML=eventSignupMarkup("event-page");
@@ -19,7 +24,7 @@ afterEach(()=>{document.body.replaceChildren();vi.unstubAllGlobals();vi.restoreA
 describe("event signup client",()=>{
   it("has no preselected consent and refuses submission until validation succeeds",async()=>{
     const fetcher=await setup();
-    expect(document.querySelector<HTMLInputElement>("#event-consent")!.checked).toBe(false);
+    expect(element<HTMLInputElement>("#event-consent").checked).toBe(false);
     vi.spyOn(getForm(),"reportValidity").mockReturnValue(false);
     getForm().dispatchEvent(new Event("submit",{bubbles:true,cancelable:true}));
     await tick();
@@ -27,8 +32,8 @@ describe("event signup client",()=>{
   });
   it("claims a saved signup only after real backend confirmation",async()=>{
     const fetcher=await setup();
-    document.querySelector<HTMLInputElement>("#event-email")!.value="visitor@example.com";
-    document.querySelector<HTMLInputElement>("#event-consent")!.checked=true;
+    element<HTMLInputElement>("#event-email").value="visitor@example.com";
+    element<HTMLInputElement>("#event-consent").checked=true;
     vi.spyOn(getForm(),"reportValidity").mockReturnValue(true);
     getForm().dispatchEvent(new Event("submit",{bubbles:true,cancelable:true}));
     await tick();
@@ -38,12 +43,12 @@ describe("event signup client",()=>{
   });
   it("does not claim success on unconfirmed persistence",async()=>{
     await setup({ok:false});
-    document.querySelector<HTMLInputElement>("#event-email")!.value="visitor@example.com";
-    document.querySelector<HTMLInputElement>("#event-consent")!.checked=true;
+    element<HTMLInputElement>("#event-email").value="visitor@example.com";
+    element<HTMLInputElement>("#event-consent").checked=true;
     vi.spyOn(getForm(),"reportValidity").mockReturnValue(true);
     getForm().dispatchEvent(new Event("submit",{bubbles:true,cancelable:true}));
     await tick();
     expect(status()).toContain("could not confirm");
-    expect(document.querySelector<HTMLButtonElement>("[type=submit]")!.disabled).toBe(false);
+    expect(element<HTMLButtonElement>("[type=submit]").disabled).toBe(false);
   });
 });
