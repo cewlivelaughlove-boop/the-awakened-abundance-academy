@@ -40,4 +40,4 @@
 
 - [x] Add standalone /academy.html (src/site/academy.html + public/assets/academy-landing.css) via the approvedDocument GET pattern; approved v23 documents untouched.
 - [x] Link "The Academy" from the React site header (desktop nav and mobile sheet).
-- [ ] Verify page renders at phone and desktop sizes and the route serves the exact document; no tests, no publishing per owner instruction.
+- [x] Verify page renders at phone and desktop sizes and the route serves the exact document; no tests, no publishing per owner instruction.
