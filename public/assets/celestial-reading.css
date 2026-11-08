@@ -25,6 +25,8 @@ body.celestial-reading{background:#090a10;isolation:isolate}
 .start-page .practice-intro{padding:22px 0 38px}.start-page .practice-welcome,.start-page .step-body>p{color:#ede6ee;font-size:17px}.start-page .practice-intro h1{color:#f4e5d0}.start-page .reflection-prompts{background:#120f1780;padding:20px;border-left:2px solid #bba38c}.start-page .practice-note{color:#d2c5d6!important}
 @media(max-width:640px){.start-page #main>.shell{width:calc(100% - 24px);padding:25px 22px;margin-top:20px}.start-page .practice-intro h1{font-size:38px}.start-page .site-header nav{flex-wrap:wrap}}
 /* Open-backed book display: preserve physical frame, shelf, plaque and book. */
+/* The exhibit wrapper must also be clear or it becomes a second back panel. */
+.celestial-reading .exhibit-art{background:transparent;backdrop-filter:none}
 .celestial-reading .book-hero,.celestial-reading .library-exhibit{background:transparent;backdrop-filter:none}
 .celestial-reading .cabinet,.celestial-reading .exhibit-art .cabinet{background:linear-gradient(90deg,#777 0,#28282d 1.5%,transparent 3%,transparent 97%,#777 98.5%,#28282d 100%)}
 .celestial-reading .cabinet:before{background:transparent;box-shadow:inset 12px 0 14px -15px #000,inset -12px 0 14px -15px #000}

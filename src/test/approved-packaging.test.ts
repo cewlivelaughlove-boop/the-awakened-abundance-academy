@@ -1,3 +1,4 @@
+import { withRoomJourney } from "../lib/room-journey";
 import { repairSanctuaryPlayback } from "../lib/sanctuary-playback";
 // @vitest-environment node
 import { readFileSync as readOriginalFileSync, existsSync } from "node:fs";
@@ -216,6 +217,8 @@ describe("Approved V23 static packaging", () => {
     const html = readFileSync("src/approved/v23/index.html", "utf8");
     const response = approvedDocument(html);
     expect(response.headers.get("Content-Type")).toBe("text/html; charset=utf-8");
-    expect(await response.text()).toBe(repairSanctuaryPlayback(optimizeStandaloneAssetUrls(html)));
+    expect(await response.text()).toBe(
+      withRoomJourney(repairSanctuaryPlayback(optimizeStandaloneAssetUrls(html))),
+    );
   });
 });

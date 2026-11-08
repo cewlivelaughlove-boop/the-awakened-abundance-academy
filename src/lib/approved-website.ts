@@ -1,13 +1,16 @@
+import { withRoomJourney } from "./room-journey";
 import { repairSanctuaryPlayback } from "./sanctuary-playback";
 import { optimizeStandaloneAssetUrls } from "./performance-assets";
 import { withEventSignup } from "./event-signup-markup";
 
 /** Serve the approved standalone documents without React/CSS interference. */
 export function approvedDocument(html: string) {
-  const enriched = html.includes('id="release-title"') && html.includes('class="book-page"')
-    ? withEventSignup(html)
-    : html;
-  return new Response(repairSanctuaryPlayback(optimizeStandaloneAssetUrls(enriched)), {
+  const presented = withRoomJourney(repairSanctuaryPlayback(optimizeStandaloneAssetUrls(html)));
+  const enriched =
+    presented.includes('id="release-title"') && presented.includes('class="book-page"')
+      ? withEventSignup(presented)
+      : presented;
+  return new Response(enriched, {
     headers: { "Content-Type": "text/html; charset=utf-8" },
   });
 }

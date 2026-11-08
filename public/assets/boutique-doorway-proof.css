@@ -1,0 +1,40 @@
+/* Approved 1976×796 right-hand doorway proof. Original 1672×941 art retained.
+   Every overlay is placed against the new measured artwork, not old percentages. */
+#boutique-stage .journal-display{left:37.6%;top:48%;width:15.05%;min-height:0}
+#boutique-stage>img.voidwalker-wall-plaque{left:45.6%;top:24.5%;width:9.8%;height:23.8%}
+#boutique-stage>img.boutique-telescope{left:20.35%;top:41%;width:3.88%;height:20%}
+#boutique-stage>img.boutique-cat{left:24.4%;top:54%;width:6.48%;height:9%}
+#boutique-stage .point.crystals{left:61.8%;top:9.5%;width:9.2%;height:14.2%;min-height:0;min-width:0}
+#boutique-stage .point.art{left:63.4%;top:24.5%;width:6.2%;height:24%;min-height:0;min-width:0}
+#boutique-stage #boutique-exterior{left:25.7%;top:12.8%;width:12.3%;height:31.5%}
+#boutique-stage[data-room-width] .boutique-shop-invitation{left:4.4%;top:80.5%;width:13.8%;height:5.2%;transform:skewY(-21deg);font-size:clamp(5px,1.15cqw,24px)}
+.proof-boutique-threshold,.proof-boutique-return{position:absolute;z-index:5;display:block;padding:0;background:transparent;border:0;border-radius:0;box-shadow:none;cursor:pointer;touch-action:pinch-zoom;color:#f0e4d6;text-decoration:none}
+.proof-boutique-threshold{left:78%;top:4%;width:19.8%;height:84%}
+.proof-boutique-return{left:20.7%;top:53.5%;width:17.1%;height:29.5%}
+.proof-boutique-threshold span,.proof-boutique-return span{position:absolute;left:50%;bottom:5%;transform:translateX(-50%);font:clamp(5px,.75cqw,15px)/1.4 system-ui;white-space:nowrap;text-shadow:0 1px 4px #000,0 0 12px #000;padding:4px 6px;border-radius:12px;background:#09081085}
+.proof-boutique-threshold:hover span,.proof-boutique-return:hover span{background:#21142bc4}
+.proof-boutique-threshold:focus-visible,.proof-boutique-return:focus-visible{outline:2px solid #e5cda8;outline-offset:-2px;border-radius:45% 45% 0 0}
+/* Larger fallback targets stay in the consistent controls outside the room. */
+
+#boutique-stage>picture.boutique-room-art{display:block;position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+#boutique-stage>picture.boutique-room-art>img{display:block;width:100%;height:100%;object-fit:fill;pointer-events:none;-webkit-user-drag:none}
+#boutique-stage .proof-boutique-window{left:25.7%;top:12.8%;width:12.3%;height:31.5%}
+@media(max-aspect-ratio:4/5){
+ /* Accepted 1086×1448 portrait, not a stretched or cropped panorama. */
+ #boutique-stage .journal-display{left:35.5%;top:48.5%;width:30%;height:14%;aspect-ratio:auto}
+ #boutique-stage .journal-display img{visibility:hidden} /* books already in approved artwork */
+ #boutique-stage .journal-display .book-open-tab{left:4%;bottom:3%;font-size:clamp(8px,1.9cqw,13px)}
+ #boutique-stage>img.voidwalker-wall-plaque{left:43%;top:34.3%;width:12%;height:9.2%}
+ #boutique-stage>img.boutique-telescope{left:20.1%;top:39.2%;width:5.5%;height:9.5%}
+ #boutique-stage>img.boutique-cat{left:26.5%;top:49%;width:7.2%;height:4.8%}
+ #boutique-stage .point.crystals{left:60.5%;top:28.8%;width:12%;height:4.6%}
+ #boutique-stage .point.art{left:63.8%;top:34.6%;width:6.5%;height:9%}
+ #boutique-stage .boutique-exterior-window{clip-path:url(#boutique-window-portrait-clip)}
+ #boutique-stage #boutique-exterior,#boutique-stage .proof-boutique-window{left:24.4%;top:30.7%;width:13.2%;height:12.1%}
+ #boutique-stage .proof-boutique-window span{top:1%;font-size:8px;padding:4px 6px}
+ #boutique-stage .proof-boutique-threshold{left:77%;top:26%;width:22%;height:34%}
+ #boutique-stage .proof-boutique-return{left:18.7%;top:45.5%;width:17.5%;height:13%}
+ #boutique-stage .proof-boutique-threshold span,#boutique-stage .proof-boutique-return span{font-size:clamp(8px,2.1cqw,13px);padding:4px 5px}
+ #boutique-stage[data-room-width] .boutique-shop-invitation{left:2.5%;top:61.3%;width:16.9%;height:3%;transform:skewY(-24deg);font-size:clamp(9px,2.45cqw,17px);letter-spacing:0}
+ #boutique-stage .boutique-shop-invitation:after{content:'';position:absolute;inset:-14px 0;min-height:44px}
+}
