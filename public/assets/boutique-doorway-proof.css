@@ -19,22 +19,3 @@
 #boutique-stage>picture.boutique-room-art{display:block;position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
 #boutique-stage>picture.boutique-room-art>img{display:block;width:100%;height:100%;object-fit:fill;pointer-events:none;-webkit-user-drag:none}
 #boutique-stage .proof-boutique-window{left:25.7%;top:12.8%;width:12.3%;height:31.5%}
-@media(max-aspect-ratio:4/5){
- /* Accepted 1086×1448 portrait, not a stretched or cropped panorama. */
- #boutique-stage .journal-display{left:35.5%;top:48.5%;width:30%;height:14%;aspect-ratio:auto}
- #boutique-stage .journal-display img{visibility:hidden} /* books already in approved artwork */
- #boutique-stage .journal-display .book-open-tab{left:4%;bottom:3%;font-size:clamp(8px,1.9cqw,13px)}
- #boutique-stage>img.voidwalker-wall-plaque{left:43%;top:34.3%;width:12%;height:9.2%}
- #boutique-stage>img.boutique-telescope{left:20.1%;top:39.2%;width:5.5%;height:9.5%}
- #boutique-stage>img.boutique-cat{left:26.5%;top:49%;width:7.2%;height:4.8%}
- #boutique-stage .point.crystals{left:60.5%;top:28.8%;width:12%;height:4.6%}
- #boutique-stage .point.art{left:63.8%;top:34.6%;width:6.5%;height:9%}
- #boutique-stage .boutique-exterior-window{clip-path:url(#boutique-window-portrait-clip)}
- #boutique-stage #boutique-exterior,#boutique-stage .proof-boutique-window{left:24.4%;top:30.7%;width:13.2%;height:12.1%}
- #boutique-stage .proof-boutique-window span{top:1%;font-size:8px;padding:4px 6px}
- #boutique-stage .proof-boutique-threshold{left:77%;top:26%;width:22%;height:34%}
- #boutique-stage .proof-boutique-return{left:18.7%;top:45.5%;width:17.5%;height:13%}
- #boutique-stage .proof-boutique-threshold span,#boutique-stage .proof-boutique-return span{font-size:clamp(8px,2.1cqw,13px);padding:4px 5px}
- #boutique-stage[data-room-width] .boutique-shop-invitation{left:2.5%;top:61.3%;width:16.9%;height:3%;transform:skewY(-24deg);font-size:clamp(9px,2.45cqw,17px);letter-spacing:0}
- #boutique-stage .boutique-shop-invitation:after{content:'';position:absolute;inset:-14px 0;min-height:44px}
-}
