@@ -6,16 +6,18 @@ let pan=Number(sessionStorage.getItem('academy-boutique-pan')??.5),full=innerWid
 // A small phone-camera pullback, not the narrow whole-image overview.
 let camera=.9;try{const saved=Number(sessionStorage.getItem('academy-boutique-camera'));if(saved>=.82&&saved<=1)camera=saved;}catch{}
 const cameraButtons=[];
-const cameraEdges=['top','bottom'].map(side=>{const edge=document.createElement('div');edge.className='boutique-edge-fill boutique-edge-'+side;edge.setAttribute('aria-hidden','true');edge.hidden=true;stage.prepend(edge);return edge;});
+const cameraBackdrop=document.createElement('div');cameraBackdrop.className='boutique-camera-backdrop';cameraBackdrop.setAttribute('aria-hidden','true');cameraBackdrop.hidden=true;scene.prepend(cameraBackdrop);
 function layout(){
  try{sessionStorage.setItem('academy-boutique-pan',String(pan));sessionStorage.setItem('academy-boutique-camera',String(camera));}catch{}
  const w=innerWidth,h=innerHeight,ratio=1976/796,phone=w<1024,scale=phone?camera:1;
  stage.dataset.roomWidth='1976';stage.dataset.roomHeight='796';stage.dataset.portrait='false';stage.dataset.camera=String(scale);
  sw=full?Math.min(w,h*ratio):Math.max(w,h*ratio*scale);const sh=sw/ratio,gap=Math.max(0,(h-sh)/2);
  stage.style.width=sw+'px';stage.style.height=sh+'px';stage.style.left=((w-sw)*(full?.5:pan))+'px';stage.style.top=((h-sh)/2)+'px';
- // Continue only the top/bottom edge pixels behind the small camera margin.
- // The main artwork and every hotspot keep their original aspect ratio.
- cameraEdges.forEach((edge,i)=>{edge.hidden=full||!phone||gap<.01;edge.style.backgroundSize=sw+'px '+sh+'px';edge.style.backgroundPosition=i?'left bottom':'left top';edge.style.top=(i?sh-1:-gap)+'px';edge.style.transform='scaleY('+(gap+1)+')';});
+ // A softly defocused copy of the same room fills only the small outer margin.
+ // Main artwork and hotspots retain the original aspect ratio, with no edge stretching.
+ const pulledBack=!full&&phone&&gap>=.01;cameraBackdrop.hidden=!pulledBack;stage.dataset.cameraPullback=String(pulledBack);
+ const bw=Math.max(w+32,(h+32)*ratio),bh=bw/ratio;
+ Object.assign(cameraBackdrop.style,{width:(w+32)+'px',height:(h+32)+'px',backgroundSize:bw+'px '+bh+'px',backgroundPosition:((w+32-bw)*pan)+'px '+((h+32-bh)/2)+'px'});
  cameraButtons.forEach((button,i)=>{button.disabled=!phone||(i===0?camera<=.82001:camera>=.99999);});
 }
 function adjustCamera(delta){

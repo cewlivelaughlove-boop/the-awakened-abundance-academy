@@ -20,8 +20,10 @@
 #boutique-stage>picture.boutique-room-art>img{display:block;width:100%;height:100%;object-fit:fill;pointer-events:none;-webkit-user-drag:none}
 #boutique-stage .proof-boutique-window{left:25.7%;top:12.8%;width:12.3%;height:31.5%}
 
-/* Decorative room-edge continuation keeps a modest pullback full-height. */
-#boutique-stage .boutique-edge-fill{position:absolute;left:0;width:100%;height:1px;z-index:0;pointer-events:none;transform-origin:0 0;background-image:url('./optimized/boutique-right-doorway-black-floor-v2.webp');background-repeat:no-repeat}
-#boutique-stage .boutique-edge-fill[hidden]{display:none}
+/* A softly defocused room backdrop avoids empty bars without stretching edges. */
+#boutique-scene>.boutique-camera-backdrop{position:absolute;left:-16px;top:-16px;z-index:0;pointer-events:none;background-image:url('./optimized/boutique-right-doorway-black-floor-v2.webp');background-repeat:no-repeat;filter:blur(10px) brightness(.82)}
+#boutique-scene>.boutique-camera-backdrop[hidden]{display:none}
+#boutique-stage{z-index:1}
+#boutique-stage[data-camera-pullback="true"]{-webkit-mask-image:linear-gradient(to bottom,transparent,#000 12px,#000 calc(100% - 12px),transparent);mask-image:linear-gradient(to bottom,transparent,#000 12px,#000 calc(100% - 12px),transparent)}
 #academy-site-menu .boutique-camera-controls{display:grid;grid-template-columns:1fr 1fr;gap:7px;width:100%}
 #academy-site-menu .boutique-camera-controls button{min-width:0}
