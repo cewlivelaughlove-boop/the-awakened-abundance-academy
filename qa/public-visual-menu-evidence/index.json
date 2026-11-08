@@ -330,7 +330,7 @@
       "consentUnchecked": true
     }
   ],
-  "pixelInspection": "Pending actual JPEG inspection",
+  "pixelInspection": "PASS: inspected all four actual public JPEGs; six thumbnails visibly clipped inside rounded 40x40 frames, equal 58px cards, no spills or clipping defects.",
   "limitations": [
     "Chromium phone emulation; not a physical iPhone",
     "Focused four-page verification only"
