@@ -2,7 +2,7 @@
  const reduced=matchMedia('(prefers-reduced-motion:reduce)');
  document.body.classList.add('celestial-reading');
  const bg=document.createElement('div');bg.className='reading-universe';bg.setAttribute('aria-hidden','true');
- const video=document.createElement('video');video.muted=true;video.defaultMuted=true;video.playsInline=true;video.loop=true;video.preload='none';video.poster='./assets/planet-journey-poster-v4.png';bg.append(video);document.body.prepend(bg);
+ const video=document.createElement('video');video.muted=true;video.defaultMuted=true;video.playsInline=true;video.loop=true;video.preload='none';video.poster='./assets/optimized/planet-journey-poster-v4-lossless-v1.webp';bg.append(video);document.body.prepend(bg);
  const rail=document.createElement('div');rail.className='reading-motion';const button=document.createElement('button');button.type='button';button.textContent='Pause galaxy';rail.append(button);
  const header=document.querySelector('.site-header');if(header)header.after(rail);else document.body.append(rail);
  let paused=reduced.matches,loaded=false,loading=null,token=0;

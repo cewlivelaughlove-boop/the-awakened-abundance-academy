@@ -1,6 +1,9 @@
+import { repairSanctuaryPlayback } from "./sanctuary-playback";
+import { optimizeStandaloneAssetUrls } from "./performance-assets";
+
 /** Serve the approved standalone documents without React/CSS interference. */
 export function approvedDocument(html: string) {
-  return new Response(html, {
+  return new Response(repairSanctuaryPlayback(optimizeStandaloneAssetUrls(html)), {
     headers: { "Content-Type": "text/html; charset=utf-8" },
   });
 }

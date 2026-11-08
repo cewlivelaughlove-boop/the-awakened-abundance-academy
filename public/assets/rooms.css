@@ -54,7 +54,7 @@ footer{pointer-events:none}
 .bottom-bar,body>footer{display:none!important}
 @media(max-width:700px){.room-info-dock{bottom:12px;width:calc(100vw - 24px);padding:8px 12px;gap:8px;font-size:11px;min-height:64px}}
 /* V17: a small celestial atlas, not a tall list of words. */
-.room-info-dock .compact-room-menu[open]{width:min(340px,calc(100vw - 32px));max-height:min(620px,calc(100dvh - 120px));padding:8px 12px 12px;border-color:#b19bc46b;background:linear-gradient(135deg,#110d1cef,#191022eb),url('./planet-journey-poster-v4.png') center/cover;box-shadow:0 18px 65px #000a,inset 0 1px 0 #d5b7e625}
+.room-info-dock .compact-room-menu[open]{width:min(340px,calc(100vw - 32px));max-height:min(620px,calc(100dvh - 120px));padding:8px 12px 12px;border-color:#b19bc46b;background:linear-gradient(135deg,#110d1cef,#191022eb),url('./optimized/planet-journey-poster-v4-lossless-v1.webp') center/cover;box-shadow:0 18px 65px #000a,inset 0 1px 0 #d5b7e625}
 .room-info-dock .compact-room-menu[open]>summary{position:sticky;top:-8px;z-index:2;background:#17101fec;padding:8px 4px;min-height:44px;border-bottom:1px solid #b998ca33}
 .room-info-dock .compact-room-menu nav.room-map{display:flex;flex-direction:column;gap:2px;padding:4px 0}
 .room-info-dock .compact-room-menu .room-portal{display:grid;grid-template-columns:58px 1fr 16px;gap:12px;align-items:center;min-height:68px;padding:5px 4px;border-radius:8px;background:transparent}
@@ -63,7 +63,7 @@ footer{pointer-events:none}
 .room-info-dock .compact-room-menu .room-portal span{display:block;color:#e9ddf1}.room-portal strong{display:block;font-size:13px;font-weight:500}.room-portal small{display:block;font-size:10px;color:#b6a5c4;margin-top:3px}.room-portal svg{width:16px;fill:none;stroke:#c8b4d5;stroke-width:1.5}
 .room-control-rail{display:grid;grid-template-columns:1fr 1fr;gap:2px;border-block:1px solid #b998ca29;padding:5px 0}.compact-room-menu .room-control-rail button{font-size:10px;text-align:center;padding:7px 4px;min-height:44px;border-radius:6px;line-height:1.4}.room-object-options>summary,.compact-room-menu #cosmic-guide-transcript summary{font-size:11px;color:#c6b4d4;padding:5px 4px;min-height:44px}.room-object-options nav{padding-left:6px}.room-menu-content{gap:2px;padding-bottom:0}.room-object-options .sanctuary-nav{display:grid;grid-template-columns:1fr 1fr}.room-object-options button{font-size:10px!important}.room-portal[aria-current="page"] strong:after{content:' · here';font-size:9px;color:#a892bc}
 /* Visible cosmic depth with clear foreground type. */
-.room-info-dock .compact-room-menu[open]{background:linear-gradient(125deg,#10091ba8,#19102294),url('./planet-journey-poster-v4.png') 55% center/cover;text-shadow:0 1px 4px #000,0 0 10px #0008}
+.room-info-dock .compact-room-menu[open]{background:linear-gradient(125deg,#10091ba8,#19102294),url('./optimized/planet-journey-poster-v4-lossless-v1.webp') 55% center/cover;text-shadow:0 1px 4px #000,0 0 10px #0008}
 .room-info-dock .compact-room-menu .room-portal{grid-template-columns:80px 1fr 16px;min-height:86px;gap:12px;padding:3px 4px}.room-portal img{width:80px;height:76px}.room-control-rail{grid-template-columns:repeat(3,1fr);padding:3px 0}.room-control-rail button{font-size:9px!important}.room-portal small{font-size:10px}.room-menu-content{gap:0}.room-info-dock .compact-room-menu[open]>summary{background:#17101fce}
 /* V17 portrait immersion: same undistorted room, all objects reachable by pan. */
 .room-control-rail #reset-view,.room-control-rail #wide-view{display:block!important}

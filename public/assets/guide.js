@@ -1,7 +1,7 @@
 /* User-initiated recorded welcome. No microphone, live chat, or autoplay. */
 (() => {
   if (document.getElementById('cosmic-guide-launch')) return;
-  const asset = document.currentScript?.dataset.asset || './assets/cosmic-guide-organic-v5.png';
+  const asset = document.currentScript?.dataset.asset || './assets/optimized/cosmic-guide-organic-v5-lossless-v1.webp';
   const stage = document.getElementById('stage');
   if (!stage) return;
   const welcome = 'Welcome to Voidwalker Academy. Take a gentle breath. You are welcome here, just as you are. Explore the sanctuary at your own pace. Discover Beyond the Script at the book display, or step next door into The Voidwalker Boutique. Let curiosity guide you. There is no need to rush. When you are ready, choose a doorway and begin.';

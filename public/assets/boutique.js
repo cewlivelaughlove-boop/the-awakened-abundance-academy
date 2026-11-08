@@ -24,10 +24,10 @@ scene.addEventListener('pointerdown',e=>{if(dialog.open||e.button!==0||!e.isPrim
  const video=document.querySelector('#boutique-exterior'),button=document.querySelector('#boutique-motion'),status=document.querySelector('#room-status');
  if(!video||!button)return;
  const reduced=matchMedia('(prefers-reduced-motion: reduce)');
- let paused=reduced.matches||window.academyJourney?.paused===true,attempt=0;
+ let paused=reduced.matches||window.academyJourney?.paused===true,attempt=0,autoplayBlocked=false;
  const restoring=()=>video.dataset.mediaState==='loading'||video.dataset.journeyRestore==='loading-same-video';
  function label(){button.textContent=paused?'Resume motion':'Pause motion';button.setAttribute('aria-pressed',String(paused));}
- function blocked(){paused=true;label();status.textContent='Tap Resume motion in the Room menu to start the window view.';}
+ function blocked(){paused=true;autoplayBlocked=true;video.dataset.autoplayBlocked='true';label();status.textContent='Tap Resume motion in the Room menu to start the window view.';}
  function sync(){
   const token=++attempt;label();
   if(paused||document.hidden){video.pause();return;}
@@ -37,19 +37,24 @@ scene.addEventListener('pointerdown',e=>{if(dialog.open||e.button!==0||!e.isPrim
   if(result)result.catch(error=>{
    if(token!==attempt||paused||document.hidden)return;
    // A source reload aborts the old request, not the visitor’s play intent.
-   if(error.name==='AbortError'&&restoring())return;
+   if(error.name==='AbortError')return;
    blocked();
   });
  }
  video.muted=true;video.defaultMuted=true;video.playsInline=true;
- button.addEventListener('click',()=>{paused=!paused;sync()});
+ button.addEventListener('click',()=>{autoplayBlocked=false;delete video.dataset.autoplayBlocked;paused=!paused;sync()});
+ document.addEventListener('click',event=>{
+  if(event.target.closest?.('#boutique-motion')||!autoplayBlocked||reduced.matches||document.hidden)return;
+  autoplayBlocked=false;delete video.dataset.autoplayBlocked;paused=false;sync();
+ });
+ video.addEventListener('canplay',sync);
  reduced.addEventListener('change',e=>{if(e.matches){paused=true;sync()}});
  document.addEventListener('visibilitychange',sync);
  video.addEventListener('academy-journey-ready',sync);
  video.addEventListener('loadeddata',sync);
  video.addEventListener('academy-journey-play-blocked',()=>{if(!video.paused||paused||document.hidden||restoring())return;blocked();});
  video.addEventListener('pause',()=>{if(!paused&&!document.hidden&&!restoring()&&video.readyState>=2)blocked();});
- video.addEventListener('playing',()=>{if(paused||document.hidden){video.pause();return;}label();status.textContent='The window view is moving. Choose a collection to explore.';});
- video.addEventListener('error',()=>{paused=true;sync();status.textContent='The still window view is available. Video could not load.'});
+ video.addEventListener('playing',()=>{if(paused||document.hidden){video.pause();return;}autoplayBlocked=false;delete video.dataset.autoplayBlocked;label();status.textContent='The window view is moving. Choose a collection to explore.';});
+ video.addEventListener('error',()=>{autoplayBlocked=false;delete video.dataset.autoplayBlocked;paused=true;sync();status.textContent='The still window view is available. Video could not load.'});
  sync();
 })();

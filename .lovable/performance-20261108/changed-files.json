@@ -1,0 +1,16 @@
+[
+  "local-tests/shop-placement.test.mjs",
+  "public/assets/apparel-coming-soon.js",
+  "public/assets/arrival.js",
+  "public/assets/celestial-reading.css",
+  "public/assets/celestial-reading.js",
+  "public/assets/guide.js",
+  "public/assets/media-loader.js",
+  "public/assets/rooms.css",
+  "public/assets/rooms.js",
+  "public/assets/telescope-journey.js",
+  "public/shop.html",
+  "public/voidwalk.html",
+  "src/lib/approved-website.ts",
+  "src/test/approved-packaging.test.ts"
+]

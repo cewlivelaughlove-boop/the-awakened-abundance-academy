@@ -3,9 +3,9 @@
 const nav=document.createElement('nav');nav.className='room-map';nav.setAttribute('aria-label','Rooms');nav.innerHTML=`<a href="./index.html" ${!boutique?'aria-current="page"':''}>Headquarters</a><span aria-hidden="true">—</span><a href="./boutique.html" ${boutique?'aria-current="page"':''}>Boutique</a><a href="./library.html">Library</a>`;const menu=document.createElement('details');menu.className='compact-room-menu';menu.innerHTML='<summary>Room menu</summary><div class="room-menu-content"></div>';document.body.append(menu);const menuContent=menu.querySelector('.room-menu-content');menuContent.append(nav);
 for(const element of document.querySelectorAll('.sanctuary-nav,.scene-controls,footer nav[aria-label="Boutique collections"]'))menuContent.append(element);
 const tools=document.querySelector('.room-tools');if(tools)for(const button of [...tools.querySelectorAll('button')])menuContent.append(button);
-const portalArt=['./assets/sanctuary-polished-v5.png','./assets/boutique-polished-hq-v2.png','./assets/beyond-the-script-public-cover.png'];
+const portalArt=['./assets/optimized/sanctuary-polished-v5-lossless-v1.webp','./assets/optimized/boutique-polished-hq-v2-lossless-v1.webp','./assets/optimized/beyond-the-script-public-cover-lossless-v1.webp'];
 const portalNotes=['Return to the sanctuary','Explore the collection','Books & new perspectives'];
-[...nav.querySelectorAll('a')].forEach((a,index)=>{const name=a.textContent;a.classList.add('room-portal');a.innerHTML=`<img src="${portalArt[index]}" alt=""><span><strong>${name}</strong><small>${portalNotes[index]}</small></span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>`;});
+[...nav.querySelectorAll('a')].forEach((a,index)=>{const name=a.textContent;a.classList.add('room-portal');a.innerHTML=`<img data-src="${portalArt[index]}" decoding="async" alt=""><span><strong>${name}</strong><small>${portalNotes[index]}</small></span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>`;});
 for(const button of menuContent.querySelectorAll('[data-open-station]')){if(button.dataset.openStation==='reflect')button.textContent='Start Here · Reflection desk';else if(button.dataset.openStation!=='resources')button.textContent+=' · Coming soon';}
 const objectOptions=document.createElement('details');objectOptions.className='room-object-options';objectOptions.innerHTML='<summary>Room objects</summary>';
 for(const group of menuContent.querySelectorAll('.sanctuary-nav,nav[aria-label="Boutique collections"]'))objectOptions.append(group);
@@ -18,7 +18,14 @@ const closeMenu=document.createElement('button');closeMenu.type='button';closeMe
 const resourceLinks=document.createElement('section');resourceLinks.className='room-resource-links';resourceLinks.setAttribute('aria-label','Resources');
 const libraryLink=nav.querySelector('a[href="./library.html"]');if(libraryLink){libraryLink.className='';libraryLink.textContent='Library · books and guides';resourceLinks.append(libraryLink)}
 resourceLinks.append(startLink);nav.after(resourceLinks);
-const chamberLink=document.createElement('a');chamberLink.href='./voidwalk.html';chamberLink.className='room-portal';chamberLink.innerHTML='<img src="./assets/voidwalk-chamber-v3.png" alt=""><span><strong>Voidwalk Chamber</strong><small>A journey through five discoveries</small></span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>';nav.append(chamberLink);
+const chamberLink=document.createElement('a');chamberLink.href='./voidwalk.html';chamberLink.className='room-portal';chamberLink.innerHTML='<img data-src="./assets/optimized/voidwalk-chamber-v3-lossless-v1.webp" decoding="async" alt=""><span><strong>Voidwalk Chamber</strong><small>A journey through five discoveries</small></span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>';nav.append(chamberLink);
+// No hidden room artwork or removed Library cover competes with the visible scene.
+menu.addEventListener('toggle',()=>{
+ if(!menu.open)return;
+ for(const image of menu.querySelectorAll('img[data-src]')){
+  image.src=image.dataset.src;image.removeAttribute('data-src');
+ }
+});
 const displayOptions=document.createElement('details');displayOptions.className='room-display-options';displayOptions.innerHTML='<summary>Display & room controls</summary>';displayOptions.append(rail,objectOptions);menuContent.append(displayOptions);
 const polish=document.createElement('link');polish.rel='stylesheet';polish.href='./assets/room-menu-polish.css';document.head.append(polish);
 // Restart deliberately clears only this experience's per-tab progress.
@@ -45,7 +52,7 @@ door.addEventListener('pointermove',e=>{if(!d||e.pointerId!==d.id)return;const d
 door.addEventListener('pointerup',e=>{if(!d)return;const dx=(e.clientX-d.x)*(boutique?1:-1),dy=Math.abs(e.clientY-d.y);if(Math.abs(e.clientX-d.x)>8||dy>8)suppress=performance.now()+400;const go=dx>90&&dy<65;reset();if(go)window.academyNavigate(dest)});door.addEventListener('pointercancel',reset);door.addEventListener('click',e=>{if(performance.now()<suppress)e.preventDefault()});
 for(const point of document.querySelectorAll('.point'))for(const node of [...point.childNodes])if(node.nodeType===3&&node.textContent.trim()){const label=document.createElement('span');label.className='object-label';label.textContent=node.textContent;node.replaceWith(label)}
 if(!boutique){const plaque=document.createElement('a');plaque.className='library-shelf-plaque';plaque.href='./library.html';plaque.textContent='LIBRARY';plaque.setAttribute('aria-label','Library — open the book collection');document.querySelector('#stage')?.append(plaque);}
-if(!boutique){const chart=document.createElement('img');chart.src='./assets/celestial-wall-chart.svg';chart.alt='';chart.className='celestial-wall-chart';document.querySelector('#stage')?.append(chart);const telescope=document.createElement('button');telescope.className='sanctuary-telescope';telescope.type='button';telescope.setAttribute('aria-label','Telescope — look closer at the galaxy');telescope.innerHTML='<img src="./assets/observatory-slender-refractor-v4.png" alt="" draggable="false">';document.querySelector('#stage')?.append(telescope);telescope.addEventListener('click',()=>{window.dispatchEvent(new CustomEvent('academy-telescope-view'));});}
+if(!boutique){const chart=document.createElement('img');chart.src='./assets/celestial-wall-chart.svg';chart.alt='';chart.className='celestial-wall-chart';document.querySelector('#stage')?.append(chart);const telescope=document.createElement('button');telescope.className='sanctuary-telescope';telescope.type='button';telescope.setAttribute('aria-label','Telescope — look closer at the galaxy');telescope.innerHTML='<img src="./assets/optimized/observatory-slender-refractor-v4-lossless-v1.webp" alt="" draggable="false">';document.querySelector('#stage')?.append(telescope);telescope.addEventListener('click',()=>{window.dispatchEvent(new CustomEvent('academy-telescope-view'));});}
 const note=document.querySelector('#room-status')||document.querySelector('#scene-status');
 const dock=document.createElement('section');dock.className='room-info-dock';dock.setAttribute('aria-label','Room information and controls');
 const info=document.createElement('div');info.className='room-info-copy';
@@ -67,6 +74,6 @@ if(!boutique){
 })();
 
 // Focused additions keep approved source HTML and room artwork unchanged.
-if(document.querySelector('#stage'))import('./telescope-journey.js').then(({mountGalaxyJourney})=>mountGalaxyJourney());
-if(document.querySelector('#boutique-stage'))import('./apparel-coming-soon.js').then(({mountApparelComingSoon})=>mountApparelComingSoon());
+if(document.querySelector('#stage'))import('./telescope-journey.js?v=performance-20261108-1').then(({mountGalaxyJourney})=>mountGalaxyJourney());
+if(document.querySelector('#boutique-stage'))import('./apparel-coming-soon.js?v=engraving-20261108-1').then(({mountApparelComingSoon})=>mountApparelComingSoon());
 {const style=document.createElement('link');style.rel='stylesheet';style.href='./assets/interaction-polish.css';document.head.append(style);}
