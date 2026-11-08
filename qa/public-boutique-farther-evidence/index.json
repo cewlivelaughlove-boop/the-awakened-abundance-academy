@@ -1,0 +1,318 @@
+{
+  "approved_release": "1855b509d81a8aa3af744ae72cf6aa6d47ec1a4e",
+  "checks": {
+    "fresh_default": {
+      "camera": 0.85,
+      "width": 1388.40625,
+      "height": 559.296875,
+      "left": -497.703125,
+      "top": 98.6875,
+      "bottom": 657.984375,
+      "right": 890.703125,
+      "ratio": 2.482413744936444,
+      "originalRatio": 2.4824120603015074,
+      "fullWidth": true,
+      "overflow": false
+    },
+    "legacy_94_default": {
+      "camera": 0.85,
+      "width": 1388.40625,
+      "height": 559.296875,
+      "left": -497.703125,
+      "top": 98.6875,
+      "bottom": 657.984375,
+      "right": 890.703125,
+      "ratio": 2.482413744936444,
+      "originalRatio": 2.4824120603015074,
+      "fullWidth": true,
+      "overflow": false
+    },
+    "drag_pan": {
+      "left": {
+        "camera": 0.85,
+        "width": 1388.40625,
+        "height": 559.296875,
+        "left": 0,
+        "top": 98.6875,
+        "bottom": 657.984375,
+        "right": 1388.40625,
+        "ratio": 2.482413744936444,
+        "originalRatio": 2.4824120603015074,
+        "fullWidth": true,
+        "overflow": false
+      },
+      "right": {
+        "camera": 0.85,
+        "width": 1388.40625,
+        "height": 559.296875,
+        "left": -995.40625,
+        "top": 98.6875,
+        "bottom": 657.984375,
+        "right": 393,
+        "ratio": 2.482413744936444,
+        "originalRatio": 2.4824120603015074,
+        "fullWidth": true,
+        "overflow": false
+      }
+    },
+    "camera_steps": [
+      0.82,
+      0.79,
+      0.76,
+      0.79,
+      0.82,
+      0.85,
+      0.88,
+      0.91,
+      0.94,
+      0.97,
+      1
+    ],
+    "bounds_disabled": true,
+    "moving_window": {
+      "start": 11.69021,
+      "end": 13.706381,
+      "advances": true
+    },
+    "dark_room_url": "https://awakened-abundance-academy.lovable.app/voidwalk.html",
+    "return_url": "https://awakened-abundance-academy.lovable.app/boutique.html",
+    "signup": {
+      "publicURL": "https://awakened-abundance-academy.lovable.app/join.html",
+      "consent_checked": [
+        false
+      ],
+      "submitted": false
+    },
+    "library": {
+      "sentence": "Free guide coming soon \u00b7 Email signup is open",
+      "bounds": {
+        "x": 48,
+        "y": 337.140625,
+        "width": 297,
+        "height": 15.296875
+      },
+      "horizontalOverflow": false
+    },
+    "doorway_controls": {
+      "outbound": "Visible right-edge Open the doorway to Dark Room link clicked",
+      "return": "Visible left-edge Open the doorway to Boutique link clicked"
+    },
+    "requests": "All non-GET requests blocked; no form submission attempted; no private records accessed."
+  },
+  "screenshots": [
+    {
+      "filename": "center-85.jpg",
+      "sha256": "b82cc1f0e37e049338bc59de47fcee65e41d127dc5318a6d5b89b64e7ed040e0",
+      "publicURL": "https://awakened-abundance-academy.lovable.app/boutique.html",
+      "dimensions": [
+        393,
+        658
+      ],
+      "geometry": {
+        "camera": 0.85,
+        "width": 1388.40625,
+        "height": 559.296875,
+        "left": -497.703125,
+        "top": 98.6875,
+        "bottom": 657.984375,
+        "right": 890.703125,
+        "ratio": 2.482413744936444,
+        "originalRatio": 2.4824120603015074,
+        "fullWidth": true,
+        "overflow": false
+      },
+      "observations": "Clean full-width immersive room; approximately 98.7px dark ceiling margin (15%). Original proportions preserved; rug reaches screen bottom; no duplicate objects, blurred/stretched fill, or lower gap.",
+      "camera": 0.85
+    },
+    {
+      "filename": "apparel-left-85.jpg",
+      "sha256": "bfa990ea02457d7a3e934d18b2126fa2632b591fdebf3b008fcb5e84f424760f",
+      "publicURL": "https://awakened-abundance-academy.lovable.app/boutique.html",
+      "dimensions": [
+        393,
+        658
+      ],
+      "geometry": {
+        "camera": 0.85,
+        "width": 1388.40625,
+        "height": 559.296875,
+        "left": 0,
+        "top": 98.6875,
+        "bottom": 657.984375,
+        "right": 1388.40625,
+        "ratio": 2.482413744936444,
+        "originalRatio": 2.4824120603015074,
+        "fullWidth": true,
+        "overflow": false
+      },
+      "observations": "Actual drag reaches left bound. Apparel and floor are undistorted; clean top margin; artwork reaches bottom.",
+      "camera": 0.85
+    },
+    {
+      "filename": "doorway-right-85.jpg",
+      "sha256": "f1a78361df05462d0c6941527a0512fd1f9b1d22d5bc11480bc162282f481476",
+      "publicURL": "https://awakened-abundance-academy.lovable.app/boutique.html",
+      "dimensions": [
+        393,
+        658
+      ],
+      "geometry": {
+        "camera": 0.85,
+        "width": 1388.40625,
+        "height": 559.296875,
+        "left": -995.40625,
+        "top": 98.6875,
+        "bottom": 657.984375,
+        "right": 393,
+        "ratio": 2.482413744936444,
+        "originalRatio": 2.4824120603015074,
+        "fullWidth": true,
+        "overflow": false
+      },
+      "observations": "Actual drag reaches right bound. Purple architectural doorway visible; original proportions and bottom alignment preserved.",
+      "camera": 0.85
+    },
+    {
+      "filename": "center-minimum-76.jpg",
+      "sha256": "5b70aad175e004fb7c88a95f7026c73a4fc380d8b29d59eb04a74acb3281b1b7",
+      "publicURL": "https://awakened-abundance-academy.lovable.app/boutique.html",
+      "dimensions": [
+        393,
+        658
+      ],
+      "geometry": {
+        "camera": 0.76,
+        "width": 1241.390625,
+        "height": 500.078125,
+        "left": -424.203125,
+        "top": 157.90625,
+        "bottom": 657.984375,
+        "right": 817.1875,
+        "ratio": 2.4823933760349943,
+        "originalRatio": 2.4824120603015074,
+        "fullWidth": true,
+        "overflow": false
+      },
+      "observations": "Actual Move back taps reach .76. Room remains full-width, about 500.1px high; clean but prominent 157.9px dark ceiling margin (24%). No lower gap or artificial fill; this margin remains the visual concern.",
+      "camera": 0.76
+    },
+    {
+      "filename": "camera-controls-open-76.jpg",
+      "sha256": "47152fae9b481c5f0591c411422c67069e34dafd9ce4d9f6b9a537dfb1b43bd6",
+      "publicURL": "https://awakened-abundance-academy.lovable.app/boutique.html",
+      "dimensions": [
+        393,
+        658
+      ],
+      "geometry": {
+        "camera": 0.76,
+        "width": 1241.390625,
+        "height": 500.078125,
+        "left": -424.203125,
+        "top": 157.90625,
+        "bottom": 657.984375,
+        "right": 817.1875,
+        "ratio": 2.4823933760349943,
+        "originalRatio": 2.4824120603015074,
+        "fullWidth": true,
+        "overflow": false
+      },
+      "observations": "Display & room controls expanded and scrolled into view. Move back disabled at .76; Move closer available. No horizontal clipping of camera buttons.",
+      "camera": 0.76
+    },
+    {
+      "filename": "library-corrected-sentence.jpg",
+      "sha256": "dc2518cae082fcd4b2162e199abd21e8b94f8e3d306265e511aeb2f03381bef9",
+      "publicURL": "https://awakened-abundance-academy.lovable.app/library.html",
+      "dimensions": [
+        393,
+        658
+      ],
+      "geometry": null,
+      "observations": "Correct sentence fully visible on one line within its panel, with no clipping or overlap. Small subdued text matches the current public design; page is scrolled to the sentence.",
+      "camera": null
+    }
+  ],
+  "blocked_non_GET_requests": [
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    }
+  ],
+  "limitations": [
+    "Fresh Chromium phone emulation at 393\u00d7658, not a physical iPhone.",
+    "Public pages only; no submissions or private records accessed.",
+    "Non-GET requests blocked.",
+    "Focused camera, doorway, signup link and Library checks only."
+  ],
+  "visual_verdict": "PASS for the requested public release checks. Clean, proportionate, full-width framing at .85; .76 retains a prominent but clean dark ceiling margin. No duplicate/blurred/stretched artwork, bottom gaps or clipping of the corrected Library sentence found.",
+  "evidence_directory": "qa/public-boutique-farther-evidence"
+}
