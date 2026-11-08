@@ -22,14 +22,14 @@ export function mountAbundanceDeck() {
   menuLauncher.className = 'abundance-menu-launcher';
   menuLauncher.textContent = 'Abundance cards';
   menuLauncher.setAttribute('aria-haspopup', 'dialog');
-  menu.querySelector('.start-practice-link')?.after(menuLauncher);
+  (menu.querySelector('.room-resource-links') || menu).append(menuLauncher);
   if (!menuLauncher.isConnected) menu.append(menuLauncher);
 
   const dialog = document.createElement('dialog');
   dialog.className = 'abundance-dialog';
   dialog.setAttribute('aria-labelledby', 'abundance-title');
   dialog.setAttribute('aria-describedby', 'abundance-caption');
-  dialog.innerHTML = `<div class="abundance-heading"><div><h2 id="abundance-title">Abundance Cards</h2><p class="abundance-caption" id="abundance-caption">Shuffle the deck. Choose a card.</p></div><button class="abundance-close" type="button" aria-label="Close Abundance Cards"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div><div class="abundance-hand" role="group" aria-label="Five face-down cards"></div><section class="abundance-reflection" aria-labelledby="abundance-card-name" hidden><h3 id="abundance-card-name" tabindex="-1"></h3><p class="abundance-message"></p><p class="abundance-action-label">A small practice</p><p class="abundance-action"></p></section><div class="abundance-actions"><button type="button" class="abundance-shuffle">${shuffleIcon}Shuffle</button><button type="button" class="abundance-again" hidden>${shuffleIcon}Draw again</button></div><p class="abundance-preview-label">Sample deck · preview</p><p class="abundance-status" role="status" aria-live="polite"></p>`;
+  dialog.innerHTML = `<div class="abundance-heading"><div><h2 id="abundance-title">Abundance Cards</h2><p class="abundance-caption" id="abundance-caption">Choose a card below to reveal its illustration and meaning. No tarot experience needed.</p></div><button class="abundance-close" type="button" aria-label="Close Abundance Cards"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div><div class="abundance-hand" role="group" aria-label="Five face-down cards"></div><section class="abundance-reflection" aria-labelledby="abundance-card-name" hidden><img class="abundance-hero-card" alt=""><div class="abundance-reading"><p class="abundance-action-label">YOUR CARD · UPRIGHT</p><h3 id="abundance-card-name" tabindex="-1"></h3><p class="abundance-keywords"></p><h4>What this card means</h4><p class="abundance-meaning"></p><h4>A moment to reflect</h4><p class="abundance-message"></p><p class="abundance-action-label">A small practice</p><p class="abundance-action"></p></div></section><div class="abundance-actions"><button type="button" class="abundance-shuffle">${shuffleIcon}Shuffle</button><button type="button" class="abundance-again" hidden>${shuffleIcon}Draw again</button></div><p class="abundance-preview-label">Illustrated tarot · for reflection, not prediction. Tarot illustrations by Pamela Colman Smith, Rider–Waite–Smith deck (1909–1910). Public domain. Scans via Wikimedia Commons.</p><p class="abundance-status" role="status" aria-live="polite"></p>`;
   document.body.append(dialog);
   const hand = dialog.querySelector('.abundance-hand');
   const reflection = dialog.querySelector('.abundance-reflection');
@@ -41,7 +41,10 @@ export function mountAbundanceDeck() {
     clearTimeout(shuffleTimer);
     deck = shuffleDeck(abundanceCards);
     selected = false;
+    dialog.classList.remove('has-reading');
     reflection.hidden = true;
+    hand.hidden = false;
+    dialog.querySelector('.abundance-shuffle').hidden = false;
     again.hidden = true;
     hand.replaceChildren();
     hand.classList.remove('is-shuffling');
@@ -53,21 +56,31 @@ export function mountAbundanceDeck() {
       button.setAttribute('aria-pressed', 'false');
       button.innerHTML = `${back}<span class="abundance-card-front" aria-hidden="true">${ornament}<span></span></span>`;
       button.querySelector('.abundance-card-front>span').textContent = card.name;
+      if(card.cardImage){const illustration=document.createElement('img');illustration.src=card.cardImage;illustration.alt='';illustration.loading='lazy';button.querySelector('.abundance-card-front').prepend(illustration);}
+
       // Hidden backs do not expose the draw to assistive technologies or the visible UI.
       button.addEventListener('click', () => {
         if (selected) return;
         clearTimeout(shuffleTimer);
         hand.classList.remove('is-shuffling');
         selected = true;
+        dialog.classList.add('has-reading');
         for (const sibling of hand.children) sibling.disabled = true;
         button.setAttribute('aria-pressed', 'true');
         button.setAttribute('aria-label', card.name);
         dialog.querySelector('#abundance-card-name').textContent = card.name;
         dialog.querySelector('.abundance-message').textContent = card.message;
         dialog.querySelector('.abundance-action').textContent = card.action;
+        const hero=dialog.querySelector('.abundance-hero-card');
+        hero.src=card.cardImage; hero.alt=card.name+' tarot illustration';
+        dialog.querySelector('.abundance-meaning').textContent=card.meaning || card.message;
+        dialog.querySelector('.abundance-keywords').textContent=(card.keywords || []).join(' · ');
+        hand.hidden=true;
+        dialog.querySelector('.abundance-shuffle').hidden=true;
         reflection.hidden = false;
         again.hidden = false;
-        status.textContent = `${card.name} revealed.`;
+        status.textContent = `${card.name} revealed. Its meaning is below the illustration.`;
+        dialog.scrollTop=0;
         dialog.querySelector('#abundance-card-name').focus({ preventScroll: true });
       }, { once: true });
       hand.append(button);

@@ -1,0 +1,14 @@
+/* Quiet navigation: room destinations first, resources second, controls on request. */
+.room-info-dock .compact-room-menu[open]{background:#19151fee!important;backdrop-filter:blur(16px);background-image:none!important}
+.room-info-dock .compact-room-menu[open]:before,.room-info-dock .compact-room-menu[open]:after{display:none!important}
+.compact-room-menu .room-menu-content{gap:8px!important;padding:8px 14px 16px!important}
+.compact-room-menu .room-map{gap:8px!important}
+.room-info-dock .compact-room-menu .room-portal{grid-template-columns:58px 1fr 16px!important;min-height:70px!important;gap:12px!important;padding:6px!important;border-bottom:1px solid #89738d30}
+.room-info-dock .compact-room-menu .room-portal img{width:58px!important;height:58px!important;border-radius:9px!important}
+.room-info-dock .compact-room-menu .room-portal strong{font-size:16px!important}.room-info-dock .compact-room-menu .room-portal small{font-size:12px!important}
+.room-resource-links{display:flex;flex-direction:column;padding:10px 0;border-top:1px solid #89738d50}
+.room-resource-links:before{content:'EXPLORE';font:11px/1.5 system-ui;letter-spacing:.12em;color:#c4adc9;margin:0 6px 6px}
+.compact-room-menu .room-resource-links>a,.compact-room-menu .room-resource-links>button{display:block!important;width:100%;padding:12px 6px!important;min-height:44px;text-align:left;border:0!important;background:none!important;color:#eee4f3;font:15px/1.4 system-ui!important;text-decoration:none}
+.room-display-options{border-top:1px solid #89738d50;padding-top:8px}.room-display-options>summary{min-height:44px;padding:12px 6px;font:14px/1.4 system-ui;color:#d6c7dc;cursor:pointer}
+.room-display-options .room-control-rail{display:grid;grid-template-columns:1fr 1fr!important;gap:8px;border:0}.room-display-options .room-control-rail button{font-size:13px!important;min-height:44px!important}
+.compact-room-menu .close-room-menu{position:static!important;padding:6px 8px!important;margin:0 0 2px auto;background:none;border:0;font-size:14px}

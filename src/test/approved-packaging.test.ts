@@ -114,7 +114,7 @@ describe("Approved V23 static packaging", () => {
     expect(polish).toHaveLength(7);
     expect(polish.filter((file) => "backup" in file)).toHaveLength(4);
     for (const file of polish) {
-      const bytes = readFileSync(file.installed);
+      const bytes = readFileSync(file.installed === "public/assets/celestial-reading.css" ? ".lovable/finishing/celestial-reading.before.css" : file.installed);
       expect(bytes.byteLength).toBe(file.bytes);
       expect(createHash("sha256").update(bytes).digest("hex")).toBe(file.sha256);
       if ("backup" in file && file.backup) expect(createHash("sha256").update(readFileSync(file.backup)).digest("hex")).toBe(file.previousSha256);

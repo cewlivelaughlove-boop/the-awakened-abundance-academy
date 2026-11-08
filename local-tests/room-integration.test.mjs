@@ -1,0 +1,14 @@
+import {readFileSync,existsSync} from 'node:fs';
+import assert from 'node:assert/strict';
+const read=p=>readFileSync(p,'utf8');
+const rooms=read('public/assets/rooms.js');
+assert.ok(rooms.includes("chamberLink.href='./voidwalk.html'"));
+assert.ok(rooms.includes("resourceLinks.append(libraryLink)"));
+assert.ok(rooms.includes("displayOptions.append(rail,objectOptions)"));
+assert.ok(!rooms.includes('mountCelestialReflectionRoom'));
+const room=read('public/voidwalk.html');
+for(const path of ['index.html','boutique.html','voidwalk.html','library.html'])assert.ok(room.includes(`href="./${path}"`));
+assert.ok(!room.includes('rooms.js'));
+for(const path of ['voidwalk.html','assets/voidwalk-chamber.js','assets/voidwalk-chamber.css','assets/voidwalk-chamber-v3.png'])assert.ok(existsSync('public/'+path));
+assert.ok(room.includes('aria-current="page"'));
+console.log('PASS: three room destinations, separate resources and display controls, third-room routes/assets, no obsolete reflection initializer.');
