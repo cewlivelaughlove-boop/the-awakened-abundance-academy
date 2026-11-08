@@ -930,5 +930,18 @@
   ],
   "blocked_non_GET_requests": [],
   "submissions": 0,
-  "pixel_inspection": "Pending visual inspection of four actual JPEGs"
+  "pixel_inspection": "PASS: inspected all four actual 393x658 JPEGs after arrival/transition completion; all six thumbnails visibly contained within rounded 40x40 frames, no image spill or uneven cards.",
+  "saved_source_commit": "be60136810bd5bd30af4c23156173ad0a9853c71",
+  "tests": {
+    "room": 83,
+    "vitest": 84,
+    "node": 14,
+    "build": "build OK 2026-11-08T19:56:09Z",
+    "types": "Not rerun; prior pass, no TypeScript changes"
+  },
+  "file_hashes": {
+    "public/assets/site-menu.css": "fd64d44ce1218757e03ad166ceb06d67a8886831533b479e168500b6781fc326",
+    "qa/room-tests/site-menu.test.mjs": "aa850a5ab61cd3980b1a84fc9ae1eff2e2b148ff546c158180e322f078ceb95a"
+  },
+  "unrelated_tracked_files_unchanged": 532
 }
