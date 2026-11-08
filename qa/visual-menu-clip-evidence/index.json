@@ -78,8 +78,8 @@
       "clientHeight": 568,
       "screenshot": {
         "file": "index-393x658-menu.jpg.b64.txt",
-        "jpeg_sha256": "8f521d595b6b5360e8bb56c326f0daf17fe91c2a423d5a19bf63ea98276f645b",
-        "base64_sha256": "be61c995ee5e320ec88910bb797104fd0f4d182e1768c78d08e5f7e4edd3e3b4"
+        "jpeg_sha256": "d3df765944a136443d124a09aff01c5bed162df148f18c9ee462bf7d072794d6",
+        "base64_sha256": "a7836e1d676dba0891e9e02b27a2bba92596b5917d213531d663cc71023ba362"
       },
       "lastCardReachable": true,
       "emailSignupDirect": true
@@ -309,8 +309,8 @@
       "clientHeight": 568,
       "screenshot": {
         "file": "library-393x658-menu.jpg.b64.txt",
-        "jpeg_sha256": "334ae6fae2600998371cc73357273773164fe8a0792453aed37e6ac0942daf7b",
-        "base64_sha256": "cfd1e999c54b3469b9d87cf038abc2414fedf8bcb93885e66b2550d251f1da6a"
+        "jpeg_sha256": "bdd1e22303134e2f8584acb3c709b39260f1c14545fa3828f5b2c740615873e7",
+        "base64_sha256": "ffc0a29a560bf4fd49ad79841f018598d7a26a16c206d8f8b23dfdc306eab353"
       },
       "lastCardReachable": true
     },
@@ -619,8 +619,8 @@
       "clientHeight": 519,
       "screenshot": {
         "file": "join-393x658-menu.jpg.b64.txt",
-        "jpeg_sha256": "0e424e95ab0230d8e75a6420ab9e087888a54c4cd6e1c1136a1a06ab813b8a58",
-        "base64_sha256": "84662133bc9205629168b1934239f5c01a9a7d5115865a2b2ac506eb30fa7cc5"
+        "jpeg_sha256": "7dac14bfd07ac4f5ecc36fcf9b90b4b49dce56adce97d4d2d2e52940283da2f3",
+        "base64_sha256": "6bb351796fb6c7448a39ff583e4d99134c9fbc4c34249cdc100ef7ae6c803e9e"
       },
       "lastCardReachable": true,
       "consentUnchecked": true
