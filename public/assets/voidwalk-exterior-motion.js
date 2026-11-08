@@ -60,9 +60,9 @@ export function mountVoidwalkExteriorMotion(root=document){
  if(typeof CSS!=='undefined'&&!CSS.supports('mask-image',mask)&&!CSS.supports('-webkit-mask-image',mask))return false;
  art.after(video);
  const reduce=matchMedia('(prefers-reduced-motion: reduce)');
- let destroyed=false,visible=true,loading=false,playPending=false,pageHidden=false,failed=false,maskReady=false,maskBuilt=false;
+ let destroyed=false,visible=true,loading=false,playPending=false,pageHidden=false,failed=false,maskReady=false,maskBuilt=false,manualMotion=false;
  function state(value){if(video.dataset.motionState!==value)video.dataset.motionState=value;}
- function allowed(){return maskReady&&!destroyed&&!failed&&!pageHidden&&visible&&!document.hidden&&!room.classList.contains('paused')&&!reduce.matches;}
+ function allowed(){return maskReady&&!destroyed&&!failed&&!pageHidden&&visible&&!document.hidden&&!room.classList.contains('paused')&&(!reduce.matches||manualMotion);}
  function stop(){if(!video.paused)video.pause();state(reduce.matches?'reduced':'paused');}
  async function play(){
   if(playPending||!allowed()||!video.src)return;
@@ -96,14 +96,19 @@ export function mountVoidwalkExteriorMotion(root=document){
  video.addEventListener('error',onError);
  const observer=new MutationObserver(sync);observer.observe(room,{attributes:true,attributeFilter:['class']});
  const intersection=typeof IntersectionObserver==='function'?new IntersectionObserver(entries=>{const next=entries[0]?.isIntersecting!==false;if(next!==visible){visible=next;sync();}}):null;intersection?.observe(plane);
- document.addEventListener('visibilitychange',sync);reduce.addEventListener('change',sync);
+ // Reduced motion is the default, not a prohibition on an explicit Play choice.
+ const motionControl=root.querySelector('#motion');
+ const onMotionControl=()=>queueMicrotask(()=>{if(destroyed)return;manualMotion=!room.classList.contains('paused');sync();});
+ const onPreferenceChange=()=>{manualMotion=false;sync();};
+ motionControl?.addEventListener('click',onMotionControl);
+ document.addEventListener('visibilitychange',sync);reduce.addEventListener('change',onPreferenceChange);
  // On phones that reject muted autoplay, the next real room gesture can
  // start the existing film. Respect explicit pause and reduced-motion.
  const retryFromGesture=()=>{if(video.dataset.motionState==='blocked'&&allowed())void play();};
  document.addEventListener('pointerup',retryFromGesture,{passive:true});
  document.addEventListener('keydown',retryFromGesture);
  const onPageShow=()=>{pageHidden=false;sync();};
- const onPageHide=e=>{pageHidden=true;stop();if(!e.persisted){destroyed=true;art.removeEventListener('load',prepareMask);observer.disconnect();intersection?.disconnect();document.removeEventListener('visibilitychange',sync);reduce.removeEventListener('change',sync);document.removeEventListener('pointerup',retryFromGesture);document.removeEventListener('keydown',retryFromGesture);window.removeEventListener('pageshow',onPageShow);window.removeEventListener('pagehide',onPageHide);video.removeEventListener('error',onError);video.removeAttribute('src');}};
+ const onPageHide=e=>{pageHidden=true;stop();if(!e.persisted){destroyed=true;art.removeEventListener('load',prepareMask);observer.disconnect();intersection?.disconnect();document.removeEventListener('visibilitychange',sync);reduce.removeEventListener('change',onPreferenceChange);motionControl?.removeEventListener('click',onMotionControl);document.removeEventListener('pointerup',retryFromGesture);document.removeEventListener('keydown',retryFromGesture);window.removeEventListener('pageshow',onPageShow);window.removeEventListener('pagehide',onPageHide);video.removeEventListener('error',onError);video.removeAttribute('src');}};
  window.addEventListener('pagehide',onPageHide);window.addEventListener('pageshow',onPageShow);
  prepareMask();return true;
 }
