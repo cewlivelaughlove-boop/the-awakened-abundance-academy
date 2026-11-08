@@ -1,0 +1,1414 @@
+{
+  "verdict": "REJECT \u2014 visible unnatural single-row edge stretching/streak bands; do not publish",
+  "publicURL": "https://awakened-abundance-academy.lovable.app",
+  "base_commit": "ab9b74a79a672dbae3a173e8c37d5632f38747f8",
+  "verified_import_commit": "b623c4d1151b569233c311599ed217b0d2340137",
+  "scope": "Exact six-file import, evidence additions only; current published site unchanged",
+  "import_files": [
+    {
+      "path": "public/assets/boutique.js",
+      "expected_before_sha256": "29905147077d460fdfe296255f44228742508265b5fea8a3b75d4d50d6d8cb38",
+      "sha256": "fc5614d64b93cbf979a507c0187b1c61c43eddc2faac3f990c10938c9d8fd27e"
+    },
+    {
+      "path": "public/assets/boutique-doorway-proof.css",
+      "expected_before_sha256": "f7d663c7a57208c130d49b04267f890c8fe36d8c8b79b35190c2159d806be47b",
+      "sha256": "395f5db1d80823085daccc9c5beb0639c8bc4cc49d69ccc44c177574cff412dd"
+    },
+    {
+      "path": "src/lib/room-journey.ts",
+      "expected_before_sha256": "882d71b25a21df9b6d2ba14dcedb9ace57e3a4454ffa50e6cc68dfff9fb14be9",
+      "sha256": "0d2d42026317524da55bf8534241cb97c80a9f0403d2cdd7766c3315a911e923"
+    },
+    {
+      "path": "qa/room-tests/boutique-lookaround.test.mjs",
+      "expected_before_sha256": "f2544c482bec722a6c8a82b2cf7f6fdb08ee94018f4bfba4c5350a0de88e4ea2",
+      "sha256": "e085391b7dd614a7bcef8b24dcc5b4321a7655eba45e9f929cc4274e252beb6d"
+    },
+    {
+      "path": "qa/room-tests/portrait-room.test.mjs",
+      "expected_before_sha256": "d43a9480c18db6dd58b8025490d81d9df3ff4a3c46c0a207191493b523c0dd96",
+      "sha256": "120c474d37c36c209a2703401d637be763bf6a0fc91910b2c13197f694a97153"
+    },
+    {
+      "path": "qa/room-tests/camera.test.mjs",
+      "expected_before_sha256": "890e23256beeb5ec24224c80e3b809edd468ad67079a5efcd394152179d719d0",
+      "sha256": "ba86266467ad289fff982b78dff2af32c2032a4305e99505289884113ab39a36"
+    }
+  ],
+  "unrelated_tracked_files_preserved": 538,
+  "source_artwork_unchanged": true,
+  "form_dom_sha256": "ee4cd2a1a3190b0acbdbd9bd38942de38f65cb072056362b199590021ea13a48",
+  "form_verified": "Raw public and preview response parsed as DOM both match approved hash. Runtime readiness only enables submit, so post-script DOM differs without source changes.",
+  "tests": {
+    "room": {
+      "pass": 85,
+      "fail": 0
+    },
+    "vitest": {
+      "pass": 84,
+      "fail": 0
+    },
+    "node": {
+      "pass": 14,
+      "fail": 0
+    },
+    "types": "passed tsgo -b --noEmit",
+    "build": "Harness build OK 2026-11-08T20:36:22Z",
+    "targeted_lint": "Functional lint passed with prettier/prettier disabled; strict formatting lint failed on exact supplied minified files; intentionally not reformatted"
+  },
+  "browser_findings": [
+    {
+      "viewport": [
+        393,
+        658
+      ],
+      "drag_delta": -386.65625
+    },
+    {
+      "viewport": [
+        393,
+        658
+      ],
+      "video_times": [
+        8.148601,
+        9.362752
+      ]
+    },
+    {
+      "book": "http://localhost:8080/books.html#preview"
+    },
+    {
+      "hq_return": "http://localhost:8080/index.html"
+    },
+    {
+      "portal": "http://localhost:8080/voidwalk.html"
+    },
+    {
+      "portal_return": "http://localhost:8080/boutique.html"
+    },
+    {
+      "signup": "http://localhost:8080/join.html",
+      "runtime_form_sha256": "2719c2bd4767f60961475ca47035b82f0fb75738e14da798577a74c4b87629e4",
+      "note": "Readiness script enables submit button; immutable response form hash checked separately",
+      "consent": false
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "drag_delta": -372.0
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "video_times": [
+        7.837217,
+        9.050434
+      ]
+    },
+    {
+      "desktop_camera": "1",
+      "controls_absent": true
+    }
+  ],
+  "limitations": [
+    "Chromium mobile viewport emulation; not physical iPhone/Safari.",
+    "No publication, submissions, private lead reads, DB/settings changes. All browser non-GET/HEAD requests blocked; no POST attempts recorded.",
+    "Dark Room return used visible doorway edge arrow; off-screen architectural hotspot was not forced.",
+    "Camera buttons preserve focal center by geometry; pan endpoints necessarily clamp.",
+    "No redesign or code correction after visual rejection.",
+    "Production build supplied by automatic harness, not manually run."
+  ],
+  "screenshots": [
+    {
+      "file": "book-hotspot.jpg",
+      "route": "http://localhost:8080/books.html#preview",
+      "viewport": {
+        "width": 393,
+        "height": 658
+      },
+      "source": "preview",
+      "camera": null,
+      "bounds": null,
+      "visible_quality_findings": "Interaction confirmation; no submissions. Consent remains unchecked in signup screenshot.",
+      "filename": "book-hotspot.jpg.b64.txt",
+      "jpeg_sha256": "e5e35dac924c93927fd7b5e0e6e394202022f73cc54bb207aa05e5481f15cb05",
+      "base64_file_sha256": "c49561a1a0df96b86952e23d1d1a61b5cbe3d29279dd8e208ca14ad5b9e49a25",
+      "jpeg_bytes": 48832
+    },
+    {
+      "file": "desktop-1440x900.jpg",
+      "route": "http://localhost:8080/boutique.html",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "source": "preview",
+      "sha256": "22b1699b7959dcb11baa4fdfaa73db5f5b3040cd3891329c26a21b872228f50b",
+      "camera": "1",
+      "bounds": {
+        "x": 0,
+        "y": 159.953125,
+        "width": 1440,
+        "height": 580.078125
+      },
+      "edges": [
+        {
+          "hidden": true,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "hidden": true,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        }
+      ],
+      "visible_quality_findings": "Unchanged centered whole-room option at desktop; camera=1, no camera controls, decorative edges hidden.",
+      "filename": "desktop-1440x900.jpg.b64.txt",
+      "jpeg_sha256": "22b1699b7959dcb11baa4fdfaa73db5f5b3040cd3891329c26a21b872228f50b",
+      "base64_file_sha256": "1eff17ed2c239a419cc4466bfefee404a3ae873a114efb07cc7d5316005c958c",
+      "jpeg_bytes": 144494
+    },
+    {
+      "file": "hq-return.jpg",
+      "route": "http://localhost:8080/index.html",
+      "viewport": {
+        "width": 393,
+        "height": 658
+      },
+      "source": "preview",
+      "camera": null,
+      "bounds": null,
+      "visible_quality_findings": "Interaction confirmation; no submissions. Consent remains unchecked in signup screenshot.",
+      "filename": "hq-return.jpg.b64.txt",
+      "jpeg_sha256": "b6abb42c727575ab6be7a0af8b51ea7983313061b8870e3fd266e7571ada0248",
+      "base64_file_sha256": "262278db9b325190485e3b058e5446fd73348d7733336e5ec733ae14e30dbc1a",
+      "jpeg_bytes": 43142
+    },
+    {
+      "file": "landscape-844x390.jpg",
+      "route": "http://localhost:8080/boutique.html",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "source": "preview",
+      "sha256": "cab462726b22b6b9e9c011caa7066484276194ae2d8fe4d0f0cafe2f9ddabe69",
+      "camera": "0.92",
+      "bounds": {
+        "x": -38.390625,
+        "y": 15.59375,
+        "width": 890.6875,
+        "height": 358.796875
+      },
+      "edges": [
+        {
+          "hidden": false,
+          "bounds": {
+            "x": -38.390625,
+            "y": 373.390625,
+            "width": 890.6875,
+            "height": 16.600006103515625
+          }
+        },
+        {
+          "hidden": false,
+          "bounds": {
+            "x": -38.390625,
+            "y": 0,
+            "width": 890.6875,
+            "height": 16.600000381469727
+          }
+        }
+      ],
+      "visible_quality_findings": "Full-width main room retained, not narrow contained strip; bottom rug extension visibly streaks. Landscape deliberately inherits phone pullback, unlike desktop.",
+      "filename": "landscape-844x390.jpg.b64.txt",
+      "jpeg_sha256": "cab462726b22b6b9e9c011caa7066484276194ae2d8fe4d0f0cafe2f9ddabe69",
+      "base64_file_sha256": "147a2f9deb038e6522b73baea966d518ba0800578dde1dbf70e7a3a81d9fb72b",
+      "jpeg_bytes": 56773
+    },
+    {
+      "file": "phone-390x844-100-center.jpg",
+      "route": "http://localhost:8080/boutique.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "source": "preview",
+      "sha256": "070f385c4d3397962d46564152c55a1ee3731375ded01bbc0747945d06a00c7a",
+      "camera": "1",
+      "bounds": {
+        "x": -852.5625,
+        "y": 0,
+        "width": 2095.140625,
+        "height": 844
+      },
+      "edges": [
+        {
+          "hidden": true,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "hidden": true,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        }
+      ],
+      "position": "center",
+      "visible_quality_findings": "100% has no decorative margin and no edge-extension streak band; original immersive close framing retained.",
+      "filename": "phone-390x844-100-center.jpg.b64.txt",
+      "jpeg_sha256": "070f385c4d3397962d46564152c55a1ee3731375ded01bbc0747945d06a00c7a",
+      "base64_file_sha256": "50ee87b72b48165867e30a0f112f30a79e0cc822449d2708715803dc3e25041d",
+      "jpeg_bytes": 47179
+    },
+    {
+      "file": "phone-390x844-100-left.jpg",
+      "route": "http://localhost:8080/boutique.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "source": "preview",
+      "sha256": "d6981062cca32eb325c3fed40799aa4e3dac7f56576d4bf2afa83f903812f364",
+      "camera": "1",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 2095.140625,
+        "height": 844
+      },
+      "edges": [
+        {
+          "hidden": true,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "hidden": true,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        }
+      ],
+      "position": "left",
+      "visible_quality_findings": "100% has no decorative margin and no edge-extension streak band; original immersive close framing retained.",
+      "filename": "phone-390x844-100-left.jpg.b64.txt",
+      "jpeg_sha256": "d6981062cca32eb325c3fed40799aa4e3dac7f56576d4bf2afa83f903812f364",
+      "base64_file_sha256": "120a99dbba69d56332c2b4de361288126e63eb604bba019c5e9cdc3ea7cf4644",
+      "jpeg_bytes": 47613
+    },
+    {
+      "file": "phone-390x844-100-right.jpg",
+      "route": "http://localhost:8080/boutique.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "source": "preview",
+      "sha256": "7b9fc11c67308e597aaa3f0bd6faab8c21bdaf42a3bb5ae8eb78d84b3329fc2f",
+      "camera": "1",
+      "bounds": {
+        "x": -1705.140625,
+        "y": 0,
+        "width": 2095.140625,
+        "height": 844
+      },
+      "edges": [
+        {
+          "hidden": true,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "hidden": true,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        }
+      ],
+      "position": "right",
+      "visible_quality_findings": "100% has no decorative margin and no edge-extension streak band; original immersive close framing retained.",
+      "filename": "phone-390x844-100-right.jpg.b64.txt",
+      "jpeg_sha256": "7b9fc11c67308e597aaa3f0bd6faab8c21bdaf42a3bb5ae8eb78d84b3329fc2f",
+      "base64_file_sha256": "da8142681b369c1894271e853701512cb7b2aae9897d658fdaf8f383a1f8e27b",
+      "jpeg_bytes": 48551
+    },
+    {
+      "file": "phone-390x844-82-center.jpg",
+      "route": "http://localhost:8080/boutique.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "source": "preview",
+      "sha256": "ab3be20b180e370cbce92d4550d615b1ad3942b14df54294622bb8435a1a53a9",
+      "camera": "0.82",
+      "bounds": {
+        "x": -664,
+        "y": 75.953125,
+        "width": 1718.015625,
+        "height": 692.078125
+      },
+      "edges": [
+        {
+          "hidden": false,
+          "bounds": {
+            "x": -664,
+            "y": 767.03125,
+            "width": 1718.015625,
+            "height": 76.96002197265625
+          }
+        },
+        {
+          "hidden": false,
+          "bounds": {
+            "x": -664,
+            "y": 0,
+            "width": 1718.015625,
+            "height": 76.95999908447266
+          }
+        }
+      ],
+      "position": "center",
+      "visible_quality_findings": "Main image/hotspots retain 1976/796 ratio and cover 82% height. Top/bottom margins 75.95px extend single edge rows. REJECT: conspicuous vertical purple streak band under rug/table; upper light column also extended unnaturally.",
+      "filename": "phone-390x844-82-center.jpg.b64.txt",
+      "jpeg_sha256": "ab3be20b180e370cbce92d4550d615b1ad3942b14df54294622bb8435a1a53a9",
+      "base64_file_sha256": "95804c1ff3ae88fa6b91be942f586e36e4432a27cd869e52036acd2a55309ec9",
+      "jpeg_bytes": 43600
+    },
+    {
+      "file": "phone-390x844-82-left.jpg",
+      "route": "http://localhost:8080/boutique.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "source": "preview",
+      "sha256": "efa9a7847d0fa6b156aa4301f3b25b9b0b5c81b3d26627ca8769e8a8f7ceec95",
+      "camera": "0.82",
+      "bounds": {
+        "x": 0,
+        "y": 75.953125,
+        "width": 1718.015625,
+        "height": 692.078125
+      },
+      "edges": [
+        {
+          "hidden": false,
+          "bounds": {
+            "x": 0,
+            "y": 767.03125,
+            "width": 1718.015625,
+            "height": 76.96002197265625
+          }
+        },
+        {
+          "hidden": false,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1718.015625,
+            "height": 76.95999908447266
+          }
+        }
+      ],
+      "position": "left",
+      "visible_quality_findings": "Main image/hotspots retain 1976/796 ratio and cover 82% height. Top/bottom margins 75.95px extend single edge rows. Extended vertical architecture/floor lines visible in margins; less conspicuous here, but artificial edge continuation remains. Candidate rejected based on center evidence.",
+      "filename": "phone-390x844-82-left.jpg.b64.txt",
+      "jpeg_sha256": "efa9a7847d0fa6b156aa4301f3b25b9b0b5c81b3d26627ca8769e8a8f7ceec95",
+      "base64_file_sha256": "26bbb8bb9bebeca6df57aa8c1bba4ed09463712442cae0d51ebb14e3e4440d35",
+      "jpeg_bytes": 47730
+    },
+    {
+      "file": "phone-390x844-82-right.jpg",
+      "route": "http://localhost:8080/boutique.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "source": "preview",
+      "sha256": "ac14b877099b812f1f64c7530b847f9261979a28e5bfdf94c3243b95c5167957",
+      "camera": "0.82",
+      "bounds": {
+        "x": -1328.015625,
+        "y": 75.953125,
+        "width": 1718.015625,
+        "height": 692.078125
+      },
+      "edges": [
+        {
+          "hidden": false,
+          "bounds": {
+            "x": -1328.015625,
+            "y": 767.03125,
+            "width": 1718.015625,
+            "height": 76.96002197265625
+          }
+        },
+        {
+          "hidden": false,
+          "bounds": {
+            "x": -1328.015625,
+            "y": 0,
+            "width": 1718.015625,
+            "height": 76.95999908447266
+          }
+        }
+      ],
+      "position": "right",
+      "visible_quality_findings": "Main image/hotspots retain 1976/796 ratio and cover 82% height. Top/bottom margins 75.95px extend single edge rows. Extended vertical architecture/floor lines visible in margins; less conspicuous here, but artificial edge continuation remains. Candidate rejected based on center evidence.",
+      "filename": "phone-390x844-82-right.jpg.b64.txt",
+      "jpeg_sha256": "ac14b877099b812f1f64c7530b847f9261979a28e5bfdf94c3243b95c5167957",
+      "base64_file_sha256": "340cf7330fc1d3f4a6903be64f5ffdf3c1202ff8eacf81c92a0411909e4b06ae",
+      "jpeg_bytes": 47582
+    },
+    {
+      "file": "phone-390x844-86-center.jpg",
+      "route": "http://localhost:8080/boutique.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "source": "preview",
+      "sha256": "0345ac820ea8c149681a78b1025a2f32142ac0d77e74b4c1b8aa43019fc3309b",
+      "camera": "0.86",
+      "bounds": {
+        "x": -705.90625,
+        "y": 59.078125,
+        "width": 1801.828125,
+        "height": 725.828125
+      },
+      "edges": [
+        {
+          "hidden": false,
+          "bounds": {
+            "x": -705.90625,
+            "y": 783.90625,
+            "width": 1801.828125,
+            "height": 60.08001708984375
+          }
+        },
+        {
+          "hidden": false,
+          "bounds": {
+            "x": -705.90625,
+            "y": 0,
+            "width": 1801.828125,
+            "height": 60.08000183105469
+          }
+        }
+      ],
+      "position": "center",
+      "visible_quality_findings": "Main image/hotspots retain 1976/796 ratio and cover 86% height. Top/bottom margins 59.08px extend single edge rows. REJECT: conspicuous vertical purple streak band under rug/table; upper light column also extended unnaturally.",
+      "filename": "phone-390x844-86-center.jpg.b64.txt",
+      "jpeg_sha256": "0345ac820ea8c149681a78b1025a2f32142ac0d77e74b4c1b8aa43019fc3309b",
+      "base64_file_sha256": "12e5b60c5bfaff0f3f69e7ec383dc4e2b7d5e1790f9e965e64a15c70846034df",
+      "jpeg_bytes": 44272
+    },
+    {
+      "file": "phone-390x844-86-left.jpg",
+      "route": "http://localhost:8080/boutique.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "source": "preview",
+      "sha256": "c963d413b9d421ecd4547ac30b963bc3fdf2b60f60f618244326fa35c7cd5d49",
+      "camera": "0.86",
+      "bounds": {
+        "x": 0,
+        "y": 59.078125,
+        "width": 1801.828125,
+        "height": 725.828125
+      },
+      "edges": [
+        {
+          "hidden": false,
+          "bounds": {
+            "x": 0,
+            "y": 783.90625,
+            "width": 1801.828125,
+            "height": 60.08001708984375
+          }
+        },
+        {
+          "hidden": false,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1801.828125,
+            "height": 60.08000183105469
+          }
+        }
+      ],
+      "position": "left",
+      "visible_quality_findings": "Main image/hotspots retain 1976/796 ratio and cover 86% height. Top/bottom margins 59.08px extend single edge rows. Extended vertical architecture/floor lines visible in margins; less conspicuous here, but artificial edge continuation remains. Candidate rejected based on center evidence.",
+      "filename": "phone-390x844-86-left.jpg.b64.txt",
+      "jpeg_sha256": "c963d413b9d421ecd4547ac30b963bc3fdf2b60f60f618244326fa35c7cd5d49",
+      "base64_file_sha256": "9a4325978e646a195944676d3b7498c5a47c83378b31057c21f36a74622fbcdd",
+      "jpeg_bytes": 48088
+    },
+    {
+      "file": "phone-390x844-86-right.jpg",
+      "route": "http://localhost:8080/boutique.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "source": "preview",
+      "sha256": "8ac78b29d74245d44b5ecbbdb7f075f6e9c756208357239651052ae78cc22693",
+      "camera": "0.86",
+      "bounds": {
+        "x": -1411.828125,
+        "y": 59.078125,
+        "width": 1801.828125,
+        "height": 725.828125
+      },
+      "edges": [
+        {
+          "hidden": false,
+          "bounds": {
+            "x": -1411.828125,
+            "y": 783.90625,
+            "width": 1801.828125,
+            "height": 60.08001708984375
+          }
+        },
+        {
+          "hidden": false,
+          "bounds": {
+            "x": -1411.828125,
+            "y": 0,
+            "width": 1801.828125,
+            "height": 60.08000183105469
+          }
+        }
+      ],
+      "position": "right",
+      "visible_quality_findings": "Main image/hotspots retain 1976/796 ratio and cover 86% height. Top/bottom margins 59.08px extend single edge rows. Extended vertical architecture/floor lines visible in margins; less conspicuous here, but artificial edge continuation remains. Candidate rejected based on center evidence.",
+      "filename": "phone-390x844-86-right.jpg.b64.txt",
+      "jpeg_sha256": "8ac78b29d74245d44b5ecbbdb7f075f6e9c756208357239651052ae78cc22693",
+      "base64_file_sha256": "c6066e5c572cdb3b2b7d0c54532b13ab9ef7890680529d985d82b5f3024fb80d",
+      "jpeg_bytes": 48679
+    },
+    {
+      "file": "phone-390x844-90-center.jpg",
+      "route": "http://localhost:8080/boutique.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "source": "preview",
+      "sha256": "a6a4a3548a94d24e942ea56ee4a4c948df3418083b56b9614695d2ac686fc5f4",
+      "camera": "0.9",
+      "bounds": {
+        "x": -747.8125,
+        "y": 42.1875,
+        "width": 1885.625,
+        "height": 759.59375
+      },
+      "edges": [
+        {
+          "hidden": false,
+          "bounds": {
+            "x": -747.8125,
+            "y": 800.78125,
+            "width": 1885.625,
+            "height": 43.20001220703125
+          }
+        },
+        {
+          "hidden": false,
+          "bounds": {
+            "x": -747.8125,
+            "y": 0,
+            "width": 1885.625,
+            "height": 43.20000076293945
+          }
+        }
+      ],
+      "position": "center",
+      "visible_quality_findings": "Main image/hotspots retain 1976/796 ratio and cover 90% height. Top/bottom margins 42.19px extend single edge rows. REJECT: conspicuous vertical purple streak band under rug/table; upper light column also extended unnaturally.",
+      "filename": "phone-390x844-90-center.jpg.b64.txt",
+      "jpeg_sha256": "a6a4a3548a94d24e942ea56ee4a4c948df3418083b56b9614695d2ac686fc5f4",
+      "base64_file_sha256": "45b422e002ac3c7f0454da2b70aa9673c9f0f42cfbe757b2b066741049ed1e67",
+      "jpeg_bytes": 44950
+    },
+    {
+      "file": "phone-390x844-90-left.jpg",
+      "route": "http://localhost:8080/boutique.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "source": "preview",
+      "sha256": "01ca793212a6af07c7ac4bc98cf549d3dd6a63f6d3fa57d050dc6fa50faaf61c",
+      "camera": "0.9",
+      "bounds": {
+        "x": 0,
+        "y": 42.1875,
+        "width": 1885.625,
+        "height": 759.59375
+      },
+      "edges": [
+        {
+          "hidden": false,
+          "bounds": {
+            "x": 0,
+            "y": 800.78125,
+            "width": 1885.625,
+            "height": 43.20001220703125
+          }
+        },
+        {
+          "hidden": false,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1885.625,
+            "height": 43.20000076293945
+          }
+        }
+      ],
+      "position": "left",
+      "visible_quality_findings": "Main image/hotspots retain 1976/796 ratio and cover 90% height. Top/bottom margins 42.19px extend single edge rows. Extended vertical architecture/floor lines visible in margins; less conspicuous here, but artificial edge continuation remains. Candidate rejected based on center evidence.",
+      "filename": "phone-390x844-90-left.jpg.b64.txt",
+      "jpeg_sha256": "01ca793212a6af07c7ac4bc98cf549d3dd6a63f6d3fa57d050dc6fa50faaf61c",
+      "base64_file_sha256": "3d2bb3f352f28e0de3670ecb24f0b04a8180740fe81609bf6c6de7707bde38e1",
+      "jpeg_bytes": 47672
+    },
+    {
+      "file": "phone-390x844-90-right.jpg",
+      "route": "http://localhost:8080/boutique.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "source": "preview",
+      "sha256": "404219b8a2ede65c994b22fe28a56ba8e7937c528d5334fba4fdb6b5113c9b4c",
+      "camera": "0.9",
+      "bounds": {
+        "x": -1495.625,
+        "y": 42.1875,
+        "width": 1885.625,
+        "height": 759.59375
+      },
+      "edges": [
+        {
+          "hidden": false,
+          "bounds": {
+            "x": -1495.625,
+            "y": 800.78125,
+            "width": 1885.625,
+            "height": 43.20001220703125
+          }
+        },
+        {
+          "hidden": false,
+          "bounds": {
+            "x": -1495.625,
+            "y": 0,
+            "width": 1885.625,
+            "height": 43.20000076293945
+          }
+        }
+      ],
+      "position": "right",
+      "visible_quality_findings": "Main image/hotspots retain 1976/796 ratio and cover 90% height. Top/bottom margins 42.19px extend single edge rows. Extended vertical architecture/floor lines visible in margins; less conspicuous here, but artificial edge continuation remains. Candidate rejected based on center evidence.",
+      "filename": "phone-390x844-90-right.jpg.b64.txt",
+      "jpeg_sha256": "404219b8a2ede65c994b22fe28a56ba8e7937c528d5334fba4fdb6b5113c9b4c",
+      "base64_file_sha256": "7aa29711a110e7474827b12662129f6794fc3dca8356c337c139cfb1718148f9",
+      "jpeg_bytes": 48523
+    },
+    {
+      "file": "phone-390x844-controls.jpg",
+      "route": "http://localhost:8080/boutique.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "source": "preview",
+      "sha256": "96c3d3dc8c883da657d54c48a95d8f2db830e96bafbd7c850d96b4728f35129b",
+      "camera": "1",
+      "bounds": {
+        "x": -1238.671875,
+        "y": 0,
+        "width": 2095.140625,
+        "height": 844
+      },
+      "edges": [
+        {
+          "hidden": true,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "hidden": true,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        }
+      ],
+      "visible_quality_findings": "Move back/Move closer inside Display & room controls; existing six image-card links remain unchanged; controls scroll within menu.",
+      "filename": "phone-390x844-controls.jpg.b64.txt",
+      "jpeg_sha256": "96c3d3dc8c883da657d54c48a95d8f2db830e96bafbd7c850d96b4728f35129b",
+      "base64_file_sha256": "1b6609955b8d5e959f0deac0c5370bc664537e1712feac821bccc094a1da365a",
+      "jpeg_bytes": 34449
+    },
+    {
+      "file": "phone-393x658-100-center.jpg",
+      "route": "http://localhost:8080/boutique.html",
+      "viewport": {
+        "width": 393,
+        "height": 658
+      },
+      "source": "preview",
+      "sha256": "9d75eed3f90506c34be05d723262efb06ee5fdb6e3d4d9c29d30883184262feb",
+      "camera": "1",
+      "bounds": {
+        "x": -620.203125,
+        "y": 0,
+        "width": 1633.421875,
+        "height": 658
+      },
+      "edges": [
+        {
+          "hidden": true,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "hidden": true,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        }
+      ],
+      "position": "center",
+      "visible_quality_findings": "100% has no decorative margin and no edge-extension streak band; original immersive close framing retained.",
+      "filename": "phone-393x658-100-center.jpg.b64.txt",
+      "jpeg_sha256": "9d75eed3f90506c34be05d723262efb06ee5fdb6e3d4d9c29d30883184262feb",
+      "base64_file_sha256": "07fc9eb3523675abdc34d0e7ad9429ce5a2314b5ee2bf2a7d4cca9f67cdfe58e",
+      "jpeg_bytes": 38902
+    },
+    {
+      "file": "phone-393x658-100-left.jpg",
+      "route": "http://localhost:8080/boutique.html",
+      "viewport": {
+        "width": 393,
+        "height": 658
+      },
+      "source": "preview",
+      "sha256": "ad426ed5481dd1f858abf61ed04db877007196f9f2f63256ba6571374a72d04a",
+      "camera": "1",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1633.421875,
+        "height": 658
+      },
+      "edges": [
+        {
+          "hidden": true,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "hidden": true,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        }
+      ],
+      "position": "left",
+      "visible_quality_findings": "100% has no decorative margin and no edge-extension streak band; original immersive close framing retained.",
+      "filename": "phone-393x658-100-left.jpg.b64.txt",
+      "jpeg_sha256": "ad426ed5481dd1f858abf61ed04db877007196f9f2f63256ba6571374a72d04a",
+      "base64_file_sha256": "04203043bcd310a51074bd454434d204f8c4b4b4c071d4b7f5e58a8966a05606",
+      "jpeg_bytes": 43661
+    },
+    {
+      "file": "phone-393x658-100-right.jpg",
+      "route": "http://localhost:8080/boutique.html",
+      "viewport": {
+        "width": 393,
+        "height": 658
+      },
+      "source": "preview",
+      "sha256": "42e4a97252a69cfc5ce7530e7a88b884ce441552a6ad2178f79e69740444a07c",
+      "camera": "1",
+      "bounds": {
+        "x": -1240.421875,
+        "y": 0,
+        "width": 1633.421875,
+        "height": 658
+      },
+      "edges": [
+        {
+          "hidden": true,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "hidden": true,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        }
+      ],
+      "position": "right",
+      "visible_quality_findings": "100% has no decorative margin and no edge-extension streak band; original immersive close framing retained.",
+      "filename": "phone-393x658-100-right.jpg.b64.txt",
+      "jpeg_sha256": "42e4a97252a69cfc5ce7530e7a88b884ce441552a6ad2178f79e69740444a07c",
+      "base64_file_sha256": "b2f57af2b76e54504ec897b175acf004b80270c24435ffbb38b0590e5c5de9e8",
+      "jpeg_bytes": 42633
+    },
+    {
+      "file": "phone-393x658-82-center.jpg",
+      "route": "http://localhost:8080/boutique.html",
+      "viewport": {
+        "width": 393,
+        "height": 658
+      },
+      "source": "preview",
+      "sha256": "d05808fa19a7839c5189926c494cd86c2b66fd17ac926fda9fab307f62a78ca7",
+      "camera": "0.82",
+      "bounds": {
+        "x": -473.203125,
+        "y": 59.21875,
+        "width": 1339.40625,
+        "height": 539.546875
+      },
+      "edges": [
+        {
+          "hidden": false,
+          "bounds": {
+            "x": -473.203125,
+            "y": 597.765625,
+            "width": 1339.40625,
+            "height": 60.219970703125
+          }
+        },
+        {
+          "hidden": false,
+          "bounds": {
+            "x": -473.203125,
+            "y": 0,
+            "width": 1339.40625,
+            "height": 60.220001220703125
+          }
+        }
+      ],
+      "position": "center",
+      "visible_quality_findings": "Main image/hotspots retain 1976/796 ratio and cover 82% height. Top/bottom margins 59.22px extend single edge rows. REJECT: conspicuous vertical purple streak band under rug/table; upper light column also extended unnaturally.",
+      "filename": "phone-393x658-82-center.jpg.b64.txt",
+      "jpeg_sha256": "d05808fa19a7839c5189926c494cd86c2b66fd17ac926fda9fab307f62a78ca7",
+      "base64_file_sha256": "23ba044bc546d33ef7218cd4642755ec878dc0034417f8496406bb421be5deb3",
+      "jpeg_bytes": 37226
+    },
+    {
+      "file": "phone-393x658-82-left.jpg",
+      "route": "http://localhost:8080/boutique.html",
+      "viewport": {
+        "width": 393,
+        "height": 658
+      },
+      "source": "preview",
+      "sha256": "2360cf0b320afbec5087409fbbda8534c3595c60ec88ccb74127c91f6c88b0c7",
+      "camera": "0.82",
+      "bounds": {
+        "x": 0,
+        "y": 59.21875,
+        "width": 1339.40625,
+        "height": 539.546875
+      },
+      "edges": [
+        {
+          "hidden": false,
+          "bounds": {
+            "x": 0,
+            "y": 597.765625,
+            "width": 1339.40625,
+            "height": 60.219970703125
+          }
+        },
+        {
+          "hidden": false,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1339.40625,
+            "height": 60.220001220703125
+          }
+        }
+      ],
+      "position": "left",
+      "visible_quality_findings": "Main image/hotspots retain 1976/796 ratio and cover 82% height. Top/bottom margins 59.22px extend single edge rows. Extended vertical architecture/floor lines visible in margins; less conspicuous here, but artificial edge continuation remains. Candidate rejected based on center evidence.",
+      "filename": "phone-393x658-82-left.jpg.b64.txt",
+      "jpeg_sha256": "2360cf0b320afbec5087409fbbda8534c3595c60ec88ccb74127c91f6c88b0c7",
+      "base64_file_sha256": "d2803c1fe8ab5a2cff0c8d7d480eab87719fb101aeb2745562adbf2925d12c1d",
+      "jpeg_bytes": 44353
+    },
+    {
+      "file": "phone-393x658-82-right.jpg",
+      "route": "http://localhost:8080/boutique.html",
+      "viewport": {
+        "width": 393,
+        "height": 658
+      },
+      "source": "preview",
+      "sha256": "519734ab64ef3da3c962ddf9b918e370079c1ee8010a34a50ad600eccdac56b2",
+      "camera": "0.82",
+      "bounds": {
+        "x": -946.40625,
+        "y": 59.21875,
+        "width": 1339.40625,
+        "height": 539.546875
+      },
+      "edges": [
+        {
+          "hidden": false,
+          "bounds": {
+            "x": -946.40625,
+            "y": 597.765625,
+            "width": 1339.40625,
+            "height": 60.219970703125
+          }
+        },
+        {
+          "hidden": false,
+          "bounds": {
+            "x": -946.40625,
+            "y": 0,
+            "width": 1339.40625,
+            "height": 60.220001220703125
+          }
+        }
+      ],
+      "position": "right",
+      "visible_quality_findings": "Main image/hotspots retain 1976/796 ratio and cover 82% height. Top/bottom margins 59.22px extend single edge rows. Extended vertical architecture/floor lines visible in margins; less conspicuous here, but artificial edge continuation remains. Candidate rejected based on center evidence.",
+      "filename": "phone-393x658-82-right.jpg.b64.txt",
+      "jpeg_sha256": "519734ab64ef3da3c962ddf9b918e370079c1ee8010a34a50ad600eccdac56b2",
+      "base64_file_sha256": "3fa2ae9f76fef5cc23cd6dc9604b19c394b22fe1b39a5279c8fc9cc2b0473bfa",
+      "jpeg_bytes": 38843
+    },
+    {
+      "file": "phone-393x658-86-center.jpg",
+      "route": "http://localhost:8080/boutique.html",
+      "viewport": {
+        "width": 393,
+        "height": 658
+      },
+      "source": "preview",
+      "sha256": "d57dbedfec6870de40f74e6ef0d1e1ec13f8e6caa2ea0a1fc9492cebafa688cd",
+      "camera": "0.86",
+      "bounds": {
+        "x": -505.859375,
+        "y": 46.046875,
+        "width": 1404.734375,
+        "height": 565.875
+      },
+      "edges": [
+        {
+          "hidden": false,
+          "bounds": {
+            "x": -505.859375,
+            "y": 610.921875,
+            "width": 1404.734375,
+            "height": 47.05999755859375
+          }
+        },
+        {
+          "hidden": false,
+          "bounds": {
+            "x": -505.859375,
+            "y": 0,
+            "width": 1404.734375,
+            "height": 47.060001373291016
+          }
+        }
+      ],
+      "position": "center",
+      "visible_quality_findings": "Main image/hotspots retain 1976/796 ratio and cover 86% height. Top/bottom margins 46.05px extend single edge rows. REJECT: conspicuous vertical purple streak band under rug/table; upper light column also extended unnaturally.",
+      "filename": "phone-393x658-86-center.jpg.b64.txt",
+      "jpeg_sha256": "d57dbedfec6870de40f74e6ef0d1e1ec13f8e6caa2ea0a1fc9492cebafa688cd",
+      "base64_file_sha256": "2663844513919e2fe1b706dec4e888d1ac0343b42aed240b73de6ab6eb10642a",
+      "jpeg_bytes": 37567
+    },
+    {
+      "file": "phone-393x658-86-left.jpg",
+      "route": "http://localhost:8080/boutique.html",
+      "viewport": {
+        "width": 393,
+        "height": 658
+      },
+      "source": "preview",
+      "sha256": "b7ceac1654c2d69cb2ae36663d5a52c53fecb06826a4a219beef39da1ad1b450",
+      "camera": "0.86",
+      "bounds": {
+        "x": 0,
+        "y": 46.046875,
+        "width": 1404.734375,
+        "height": 565.875
+      },
+      "edges": [
+        {
+          "hidden": false,
+          "bounds": {
+            "x": 0,
+            "y": 610.921875,
+            "width": 1404.734375,
+            "height": 47.05999755859375
+          }
+        },
+        {
+          "hidden": false,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1404.734375,
+            "height": 47.060001373291016
+          }
+        }
+      ],
+      "position": "left",
+      "visible_quality_findings": "Main image/hotspots retain 1976/796 ratio and cover 86% height. Top/bottom margins 46.05px extend single edge rows. Extended vertical architecture/floor lines visible in margins; less conspicuous here, but artificial edge continuation remains. Candidate rejected based on center evidence.",
+      "filename": "phone-393x658-86-left.jpg.b64.txt",
+      "jpeg_sha256": "b7ceac1654c2d69cb2ae36663d5a52c53fecb06826a4a219beef39da1ad1b450",
+      "base64_file_sha256": "d8a8fd8528eaf77ec6e43ced548a4d35c20b97439042742856fd8f85c39788a8",
+      "jpeg_bytes": 43433
+    },
+    {
+      "file": "phone-393x658-86-right.jpg",
+      "route": "http://localhost:8080/boutique.html",
+      "viewport": {
+        "width": 393,
+        "height": 658
+      },
+      "source": "preview",
+      "sha256": "488c20aea984ad2ef9470c95bcc763298b2f4b9c1d6a79f49d98daf50f39607c",
+      "camera": "0.86",
+      "bounds": {
+        "x": -1011.734375,
+        "y": 46.046875,
+        "width": 1404.734375,
+        "height": 565.875
+      },
+      "edges": [
+        {
+          "hidden": false,
+          "bounds": {
+            "x": -1011.734375,
+            "y": 610.921875,
+            "width": 1404.734375,
+            "height": 47.05999755859375
+          }
+        },
+        {
+          "hidden": false,
+          "bounds": {
+            "x": -1011.734375,
+            "y": 0,
+            "width": 1404.734375,
+            "height": 47.060001373291016
+          }
+        }
+      ],
+      "position": "right",
+      "visible_quality_findings": "Main image/hotspots retain 1976/796 ratio and cover 86% height. Top/bottom margins 46.05px extend single edge rows. Extended vertical architecture/floor lines visible in margins; less conspicuous here, but artificial edge continuation remains. Candidate rejected based on center evidence.",
+      "filename": "phone-393x658-86-right.jpg.b64.txt",
+      "jpeg_sha256": "488c20aea984ad2ef9470c95bcc763298b2f4b9c1d6a79f49d98daf50f39607c",
+      "base64_file_sha256": "7dc045282766d992d7ff510bb4f2308a56afdb2f49dadf85e91b5d5ff5966922",
+      "jpeg_bytes": 39340
+    },
+    {
+      "file": "phone-393x658-90-center.jpg",
+      "route": "http://localhost:8080/boutique.html",
+      "viewport": {
+        "width": 393,
+        "height": 658
+      },
+      "source": "preview",
+      "sha256": "978d0eacf8f8653fa528e69110f33ff07cf375efc98085aac5a0a657742d0571",
+      "camera": "0.9",
+      "bounds": {
+        "x": -538.53125,
+        "y": 32.890625,
+        "width": 1470.078125,
+        "height": 592.1875
+      },
+      "edges": [
+        {
+          "hidden": false,
+          "bounds": {
+            "x": -538.53125,
+            "y": 624.078125,
+            "width": 1470.078125,
+            "height": 33.9000244140625
+          }
+        },
+        {
+          "hidden": false,
+          "bounds": {
+            "x": -538.53125,
+            "y": 0,
+            "width": 1470.078125,
+            "height": 33.900001525878906
+          }
+        }
+      ],
+      "position": "center",
+      "visible_quality_findings": "Main image/hotspots retain 1976/796 ratio and cover 90% height. Top/bottom margins 32.89px extend single edge rows. REJECT: conspicuous vertical purple streak band under rug/table; upper light column also extended unnaturally.",
+      "filename": "phone-393x658-90-center.jpg.b64.txt",
+      "jpeg_sha256": "978d0eacf8f8653fa528e69110f33ff07cf375efc98085aac5a0a657742d0571",
+      "base64_file_sha256": "e9b0269167dbea896aab1a42d87331ca5372a4b0350d53db04ff963528283e54",
+      "jpeg_bytes": 37284
+    },
+    {
+      "file": "phone-393x658-90-left.jpg",
+      "route": "http://localhost:8080/boutique.html",
+      "viewport": {
+        "width": 393,
+        "height": 658
+      },
+      "source": "preview",
+      "sha256": "11cd4d5329944d13ee4b0b89cb6883121c6952584acc4005d411374c3b810d35",
+      "camera": "0.9",
+      "bounds": {
+        "x": 0,
+        "y": 32.890625,
+        "width": 1470.078125,
+        "height": 592.1875
+      },
+      "edges": [
+        {
+          "hidden": false,
+          "bounds": {
+            "x": 0,
+            "y": 624.078125,
+            "width": 1470.078125,
+            "height": 33.9000244140625
+          }
+        },
+        {
+          "hidden": false,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1470.078125,
+            "height": 33.900001525878906
+          }
+        }
+      ],
+      "position": "left",
+      "visible_quality_findings": "Main image/hotspots retain 1976/796 ratio and cover 90% height. Top/bottom margins 32.89px extend single edge rows. Extended vertical architecture/floor lines visible in margins; less conspicuous here, but artificial edge continuation remains. Candidate rejected based on center evidence.",
+      "filename": "phone-393x658-90-left.jpg.b64.txt",
+      "jpeg_sha256": "11cd4d5329944d13ee4b0b89cb6883121c6952584acc4005d411374c3b810d35",
+      "base64_file_sha256": "783e840fffc6e4e69f134c9afcf971eeb8bf4671ff5d0079ea139af80509f3e2",
+      "jpeg_bytes": 42852
+    },
+    {
+      "file": "phone-393x658-90-right.jpg",
+      "route": "http://localhost:8080/boutique.html",
+      "viewport": {
+        "width": 393,
+        "height": 658
+      },
+      "source": "preview",
+      "sha256": "900d179df7bca804a659de80cbb0845961fbf61b4a9445f893969452862959be",
+      "camera": "0.9",
+      "bounds": {
+        "x": -1077.078125,
+        "y": 32.890625,
+        "width": 1470.078125,
+        "height": 592.1875
+      },
+      "edges": [
+        {
+          "hidden": false,
+          "bounds": {
+            "x": -1077.078125,
+            "y": 624.078125,
+            "width": 1470.078125,
+            "height": 33.9000244140625
+          }
+        },
+        {
+          "hidden": false,
+          "bounds": {
+            "x": -1077.078125,
+            "y": 0,
+            "width": 1470.078125,
+            "height": 33.900001525878906
+          }
+        }
+      ],
+      "position": "right",
+      "visible_quality_findings": "Main image/hotspots retain 1976/796 ratio and cover 90% height. Top/bottom margins 32.89px extend single edge rows. Extended vertical architecture/floor lines visible in margins; less conspicuous here, but artificial edge continuation remains. Candidate rejected based on center evidence.",
+      "filename": "phone-393x658-90-right.jpg.b64.txt",
+      "jpeg_sha256": "900d179df7bca804a659de80cbb0845961fbf61b4a9445f893969452862959be",
+      "base64_file_sha256": "f44f3e4a84af8f16d340d5ce65c2a9eb52866286376299d4254b10ccdec6082d",
+      "jpeg_bytes": 39763
+    },
+    {
+      "file": "phone-393x658-controls.jpg",
+      "route": "http://localhost:8080/boutique.html",
+      "viewport": {
+        "width": 393,
+        "height": 658
+      },
+      "source": "preview",
+      "sha256": "5899efce174e2dd30ef5263886f02c26b1bde378e49a64bea1898c5f94cbf1a1",
+      "camera": "1",
+      "bounds": {
+        "x": -1009.28125,
+        "y": 0,
+        "width": 1633.421875,
+        "height": 658
+      },
+      "edges": [
+        {
+          "hidden": true,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "hidden": true,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        }
+      ],
+      "visible_quality_findings": "Move back/Move closer inside Display & room controls; existing six image-card links remain unchanged; controls scroll within menu.",
+      "filename": "phone-393x658-controls.jpg.b64.txt",
+      "jpeg_sha256": "5899efce174e2dd30ef5263886f02c26b1bde378e49a64bea1898c5f94cbf1a1",
+      "base64_file_sha256": "a441e48aea498caf1236538c698b5b190ef0bd6eb88dac7ae95a33ff7f551401",
+      "jpeg_bytes": 30794
+    },
+    {
+      "file": "portal-arrival.jpg",
+      "route": "http://localhost:8080/voidwalk.html",
+      "viewport": {
+        "width": 393,
+        "height": 658
+      },
+      "source": "preview",
+      "camera": null,
+      "bounds": null,
+      "visible_quality_findings": "Interaction confirmation; no submissions. Consent remains unchecked in signup screenshot.",
+      "filename": "portal-arrival.jpg.b64.txt",
+      "jpeg_sha256": "6396cc3903633e28f0cec030d664af722d78f9a1fd42e4d991afcb7ca7520ead",
+      "base64_file_sha256": "6c60a2f2abf9c0b8f0900b9c3c079b131347c059cd57113e4637c258d45d1016",
+      "jpeg_bytes": 35341
+    },
+    {
+      "file": "public-before.jpg",
+      "route": "https://awakened-abundance-academy.lovable.app/boutique.html",
+      "viewport": {
+        "width": 393,
+        "height": 658
+      },
+      "source": "public-before",
+      "camera": 1,
+      "bounds": {
+        "x": -620.213567839196,
+        "y": 0,
+        "width": 1633.427135678392,
+        "height": 658
+      },
+      "bounds_note": "Pre-import current cover geometry, source inspected; screenshot captured publicly before import",
+      "visible_quality_findings": "Actual published before: original close cover framing, no edge-extension band.",
+      "filename": "public-before.jpg.b64.txt",
+      "jpeg_sha256": "3a328a33a93c7c70b0606f22bcb02750cab97d8c2fcf25aa939a85b0afc1c3f5",
+      "base64_file_sha256": "13e4a89ae5e6207febeffcb01f98b56a886270e71e1b23257c1152de004c25ad",
+      "jpeg_bytes": 38885
+    },
+    {
+      "file": "signup-unchecked.jpg",
+      "route": "http://localhost:8080/join.html",
+      "viewport": {
+        "width": 393,
+        "height": 658
+      },
+      "source": "preview",
+      "camera": null,
+      "bounds": null,
+      "visible_quality_findings": "Interaction confirmation; no submissions. Consent remains unchecked in signup screenshot.",
+      "filename": "signup-unchecked.jpg.b64.txt",
+      "jpeg_sha256": "1e1b9d9398a9d4a40b00afe58a98690b51ce4100909dc5aac37068a52af9f6b3",
+      "base64_file_sha256": "cefeb9800519e2eaf47ff4d47d2cbd601c8adf46816dd3f85c63ff91eb91f5e2",
+      "jpeg_bytes": 34928
+    }
+  ]
+}
