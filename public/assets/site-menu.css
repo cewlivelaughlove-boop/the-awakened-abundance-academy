@@ -38,3 +38,7 @@
 #academy-site-menu a[href="./join.html"]>img{object-position:50% 15%}
 #academy-site-menu a[href="./library.html"]>img{object-position:50% 100%}
 #academy-site-menu a[href="./start.html"]>img{object-position:50% 70%}
+
+/* Keep replaced-image pixels and flex items inside equal visual cards. */
+#academy-site-menu .proof-signup-link,#academy-site-menu nav>a,#academy-site-menu .proof-resources>a{height:58px;min-height:58px;flex-shrink:0;overflow:hidden}
+#academy-site-menu a>img{overflow:hidden;clip-path:inset(0 round 5px)}

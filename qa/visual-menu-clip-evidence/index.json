@@ -1,0 +1,947 @@
+{
+  "base_commit": "5ab16b56105b98b6c4faf2ffad8ad7287be8603e",
+  "origin": "http://localhost:8080",
+  "browser": "Chromium phone emulation, not physical iPhone",
+  "checks": [
+    {
+      "page": "index",
+      "viewport": [
+        393,
+        658
+      ],
+      "status": 200,
+      "cards": [
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        }
+      ],
+      "horizontalOverflow": false,
+      "documentOverflow": false,
+      "scrollHeight": 568,
+      "clientHeight": 568,
+      "screenshot": {
+        "file": "index-393x658-menu.jpg.b64.txt",
+        "jpeg_sha256": "d3df765944a136443d124a09aff01c5bed162df148f18c9ee462bf7d072794d6",
+        "base64_sha256": "a7836e1d676dba0891e9e02b27a2bba92596b5917d213531d663cc71023ba362"
+      },
+      "lastCardReachable": true,
+      "emailSignupDirect": true
+    },
+    {
+      "page": "boutique",
+      "viewport": [
+        393,
+        658
+      ],
+      "status": 200,
+      "cards": [
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        }
+      ],
+      "horizontalOverflow": false,
+      "documentOverflow": false,
+      "scrollHeight": 568,
+      "clientHeight": 568,
+      "lastCardReachable": true
+    },
+    {
+      "page": "voidwalk",
+      "viewport": [
+        393,
+        658
+      ],
+      "status": 200,
+      "cards": [
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        }
+      ],
+      "horizontalOverflow": false,
+      "documentOverflow": false,
+      "scrollHeight": 568,
+      "clientHeight": 568,
+      "lastCardReachable": true
+    },
+    {
+      "page": "library",
+      "viewport": [
+        393,
+        658
+      ],
+      "status": 200,
+      "cards": [
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        }
+      ],
+      "horizontalOverflow": false,
+      "documentOverflow": false,
+      "scrollHeight": 568,
+      "clientHeight": 568,
+      "screenshot": {
+        "file": "library-393x658-menu.jpg.b64.txt",
+        "jpeg_sha256": "bdd1e22303134e2f8584acb3c709b39260f1c14545fa3828f5b2c740615873e7",
+        "base64_sha256": "ffc0a29a560bf4fd49ad79841f018598d7a26a16c206d8f8b23dfdc306eab353"
+      },
+      "lastCardReachable": true
+    },
+    {
+      "page": "books",
+      "viewport": [
+        393,
+        658
+      ],
+      "status": 200,
+      "cards": [
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        }
+      ],
+      "horizontalOverflow": false,
+      "documentOverflow": false,
+      "scrollHeight": 568,
+      "clientHeight": 568,
+      "lastCardReachable": true
+    },
+    {
+      "page": "start",
+      "viewport": [
+        393,
+        658
+      ],
+      "status": 200,
+      "cards": [
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        }
+      ],
+      "horizontalOverflow": false,
+      "documentOverflow": false,
+      "scrollHeight": 568,
+      "clientHeight": 568,
+      "lastCardReachable": true
+    },
+    {
+      "page": "shop",
+      "viewport": [
+        393,
+        658
+      ],
+      "status": 200,
+      "cards": [
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        }
+      ],
+      "horizontalOverflow": false,
+      "documentOverflow": false,
+      "scrollHeight": 519,
+      "clientHeight": 519,
+      "screenshot": {
+        "file": "shop-393x658-menu.jpg.b64.txt",
+        "jpeg_sha256": "3b9d564e700d5ed2ec55c73b0c77233fcebf8ff730d62ee84843944f563e0e61",
+        "base64_sha256": "53dd03679a6a3d53f3f2739b192ff201abe021db54280e16c6d74e8aa539eab3"
+      },
+      "lastCardReachable": true
+    },
+    {
+      "page": "join",
+      "viewport": [
+        393,
+        658
+      ],
+      "status": 200,
+      "cards": [
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        }
+      ],
+      "horizontalOverflow": false,
+      "documentOverflow": false,
+      "scrollHeight": 519,
+      "clientHeight": 519,
+      "screenshot": {
+        "file": "join-393x658-menu.jpg.b64.txt",
+        "jpeg_sha256": "7dac14bfd07ac4f5ecc36fcf9b90b4b49dce56adce97d4d2d2e52940283da2f3",
+        "base64_sha256": "6bb351796fb6c7448a39ff583e4d99134c9fbc4c34249cdc100ef7ae6c803e9e"
+      },
+      "lastCardReachable": true,
+      "consentUnchecked": true
+    },
+    {
+      "page": "index",
+      "viewport": [
+        320,
+        568
+      ],
+      "status": 200,
+      "cards": [
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        }
+      ],
+      "horizontalOverflow": false,
+      "documentOverflow": false,
+      "scrollHeight": 568,
+      "clientHeight": 486,
+      "lastCardReachable": true
+    },
+    {
+      "page": "join",
+      "viewport": [
+        320,
+        568
+      ],
+      "status": 200,
+      "cards": [
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        }
+      ],
+      "horizontalOverflow": false,
+      "documentOverflow": false,
+      "scrollHeight": 519,
+      "clientHeight": 486,
+      "lastCardReachable": true,
+      "consentUnchecked": true
+    },
+    {
+      "page": "index",
+      "viewport": [
+        844,
+        390
+      ],
+      "status": 200,
+      "cards": [
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        }
+      ],
+      "horizontalOverflow": false,
+      "documentOverflow": false,
+      "scrollHeight": 568,
+      "clientHeight": 308,
+      "lastCardReachable": true
+    },
+    {
+      "page": "join",
+      "viewport": [
+        844,
+        390
+      ],
+      "status": 200,
+      "cards": [
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        }
+      ],
+      "horizontalOverflow": false,
+      "documentOverflow": false,
+      "scrollHeight": 519,
+      "clientHeight": 308,
+      "lastCardReachable": true,
+      "consentUnchecked": true
+    }
+  ],
+  "blocked_non_GET_requests": [],
+  "submissions": 0,
+  "pixel_inspection": "PASS: inspected all four actual 393x658 JPEGs after arrival/transition completion; all six thumbnails visibly contained within rounded 40x40 frames, no image spill or uneven cards.",
+  "saved_source_commit": "be60136810bd5bd30af4c23156173ad0a9853c71",
+  "tests": {
+    "room": 83,
+    "vitest": 84,
+    "node": 14,
+    "build": "build OK 2026-11-08T19:56:09Z",
+    "types": "Not rerun; prior pass, no TypeScript changes"
+  },
+  "file_hashes": {
+    "public/assets/site-menu.css": "fd64d44ce1218757e03ad166ceb06d67a8886831533b479e168500b6781fc326",
+    "qa/room-tests/site-menu.test.mjs": "aa850a5ab61cd3980b1a84fc9ae1eff2e2b148ff546c158180e322f078ceb95a"
+  },
+  "unrelated_tracked_files_unchanged": 532
+}
