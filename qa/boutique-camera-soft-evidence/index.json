@@ -1,0 +1,156 @@
+{
+ "verdict": "REJECT \u2014 the stretched streaks are gone, but the blurred backdrop is scaled and positioned differently from the main room, so ghosted duplicates of top-edge objects (ceiling spotlight; plant/rock at left pan) appear above the sharp image, and a soft blurred band with a visible seam sits below the rug. Most obvious at 82%, still visible at default 90% on 393x658 and 390x844. Landscape 844x390 and right pan are nearly acceptable. Do not publish.",
+ "base_commit": "77c793fdc3435cc81a9d62985e28224a6e8d441c",
+ "import_commit": "f48e7caf5644a1d4193a97b4930d75fcb8590b77",
+ "import_files": [
+  {
+   "path": "public/assets/boutique.js",
+   "expected_before_sha256": "fc5614d64b93cbf979a507c0187b1c61c43eddc2faac3f990c10938c9d8fd27e",
+   "sha256": "113e0b7d8a649e47b71ce67d90a7bf1c0206728c901c91ff09babe30ba1f558a",
+   "match": true
+  },
+  {
+   "path": "public/assets/boutique-doorway-proof.css",
+   "expected_before_sha256": "395f5db1d80823085daccc9c5beb0639c8bc4cc49d69ccc44c177574cff412dd",
+   "sha256": "b0f613cd711cef5f9a2fbe6caff2379c0f066edaa4e347abf5fc74912f8007e4",
+   "match": true
+  },
+  {
+   "path": "qa/room-tests/boutique-lookaround.test.mjs",
+   "expected_before_sha256": "e085391b7dd614a7bcef8b24dcc5b4321a7655eba45e9f929cc4274e252beb6d",
+   "sha256": "14833cd9bf57943458924d1a325e87f49cef57c2d98a9d267d4ae428ce4fc7f4",
+   "match": true
+  },
+  {
+   "path": "qa/room-tests/portrait-room.test.mjs",
+   "expected_before_sha256": "120c474d37c36c209a2703401d637be763bf6a0fc91910b2c13197f694a97153",
+   "sha256": "68c052226e0211f15c35b7ed0e8a6565ee4ffe562dccdf2c693fd59e659fc217",
+   "match": true
+  },
+  {
+   "path": "qa/room-tests/camera.test.mjs",
+   "expected_before_sha256": "ba86266467ad289fff982b78dff2af32c2032a4305e99505289884113ab39a36",
+   "sha256": "ef4b24ba9737ea0a6dd1e703a542744ae9e4ada826f5da38ce161ab32be52acd",
+   "match": true
+  }
+ ],
+ "import_commit_changed_only_manifest_files": true,
+ "tests": {
+  "room": {
+   "pass": 85,
+   "fail": 0
+  },
+  "build": "Harness build OK 2026-11-08T20:48:22Z",
+  "vitest_node_types": "Not re-run: no TypeScript/src or Vitest/Node test files changed; prior evidence (84 Vitest, 14 Node, tsgo passed) retained"
+ },
+ "interactions": {
+  "camera_controls": "From 0.90: Move back -> 0.86 -> 0.82 -> disabled at 0.82; Move closer -> 0.86 -> 0.90 -> 0.94 (bounded 0.82\u20131). Controls in Room menu > Display & room controls; activating a control closes the menu.",
+  "panning": "Drag 180px left moved pan 0.50 -> 0.76",
+  "live_window": "Window video playing; currentTime advanced 2.74s -> 4.25s",
+  "doorway": "Enter the Dark Room through the purple doorway -> /voidwalk.html",
+  "non_get_requests": 0,
+  "forms_submitted": 0,
+  "private_lead_reads": 0
+ },
+ "limitations": "Chromium mobile emulation, not a physical iPhone. Screenshots downscaled to 1x CSS pixels to keep files small; findings were made on the 2x originals.",
+ "screenshots": [
+  {
+   "filename": "phone-393x658-90-center.jpg.b64.txt",
+   "viewport": {
+    "width": 393,
+    "height": 658
+   },
+   "camera": "0.90",
+   "view": "pan 0.5",
+   "source": "preview http://localhost:8080/boutique.html",
+   "jpeg_sha256": "f2a8d624e8ea79d6f88e2cad780cb34e7461d1ac7599f2db9f2deaa37bee2dfb",
+   "base64_file_sha256": "09275270c453daaf667a91a64d8206eef2edc6349ee22921225de1b96382ce27",
+   "jpeg_bytes": 30495,
+   "visual_findings": "REJECT: blurred backdrop above main room shows a second, ghosted ceiling spotlight above the sharp one; soft blurred band visible below the rug."
+  },
+  {
+   "filename": "phone-393x658-90-left.jpg.b64.txt",
+   "viewport": {
+    "width": 393,
+    "height": 658
+   },
+   "camera": "0.90",
+   "view": "pan 0",
+   "source": "preview http://localhost:8080/boutique.html",
+   "jpeg_sha256": "ba11c4f284e34a42c19cbbc5543114ad88c7206e552464a693f0efdafe4d9363",
+   "base64_file_sha256": "b0d3f3de595dd21f07b1a90d5b6b3862dafea24c43a2257fa07eec514bf45838",
+   "jpeg_bytes": 35579,
+   "visual_findings": "REJECT: ghosted blurred plant/rock duplicate visible above the sharp plant at top; blurred floor band at bottom."
+  },
+  {
+   "filename": "phone-393x658-90-right.jpg.b64.txt",
+   "viewport": {
+    "width": 393,
+    "height": 658
+   },
+   "camera": "0.90",
+   "view": "pan 1",
+   "source": "preview http://localhost:8080/boutique.html",
+   "jpeg_sha256": "209b6a66d566c02a4b5552517af58337317cae04a7c0baf5b8389c13f9655b8c",
+   "base64_file_sha256": "af3e496883b9add33c9f8613d9795f8f537d1ae06d781e4c1440c84804a57a58",
+   "jpeg_bytes": 32982,
+   "visual_findings": "Least noticeable view: soft top/bottom margins read as vignette; no obvious duplicate."
+  },
+  {
+   "filename": "phone-393x658-82-center.jpg.b64.txt",
+   "viewport": {
+    "width": 393,
+    "height": 658
+   },
+   "camera": "0.82",
+   "view": "pan 0.5",
+   "source": "preview http://localhost:8080/boutique.html",
+   "jpeg_sha256": "6c2b54fd6a5cbcdd095ecfcad756cbeb6a98492c34025dbe5ed56f8f66c306ac",
+   "base64_file_sha256": "4100965a5e231c6e82dd4dfd95eaa7c5f63cb367699d2aada089651224157083",
+   "jpeg_bytes": 29855,
+   "visual_findings": "REJECT: ~45px top band clearly shows a doubled spotlight; ~60px bottom band is a dark blurred strip with a visible soft seam under the rug \u2014 reads as framed."
+  },
+  {
+   "filename": "phone-393x658-90-controls.jpg.b64.txt",
+   "viewport": {
+    "width": 393,
+    "height": 658
+   },
+   "camera": "0.90",
+   "view": "pan 0.5, Room menu open",
+   "source": "preview http://localhost:8080/boutique.html",
+   "jpeg_sha256": "a23b231ec5047dad58550eb961537d4d6b3d85dc5154f57a671cca5496ca4703",
+   "base64_file_sha256": "ad0fa0f01f89630caf3c1fae794441a09c8c95ae6bdbc4be982cce06f23d2b3e",
+   "jpeg_bytes": 26910,
+   "visual_findings": "Controls visible: Move back / Move closer / Whole room. Menu unchanged."
+  },
+  {
+   "filename": "phone-390x844-90-center.jpg.b64.txt",
+   "viewport": {
+    "width": 390,
+    "height": 844
+   },
+   "camera": "0.90",
+   "view": "pan 0.5",
+   "source": "preview http://localhost:8080/boutique.html",
+   "jpeg_sha256": "9bbe1f357dc5b2ac909ddc37b7b85c76f1503e39c666287852f38c5f730d1d75",
+   "base64_file_sha256": "c58475350a66821b496f2aa5fc77aba97bfe85efb47cdb6b92260d7eba64a613",
+   "jpeg_bytes": 37216,
+   "visual_findings": "REJECT: ghosted spotlight glow above sharp spotlight at top; blurred band under rug at bottom."
+  },
+  {
+   "filename": "landscape-844x390-90-center.jpg.b64.txt",
+   "viewport": {
+    "width": 844,
+    "height": 390
+   },
+   "camera": "0.90",
+   "view": "pan 0.5",
+   "source": "preview http://localhost:8080/boutique.html",
+   "jpeg_sha256": "084ddfc68051d48e0f3275d89d53ecb721f34495fedb0a8a9b1669c6c9033f67",
+   "base64_file_sha256": "83c7bfe1999d60158efe51ada0183ce9d109763d82c9950f04a9fb5c8fd671eb",
+   "jpeg_bytes": 49169,
+   "visual_findings": "Mostly acceptable: thin soft margins top/bottom; slight blurred light row at bottom edge."
+  }
+ ]
+}
