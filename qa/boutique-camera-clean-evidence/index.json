@@ -1,0 +1,225 @@
+{
+ "verdict": "ACCEPT (visual candidate) \u2014 dominant full-width room stays immersive at default 94%; only a small uniform dark ceiling margin with a soft fade; no duplicated objects, blurred/stretched bands, bottom gap or distortion at any captured size. 88% leaves a larger (~12%) but still clean ceiling band. Root to inspect before publishing.",
+ "base_commit": "8366ee81590927d54a20bc6d890b7e7c18e798a4",
+ "import_files": [
+  {
+   "path": "public/assets/boutique.js",
+   "expected_before_sha256": "113e0b7d8a649e47b71ce67d90a7bf1c0206728c901c91ff09babe30ba1f558a",
+   "sha256": "ad198c6fde98006c0018e21a4d000465ce31f8e7f4fb82ba29ec186590299fbf",
+   "before_match": true,
+   "final_match": true
+  },
+  {
+   "path": "public/assets/boutique-doorway-proof.css",
+   "expected_before_sha256": "b0f613cd711cef5f9a2fbe6caff2379c0f066edaa4e347abf5fc74912f8007e4",
+   "sha256": "7251425f953fccb6bcc8e6751cd1566041a8a7791ec7cf7df749c486f4a307c7",
+   "before_match": true,
+   "final_match": true
+  },
+  {
+   "path": "qa/room-tests/boutique-lookaround.test.mjs",
+   "expected_before_sha256": "14833cd9bf57943458924d1a325e87f49cef57c2d98a9d267d4ae428ce4fc7f4",
+   "sha256": "5009998e3d467e4be786b89ef60e57b0778c1cdb5a4fd963ea2e50e8bf0c1afc",
+   "before_match": true,
+   "final_match": true
+  },
+  {
+   "path": "qa/room-tests/portrait-room.test.mjs",
+   "expected_before_sha256": "68c052226e0211f15c35b7ed0e8a6565ee4ffe562dccdf2c693fd59e659fc217",
+   "sha256": "5c1895decd1ee32ecc8a397a685507ae4468e56ed9524b2f85aede1b296d4013",
+   "before_match": true,
+   "final_match": true
+  },
+  {
+   "path": "qa/room-tests/camera.test.mjs",
+   "expected_before_sha256": "ef4b24ba9737ea0a6dd1e703a542744ae9e4ada826f5da38ce161ab32be52acd",
+   "sha256": "f9e9d477b8902735cc004ec80caf892ed68a647bd448e9cea34940fb41009df0",
+   "before_match": true,
+   "final_match": true
+  }
+ ],
+ "pixel_checks": "Top ceiling band measured uniform (luma 8, zero column variation) in all shots; room stage keeps 1976:796 ratio (~2.48) and its bottom edge equals the viewport bottom in every shot.",
+ "controls": {
+  "steps_observed": [
+   "0.91",
+   "0.88",
+   "back-disabled=True",
+   "0.91",
+   "0.94",
+   "0.97",
+   "1",
+   "closer-disabled=True"
+  ],
+  "note": "Move back 0.94\u21920.91\u21920.88 then disabled; Move closer 0.88\u2192\u2026\u21921.00 then disabled. Menu closes after each tap by design."
+ },
+ "pan_drag": {
+  "before": "0.49999986635463267",
+  "after": "0.6729241710802703"
+ },
+ "tests": {
+  "room_tests": "85/85 pass (node --test qa/room-tests)",
+  "build": "vite build passed"
+ },
+ "non_get_requests": [],
+ "limitations": [
+  "Chromium phone emulation, not a physical iPhone.",
+  "Doorway/video/signup not re-tested (code paths unchanged; passed previously).",
+  "Not published; no forms submitted, no private data read."
+ ],
+ "screenshots": [
+  {
+   "file": "phone-393x658-94-center.jpg.b64.txt",
+   "jpeg_sha256": "b642999a71cbcd4a39b3ddd07d31a125939a0d07508d755c7faaffed3f39db16",
+   "route": "/boutique.html",
+   "source": "preview (localhost dev server, Chromium)",
+   "viewport": [
+    393,
+    658
+   ],
+   "camera": 0.94,
+   "pan": "0.5",
+   "room_stage_bounds_xywh": [
+    -571,
+    39,
+    1535,
+    619
+   ],
+   "room_stage_ratio": 2.48,
+   "stage_bottom_equals_viewport_bottom": true,
+   "horizontal_overflow": false,
+   "finding": "Fresh session default 0.94. Full-width room dominates; ~39px uniform dark ceiling margin (6%) with soft top fade; no duplicated objects, streaks or blur bands; rug reaches phone bottom (stage bottom = 658)."
+  },
+  {
+   "file": "phone-393x658-94-left.jpg.b64.txt",
+   "jpeg_sha256": "b640dc95ffdaf5c0dbd43b9fb28152c8f9722c5181865669c07d0b7e69c27acf",
+   "route": "/boutique.html",
+   "source": "preview (localhost dev server, Chromium)",
+   "viewport": [
+    393,
+    658
+   ],
+   "camera": 0.94,
+   "pan": "0",
+   "room_stage_bounds_xywh": [
+    0,
+    39,
+    1535,
+    619
+   ],
+   "room_stage_ratio": 2.48,
+   "stage_bottom_equals_viewport_bottom": true,
+   "horizontal_overflow": false,
+   "finding": "Default 0.94 panned fully left (apparel rail). Same clean 39px top margin; no ghosted plant/rock; floor reaches bottom."
+  },
+  {
+   "file": "phone-393x658-94-right.jpg.b64.txt",
+   "jpeg_sha256": "347ad2a4271517443c5151c6c4640a563abcfda17071a9d8c8568765a70f85f3",
+   "route": "/boutique.html",
+   "source": "preview (localhost dev server, Chromium)",
+   "viewport": [
+    393,
+    658
+   ],
+   "camera": 0.94,
+   "pan": "1",
+   "room_stage_bounds_xywh": [
+    -1142,
+    39,
+    1535,
+    619
+   ],
+   "room_stage_ratio": 2.48,
+   "stage_bottom_equals_viewport_bottom": true,
+   "horizontal_overflow": false,
+   "finding": "Default 0.94 panned fully right (purple doorway). Clean top margin; no artefacts; floor reaches bottom."
+  },
+  {
+   "file": "phone-393x658-88-center.jpg.b64.txt",
+   "jpeg_sha256": "886b8236394cdd5acec81e1b68edfd7e4e0a539285b510ad7619edba7dd21b06",
+   "route": "/boutique.html",
+   "source": "preview (localhost dev server, Chromium)",
+   "viewport": [
+    393,
+    658
+   ],
+   "camera": 0.88,
+   "pan": "0.5",
+   "room_stage_bounds_xywh": [
+    -522,
+    79,
+    1437,
+    579
+   ],
+   "room_stage_ratio": 2.482,
+   "stage_bottom_equals_viewport_bottom": true,
+   "horizontal_overflow": false,
+   "finding": "Minimum 0.88. ~79px dark ceiling margin (12%) \u2014 more noticeable but still clean and uniform; room still full-width and immersive, not the narrow strip; no gap below rug."
+  },
+  {
+   "file": "phone-393x658-94-controls.jpg.b64.txt",
+   "jpeg_sha256": "127852c8577c1265539b48bad98c1a69d44a528cac8e3436f46bb16c224662af",
+   "route": "/boutique.html",
+   "source": "preview (localhost dev server, Chromium)",
+   "viewport": [
+    393,
+    658
+   ],
+   "camera": 0.94,
+   "pan": "0.5",
+   "room_stage_bounds_xywh": [
+    -571,
+    39,
+    1535,
+    619
+   ],
+   "room_stage_ratio": 2.48,
+   "stage_bottom_equals_viewport_bottom": true,
+   "horizontal_overflow": false,
+   "finding": "Room menu > Display & room controls open: Move back / Move closer / Whole room visible."
+  },
+  {
+   "file": "phone-390x844-94-center.jpg.b64.txt",
+   "jpeg_sha256": "9b326717a1c42458f717960cb78fe54c3d8cd46fe4730bf70183a3cc1bf81276",
+   "route": "/boutique.html",
+   "source": "preview (localhost dev server, Chromium)",
+   "viewport": [
+    390,
+    844
+   ],
+   "camera": 0.94,
+   "pan": "0.5",
+   "room_stage_bounds_xywh": [
+    -790,
+    51,
+    1969,
+    793
+   ],
+   "room_stage_ratio": 2.483,
+   "stage_bottom_equals_viewport_bottom": true,
+   "horizontal_overflow": false,
+   "finding": "Default 0.94 on taller phone. ~51px clean ceiling margin; room fills the rest; no artefacts; rug to bottom."
+  },
+  {
+   "file": "landscape-844x390-94-center.jpg.b64.txt",
+   "jpeg_sha256": "50fd7068ddbf697b9079f93e8a14d97168b28c1213074e99ca9ca9fabdf93764",
+   "route": "/boutique.html",
+   "source": "preview (localhost dev server, Chromium)",
+   "viewport": [
+    844,
+    390
+   ],
+   "camera": 0.94,
+   "pan": "0.5",
+   "room_stage_bounds_xywh": [
+    -33,
+    23,
+    910,
+    367
+   ],
+   "room_stage_ratio": 2.48,
+   "stage_bottom_equals_viewport_bottom": true,
+   "horizontal_overflow": false,
+   "finding": "Landscape default 0.94. ~23px clean top margin; full room wide and immersive; no bands at sides or bottom."
+  }
+ ]
+}
