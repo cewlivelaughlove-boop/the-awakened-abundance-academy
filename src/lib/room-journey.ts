@@ -24,6 +24,12 @@ export function withRoomJourney(html: string): string {
     }
     for (const [before, after] of patches) result = result.replace(before, after);
   }
+  if (room === "library") {
+    result = result.replace(
+      "Free digital edition · signup coming soon",
+      "Free guide coming soon · Email signup is open",
+    );
+  }
   if (!result.includes("immersive-proof.js")) {
     const assetVersion = "menu-20261108-11";
     const styles =
@@ -38,8 +44,13 @@ export function withRoomJourney(html: string): string {
       `<script src="./assets/site-menu.js?v=menu-20261108-12"></script><script type="module" src="./assets/immersive-proof.js?v=${assetVersion}"></script></body>`,
     );
   }
-  return result.replace(
-    /(assets\/(?:boutique|celestial-reading)\.(?:js|css))(?:\?[^"'<>\s]*)?/g,
-    "$1?v=menu-20261108-11",
-  ).replace("assets/boutique.js?v=menu-20261108-11", "assets/boutique.js?v=boutique-camera-20261108-13");
+  return result
+    .replace(
+      /(assets\/(?:boutique|celestial-reading)\.(?:js|css))(?:\?[^"'<>\s]*)?/g,
+      "$1?v=menu-20261108-11",
+    )
+    .replace(
+      "assets/boutique.js?v=menu-20261108-11",
+      "assets/boutique.js?v=boutique-camera-20261108-13",
+    );
 }
