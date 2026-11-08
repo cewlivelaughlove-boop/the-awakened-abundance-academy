@@ -25,19 +25,20 @@ export function withRoomJourney(html: string): string {
     for (const [before, after] of patches) result = result.replace(before, after);
   }
   if (!result.includes("immersive-proof.js")) {
+    const assetVersion = "phone-20261108-9";
     const styles =
-      '<link rel="stylesheet" href="./assets/immersive-proof.css?v=rooms-20261108-6">' +
+      `<link rel="stylesheet" href="./assets/immersive-proof.css?v=${assetVersion}">` +
       (room === "boutique"
-        ? '<link rel="stylesheet" href="./assets/boutique-doorway-proof.css?v=rooms-20261108-6">'
+        ? '<link rel="stylesheet" href="./assets/boutique-doorway-proof.css?v=phone-20261108-9">'
         : "");
     result = result.replace("</head>", styles + "</head>");
     result = result.replace(
       "</body>",
-      '<script type="module" src="./assets/immersive-proof.js?v=rooms-20261108-6"></script></body>',
+      `<script type="module" src="./assets/immersive-proof.js?v=${assetVersion}"></script></body>`,
     );
   }
   return result.replace(
     /(assets\/(?:boutique|celestial-reading)\.(?:js|css))(?:\?[^"'<>\s]*)?/g,
-    "$1?v=rooms-20261108-6",
+    "$1?v=phone-20261108-9",
   );
 }

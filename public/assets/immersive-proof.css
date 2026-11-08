@@ -64,3 +64,13 @@ body .site-header{display:none!important}.proof-help[hidden]{display:none!import
 .proof-passage-portrait-door .proof-portal-destination{left:25%;top:14%;width:51%;height:78%}
 
 .proof-private-note a{color:#cdbcd5;text-decoration:none;display:inline-flex;align-items:center;min-height:44px}.proof-room-menu:focus-within{z-index:46}
+
+/* Keep added captions in one menu, never floating over the room. */
+.proof-clean-room .proof-room-name{display:none}.proof-clean-room .proof-resources button{position:static;display:block;width:100%;border:0;border-radius:0;background:none;color:#e1d5e7;padding:10px 0;min-height:44px;text-align:left;font:inherit;transform:none;box-shadow:none;backdrop-filter:none}.proof-clean-room .proof-door{top:50%;bottom:auto;transform:translateY(-50%);width:44px;height:64px;border-radius:8px 0 0 8px}.proof-clean-room .proof-door small{display:none}.proof-clean-room .proof-resources button:focus-visible{outline:2px solid #ead9be;outline-offset:2px}
+
+.proof-clean-room .proof-boutique-threshold span,.proof-clean-room .proof-boutique-return span,.proof-passage>p{display:none}
+.proof-clean-room .proof-door-left{border-radius:0 8px 8px 0}
+
+@media(max-width:700px){.proof-passage-room{background-size:cover}}
+
+.proof-clean-room .proof-resources button[hidden]{display:none}
