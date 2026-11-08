@@ -30,7 +30,7 @@ export function withRoomJourney(html: string): string {
       '<link rel="stylesheet" href="./assets/site-menu.css?v=menu-20261108-12">' +
       `<link rel="stylesheet" href="./assets/immersive-proof.css?v=${assetVersion}">` +
       (room === "boutique"
-        ? '<link rel="stylesheet" href="./assets/boutique-doorway-proof.css?v=menu-20261108-11">'
+        ? '<link rel="stylesheet" href="./assets/boutique-doorway-proof.css?v=boutique-camera-20261108-13">'
         : "");
     result = result.replace("</head>", styles + "</head>");
     result = result.replace(
@@ -41,5 +41,5 @@ export function withRoomJourney(html: string): string {
   return result.replace(
     /(assets\/(?:boutique|celestial-reading)\.(?:js|css))(?:\?[^"'<>\s]*)?/g,
     "$1?v=menu-20261108-11",
-  );
+  ).replace("assets/boutique.js?v=menu-20261108-11", "assets/boutique.js?v=boutique-camera-20261108-13");
 }
