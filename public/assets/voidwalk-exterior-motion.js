@@ -1,72 +1,110 @@
-/* Original 2.5D exterior motion. No downloads, storage, network or WebGL.
- * Right-to-left travel follows the existing planet-journey-v4 video.
- * Only the open rear sky and ceiling aperture are painted. */
+/* Native playback of the approved journey film. No frame-copy/render loop.
+ * The existing room photograph, sculpture exclusion and controls are preserved. */
 export const EXTERIOR_SIZE={width:1672,height:941};
-export const EXTERIOR_FRAME_INTERVAL=50; // At most 20 rendered frames per second.
-export const EXTERIOR_MAX_WIDTH=1400;
+// Inset trace of the visible exterior through the left doorway, in original
+// art coordinates. The arch, vertical frame, bottom sill and foreground table
+// are outside this polygon. Reuse one trace for both SVG and generated mask.
+export const LEFT_WINDOW_POINTS=Object.freeze([[166,233],[237,237],[242,263],[246,304],[248,345],[248,438],[174,438],[170,370],[168,315],[166,270]].map(point=>Object.freeze(point)));
+export const LEFT_WINDOW_PATH=LEFT_WINDOW_POINTS.map(([x,y],i)=>`${i?'L':'M'}${x} ${y}`).join(' ')+' Z';
+export const EXTERIOR_MASK=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1672 941"><path fill="white" fill-rule="evenodd" d="M511 488 L512 410 C520 279 666 169 834 167 C996 169 1154 283 1178 450 L1178 488 Z"/><ellipse fill="white" fill-opacity=".53" cx="834" cy="70" rx="322" ry="67"/><path fill="white" d="${LEFT_WINDOW_PATH}"/></svg>`;
 
-export function exteriorDrift(seconds){
- // Very distant galaxy moves less than the nearer light field. A long, smooth
- // cycle avoids a visible reset and never shifts the room photograph itself.
- return {x:-5.5*Math.sin(seconds/90),y:.75*Math.sin(seconds/125)};
+export const SCULPTURE_ROI={x:680,y:230,width:310,height:260};
+
+// Pure, bounded, one-time segmentation of the existing warm sculpture pixels.
+// Cool sky remains open between the wires. No image or video frame is altered.
+export function sculptureProtection(rgba,width,height){
+ const seed=new Uint8ClampedArray(width*height),result=new Uint8ClampedArray(width*height);
+ for(let i=0;i<seed.length;i++){
+  const r=rgba[i*4],g=rgba[i*4+1],b=rgba[i*4+2];
+  if(r>28&&r-g>3&&g-b>3&&r-b>9)seed[i]=255;
+ }
+ // Protect antialiasing and pale highlights next to gold with a one-pixel
+ // solid dilation and a second pixel at 35%, rather than a broad silhouette.
+ for(let y=0;y<height;y++)for(let x=0;x<width;x++){
+  let alpha=0;
+  for(let dy=-2;dy<=2;dy++)for(let dx=-2;dx<=2;dx++){
+   const nx=x+dx,ny=y+dy;if(nx<0||ny<0||nx>=width||ny>=height)continue;
+   if(seed[ny*width+nx])alpha=Math.max(alpha,Math.abs(dx)<=1&&Math.abs(dy)<=1?255:89);
+  }
+  result[y*width+x]=alpha;
+ }
+ return result;
 }
 
-export function starPosition(star,seconds){
- const span=star.right-star.left;
- const x=star.left+(((star.x-star.left-seconds*star.speed)%span)+span)%span;
- return {x,y:star.y+Math.sin(seconds*.12+star.phase)*.45};
+export function createSculptureMask(art,doc=document){
+ const canvas=doc.createElement('canvas');canvas.width=EXTERIOR_SIZE.width;canvas.height=EXTERIOR_SIZE.height;
+ const ctx=canvas.getContext('2d',{willReadFrequently:true});if(!ctx)throw Error('Mask unavailable');
+ const {x,y,width,height}=SCULPTURE_ROI;
+ // This is the only image draw/read. The canvas is detached and never reused.
+ ctx.drawImage(art,0,0,canvas.width,canvas.height);
+ const protection=sculptureProtection(ctx.getImageData(x,y,width,height).data,width,height);
+ ctx.clearRect(0,0,canvas.width,canvas.height);ctx.fillStyle='#fff';
+ ctx.beginPath();ctx.moveTo(511,488);ctx.lineTo(512,410);ctx.bezierCurveTo(520,279,666,169,834,167);ctx.bezierCurveTo(996,169,1154,283,1178,450);ctx.lineTo(1178,488);ctx.closePath();ctx.fill();
+ ctx.globalAlpha=.53;ctx.beginPath();ctx.ellipse(834,70,322,67,0,0,Math.PI*2);ctx.fill();ctx.globalAlpha=1;
+ // The adjacent room shares this same film and time; no second decoder.
+ ctx.beginPath();LEFT_WINDOW_POINTS.forEach(([px,py],i)=>{if(i===0)ctx.moveTo(px,py);else ctx.lineTo(px,py);});ctx.closePath();ctx.fill();
+ const aperture=ctx.getImageData(x,y,width,height);
+ for(let i=0;i<protection.length;i++)aperture.data[i*4+3]=Math.round(aperture.data[i*4+3]*(1-protection[i]/255));
+ ctx.putImageData(aperture,x,y);return canvas.toDataURL('image/png');
 }
 
 export function mountVoidwalkExteriorMotion(root=document){
  const room=root.querySelector('.voidwalk'),plane=root.querySelector('.chamber-plane'),art=root.querySelector('.chamber-art');
  if(!room||!plane||!art||plane.querySelector('.chamber-exterior-motion'))return false;
- const canvas=document.createElement('canvas');canvas.className='chamber-exterior-motion';canvas.setAttribute('aria-hidden','true');
- const ctx=canvas.getContext('2d',{alpha:true});if(!ctx)return false;
- const mask=document.createElement('canvas'),mctx=mask.getContext('2d',{alpha:true});if(!mctx)return false;
- art.after(canvas);
+ const video=document.createElement('video');video.className='chamber-exterior-motion';
+ video.muted=true;video.defaultMuted=true;video.loop=true;video.playsInline=true;video.preload='auto';
+ video.setAttribute('muted','');video.setAttribute('playsinline','');video.setAttribute('aria-hidden','true');video.tabIndex=-1;
+ const mask=`url("data:image/svg+xml,${encodeURIComponent(EXTERIOR_MASK)}")`;
+ Object.assign(video.style,{position:'absolute',inset:'0',width:'100%',height:'100%',objectFit:'fill',pointerEvents:'none',opacity:'.72',visibility:'hidden',maskImage:mask,maskSize:'100% 100%',maskRepeat:'no-repeat',webkitMaskImage:mask,webkitMaskSize:'100% 100%',webkitMaskRepeat:'no-repeat'});
+ // Fail closed in a browser without masks, rather than cover the room in film.
+ if(typeof CSS!=='undefined'&&!CSS.supports('mask-image',mask)&&!CSS.supports('-webkit-mask-image',mask))return false;
+ art.after(video);
  const reduce=matchMedia('(prefers-reduced-motion: reduce)');
- const {width:W,height:H}=EXTERIOR_SIZE;
- let timer=null,last=0,elapsed=0,scale=1,ready=false,destroyed=false,visible=true,renderCount=0;
- // Deterministic points make screenshots/test runs reproducible. Sparse layers,
- // no warp streaks, no flash and no points over the solid room surfaces.
- let seed=6083;const random=()=>{seed=(seed*16807)%2147483647;return(seed-1)/2147483646};
- const stars=[];
- for(const [count,left,right,top,bottom] of [[88,505,1190,155,494],[34,500,1165,1,141]]){
-  for(let i=0;i<count;i++){const near=i%5===0;stars.push({left,right,x:left+random()*(right-left),y:top+random()*(bottom-top),speed:near?10+random()*4:2.5+random()*2,radius:near?.85+random()*.45:.35+random()*.45,alpha:near?.52+random()*.22:.2+random()*.3,phase:random()*Math.PI*2});}
+ let destroyed=false,visible=true,loading=false,playPending=false,pageHidden=false,failed=false,maskReady=false,maskBuilt=false;
+ function state(value){if(video.dataset.motionState!==value)video.dataset.motionState=value;}
+ function allowed(){return maskReady&&!destroyed&&!failed&&!pageHidden&&visible&&!document.hidden&&!room.classList.contains('paused')&&!reduce.matches;}
+ function stop(){if(!video.paused)video.pause();state(reduce.matches?'reduced':'paused');}
+ async function play(){
+  if(playPending||!allowed()||!video.src)return;
+  if(!video.paused){state('playing');return;}
+  playPending=true;
+  try{await video.play();if(allowed())state('playing');else stop();}
+  catch{if(allowed())state('blocked');}
+  finally{playPending=false;}
  }
- function makeMask(){
-  mask.width=canvas.width;mask.height=canvas.height;mctx.clearRect(0,0,mask.width,mask.height);mctx.save();mctx.scale(scale,scale);mctx.fillStyle='#fff';mctx.filter='blur(2px)';
-  // Rear arch, safely inset from its bronze/stone frame.
-  mctx.beginPath();mctx.moveTo(511,488);mctx.lineTo(512,410);mctx.bezierCurveTo(520,279,666,169,834,167);mctx.bezierCurveTo(996,169,1154,283,1178,450);mctx.lineTo(1178,488);mctx.closePath();
-  // Preserve the central bronze sculpture and its pedestal, including ring.
-  mctx.moveTo(1001,376);mctx.ellipse(837,376,164,145,0,0,Math.PI*2);mctx.fill('evenodd');
-  // Ceiling opening. Projected stars on the solid ceiling remain stationary.
-  mctx.beginPath();mctx.ellipse(834,70,322,67,0,0,Math.PI*2);mctx.fill();mctx.restore();
+ async function load(){
+  if(loading||video.src||!allowed())return;loading=true;state('loading');
+  try{
+   if(!window.academyMedia)await import('./media-loader.js');
+   const url=await window.academyMedia.load('journey');
+   if(destroyed)return;video.src=url;sync();
+  }catch{failed=true;state('error');}
+  finally{loading=false;}
  }
- function resize(){
-  if(destroyed)return;const cssWidth=plane.clientWidth||W;const width=Math.max(480,Math.min(EXTERIOR_MAX_WIDTH,Math.round(cssWidth)));scale=width/W;canvas.width=width;canvas.height=Math.round(H*scale);makeMask();if(ready)paint();
+ function sync(){if(failed||destroyed||!maskReady)return;if(!allowed()){stop();return;}if(video.src)void play();else void load();}
+ function prepareMask(){
+  if(maskBuilt||destroyed||!art.complete||!art.naturalWidth)return;maskBuilt=true;
+  try{
+   const precise=`url("${createSculptureMask(art)}")`;
+   video.style.maskImage=precise;video.style.webkitMaskImage=precise;
+   maskReady=true;video.style.visibility='visible';sync();
+  }catch{failed=true;state('mask-error');} // Keep the original photograph on failure.
  }
- function allowed(){return ready&&!destroyed&&visible&&!document.hidden&&!room.classList.contains('paused')&&!reduce.matches;}
- function paint(){
-  if(!ready||destroyed)return;ctx.clearRect(0,0,canvas.width,canvas.height);ctx.save();ctx.scale(scale,scale);
-  const d=exteriorDrift(elapsed);ctx.drawImage(art,d.x,d.y,W,H);
-  // Two speeds give depth while matching the other room's measured leftward
-  // drift. The original galaxy and existing planet limb remain recognizable.
-  for(const star of stars){const p=starPosition(star,elapsed);ctx.globalAlpha=star.alpha*(.92+.08*Math.sin(elapsed*.3+star.phase));ctx.fillStyle='#e4e9ed';ctx.beginPath();ctx.arc(p.x,p.y,star.radius,0,Math.PI*2);ctx.fill();}
-  ctx.restore();ctx.globalAlpha=1;ctx.globalCompositeOperation='destination-in';ctx.drawImage(mask,0,0);ctx.globalCompositeOperation='source-over';renderCount++;canvas.dataset.motionFrames=String(renderCount);canvas.dataset.motionTime=elapsed.toFixed(2);
- }
- function stop(){if(timer!==null){clearTimeout(timer);timer=null;}last=0;canvas.dataset.motionState=reduce.matches?'reduced':'paused';}
- function tick(){timer=null;if(!allowed()){stop();return;}const now=performance.now();if(last)elapsed+=Math.min(.15,(now-last)/1000);last=now;paint();canvas.dataset.motionState='playing';timer=setTimeout(tick,EXTERIOR_FRAME_INTERVAL);}
- function sync(){if(allowed()){if(timer===null){last=0;tick();}}else stop();}
+ art.addEventListener('load',prepareMask);
+ // No loadeddata->play cycle and no load() calls: assigning src is sufficient.
+ const onError=()=>{failed=true;if(!video.paused)video.pause();video.style.visibility='hidden';state('error');};
+ video.addEventListener('error',onError);
  const observer=new MutationObserver(sync);observer.observe(room,{attributes:true,attributeFilter:['class']});
- const resizeObserver=new ResizeObserver(resize);resizeObserver.observe(plane);
- const intersection=typeof IntersectionObserver==='function'?new IntersectionObserver(entries=>{visible=entries[0]?.isIntersecting!==false;sync();}):null;intersection?.observe(plane);
- const onLoaded=()=>{ready=art.naturalWidth>0;if(ready){resize();sync();}};
- art.addEventListener('load',onLoaded);document.addEventListener('visibilitychange',sync);reduce.addEventListener('change',sync);
- const onPageHide=e=>{stop();if(!e.persisted){destroyed=true;observer.disconnect();resizeObserver.disconnect();intersection?.disconnect();document.removeEventListener('visibilitychange',sync);reduce.removeEventListener('change',sync);art.removeEventListener('load',onLoaded);}};
- window.addEventListener('pagehide',onPageHide);window.addEventListener('pageshow',sync);
- resize();if(art.complete)onLoaded();
- return true;
+ const intersection=typeof IntersectionObserver==='function'?new IntersectionObserver(entries=>{const next=entries[0]?.isIntersecting!==false;if(next!==visible){visible=next;sync();}}):null;intersection?.observe(plane);
+ document.addEventListener('visibilitychange',sync);reduce.addEventListener('change',sync);
+ // On phones that reject muted autoplay, the next real room gesture can
+ // start the existing film. Respect explicit pause and reduced-motion.
+ const retryFromGesture=()=>{if(video.dataset.motionState==='blocked'&&allowed())void play();};
+ document.addEventListener('pointerup',retryFromGesture,{passive:true});
+ document.addEventListener('keydown',retryFromGesture);
+ const onPageShow=()=>{pageHidden=false;sync();};
+ const onPageHide=e=>{pageHidden=true;stop();if(!e.persisted){destroyed=true;art.removeEventListener('load',prepareMask);observer.disconnect();intersection?.disconnect();document.removeEventListener('visibilitychange',sync);reduce.removeEventListener('change',sync);document.removeEventListener('pointerup',retryFromGesture);document.removeEventListener('keydown',retryFromGesture);window.removeEventListener('pageshow',onPageShow);window.removeEventListener('pagehide',onPageHide);video.removeEventListener('error',onError);video.removeAttribute('src');}};
+ window.addEventListener('pagehide',onPageHide);window.addEventListener('pageshow',onPageShow);
+ prepareMask();return true;
 }
-
 if(typeof document!=='undefined')mountVoidwalkExteriorMotion();

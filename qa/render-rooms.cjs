@@ -1,0 +1,4 @@
+const fs=require('node:fs'),path=require('node:path'),ts=require('typescript');
+require.extensions['.ts']=(m,f)=>m._compile(ts.transpileModule(fs.readFileSync(f,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022}}).outputText,f);
+const {approvedDocument}=require('../src/lib/approved-website.ts');
+(async()=>{fs.mkdirSync('qa/rendered',{recursive:true});for(const name of ['index','boutique','library','books','start'])fs.writeFileSync(`qa/rendered/${name}.html`,await approvedDocument(fs.readFileSync(`src/approved/v23/${name}.html`,'utf8')).text());for(const n of ['voidwalk','shop'])fs.copyFileSync(`public/${n}.html`,`qa/rendered/${n}.html`);fs.copyFileSync('qa/rendered/index.html','qa/rendered/entrance-review.html');if(!fs.existsSync('qa/rendered/assets'))fs.symlinkSync('../../public/assets','qa/rendered/assets');})();
