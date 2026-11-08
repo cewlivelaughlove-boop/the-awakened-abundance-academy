@@ -1,9 +1,13 @@
 import { repairSanctuaryPlayback } from "./sanctuary-playback";
 import { optimizeStandaloneAssetUrls } from "./performance-assets";
+import { withEventSignup } from "./event-signup-markup";
 
 /** Serve the approved standalone documents without React/CSS interference. */
 export function approvedDocument(html: string) {
-  return new Response(repairSanctuaryPlayback(optimizeStandaloneAssetUrls(html)), {
+  const enriched = html.includes('id="release-title"') && html.includes('class="book-page"')
+    ? withEventSignup(html)
+    : html;
+  return new Response(repairSanctuaryPlayback(optimizeStandaloneAssetUrls(enriched)), {
     headers: { "Content-Type": "text/html; charset=utf-8" },
   });
 }
