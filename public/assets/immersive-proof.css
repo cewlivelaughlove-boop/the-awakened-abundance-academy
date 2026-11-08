@@ -74,3 +74,6 @@ body .site-header{display:none!important}.proof-help[hidden]{display:none!import
 @media(max-width:700px){.proof-passage-room{background-size:cover}}
 
 .proof-clean-room .proof-resources button[hidden]{display:none}
+
+/* A loaded room should appear directly, never fade through an empty page. */
+body:has(#stage),body:has(#boutique-stage){animation:none!important}
