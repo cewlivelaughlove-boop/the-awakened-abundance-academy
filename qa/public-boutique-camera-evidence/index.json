@@ -1,0 +1,287 @@
+{
+  "publicURL": "https://awakened-abundance-academy.lovable.app/boutique.html",
+  "approved_release": "e70050a5ee7873029b6cb741e27b2e4c27951fc3",
+  "initial_geometry": {
+    "camera": 0.94,
+    "width": 1535.40625,
+    "height": 618.515625,
+    "left": -571.203125,
+    "top": 39.46875,
+    "right": 964.203125,
+    "bottom": 657.984375,
+    "ratio": 2.4824049513704685,
+    "originalWidth": 1976,
+    "originalHeight": 796,
+    "fullWidth": true,
+    "overflow": false
+  },
+  "camera_steps": [
+    0.91,
+    0.88,
+    0.91,
+    0.94,
+    0.97,
+    1
+  ],
+  "pan": {
+    "left": {
+      "camera": 0.94,
+      "width": 1535.40625,
+      "height": 618.515625,
+      "left": 0,
+      "top": 39.46875,
+      "right": 1535.40625,
+      "bottom": 657.984375,
+      "ratio": 2.4824049513704685,
+      "originalWidth": 1976,
+      "originalHeight": 796,
+      "fullWidth": true,
+      "overflow": false
+    },
+    "right": {
+      "camera": 0.94,
+      "width": 1535.40625,
+      "height": 618.515625,
+      "left": -1142.40625,
+      "top": 39.46875,
+      "right": 393,
+      "bottom": 657.984375,
+      "ratio": 2.4824049513704685,
+      "originalWidth": 1976,
+      "originalHeight": 796,
+      "fullWidth": true,
+      "overflow": false
+    },
+    "passed": true
+  },
+  "window_video": {
+    "start": 12.29828,
+    "end": 14.118238,
+    "advances": true
+  },
+  "doorway": {
+    "darkRoomURL": "https://awakened-abundance-academy.lovable.app/voidwalk.html",
+    "returnURL": "https://awakened-abundance-academy.lovable.app/boutique.html"
+  },
+  "signup": {
+    "URL": "https://awakened-abundance-academy.lovable.app/join.html",
+    "consent_checked": [
+      false
+    ],
+    "submitted": false
+  },
+  "blocked_non_GET_requests": [
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    }
+  ],
+  "runtime_errors": [],
+  "screenshots": [
+    {
+      "filename": "boutique-center-94.jpg.b64.txt",
+      "sha256_decoded_jpeg": "41252d4c78687d3dcef72f092c7a506d8d3790e66b2b73698249859110d3fd67",
+      "route": "https://awakened-abundance-academy.lovable.app/boutique.html",
+      "dimensions": {
+        "width": 393,
+        "height": 658
+      },
+      "source": "PUBLIC",
+      "geometry": {
+        "camera": 0.94,
+        "width": 1535.40625,
+        "height": 618.515625,
+        "left": -571.203125,
+        "top": 39.46875,
+        "right": 964.203125,
+        "bottom": 657.984375,
+        "ratio": 2.4824049513704685,
+        "originalWidth": 1976,
+        "originalHeight": 796,
+        "fullWidth": true,
+        "overflow": false
+      },
+      "camera": 0.94,
+      "menu_open": false,
+      "observation": "Center rug reaches phone bottom; left and right floor reach bottom naturally; no artificial edge-fill streaks or doubled objects."
+    },
+    {
+      "filename": "boutique-apparel-left-94.jpg.b64.txt",
+      "sha256_decoded_jpeg": "39c55d6e3bf1dd86664a3017d2ff9bf6cfe2d5f5aecfa328fb292eb9fc0328a2",
+      "route": "https://awakened-abundance-academy.lovable.app/boutique.html",
+      "dimensions": {
+        "width": 393,
+        "height": 658
+      },
+      "source": "PUBLIC",
+      "geometry": {
+        "camera": 0.94,
+        "width": 1535.40625,
+        "height": 618.515625,
+        "left": 0,
+        "top": 39.46875,
+        "right": 1535.40625,
+        "bottom": 657.984375,
+        "ratio": 2.4824049513704685,
+        "originalWidth": 1976,
+        "originalHeight": 796,
+        "fullWidth": true,
+        "overflow": false
+      },
+      "camera": 0.94,
+      "menu_open": false,
+      "observation": "Center rug reaches phone bottom; left and right floor reach bottom naturally; no artificial edge-fill streaks or doubled objects."
+    },
+    {
+      "filename": "boutique-doorway-right-94.jpg.b64.txt",
+      "sha256_decoded_jpeg": "ff91d04633c15a5d644247bc13258b54ef66d914a722e9c07c30dc7602ccfe7c",
+      "route": "https://awakened-abundance-academy.lovable.app/boutique.html",
+      "dimensions": {
+        "width": 393,
+        "height": 658
+      },
+      "source": "PUBLIC",
+      "geometry": {
+        "camera": 0.94,
+        "width": 1535.40625,
+        "height": 618.515625,
+        "left": -1142.40625,
+        "top": 39.46875,
+        "right": 393,
+        "bottom": 657.984375,
+        "ratio": 2.4824049513704685,
+        "originalWidth": 1976,
+        "originalHeight": 796,
+        "fullWidth": true,
+        "overflow": false
+      },
+      "camera": 0.94,
+      "menu_open": false,
+      "observation": "Center rug reaches phone bottom; left and right floor reach bottom naturally; no artificial edge-fill streaks or doubled objects."
+    },
+    {
+      "filename": "boutique-center-minimum-88.jpg.b64.txt",
+      "sha256_decoded_jpeg": "3a5eab87e2db715677a3c053126b77f9850febe7e7ca1ab6865a6a201fe76e7c",
+      "route": "https://awakened-abundance-academy.lovable.app/boutique.html",
+      "dimensions": {
+        "width": 393,
+        "height": 658
+      },
+      "source": "PUBLIC",
+      "geometry": {
+        "camera": 0.88,
+        "width": 1437.40625,
+        "height": 579.03125,
+        "left": -522.203125,
+        "top": 78.953125,
+        "right": 915.203125,
+        "bottom": 657.984375,
+        "ratio": 2.4824329429542877,
+        "originalWidth": 1976,
+        "originalHeight": 796,
+        "fullWidth": true,
+        "overflow": false
+      },
+      "camera": 0.88,
+      "menu_open": false,
+      "observation": "At minimum 88%, ceiling margin increases to approximately 78.95px; still full-width and bottom-aligned, but margin is noticeably larger."
+    },
+    {
+      "filename": "boutique-camera-controls-open-88.jpg.b64.txt",
+      "sha256_decoded_jpeg": "9cdd3cfec0d7db12ff5679643cc209c43a151aad89a95f781be41cf17b48a3d2",
+      "route": "https://awakened-abundance-academy.lovable.app/boutique.html",
+      "dimensions": {
+        "width": 393,
+        "height": 658
+      },
+      "source": "PUBLIC",
+      "geometry": {
+        "camera": 0.88,
+        "width": 1437.40625,
+        "height": 579.03125,
+        "left": -522.203125,
+        "top": 78.953125,
+        "right": 915.203125,
+        "bottom": 657.984375,
+        "ratio": 2.4824329429542877,
+        "originalWidth": 1976,
+        "originalHeight": 796,
+        "fullWidth": true,
+        "overflow": false
+      },
+      "camera": 0.88,
+      "menu_open": true,
+      "observation": "Controls visible within opened Display & room controls; menu scrolls to reveal lower controls."
+    }
+  ],
+  "limitations": [
+    "Fresh Chromium phone emulation at 393\u00d7658; not a physical iPhone.",
+    "Only requested focused public interactions tested.",
+    "No forms submitted or private records accessed; all non-GET requests blocked.",
+    "Release identifier supplied by user; no deployment settings read."
+  ],
+  "verdict": "PASS \u2014 published default 0.94 retains immersive full-width original proportions, clean small ceiling margin and floor/rug reaching viewport bottom. No stretched pixels, duplicate objects, blurred bands, bottom gap or horizontal overflow observed.",
+  "camera_bounds": {
+    "minimum": 0.88,
+    "maximum": 1,
+    "back_disabled_at_minimum": true,
+    "closer_disabled_at_maximum": true,
+    "tested_by": "Actual menu button clicks; menu reopened between taps."
+  },
+  "visual_observations": [
+    "Default 94%: approximately 39.47px clean dark ceiling margin; stage bottom 657.98px in 658px viewport.",
+    "Original artwork ratio 1976:796 preserved (rendered ratio 2.48240; minor subpixel rounding).",
+    "Center rug reaches phone bottom; left and right floor reach bottom naturally; no artificial edge-fill streaks or doubled objects.",
+    "At minimum 88%, ceiling margin increases to approximately 78.95px; still full-width and bottom-aligned, but margin is noticeably larger.",
+    "Controls visible within opened Display & room controls; menu scrolls to reveal lower controls.",
+    "Dark Room return used visible left edge doorway control; architectural return hotspot was offscreen in centered Dark Room view."
+  ]
+}
