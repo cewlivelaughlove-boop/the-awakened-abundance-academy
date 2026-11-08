@@ -1,0 +1,1357 @@
+{
+  "source": "public",
+  "baseURL": "https://awakened-abundance-academy.lovable.app",
+  "publicCommitReportedByRoot": "530e589e7b84b1ebb689554ad71b6651f3aa2039",
+  "commitLimit": "Public response exposes deployment ID, not Git SHA; four public asset hashes independently checked against saved source.",
+  "viewport": [
+    393,
+    658
+  ],
+  "browser": "Chromium mobile emulation, not physical iPhone",
+  "screenshots": [
+    {
+      "filename": "index-center.jpg.b64.txt",
+      "route": "https://awakened-abundance-academy.lovable.app/index.html",
+      "view": "Headquarters initial immersive center",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "7cde8323fe13a9e5e37ee48fe0a087602d91eda4014ce07733057c5643d8f85b",
+      "source": "public",
+      "base64_file_sha256": "316b09436dfec9ce9a104accef38587c0439f8dcf4c8ecb6e6202afe9fe78510",
+      "visible_findings": "Phone-filling sanctuary with guide, cat, telescope and moving window; panning exposes desk and right seating."
+    },
+    {
+      "filename": "menu-index.jpg.b64.txt",
+      "route": "https://awakened-abundance-academy.lovable.app/index.html",
+      "view": "Headquarters open menu",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "7437aec42fcdde89d558679fd53b6002bc8b91efb39e6fea741870bf888d34ca",
+      "source": "public",
+      "base64_file_sha256": "04cb514851583d9197509f52d39895da9c59d0f2f7ba259a061c582b01ad7ded",
+      "visible_findings": "All six destinations visible vertically, Email Signup first, consistent typography and creator credit; no horizontal clipping."
+    },
+    {
+      "filename": "boutique-entry-0.jpg.b64.txt",
+      "route": "https://awakened-abundance-academy.lovable.app/index.html",
+      "view": "public first Boutique entry frame",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "4912eb9e8b9b837cc397b6aca2370afe3a410b8f156a585198a7b0f3582ccb8e",
+      "source": "public",
+      "base64_file_sha256": "8db9baeed035b81efa06bcec3155ab25d5cc0019b4c2dcaf761ff59fddd2b5fe",
+      "visible_findings": "Phone-filling sanctuary with guide, cat, telescope and moving window; panning exposes desk and right seating."
+    },
+    {
+      "filename": "boutique-entry-1.jpg.b64.txt",
+      "route": "https://awakened-abundance-academy.lovable.app/boutique.html",
+      "view": "public first Boutique entry frame",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "3a328a33a93c7c70b0606f22bcb02750cab97d8c2fcf25aa939a85b0afc1c3f5",
+      "source": "public",
+      "base64_file_sha256": "13e4a89ae5e6207febeffcb01f98b56a886270e71e1b23257c1152de004c25ad",
+      "visible_findings": "Fully rendered approved wide Boutique, plaque and book; left pan shows Apparel rail, right pan purple doorway."
+    },
+    {
+      "filename": "boutique-entry-2.jpg.b64.txt",
+      "route": "https://awakened-abundance-academy.lovable.app/boutique.html",
+      "view": "public first Boutique entry frame",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "3a328a33a93c7c70b0606f22bcb02750cab97d8c2fcf25aa939a85b0afc1c3f5",
+      "source": "public",
+      "base64_file_sha256": "13e4a89ae5e6207febeffcb01f98b56a886270e71e1b23257c1152de004c25ad",
+      "visible_findings": "Fully rendered approved wide Boutique, plaque and book; left pan shows Apparel rail, right pan purple doorway."
+    },
+    {
+      "filename": "boutique-entry-3.jpg.b64.txt",
+      "route": "https://awakened-abundance-academy.lovable.app/boutique.html",
+      "view": "public first Boutique entry frame",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "3a328a33a93c7c70b0606f22bcb02750cab97d8c2fcf25aa939a85b0afc1c3f5",
+      "source": "public",
+      "base64_file_sha256": "13e4a89ae5e6207febeffcb01f98b56a886270e71e1b23257c1152de004c25ad",
+      "visible_findings": "Fully rendered approved wide Boutique, plaque and book; left pan shows Apparel rail, right pan purple doorway."
+    },
+    {
+      "filename": "boutique-first-arrival.jpg.b64.txt",
+      "route": "https://awakened-abundance-academy.lovable.app/boutique.html",
+      "view": "Boutique fully rendered after first HQ entry",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "3a328a33a93c7c70b0606f22bcb02750cab97d8c2fcf25aa939a85b0afc1c3f5",
+      "source": "public",
+      "base64_file_sha256": "13e4a89ae5e6207febeffcb01f98b56a886270e71e1b23257c1152de004c25ad",
+      "visible_findings": "Fully rendered approved wide Boutique, plaque and book; left pan shows Apparel rail, right pan purple doorway."
+    },
+    {
+      "filename": "index-left.jpg.b64.txt",
+      "route": "https://awakened-abundance-academy.lovable.app/index.html",
+      "view": "left panned room view",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "10cf85545a7a7919d2bddfa04254c1eed1ebaebe93f5aaa1837b5b97c151bbf2",
+      "source": "public",
+      "base64_file_sha256": "aee824003abbae47487266f646064948351dc6970f3b1d69069f9e7ad1e5c43c",
+      "visible_findings": "Phone-filling sanctuary with guide, cat, telescope and moving window; panning exposes desk and right seating."
+    },
+    {
+      "filename": "index-right.jpg.b64.txt",
+      "route": "https://awakened-abundance-academy.lovable.app/index.html",
+      "view": "right panned room view",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "d6d9043b4e89ef3c7539c1f4c67d113cee5ab773950533ca27c7eadf10bff333",
+      "source": "public",
+      "base64_file_sha256": "55b2266fb8d1c1533d0a2989c601387b0786b83644802290533231a83d3bac76",
+      "visible_findings": "Phone-filling sanctuary with guide, cat, telescope and moving window; panning exposes desk and right seating."
+    },
+    {
+      "filename": "boutique-center.jpg.b64.txt",
+      "route": "https://awakened-abundance-academy.lovable.app/boutique.html",
+      "view": "initial rendered public page / center room",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "9d75eed3f90506c34be05d723262efb06ee5fdb6e3d4d9c29d30883184262feb",
+      "source": "public",
+      "base64_file_sha256": "07fc9eb3523675abdc34d0e7ad9429ce5a2314b5ee2bf2a7d4cca9f67cdfe58e",
+      "visible_findings": "Fully rendered approved wide Boutique, plaque and book; left pan shows Apparel rail, right pan purple doorway."
+    },
+    {
+      "filename": "boutique-left.jpg.b64.txt",
+      "route": "https://awakened-abundance-academy.lovable.app/boutique.html",
+      "view": "left panned room view",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "ad426ed5481dd1f858abf61ed04db877007196f9f2f63256ba6571374a72d04a",
+      "source": "public",
+      "base64_file_sha256": "04203043bcd310a51074bd454434d204f8c4b4b4c071d4b7f5e58a8966a05606",
+      "visible_findings": "Fully rendered approved wide Boutique, plaque and book; left pan shows Apparel rail, right pan purple doorway."
+    },
+    {
+      "filename": "boutique-right.jpg.b64.txt",
+      "route": "https://awakened-abundance-academy.lovable.app/boutique.html",
+      "view": "right panned room view",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "42e4a97252a69cfc5ce7530e7a88b884ce441552a6ad2178f79e69740444a07c",
+      "source": "public",
+      "base64_file_sha256": "b2f57af2b76e54504ec897b175acf004b80270c24435ffbb38b0590e5c5de9e8",
+      "visible_findings": "Fully rendered approved wide Boutique, plaque and book; left pan shows Apparel rail, right pan purple doorway."
+    },
+    {
+      "filename": "voidwalk-center.jpg.b64.txt",
+      "route": "https://awakened-abundance-academy.lovable.app/voidwalk.html",
+      "view": "initial rendered public page / center room",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "bb0d78d4034c0c41af3a8e88e701c6774ce0228c56f0a2e74dfd28f77ceed729",
+      "source": "public",
+      "base64_file_sha256": "8f76f8985eb079f9e47df8d08d535bdfeeade4a495328bb3638a5bc414c162ba",
+      "visible_findings": "Phone-filling Dark Room; panning reveals Labyrinth/return arch and Ember/table."
+    },
+    {
+      "filename": "voidwalk-left.jpg.b64.txt",
+      "route": "https://awakened-abundance-academy.lovable.app/voidwalk.html",
+      "view": "left panned room view",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "7446b301c0846ccdc688883fe9d746e3a84483a86e7042e5b1e12a2e2cb29098",
+      "source": "public",
+      "base64_file_sha256": "e182ca52cdfd48f58d916f137b57ee8f23866a60dc9d7b226d0835bd57b5ba72",
+      "visible_findings": "Phone-filling Dark Room; panning reveals Labyrinth/return arch and Ember/table."
+    },
+    {
+      "filename": "voidwalk-right.jpg.b64.txt",
+      "route": "https://awakened-abundance-academy.lovable.app/voidwalk.html",
+      "view": "right panned room view",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "b525a159cf79e609738a3860aed699b5990193d287ff1a85c1fc73af36270b94",
+      "source": "public",
+      "base64_file_sha256": "b84b8b658ed873bfd3baf212cce2e8b1d6a7924b7edcfdfb78df70a5be51e17d",
+      "visible_findings": "Phone-filling Dark Room; panning reveals Labyrinth/return arch and Ember/table."
+    },
+    {
+      "filename": "library-center.jpg.b64.txt",
+      "route": "https://awakened-abundance-academy.lovable.app/library.html",
+      "view": "initial rendered public page / center room",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "17ae4f2ae2ed4d6f5ebe5afa391678183a546e773306debcd886b4969554bcd7",
+      "source": "public",
+      "base64_file_sha256": "880a7105f63cb7f03011a10625aba044206b2e56e020a96fc252ec97a3eb901e",
+      "visible_findings": "Library heading and first volume shown; reading page scrolls."
+    },
+    {
+      "filename": "menu-library.jpg.b64.txt",
+      "route": "https://awakened-abundance-academy.lovable.app/library.html",
+      "view": "representative open public menu",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "3652675d29af8d8092cad8c273b15c6c658956876bd74b986b94bffb79f6cff5",
+      "source": "public",
+      "base64_file_sha256": "7c3af6303587ba3dcb3e2832142887cdabd02889b150c2a2643edf60807ebbcc",
+      "visible_findings": "All six destinations visible vertically, Email Signup first, consistent typography and creator credit; no horizontal clipping."
+    },
+    {
+      "filename": "library-lower.jpg.b64.txt",
+      "route": "https://awakened-abundance-academy.lovable.app/library.html",
+      "view": "lower reading-page section after natural scrolling",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "3c62cb904f932c468f69fd6c669a7142536393fa6f4f78a8f442be168f5276c0",
+      "source": "public",
+      "base64_file_sha256": "0761d1e086cc36965f474d952fa31f85c603199b72bc5d7524ad41a630da2f95",
+      "visible_findings": "Library heading and first volume shown; reading page scrolls."
+    },
+    {
+      "filename": "books-center.jpg.b64.txt",
+      "route": "https://awakened-abundance-academy.lovable.app/books.html",
+      "view": "initial rendered public page / center room",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "945f4f0f2d3ea7a4acb4b9dace2891ebbcea5873c89bd6424bac3f57bf4674ff",
+      "source": "public",
+      "base64_file_sha256": "6f14b31b753ec78f4c4604bd5e97beaa4012af6f1db0e425730b35f56e591e3b",
+      "visible_findings": "Beyond the Script heading and transparent book display shown."
+    },
+    {
+      "filename": "books-lower.jpg.b64.txt",
+      "route": "https://awakened-abundance-academy.lovable.app/books.html",
+      "view": "lower reading-page section after natural scrolling",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "2e30dfef02a5d839fe3c78985121d001906b1b5105820fd7a8cf4874190fca87",
+      "source": "public",
+      "base64_file_sha256": "14c58345edf85e10d339a7ff3c78fd9e5f3013ca76c7ed10e2886a69c68a6f81",
+      "visible_findings": "Beyond the Script heading and transparent book display shown."
+    },
+    {
+      "filename": "start-center.jpg.b64.txt",
+      "route": "https://awakened-abundance-academy.lovable.app/start.html",
+      "view": "initial rendered public page / center room",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "5cd204a5f643a64017eb347d3e99a4c065ad35eca73b9c59c027a4395e4d3d8c",
+      "source": "public",
+      "base64_file_sha256": "c4f6d76c837985c9011f7c56cc4991816356699344cf543674d155f9b731bd95",
+      "visible_findings": "Start Here practice heading and first step visible."
+    },
+    {
+      "filename": "start-lower.jpg.b64.txt",
+      "route": "https://awakened-abundance-academy.lovable.app/start.html",
+      "view": "lower reading-page section after natural scrolling",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "3423443e04bceac7eeb5af029a8243dcb27a282a5216511b27985d0778ce5b14",
+      "source": "public",
+      "base64_file_sha256": "e4150ff74357f738521ff751cdb4721c1d9735da32233453ed3b33bc72b3552c",
+      "visible_findings": "Start Here practice heading and first step visible."
+    },
+    {
+      "filename": "shop-center.jpg.b64.txt",
+      "route": "https://awakened-abundance-academy.lovable.app/shop.html",
+      "view": "initial rendered public page / center room",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "85ffa5d9dc58fecbe5d5ad81c13c896255f40c322e91399f52d8a64b677a7802",
+      "source": "public",
+      "base64_file_sha256": "5f042e4c626da2924de6471ec59d129cad67500fe2a1381d85a09267d725560d",
+      "visible_findings": "Coming-soon collection panel remains honest; isolated menu has no foreign borders."
+    },
+    {
+      "filename": "menu-shop.jpg.b64.txt",
+      "route": "https://awakened-abundance-academy.lovable.app/shop.html",
+      "view": "representative open public menu",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "a997d9c771f76777ef4b8053521e5ef09ec628203c1da7cf1b6f44e520948be1",
+      "source": "public",
+      "base64_file_sha256": "cb834510e349d3f6d28088b0d9e2c3094deab24b6c74d9f21883939878b3390a",
+      "visible_findings": "All six destinations visible vertically, Email Signup first, consistent typography and creator credit; no horizontal clipping."
+    },
+    {
+      "filename": "join-center.jpg.b64.txt",
+      "route": "https://awakened-abundance-academy.lovable.app/join.html",
+      "view": "initial rendered public page / center room",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "58fe2d855a3ca30578c7e34f021808901251e22536dd5e0189258b869693a973",
+      "source": "public",
+      "base64_file_sha256": "b3e1aadb4cfd9ef2c6227d2141e4bca02d98095b038c762bcd4e80e972831994",
+      "visible_findings": "Moving planet above signup; unchanged email field, unchecked consent and button visible after scrolling."
+    },
+    {
+      "filename": "menu-join.jpg.b64.txt",
+      "route": "https://awakened-abundance-academy.lovable.app/join.html",
+      "view": "representative open public menu",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "8dfd248c3f636d75ec0f4e74baaf4987b1f5fee63c49290116c2f599574d22c9",
+      "source": "public",
+      "base64_file_sha256": "95c8d25b4a699e0599b57bfd527d9b495c1a19a9eae42871bc50f5b7c57fd3c5",
+      "visible_findings": "All six destinations visible vertically, Email Signup first, consistent typography and creator credit; no horizontal clipping."
+    },
+    {
+      "filename": "join-form-visible.jpg.b64.txt",
+      "route": "https://awakened-abundance-academy.lovable.app/join.html",
+      "view": "signup form after scrolling; no input or submission",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "fa76379fc8612d682cd2589e37fc4fc65a537aebc5d2c1065800f0cb8839f904",
+      "source": "public",
+      "base64_file_sha256": "841cd58acd6dc9c2c465a97988e88ae12d099ea3c6f13ecf5c0fc0b9252cfd7f",
+      "visible_findings": "Moving planet above signup; unchanged email field, unchecked consent and button visible after scrolling."
+    },
+    {
+      "filename": "boutique-before-portal.jpg.b64.txt",
+      "route": "https://awakened-abundance-academy.lovable.app/boutique.html",
+      "view": "right-side approved doorway before entering Dark Room",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "42e4a97252a69cfc5ce7530e7a88b884ce441552a6ad2178f79e69740444a07c",
+      "source": "public",
+      "base64_file_sha256": "b2f57af2b76e54504ec897b175acf004b80270c24435ffbb38b0590e5c5de9e8",
+      "visible_findings": "Fully rendered approved wide Boutique, plaque and book; left pan shows Apparel rail, right pan purple doorway."
+    },
+    {
+      "filename": "portal-hold.jpg.b64.txt",
+      "route": "https://awakened-abundance-academy.lovable.app/boutique.html",
+      "view": "existing slow portal hold",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "c6301f09de2755275a8923348506a3cf3bbd7856a2b61a0c0bd517e1b52046f8",
+      "source": "public",
+      "base64_file_sha256": "06b4b2233350e2d9335f97193e293c69ffa2d0c981726d26e48525b5654ff8b2",
+      "visible_findings": "Fully rendered approved wide Boutique, plaque and book; left pan shows Apparel rail, right pan purple doorway."
+    },
+    {
+      "filename": "portal-glide.jpg.b64.txt",
+      "route": "https://awakened-abundance-academy.lovable.app/boutique.html",
+      "view": "existing slow purple portal glide",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "c73e7a5d9b05a3077f2cd42528cdbef957c2a0f0c249273f945b730caac734a2",
+      "source": "public",
+      "base64_file_sha256": "d78f782a91d8b87c0b2665e4880b51300393f414a32c8a3fbde2ced50174d845",
+      "visible_findings": "Fully rendered approved wide Boutique, plaque and book; left pan shows Apparel rail, right pan purple doorway."
+    },
+    {
+      "filename": "portal-arrival.jpg.b64.txt",
+      "route": "https://awakened-abundance-academy.lovable.app/voidwalk.html",
+      "view": "Dark Room after slow portal",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "b294729b7824da6df6fef7ebc4b6fcb44cc2c3443ae5b286708b8f79ee869786",
+      "source": "public",
+      "base64_file_sha256": "8024c2361caeb3444880b819a4723080d16aa3421e065b8aaeeb5774df7dd4a5",
+      "visible_findings": "Phone-filling Dark Room; panning reveals Labyrinth/return arch and Ember/table."
+    }
+  ],
+  "results": [
+    {
+      "freshEntryFrames": [
+        {
+          "seconds": 0.204,
+          "route": "https://awakened-abundance-academy.lovable.app/index.html",
+          "opaquePanelCount": 0,
+          "bodyOpacity": "1"
+        },
+        {
+          "seconds": 1.157,
+          "route": "https://awakened-abundance-academy.lovable.app/boutique.html",
+          "opaquePanelCount": 0,
+          "bodyOpacity": "1"
+        },
+        {
+          "seconds": 1.819,
+          "route": "https://awakened-abundance-academy.lovable.app/boutique.html",
+          "opaquePanelCount": 0,
+          "bodyOpacity": "1"
+        },
+        {
+          "seconds": 2.915,
+          "route": "https://awakened-abundance-academy.lovable.app/boutique.html",
+          "opaquePanelCount": 0,
+          "bodyOpacity": "1"
+        }
+      ],
+      "headquartersStatus": 200,
+      "menu": {
+        "label": "Menu",
+        "links": [
+          {
+            "text": "Email Signup\n\u2192",
+            "href": "./join.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          },
+          {
+            "text": "Headquarters\n\u2192",
+            "href": "./index.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          },
+          {
+            "text": "Boutique\n\u2192",
+            "href": "./boutique.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          },
+          {
+            "text": "Dark Room\n\u2192",
+            "href": "./voidwalk.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          },
+          {
+            "text": "Library",
+            "href": "./library.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          },
+          {
+            "text": "Start Here",
+            "href": "./start.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          }
+        ],
+        "overflow": false,
+        "credit": "Created by\nFruitful Assets"
+      }
+    },
+    {
+      "boutiqueReturn": "Headquarters reached"
+    },
+    {
+      "page": "index",
+      "status": 200,
+      "finalURL": "https://awakened-abundance-academy.lovable.app/index.html",
+      "menu": {
+        "label": "Menu",
+        "links": [
+          {
+            "text": "Email Signup\n\u2192",
+            "href": "./join.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          },
+          {
+            "text": "Headquarters\n\u2192",
+            "href": "./index.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          },
+          {
+            "text": "Boutique\n\u2192",
+            "href": "./boutique.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          },
+          {
+            "text": "Dark Room\n\u2192",
+            "href": "./voidwalk.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          },
+          {
+            "text": "Library",
+            "href": "./library.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          },
+          {
+            "text": "Start Here",
+            "href": "./start.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          }
+        ],
+        "overflow": false,
+        "credit": "Created by\nFruitful Assets"
+      },
+      "panBounds": [
+        {
+          "side": "left",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1169.15625,
+            "height": 658
+          }
+        },
+        {
+          "side": "right",
+          "bounds": {
+            "x": -776.140625,
+            "y": 0,
+            "width": 1169.15625,
+            "height": 658
+          }
+        }
+      ],
+      "nativePlayback": [
+        [
+          {
+            "id": "exterior",
+            "time": 14.635915,
+            "paused": false,
+            "readyState": 4
+          },
+          {
+            "id": "",
+            "time": 0,
+            "paused": true,
+            "readyState": 0
+          },
+          {
+            "id": "",
+            "time": 0,
+            "paused": true,
+            "readyState": 0
+          },
+          {
+            "id": "",
+            "time": 0,
+            "paused": true,
+            "readyState": 0
+          }
+        ],
+        [
+          {
+            "id": "exterior",
+            "time": 16.448031,
+            "paused": false,
+            "readyState": 4
+          },
+          {
+            "id": "",
+            "time": 0,
+            "paused": true,
+            "readyState": 0
+          },
+          {
+            "id": "",
+            "time": 0,
+            "paused": true,
+            "readyState": 0
+          },
+          {
+            "id": "",
+            "time": 0,
+            "paused": true,
+            "readyState": 0
+          }
+        ]
+      ]
+    },
+    {
+      "page": "boutique",
+      "status": 200,
+      "finalURL": "https://awakened-abundance-academy.lovable.app/boutique.html",
+      "menu": {
+        "label": "Menu",
+        "links": [
+          {
+            "text": "Email Signup\n\u2192",
+            "href": "./join.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          },
+          {
+            "text": "Headquarters\n\u2192",
+            "href": "./index.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          },
+          {
+            "text": "Boutique\n\u2192",
+            "href": "./boutique.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          },
+          {
+            "text": "Dark Room\n\u2192",
+            "href": "./voidwalk.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          },
+          {
+            "text": "Library",
+            "href": "./library.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          },
+          {
+            "text": "Start Here",
+            "href": "./start.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          }
+        ],
+        "overflow": false,
+        "credit": "Created by\nFruitful Assets"
+      },
+      "panBounds": [
+        {
+          "side": "left",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1633.421875,
+            "height": 658
+          }
+        },
+        {
+          "side": "right",
+          "bounds": {
+            "x": -1240.421875,
+            "y": 0,
+            "width": 1633.421875,
+            "height": 658
+          }
+        }
+      ],
+      "nativePlayback": [
+        [
+          {
+            "id": "boutique-exterior",
+            "time": 23.553174,
+            "paused": false,
+            "readyState": 4
+          },
+          {
+            "id": "",
+            "time": 0,
+            "paused": true,
+            "readyState": 0
+          }
+        ],
+        [
+          {
+            "id": "boutique-exterior",
+            "time": 25.362911,
+            "paused": false,
+            "readyState": 4
+          },
+          {
+            "id": "",
+            "time": 0,
+            "paused": true,
+            "readyState": 0
+          }
+        ]
+      ]
+    },
+    {
+      "page": "voidwalk",
+      "status": 200,
+      "finalURL": "https://awakened-abundance-academy.lovable.app/voidwalk.html",
+      "menu": {
+        "label": "Menu",
+        "links": [
+          {
+            "text": "Email Signup\n\u2192",
+            "href": "./join.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          },
+          {
+            "text": "Headquarters\n\u2192",
+            "href": "./index.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          },
+          {
+            "text": "Boutique\n\u2192",
+            "href": "./boutique.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          },
+          {
+            "text": "Dark Room\n\u2192",
+            "href": "./voidwalk.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          },
+          {
+            "text": "Library",
+            "href": "./library.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          },
+          {
+            "text": "Start Here",
+            "href": "./start.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          }
+        ],
+        "overflow": false,
+        "credit": "Created by\nFruitful Assets"
+      },
+      "panBounds": [
+        {
+          "side": "left",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1169.15625,
+            "height": 658
+          }
+        },
+        {
+          "side": "right",
+          "bounds": {
+            "x": -676.2832641601562,
+            "y": 0,
+            "width": 1169.15625,
+            "height": 658
+          }
+        }
+      ],
+      "nativePlayback": [
+        [
+          {
+            "id": "",
+            "time": 7.297965,
+            "paused": false,
+            "readyState": 4
+          },
+          {
+            "id": "",
+            "time": 0,
+            "paused": true,
+            "readyState": 0
+          }
+        ],
+        [
+          {
+            "id": "",
+            "time": 9.11665,
+            "paused": false,
+            "readyState": 4
+          },
+          {
+            "id": "",
+            "time": 0,
+            "paused": true,
+            "readyState": 0
+          }
+        ]
+      ]
+    },
+    {
+      "page": "library",
+      "status": 200,
+      "finalURL": "https://awakened-abundance-academy.lovable.app/library.html",
+      "menu": {
+        "label": "Menu",
+        "links": [
+          {
+            "text": "Email Signup\n\u2192",
+            "href": "./join.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          },
+          {
+            "text": "Headquarters\n\u2192",
+            "href": "./index.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          },
+          {
+            "text": "Boutique\n\u2192",
+            "href": "./boutique.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          },
+          {
+            "text": "Dark Room\n\u2192",
+            "href": "./voidwalk.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          },
+          {
+            "text": "Library",
+            "href": "./library.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          },
+          {
+            "text": "Start Here",
+            "href": "./start.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          }
+        ],
+        "overflow": false,
+        "credit": "Created by\nFruitful Assets"
+      }
+    },
+    {
+      "page": "books",
+      "status": 200,
+      "finalURL": "https://awakened-abundance-academy.lovable.app/books.html",
+      "menu": {
+        "label": "Menu",
+        "links": [
+          {
+            "text": "Email Signup\n\u2192",
+            "href": "./join.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          },
+          {
+            "text": "Headquarters\n\u2192",
+            "href": "./index.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          },
+          {
+            "text": "Boutique\n\u2192",
+            "href": "./boutique.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          },
+          {
+            "text": "Dark Room\n\u2192",
+            "href": "./voidwalk.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          },
+          {
+            "text": "Library",
+            "href": "./library.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          },
+          {
+            "text": "Start Here",
+            "href": "./start.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          }
+        ],
+        "overflow": false,
+        "credit": "Created by\nFruitful Assets"
+      }
+    },
+    {
+      "page": "start",
+      "status": 200,
+      "finalURL": "https://awakened-abundance-academy.lovable.app/start.html",
+      "menu": {
+        "label": "Menu",
+        "links": [
+          {
+            "text": "Email Signup\n\u2192",
+            "href": "./join.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          },
+          {
+            "text": "Headquarters\n\u2192",
+            "href": "./index.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          },
+          {
+            "text": "Boutique\n\u2192",
+            "href": "./boutique.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          },
+          {
+            "text": "Dark Room\n\u2192",
+            "href": "./voidwalk.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          },
+          {
+            "text": "Library",
+            "href": "./library.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          },
+          {
+            "text": "Start Here",
+            "href": "./start.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          }
+        ],
+        "overflow": false,
+        "credit": "Created by\nFruitful Assets"
+      }
+    },
+    {
+      "page": "shop",
+      "status": 200,
+      "finalURL": "https://awakened-abundance-academy.lovable.app/shop.html",
+      "menu": {
+        "label": "Menu",
+        "links": [
+          {
+            "text": "Email Signup\n\u2192",
+            "href": "./join.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          },
+          {
+            "text": "Headquarters\n\u2192",
+            "href": "./index.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          },
+          {
+            "text": "Boutique\n\u2192",
+            "href": "./boutique.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          },
+          {
+            "text": "Dark Room\n\u2192",
+            "href": "./voidwalk.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          },
+          {
+            "text": "Library",
+            "href": "./library.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          },
+          {
+            "text": "Start Here",
+            "href": "./start.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          }
+        ],
+        "overflow": false,
+        "credit": "Created by\nFruitful Assets"
+      }
+    },
+    {
+      "page": "join",
+      "status": 200,
+      "finalURL": "https://awakened-abundance-academy.lovable.app/join.html",
+      "menu": {
+        "label": "Menu",
+        "links": [
+          {
+            "text": "Email Signup\n\u2192",
+            "href": "./join.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          },
+          {
+            "text": "Headquarters\n\u2192",
+            "href": "./index.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          },
+          {
+            "text": "Boutique\n\u2192",
+            "href": "./boutique.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          },
+          {
+            "text": "Dark Room\n\u2192",
+            "href": "./voidwalk.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          },
+          {
+            "text": "Library",
+            "href": "./library.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          },
+          {
+            "text": "Start Here",
+            "href": "./start.html",
+            "visible": true,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "letterSpacing": "normal"
+          }
+        ],
+        "overflow": false,
+        "credit": "Created by\nFruitful Assets"
+      },
+      "consentChecked": false,
+      "readiness": {
+        "ready": true
+      }
+    },
+    {
+      "menuNavigation": "join",
+      "reached": "https://awakened-abundance-academy.lovable.app/join.html"
+    },
+    {
+      "menuNavigation": "index",
+      "reached": "https://awakened-abundance-academy.lovable.app/index.html"
+    },
+    {
+      "menuNavigation": "boutique",
+      "reached": "https://awakened-abundance-academy.lovable.app/boutique.html"
+    },
+    {
+      "menuNavigation": "voidwalk",
+      "reached": "https://awakened-abundance-academy.lovable.app/voidwalk.html"
+    },
+    {
+      "menuNavigation": "library",
+      "reached": "https://awakened-abundance-academy.lovable.app/library.html"
+    },
+    {
+      "menuNavigation": "start",
+      "reached": "https://awakened-abundance-academy.lovable.app/start.html"
+    },
+    {
+      "boutiqueToDarkRoomSeconds": 10.617,
+      "url": "https://awakened-abundance-academy.lovable.app/voidwalk.html"
+    },
+    {
+      "darkRoomReturnSeconds": 9.742,
+      "url": "https://awakened-abundance-academy.lovable.app/boutique.html"
+    },
+    {
+      "emailSignupNavigation": "https://awakened-abundance-academy.lovable.app/join.html",
+      "consentChecked": false
+    }
+  ],
+  "publicAssetHashes": {
+    "site-menu.js": {
+      "status": 200,
+      "sha256": "7994bcd4f3e93315642bf72f80426e40163fe57bcf89df28ed981ae5a09e3111"
+    },
+    "site-menu.css": {
+      "status": 200,
+      "sha256": "d2ff4db12d42cb0709196e30c4dac98e30d85ab1d4bcab80e0c04b1343c6ce40"
+    },
+    "immersive-proof.js": {
+      "status": 200,
+      "sha256": "de0f916f21841d9ffb78fac5b6787e247d46b6076d17a4270b1f414db4e6ef30"
+    },
+    "immersive-proof.css": {
+      "status": 200,
+      "sha256": "e8384a9090e7301fc0f823b8ba6d54f3415a50e0983f9cc6c154410444baa185"
+    }
+  },
+  "pageErrors": [],
+  "blockedNonGETRequests": [
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    }
+  ],
+  "limits": [
+    "Sampled transition frames, not continuous recording",
+    "No physical iPhone/Safari check",
+    "Public Git commit is supplied by root; browser response does not expose a Git SHA. Independently verified public four-asset hashes match saved commit.",
+    "Screenshots are unaltered 393x658 browser viewport JPEGs; reading pages include natural-scroll supplemental shots, not full-page composites."
+  ],
+  "defects": [],
+  "observedSavedCommitBeforeEvidence": "530e589e7b84b1ebb689554ad71b6651f3aa2039",
+  "publicAssetsMatchSavedSource": true,
+  "verificationSummary": {
+    "allEightPagesHTTP200": true,
+    "allMenusSixVisibleDestinations": true,
+    "allSixMenuLinksReachCorrectPublicRoutes": true,
+    "signupGETReady": true,
+    "consentUnchecked": true,
+    "signupSubmissions": 0,
+    "nonGETRequestsSent": 0,
+    "blockedAutomaticTelemetryAttempts": 42,
+    "websiteEdits": 0,
+    "databaseReadsOrWrites": 0,
+    "publicationActions": 0,
+    "visibleDefectsFound": []
+  }
+}
