@@ -14,6 +14,8 @@ let active=-1,answers=Array(5).fill(null),wide=true,focusPoint=[.5,.5],zoom=1,pa
 room.classList.toggle('paused',paused);document.querySelector('#motion').setAttribute('aria-pressed',String(paused));document.querySelector('#motion').textContent=paused?'Resume motion':'Pause motion';
 
 function fit(){
+ // Whole-room arrival and resizing must never animate through a cropped frame.
+ plane.style.transition=wide?'none':'';
  const w=view.clientWidth,h=view.clientHeight,bw=Math.max(w,h*1672/941),bh=bw*941/1672;
  plane.style.width=bw+'px';plane.style.height=bh+'px';
  const z=wide?Math.min(w/bw,h/bh):zoom,px=wide?.5:focusPoint[0],py=wide?.5:focusPoint[1];

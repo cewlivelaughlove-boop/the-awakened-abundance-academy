@@ -3,8 +3,8 @@ import {readFile} from 'node:fs/promises';
 import assert from 'node:assert/strict';
 const source=await readFile(new URL('../rendered/assets/voidwalk-exterior-motion.js',import.meta.url),'utf8');
 async function fixture({reduced=false,reject=false,blockFirstPlay=false}={}){
- const dom=new JSDOM('<main class="voidwalk"><div class="chamber-plane"><img class="chamber-art"></div><button id="sound" aria-pressed="false">Sound off</button></main>',{url:'http://localhost/voidwalk.html',pretendToBeVisual:true});
- const {window}=dom;let video,loads=0,draws=0;const callbacks={};
+ const dom=new JSDOM('<main class="voidwalk"><div class="chamber-plane"><img class="chamber-art"></div><button id="motion">Motion</button><button id="sound" aria-pressed="false">Sound off</button></main>',{url:'http://localhost/voidwalk.html',pretendToBeVisual:true});
+ const {window}=dom;const room=window.document.querySelector('.voidwalk');room.classList.toggle('paused',reduced);window.document.querySelector('#motion').onclick=()=>room.classList.toggle('paused');let video,loads=0,draws=0;const callbacks={};
  const ctx=new Proxy({}, {get:(o,k)=>o[k]??(k==='drawImage'?()=>draws++:()=>{}),set:(o,k,v)=>(o[k]=v,true)});
  window.HTMLCanvasElement.prototype.getContext=()=>ctx;window.HTMLCanvasElement.prototype.toDataURL=()=> 'data:image/png;base64,TEST';ctx.getImageData=(x,y,w,h)=>({data:new Uint8ClampedArray(w*h*4)});const art=window.document.querySelector('.chamber-art');Object.defineProperties(art,{complete:{value:true},naturalWidth:{value:1672}});
  const create=window.document.createElement.bind(window.document);window.document.createElement=(name,...a)=>{const el=create(name,...a);if(name==='video'){
@@ -32,3 +32,9 @@ f=await fixture({blockFirstPlay:true});assert.equal(f.video.dataset.motionState,
 f=await fixture({blockFirstPlay:true});f.window.document.querySelector('.voidwalk').classList.add('paused');await new Promise(r=>setTimeout(r,10));f.window.document.dispatchEvent(new f.window.Event('pointerup'));await new Promise(r=>setTimeout(r,10));assert.equal(f.video._playCalls,1);assert(f.video.paused);f.close();
 f=await fixture({blockFirstPlay:true});const beforeClose=f.video._playCalls;f.window.dispatchEvent(new f.window.PageTransitionEvent('pagehide',{persisted:false}));f.window.document.dispatchEvent(new f.window.Event('pointerup'));f.window.document.dispatchEvent(new f.window.Event('keydown'));await new Promise(r=>setTimeout(r,10));assert.equal(f.video._playCalls,beforeClose);f.close();
 console.log('PASS: real-gesture recovery after blocked muted autoplay, explicit pause preserved, gesture listeners removed on final page exit.');
+
+// An explicit Resume click may opt in without overriding the default preference.
+f=await fixture({reduced:true});assert.equal(f.loads(),0);f.window.document.querySelector('#motion').click();await new Promise(r=>setTimeout(r,30));assert.equal(f.loads(),1);assert(!f.video.paused);assert.equal(f.video.dataset.motionState,'playing');
+f.window.document.querySelector('#motion').click();await new Promise(r=>setTimeout(r,10));assert(f.video.paused);const pausedCalls=f.video._playCalls;f.window.dispatchEvent(new f.window.PageTransitionEvent('pageshow',{persisted:true}));await new Promise(r=>setTimeout(r,10));assert.equal(f.video._playCalls,pausedCalls);
+f.window.document.querySelector('#motion').click();await new Promise(r=>setTimeout(r,10));assert(!f.video.paused);f.callbacks.reduce();assert(f.video.paused);const beforeManualClose=f.video._playCalls;f.window.dispatchEvent(new f.window.PageTransitionEvent('pagehide',{persisted:false}));f.window.document.querySelector('#motion').click();await new Promise(r=>setTimeout(r,10));assert.equal(f.video._playCalls,beforeManualClose);f.close();
+console.log('PASS: reduced-motion default stays still; explicit Resume plays, Pause holds across visibility, preference changes reset opt-in, final cleanup removes manual listener.');
