@@ -1,5 +1,5 @@
 // @vitest-environment node
-import { describe, it, expect, vi } from "vitest";
+import { afterEach, describe, it, expect, vi } from "vitest";
 import { readFileSync } from "node:fs";
 import { handleEventSignup, EVENT_CONSENT_VERSION } from "../lib/event-signup.server";
 import { withEventSignup } from "../lib/event-signup-markup";
@@ -8,6 +8,7 @@ import { eventPage } from "../content/event-page";
 const base = "https://awakened-abundance-academy.lovable.app";
 const env = { SUPABASE_URL: "https://test-project.supabase.co", SUPABASE_SERVICE_ROLE_KEY: "test-server-only-key" };
 const payload = { email: " Visitor@Example.com ", requestId: "00000000-0000-4000-8000-000000000001", consent: true, consentVersion: EVENT_CONSENT_VERSION, source: "event-page", website: "" };
+afterEach(() => vi.unstubAllEnvs());
 function post(body: unknown = payload, headers: Record<string,string> = {}) {
   return new Request(base + "/api/event-signup", { method: "POST", headers: { origin: base, "Content-Type": "application/json", "cf-connecting-ip": "192.0.2.1", ...headers }, body: JSON.stringify(body) });
 }
@@ -16,6 +17,8 @@ function upstream(body: unknown = { ok: true }, status = 200) {
 }
 describe("event signup server boundary", () => {
   it("fails closed when managed configuration is missing", async () => {
+    vi.stubEnv("SUPABASE_URL", "");
+    vi.stubEnv("SUPABASE_SERVICE_ROLE_KEY", "");
     const fetcher = upstream();
     expect(await (await handleEventSignup(new Request(base + "/api/event-signup"), {})).json()).toEqual({ready:false});
     expect((await handleEventSignup(post(), {}, fetcher)).status).toBe(503);
