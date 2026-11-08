@@ -35,9 +35,3 @@
 - [x] Add an independent sample deck on the existing HQ desk and a Room menu launcher; leave approved documents and media unchanged.
 - [x] Verify shuffle/draw/replay, accessible modal/focus, reduced motion, desktop and 390px/320px layouts, and existing room navigation.
 - [x] Record changed files, preservation evidence, tests and available commit; preview only, no publishing.
-
-# Academy business landing page
-
-- [x] Add standalone /academy.html (src/site/academy.html + public/assets/academy-landing.css) via the approvedDocument GET pattern; approved v23 documents untouched.
-- [x] Link "The Academy" from the React site header (desktop nav and mobile sheet).
-- [x] Verify page renders at phone and desktop sizes and the route serves the exact document; no tests, no publishing per owner instruction.
