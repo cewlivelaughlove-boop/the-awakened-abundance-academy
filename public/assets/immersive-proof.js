@@ -1,33 +1,20 @@
 /* Continuous room journey. Existing artwork, controls and activities are retained. */
-const rooms=[
- {file:'index.html',name:'Headquarters',note:'The sanctuary',image:'sanctuary-black-floor-approved-v1.webp'},
- {file:'boutique.html',name:'Boutique',note:'Objects for your practice',image:'boutique-right-doorway-black-floor-v2.webp'},
- {file:'voidwalk.html',name:'Dark Room',note:'A quiet space for reflection',image:'voidwalk-chamber-v3-lossless-v1.webp'},
-];
-const normalizedRoomFile=path=>{const stem=(path.replace(/\/+$/,'').split('/').pop()||'index').replace(/\.html$/,'');return(stem==='entrance-review'?'index':stem)+'.html';};
+const rooms=window.academyMenuRooms,normalizedRoomFile=window.academyNormalizeRoom;
 const file=normalizedRoomFile(location.pathname);
 if(file==='voidwalk.html'){const back=document.querySelector('a.object-return');if(back){back.href='./boutique.html';back.setAttribute('aria-label','Return through the doorway to the Boutique');}}
 const current=rooms.findIndex(r=>r.file===file),reduced=matchMedia('(prefers-reduced-motion:reduce)');
 document.body.classList.add('proof-clean-room');
 const art=r=>'./assets/optimized/'+r.image;
 const oldMenu=document.querySelector('.compact-room-menu,.chamber-menu');
-const menu=document.createElement('details');menu.className='proof-room-menu';menu.innerHTML='<summary>Room menu</summary><div class="proof-menu-inner"><button type="button" class="proof-close">Close ×</button><nav aria-label="Rooms"></nav><div class="proof-resources"><a href="./join.html">Email Signup</a><a href="./library.html">Library · books and guides</a><a href="./start.html">Start Here · a quiet practice</a></div><details class="proof-settings"><summary>Display & room controls</summary><div></div></details><p class="proof-private-note"><a href="https://thefruitfulassets.com" target="_blank" rel="noopener noreferrer">Created by <strong>Fruitful Assets</strong></a></p></div>';
-for(const [i,r] of rooms.entries()){
- const a=document.createElement('a');a.href='./'+r.file;a.className='proof-room-card';if(i===current)a.setAttribute('aria-current','page');
- a.innerHTML=`<img data-src="${art(r)}" alt=""><span><strong>${r.name}</strong><small>${r.note}</small></span><span aria-hidden="true">→</span>`;menu.querySelector('nav').append(a);
-}
+const menu=window.academySiteMenu;
 const settings=menu.querySelector('.proof-settings>div');
 for(const node of document.querySelectorAll('.room-display-options>.room-control-rail,.room-display-options>.room-object-options,.chamber-menu-panel .room-controls'))settings.append(node);
 const cameraControls=document.querySelector('.scene-edge-control');if(cameraControls)settings.append(cameraControls);
 const welcome=document.querySelector('#hear-guide-welcome');if(welcome)settings.append(welcome);
 const moveReading=()=>{if(!document?.documentElement)return true;const controls=document.querySelector('.reading-motion');if(!controls)return false;for(const button of [...controls.children])settings.append(button);controls.remove();return true;};if(current<0&&!moveReading()){const observer=new MutationObserver(()=>{if(moveReading())observer.disconnect();});observer.observe(document.body,{childList:true,subtree:true});}
-document.body.append(menu);if(oldMenu)oldMenu.hidden=true;
-menu.querySelector('.proof-close').onclick=()=>{menu.open=false;menu.querySelector('summary').focus()};
-menu.addEventListener('toggle',()=>{if(menu.open)for(const img of menu.querySelectorAll('img[data-src]')){img.src=img.dataset.src;delete img.dataset.src;}});
-document.addEventListener('pointerdown',e=>{if(menu.open&&!menu.contains(e.target))menu.open=false;});
-menu.addEventListener('keydown',e=>{if(e.key==='Escape'){menu.open=false;menu.querySelector('summary').focus()}});
+if(oldMenu)oldMenu.hidden=true;
 const badge=document.createElement('p');badge.className='proof-room-name';badge.textContent=current<0?({'library.html':'Library','books.html':'Beyond the Script','start.html':'Start Here','shop.html':'The Boutique'}[file]||'Voidwalker Academy'):rooms[current].name;document.body.append(badge);badge.hidden=true;
-const help=document.createElement('button');help.type='button';help.className='proof-help';help.textContent=current===2?'Explore this room':'Room guide';document.body.append(help);help.className='proof-menu-guide';menu.querySelector('.proof-resources').append(help);if(current<0)help.hidden=true;
+const help=document.createElement('button');help.type='button';help.className='proof-help';help.textContent='Room guide';document.body.append(help);help.className='proof-menu-guide';settings.append(help);if(current<0)help.hidden=true;
 const consolePanel=document.querySelector('.room-console');
 if(consolePanel){
  consolePanel.id='proof-room-guide';help.setAttribute('aria-controls',consolePanel.id);help.setAttribute('aria-expanded','false');
@@ -69,6 +56,13 @@ async function travel(url,source){
  if(normalizedRoomFile(u.pathname)===file){if(restartRequested){restartRequested=false;location.assign(url);}return;}
  if(reduced.matches){location.assign(url);return;}
  const portal=r.file==='voidwalk.html'||file==='voidwalk.html';
+ if(!portal){
+  // Keep the current room visible while the next artwork decodes. No blank panels.
+  const marker=document.createElement('div');crossing={overlay:marker,url:u.href,source,timer:null};
+  source?.setAttribute('aria-busy','true');const nextArt=new Image();nextArt.src=art(r);
+  try{await Promise.race([nextArt.decode().catch(()=>{}),new Promise(resolve=>setTimeout(resolve,1800))]);}catch{}
+  source?.removeAttribute('aria-busy');if(crossing?.overlay===marker)enter();return;
+ }
  const sourceStage=file==='boutique.html'&&r.file==='voidwalk.html'?document.querySelector('#boutique-stage'):null;
  const sourceRect=sourceStage?.getBoundingClientRect();
  const fromBoutique=sourceRect&&sourceRect.width>0&&sourceRect.height>0;
@@ -110,7 +104,7 @@ window.dispatchEvent(new Event('resize'));
 const windowStage=document.querySelector('#stage,#boutique-stage,.chamber-plane');
 if(windowStage){
  const windowButton=document.createElement('button');windowButton.type='button';windowButton.className='proof-menu-window';windowButton.setAttribute('aria-label','Enter the galaxy window');windowButton.innerHTML='<span>Enter the galaxy</span>';
- menu.querySelector('.proof-resources').append(windowButton);
+ settings.append(windowButton);
  const galaxy=document.createElement('dialog');galaxy.className='proof-galaxy-view';galaxy.setAttribute('aria-label','A view among the stars and planets');galaxy.innerHTML='<video muted loop playsinline preload="none" aria-label="The same cinematic galaxy video seen from this room"></video><button class="proof-galaxy-return">← Return to the room</button><button class="proof-galaxy-pause">Pause motion</button><p class="proof-galaxy-status" role="status"></p>';document.body.append(galaxy);
  const video=galaxy.querySelector('video'),status=galaxy.querySelector('.proof-galaxy-status'),pause=galaxy.querySelector('.proof-galaxy-pause');let token=0,gesture=null;
  const getFilm=async()=>{if(!window.academyMedia?.load)await import('./media-loader.js');return window.academyMedia.load('journey')};
@@ -120,3 +114,6 @@ if(windowStage){
  galaxy.querySelector('.proof-galaxy-return').onclick=()=>galaxy.close();galaxy.addEventListener('close',()=>{++token;video.pause();menu.querySelector('summary').focus()});document.addEventListener('visibilitychange',()=>{if(document.hidden&&galaxy.open){video.pause();pause.textContent='Play motion';}});
 }
 
+
+// Warm the next room during the Headquarters visit, without a visible overlay.
+if(current===0)setTimeout(()=>{if(!window.navigator.connection?.saveData){const nextArt=new Image();nextArt.decoding='async';nextArt.fetchPriority='low';nextArt.src=art(rooms[1]);}},1200);

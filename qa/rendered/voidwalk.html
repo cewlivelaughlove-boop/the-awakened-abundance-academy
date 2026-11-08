@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#161218">
+  <title>The Voidwalk Chamber · Voidwalker Academy</title>
+  <link rel="stylesheet" href="./assets/voidwalk-chamber.css?v=menu-20261108-11">
+  <link rel="stylesheet" href="./assets/voidwalk-exterior-motion.css?v=menu-20261108-11">
+<link rel="stylesheet" href="./assets/site-menu.css?v=menu-20261108-11"></head>
+<body>
+  <main class="voidwalk" aria-label="The Voidwalk Chamber">
+    <header class="room-header">
+      <div><p class="small-caps">Voidwalker Academy</p><h1>The Voidwalk Chamber</h1></div>
+      <details class="chamber-menu"><summary>Room menu</summary><div class="chamber-menu-panel"><nav aria-label="Rooms"><a href="./index.html">Headquarters <span>Return to the sanctuary</span></a><a href="./boutique.html">Boutique <span>Explore the collection</span></a><a href="./voidwalk.html" aria-current="page">Voidwalk Chamber <span>A journey through five discoveries</span></a></nav><a href="./library.html">Library · books and guides</a><details><summary>Display & sound</summary>      <div class="room-controls"><button id="wide" type="button">Whole room</button><button id="motion" type="button" aria-pressed="false">Pause motion</button><button id="sound" type="button" aria-pressed="false">Sound off</button></div></details></div></details>
+    </header>
+    <section class="chamber-view" aria-label="Explore the room objects">
+      <div class="chamber-plane">
+        <img class="chamber-art" src="./assets/optimized/voidwalk-chamber-v3-lossless-v1.webp" alt="A dimensional charcoal-stone chamber with dark velvet seating, a bronze geometric light sculpture, a compass, a brass labyrinth, an amber ember and a shared table. An open arch leads back to the Boutique." draggable="false">
+        <svg class="chamber-light" aria-hidden="true" viewBox="0 0 1672 941" preserveAspectRatio="none">
+          <defs><filter id="soft-glow"><feGaussianBlur stdDeviation="5"/></filter><radialGradient id="warm-core"><stop offset="0" stop-color="#fff4c7" stop-opacity=".65"/><stop offset="1" stop-color="#f0bd7c" stop-opacity="0"/></radialGradient></defs>
+          <ellipse class="core-breath" cx="835" cy="365" rx="85" ry="90" fill="url(#warm-core)"/>
+          <g class="floor-paths" fill="none" stroke="#ffe1ae" stroke-width="2.2"><path data-path="0" d="M817 631Q812 670 804 715"/><path data-path="1" d="M732 624Q599 602 447 572"/><path data-path="2" d="M720 630Q595 652 479 694"/><path data-path="3" d="M945 623Q1154 591 1208 548"/><path data-path="4" d="M946 638Q1100 668 1238 714"/></g>
+          <g class="sky-paths" fill="none" stroke="#ffeacb" stroke-width="1.5"><path data-sky-line="0" d="M642 79L760 42"/><path data-sky-line="1" d="M760 42L841 85"/><path data-sky-line="2" d="M841 85L1002 54"/><path data-sky-line="3" d="M1002 54L965 116"/><path data-sky-line="4" d="M965 116L642 79"/></g>
+          <g class="sky-stars" fill="#fff3d0"><circle data-star="0" cx="642" cy="79" r="5"/><circle data-star="1" cx="760" cy="42" r="5"/><circle data-star="2" cx="841" cy="85" r="5"/><circle data-star="3" cx="1002" cy="54" r="5"/><circle data-star="4" cx="965" cy="116" r="5"/></g>
+          <g class="station-response"><circle id="station-halo" cx="835" cy="365" r="58" fill="url(#warm-core)"/></g>
+        </svg>
+        <button class="object-touch object-threshold" type="button" data-station="0" aria-label="Explore the Threshold light sculpture"></button>
+        <button class="object-touch object-compass" type="button" data-station="1" aria-label="Explore the compass of the Unknowing"></button>
+        <button class="object-touch object-labyrinth" type="button" data-station="2" aria-label="Explore the Labyrinth table"></button>
+        <button class="object-touch object-ember" type="button" data-station="3" aria-label="Explore the Ember light"></button>
+        <button class="object-touch object-table" type="button" data-station="4" aria-label="Explore the Table of belonging"></button>
+        <a class="object-touch object-return" href="./index.html" aria-label="Return through the arch to the sanctuary"></a>
+      </div>
+      <div class="scene-edge-control"><button id="pan-left" type="button" aria-label="Look left">‹</button><button id="pan-right" type="button" aria-label="Look right">›</button></div>
+    </section>
+    <section class="room-console" aria-label="Room guide">
+      <nav class="station-tabs" aria-label="Five objects in this room">
+        <button type="button" data-select="0"><span class="station-bead" aria-hidden="true"></span>Threshold</button>
+        <button type="button" data-select="1"><span class="station-bead" aria-hidden="true"></span>Unknowing</button>
+        <button type="button" data-select="2"><span class="station-bead" aria-hidden="true"></span>Labyrinth</button>
+        <button type="button" data-select="3"><span class="station-bead" aria-hidden="true"></span>Ember</button>
+        <button type="button" data-select="4"><span class="station-bead" aria-hidden="true"></span>Table</button>
+      </nav>
+      <div class="console-body" id="console-body">
+        <div class="console-copy"><p class="small-caps" id="step-label">A room of possibility</p><h2 id="step-title" tabindex="-1">A little wonder. A path of your own.</h2><p id="step-question">Explore five objects. Make a small choice at each one. Watch your path become a constellation.</p><p id="step-response" class="step-response" hidden></p></div>
+        <div class="console-actions" id="console-actions"><button class="primary-action" id="begin" type="button">Begin the walk <span aria-hidden="true">→</span></button><p class="console-aside">About two minutes. No right answers.</p></div>
+      </div>
+      <div class="room-footer"><button id="restart" type="button" hidden>Start a new walk</button></div>
+      <p id="room-announcement" class="sr-only" aria-live="polite"></p>
+    </section>
+  </main>
+  <script type="module" src="./assets/voidwalk-chamber.js?v=menu-20261108-11"></script>
+  <script type="module" src="./assets/voidwalk-exterior-motion.js?v=menu-20261108-11"></script>
+<link rel="stylesheet" href="./assets/immersive-proof.css?v=menu-20261108-11"><script src="./assets/site-menu.js?v=menu-20261108-11"></script><script type="module" src="./assets/immersive-proof.js?v=menu-20261108-11"></script></body>
+</html>
