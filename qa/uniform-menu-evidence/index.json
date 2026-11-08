@@ -1,0 +1,2317 @@
+{
+  "screenshots": [
+    {
+      "filename": "phone-index.jpg.b64.txt",
+      "route": "http://localhost:8080/index.html",
+      "view": "initial rendered page / center room",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "9b302d1c61af83bed6472eeffaf677b9e4624b4ead4a795daedc87fb899b121c",
+      "source": "preview",
+      "base64_text_sha256": "e95ac8fbaaf11dcf60468aa6a2c938055670623ec4289913fd0f33f37dd7e6ad"
+    },
+    {
+      "filename": "menu-index.jpg.b64.txt",
+      "route": "http://localhost:8080/index.html",
+      "view": "open consistent website menu",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "149c59cc9c7f5f96abdea1a98a3b24e45b09f7f43f6de5a523a478a981051dbc",
+      "source": "preview",
+      "base64_text_sha256": "67b1f498149bfdf243bd13ea8137a0c214ad127ede0fd190676c978481037181"
+    },
+    {
+      "filename": "index-left.jpg.b64.txt",
+      "route": "http://localhost:8080/index.html",
+      "view": "left pan extent",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "abaa1b106742f89e72d64faeffbb816a448026150891ce99f239ba5cdcadc0f0",
+      "source": "preview",
+      "base64_text_sha256": "00c527bc4982c225d4fd54ae1d0b390c8a82725430adb09b18752a6c23c124d8"
+    },
+    {
+      "filename": "index-right.jpg.b64.txt",
+      "route": "http://localhost:8080/index.html",
+      "view": "right pan extent",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "a69e6f7199cd368d8171227f482e4b5cce7a0daacfdccc120c00b5ce12bbd57d",
+      "source": "preview",
+      "base64_text_sha256": "a145a3175536bfbde1fcc71aff9774311c7261e3805e9e543c03d85661f6fade"
+    },
+    {
+      "filename": "index-guide.jpg.b64.txt",
+      "route": "http://localhost:8080/index.html",
+      "view": "existing room guide opened from controls",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "0ca25f472d0548a978ba1cb214ed3b8f9298ab0224adbfe0c62c3be7cdc044c4",
+      "source": "preview",
+      "base64_text_sha256": "43fd9f258ba1f3a7069ae288ffaf57aee55f8178243d7f67d3693cc6eb798e1a"
+    },
+    {
+      "filename": "index-galaxy.jpg.b64.txt",
+      "route": "http://localhost:8080/index.html",
+      "view": "existing galaxy action playing",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "98d4e505182e0bf4cd5948511652c9795e7620046f1eb4adef385cc0f8651633",
+      "source": "preview",
+      "base64_text_sha256": "94e8d3ed8fe09529035d11fddd873c538a7a6984fb9656be697b767328812a98"
+    },
+    {
+      "filename": "phone-boutique.jpg.b64.txt",
+      "route": "http://localhost:8080/boutique.html",
+      "view": "initial rendered page / center room",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "1404441201e1e2c608ca452808abe4dd371838320ca9ab11ba50b7636c0361d8",
+      "source": "preview",
+      "base64_text_sha256": "472d68f5c8d4dd8fc9f7007e94e6329c877ec281e5a6a20f7919c30610e2d23b"
+    },
+    {
+      "filename": "menu-boutique.jpg.b64.txt",
+      "route": "http://localhost:8080/boutique.html",
+      "view": "open consistent website menu",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "365be34524bddac60fc37100a97f10f736fa759f677485569a2424f8e5619434",
+      "source": "preview",
+      "base64_text_sha256": "4cab3cfd59932b495baa371a81610d051e32ead7476a877cc6f75757b716c4ab"
+    },
+    {
+      "filename": "boutique-left.jpg.b64.txt",
+      "route": "http://localhost:8080/boutique.html",
+      "view": "left pan extent",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "26329ee74169093012e4f48a5b2a3e08f3833e16aef9294de95baee6554851ec",
+      "source": "preview",
+      "base64_text_sha256": "963a48a47616e4305fdef8400714601ffb5b8b4a8fddedd997a6f3f14fc794bd"
+    },
+    {
+      "filename": "boutique-right.jpg.b64.txt",
+      "route": "http://localhost:8080/boutique.html",
+      "view": "right pan extent",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "049c356cc789d04fe135ab1cc9846faa9aa5ca32a703ac8fe72b24f1e0a0ca9c",
+      "source": "preview",
+      "base64_text_sha256": "8468c7f307880e38ecb44fb8b93ea129a3b74c9bc4f45ff05ad2ae86df8ab992"
+    },
+    {
+      "filename": "boutique-guide.jpg.b64.txt",
+      "route": "http://localhost:8080/boutique.html",
+      "view": "existing room guide opened from controls",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "15eb0f2d93d9e7d9d7212567e17233e385069f25e5f389b1f87ebc3b402ad497",
+      "source": "preview",
+      "base64_text_sha256": "8800f02d129ed886391d52daa74a4f637fc829f3b8549567c821caa62c129a98"
+    },
+    {
+      "filename": "boutique-galaxy.jpg.b64.txt",
+      "route": "http://localhost:8080/boutique.html",
+      "view": "existing galaxy action playing",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "cff64ef27d2135e9728722cd8eff2f28efeaa5953b9ea18413e16fb7607b2a45",
+      "source": "preview",
+      "base64_text_sha256": "306a7a1c0026fb09a583a566feb4fedc42a08c4f9f001d79b100409c77afc0a8"
+    },
+    {
+      "filename": "phone-voidwalk.jpg.b64.txt",
+      "route": "http://localhost:8080/voidwalk.html",
+      "view": "initial rendered page / center room",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "1091a9c75220d8f81cb7fb7761e8b7d7f33bf491d10c98a51ee8bc8ad23f3933",
+      "source": "preview",
+      "base64_text_sha256": "e29a3a3f9c600d3fb9d97c146f0f525364f25381c7deeb08db585ee5443c7fd5"
+    },
+    {
+      "filename": "menu-voidwalk.jpg.b64.txt",
+      "route": "http://localhost:8080/voidwalk.html",
+      "view": "open consistent website menu",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "6262f60edb34bf482a912b9b3a30c9889fae5c668594e93190eb108e77bb9173",
+      "source": "preview",
+      "base64_text_sha256": "6f9fb853bba494865a734f2de6417c570ad042747c622d6a68dcbeb808f7c7df"
+    },
+    {
+      "filename": "voidwalk-left.jpg.b64.txt",
+      "route": "http://localhost:8080/voidwalk.html",
+      "view": "left pan extent",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "f69eb5bc04ce20df51545a1dba9aa4f6a3b099b7f4e9883d9d02df6185f47d6e",
+      "source": "preview",
+      "base64_text_sha256": "f0d714a6752a6985643922c5d9ec11e6986b6c3270900ee1d26112ca93381653"
+    },
+    {
+      "filename": "voidwalk-right.jpg.b64.txt",
+      "route": "http://localhost:8080/voidwalk.html",
+      "view": "right pan extent",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "94bca2477104728c2f2789a876885e8c072b27b321af605b32520b61c0e0e901",
+      "source": "preview",
+      "base64_text_sha256": "8760014c81e3f742b2ade6ecf4d3aaf4079a07a93526b0c9d8c9420094b481bb"
+    },
+    {
+      "filename": "voidwalk-guide.jpg.b64.txt",
+      "route": "http://localhost:8080/voidwalk.html",
+      "view": "existing room guide opened from controls",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "55eb5cc4e488cea58e2d97ad66c692cc03d4073d6ec16ff47cd19195d12a4e01",
+      "source": "preview",
+      "base64_text_sha256": "6a0ea23497dbbf2c7aaa8d03b6fd41bf4d48bb0e98fbd7b43a2384bd8227106a"
+    },
+    {
+      "filename": "voidwalk-galaxy.jpg.b64.txt",
+      "route": "http://localhost:8080/voidwalk.html",
+      "view": "existing galaxy action playing",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "7a9b3e76fe7bf76b146b155b1b93ce51318592aff7dcc111234238759578b182",
+      "source": "preview",
+      "base64_text_sha256": "047184c0033eb1e81ed73c3d81a1ecef59c59d4951aadd70ec3124d517f0af20"
+    },
+    {
+      "filename": "phone-library.jpg.b64.txt",
+      "route": "http://localhost:8080/library.html",
+      "view": "initial rendered page / center room",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "e9e6c81b79df03b7ef0dc690da7304a0161ff29d62801e94c4767c0603b376d8",
+      "source": "preview",
+      "base64_text_sha256": "ea6da4d81e36fda6b6575b62f3d1642f867de328cd583490a882278cfc204d3b"
+    },
+    {
+      "filename": "menu-library.jpg.b64.txt",
+      "route": "http://localhost:8080/library.html",
+      "view": "open consistent website menu",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "9dc24546935b79f4f66ea68b63c43ee1abb0dd77b5c994aa3456eef7ec282f76",
+      "source": "preview",
+      "base64_text_sha256": "44569570b56519cbd72e1a5418c6cb3a1acca65a932a1f9050019afc6a1b2c5c"
+    },
+    {
+      "filename": "library-scroll-658.jpg.b64.txt",
+      "route": "http://localhost:8080/library.html",
+      "view": "reading/form page lower section",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "2c37972326855a55879a89f51143a147196e18e107973497f676644c77fa0768",
+      "source": "preview",
+      "base64_text_sha256": "70789ded39f0f80d0092a15e8b04de443e941ea2e8fa3bb6b0580621d09f4d36"
+    },
+    {
+      "filename": "library-scroll-1316.jpg.b64.txt",
+      "route": "http://localhost:8080/library.html",
+      "view": "reading/form page lower section",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "1be462089905652741bbcf2aec11ccda78d06e4cd6bc4ad096cf0877a3bddfff",
+      "source": "preview",
+      "base64_text_sha256": "1c4d1338a01008d0e025eac2a30e4b090c438025defc3fbc0255d7d1f49d8fc1"
+    },
+    {
+      "filename": "library-scroll-1974.jpg.b64.txt",
+      "route": "http://localhost:8080/library.html",
+      "view": "reading/form page lower section",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "2634de5b0dcd161922b3a8cdd0cdd897641e3ec63408191e7f09c39a611ad5b0",
+      "source": "preview",
+      "base64_text_sha256": "a23479e0f57ba93bdd5ee9785b34ee261dfd7d51fe2a4ce61cf2e9446ef25342"
+    },
+    {
+      "filename": "phone-books.jpg.b64.txt",
+      "route": "http://localhost:8080/books.html",
+      "view": "initial rendered page / center room",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "b95b6d9067bbdae663eced6a7e978dab8bdeac93049e07d3032f29c3649f17cf",
+      "source": "preview",
+      "base64_text_sha256": "49db8fede8834a6532d964b118157ddea30e3bb4f7311851fa9583bdfd8ef564"
+    },
+    {
+      "filename": "menu-books.jpg.b64.txt",
+      "route": "http://localhost:8080/books.html",
+      "view": "open consistent website menu",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "bf14885b3ca4444e6909d9659692c5c64ded18cd96f9bc90deafb98c40d398d6",
+      "source": "preview",
+      "base64_text_sha256": "3bb56a095e76223f494fd53ce4ded8e4306bb097f54b86ee1c257ba52b36723f"
+    },
+    {
+      "filename": "books-scroll-658.jpg.b64.txt",
+      "route": "http://localhost:8080/books.html",
+      "view": "reading/form page lower section",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "620b9d68d7e6327c541b36a2085172a7dd243ec244fd9e24a310525b40d77783",
+      "source": "preview",
+      "base64_text_sha256": "c211e534fb0233c2441ea12651bfa13cd6bcb90ba07d228353c7a20f892c6b93"
+    },
+    {
+      "filename": "books-scroll-1316.jpg.b64.txt",
+      "route": "http://localhost:8080/books.html",
+      "view": "reading/form page lower section",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "314c5c9a822cb981b4def191871537605d1f0f7b7bdd82f96371569222df6f18",
+      "source": "preview",
+      "base64_text_sha256": "e0c7f727b230664591a17e6f7076453f31de0c4d02caf1b9a93cdb477ee0c94f"
+    },
+    {
+      "filename": "books-scroll-1974.jpg.b64.txt",
+      "route": "http://localhost:8080/books.html",
+      "view": "reading/form page lower section",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "cd7709fe90f89eebc4d184ebc1b82f2ce9c8b3302dc3c1960120109caebaf5d3",
+      "source": "preview",
+      "base64_text_sha256": "c072203a9b1958c0ffe9584a75f7bf412521bb34e9c9bf565499b881c661dfae"
+    },
+    {
+      "filename": "books-scroll-2632.jpg.b64.txt",
+      "route": "http://localhost:8080/books.html",
+      "view": "reading/form page lower section",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "6620157d03b334d0d888bee354a4522b1258750b2566b7f09f0561f151825045",
+      "source": "preview",
+      "base64_text_sha256": "c1c51245c82893434b0560fc4c082d1d454411bee0f7a9ead8f9681a563e6fa9"
+    },
+    {
+      "filename": "books-scroll-3290.jpg.b64.txt",
+      "route": "http://localhost:8080/books.html",
+      "view": "reading/form page lower section",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "c2a9587cb5b5d54ca5e690cf183122f6f4112542860f12f01cc7ca4c00eea77b",
+      "source": "preview",
+      "base64_text_sha256": "0511ac49f6ba66003e858bb26a73eef346448cbe84eb8632023e41ecde393508"
+    },
+    {
+      "filename": "phone-start.jpg.b64.txt",
+      "route": "http://localhost:8080/start.html",
+      "view": "initial rendered page / center room",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "b4e6b51e87b67c2c072b66ccee0b419e92aa7bd135cd961b83bf44ec5cf2d504",
+      "source": "preview",
+      "base64_text_sha256": "591c5a7b110cb92ade5fbc7146a8c676f404a3723b1d7095755f7c8bd01c106b"
+    },
+    {
+      "filename": "menu-start.jpg.b64.txt",
+      "route": "http://localhost:8080/start.html",
+      "view": "open consistent website menu",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "cd002f40123c2ebacd8a5db42b9d44b3903b805d01d9a9acbfc26c59b0629eee",
+      "source": "preview",
+      "base64_text_sha256": "54cee0be35d49fe25709048d744d7c7f9c9f68bd6ae942889b895ee114181900"
+    },
+    {
+      "filename": "start-scroll-658.jpg.b64.txt",
+      "route": "http://localhost:8080/start.html",
+      "view": "reading/form page lower section",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "904ab41431bf3f4b4382ccda27c975efd15814a49543d67f14b87dd90cf38b5d",
+      "source": "preview",
+      "base64_text_sha256": "445f22f2594684c1722898cafaef495f7f44d35595e7eb12f2686b594c94fc97"
+    },
+    {
+      "filename": "start-scroll-1316.jpg.b64.txt",
+      "route": "http://localhost:8080/start.html",
+      "view": "reading/form page lower section",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "9ee2476e7fca4664a7496f3ac2dd80f6f8b126ad5c6cbcb40659512f68cb2119",
+      "source": "preview",
+      "base64_text_sha256": "1215590afe0f2ea966f9db9e84b782915d590f66e918476c0f535c9773997a1f"
+    },
+    {
+      "filename": "start-scroll-1974.jpg.b64.txt",
+      "route": "http://localhost:8080/start.html",
+      "view": "reading/form page lower section",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "2b0ec5705546fcb7337790eb8f6c6fcb055397e886f48848bdde8ff66423e0bc",
+      "source": "preview",
+      "base64_text_sha256": "fe4b3dc7019a21d34d64597955be566544327de9d2805162715ed275c3911e61"
+    },
+    {
+      "filename": "phone-shop.jpg.b64.txt",
+      "route": "http://localhost:8080/shop.html",
+      "view": "initial rendered page / center room",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "bdaf0f44689027c8b75f0960d95776a5e24e36d161ef0780aeb495ad1e96aeb9",
+      "source": "preview",
+      "base64_text_sha256": "d85da484c2b3807eac84972c0b3874d34decf7d3ed9cef7fc1f81c317cf8c34f"
+    },
+    {
+      "filename": "menu-shop.jpg.b64.txt",
+      "route": "http://localhost:8080/shop.html",
+      "view": "open consistent website menu",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "ab84eb7e5b9195c3ae014b5054cd57114bbd44415327fb8fe1a30f02dd4ead47",
+      "source": "preview",
+      "base64_text_sha256": "b303c10ec0fc0f9cc40a76b4d599278e241244e3c3bee9461ac6b29903f3f76b"
+    },
+    {
+      "filename": "phone-join.jpg.b64.txt",
+      "route": "http://localhost:8080/join.html",
+      "view": "initial rendered page / center room",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "007bd3304ede098b0e02b847524d12213ff35067aa6cb1c473a67267dcccf126",
+      "source": "preview",
+      "base64_text_sha256": "d3469c752c3fb84f01c87522fa84b91136ab1988178f8f87b8410c3701d5d138"
+    },
+    {
+      "filename": "menu-join.jpg.b64.txt",
+      "route": "http://localhost:8080/join.html",
+      "view": "open consistent website menu",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "53f0b22e741af3376cfaa9bf1847e230c71b24978c71c7d28ab09585b06b2da9",
+      "source": "preview",
+      "base64_text_sha256": "bcb43684e41b904681b122216425e7feddacf67f0fe7cefe4b423a1c749dd327"
+    },
+    {
+      "filename": "join-scroll-658.jpg.b64.txt",
+      "route": "http://localhost:8080/join.html",
+      "view": "reading/form page lower section",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "6480fb961b695f9a3b78bd9a04db9a613e8eeb497c58b02f8e8744794b266726",
+      "source": "preview",
+      "base64_text_sha256": "77cc00955be714d98da0adb0e8c6eb4e656b6d957a2fd68e1cb18a639762ea52"
+    },
+    {
+      "filename": "preview-entry-hq.jpg.b64.txt",
+      "route": "http://localhost:8080/index.html",
+      "view": "Headquarters before first Boutique entry",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "e10e888ceb3a15b9dec3ca970aedf025d598e7184e1cb7a79d651c147930aa9b",
+      "source": "preview",
+      "base64_text_sha256": "3cd67b393907caeedf055a5dc81140020b287cf8cbc524e4c1faddfb12412d5c"
+    },
+    {
+      "filename": "preview-entry-0.jpg.b64.txt",
+      "route": "http://localhost:8080/index.html",
+      "view": "first Boutique entry frame",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "2307a143861fe2cb7b9286e6b9fbf1a3ad5b2d0007c9a9eedc7dc93968a2c8c6",
+      "source": "preview",
+      "base64_text_sha256": "580bb64699e63e2c88b678ea07faff13a28264bcb13fa7608cb261ad9761d2ac"
+    },
+    {
+      "filename": "preview-entry-1.jpg.b64.txt",
+      "route": "http://localhost:8080/index.html",
+      "view": "first Boutique entry frame",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "e53d9033e4a35ae0f2b9bee300806aef9ab9d1e3a79762659590d4a049d9cef9",
+      "source": "preview",
+      "base64_text_sha256": "a70b9a42fb3cd10d646bc93697ffd8d6501a9783168496aaff76092dd33cfd05"
+    },
+    {
+      "filename": "preview-entry-2.jpg.b64.txt",
+      "route": "http://localhost:8080/index.html",
+      "view": "first Boutique entry frame",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "98538addba44e62490052cf3ed90096b42723deb1c866dcea445551a7f4e17f5",
+      "source": "preview",
+      "base64_text_sha256": "8750eab00d24842726185b588b5c5823cf4f3965475ea6af1fec2e151f6fbfb6"
+    },
+    {
+      "filename": "preview-entry-3.jpg.b64.txt",
+      "route": "http://localhost:8080/boutique.html",
+      "view": "first Boutique entry frame",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "d5d4c9fabffd6a600654e8cd7b5f376d3e3cf306f9674451b7530714651d37e7",
+      "source": "preview",
+      "base64_text_sha256": "b3b7ea4a9c7265ec2a6c85958fd876d7dd9db431805b09a51da7247274fcd224"
+    },
+    {
+      "filename": "preview-entry-4.jpg.b64.txt",
+      "route": "http://localhost:8080/boutique.html",
+      "view": "first Boutique entry frame",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "1404441201e1e2c608ca452808abe4dd371838320ca9ab11ba50b7636c0361d8",
+      "source": "preview",
+      "base64_text_sha256": "472d68f5c8d4dd8fc9f7007e94e6329c877ec281e5a6a20f7919c30610e2d23b"
+    },
+    {
+      "filename": "cached-boutique.jpg.b64.txt",
+      "route": "http://localhost:8080/boutique.html",
+      "view": "cached Boutique entry",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "d5d4c9fabffd6a600654e8cd7b5f376d3e3cf306f9674451b7530714651d37e7",
+      "source": "preview",
+      "base64_text_sha256": "b3b7ea4a9c7265ec2a6c85958fd876d7dd9db431805b09a51da7247274fcd224"
+    },
+    {
+      "filename": "portal-hold.jpg.b64.txt",
+      "route": "http://localhost:8080/boutique.html",
+      "view": "preserved purple doorway hold",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "7dc89330b0bfbb03a06550135b94b8f7aa1a69ea082296998291d43a5bc24ec5",
+      "source": "preview",
+      "base64_text_sha256": "746acd4a29860ec73fff0ce126cd5afac6402a010378518d697642bfc12b487f"
+    },
+    {
+      "filename": "portal-glide.jpg.b64.txt",
+      "route": "http://localhost:8080/boutique.html",
+      "view": "preserved slow purple doorway glide",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "75bd413af55a91a797984209bd1dbce7b88463413f0b4610d0f5c8d756c152f6",
+      "source": "preview",
+      "base64_text_sha256": "72995021f518d87a53f6b9d8e1d1ae7fabf28fc16188a1986ac647090866dcac"
+    },
+    {
+      "filename": "portal-arrived.jpg.b64.txt",
+      "route": "http://localhost:8080/voidwalk.html",
+      "view": "Dark Room reached through slow portal",
+      "dimensions": [
+        393,
+        658
+      ],
+      "sha256": "fc331382c37f4039c07f687f56b0c6b17da91db37cf3102c6b7ebf0bd70227b1",
+      "source": "preview",
+      "base64_text_sha256": "ba1de0b97cc17913e9849a144f257326d4d72a6a5f9b1ab8ed7875025fa1b8a3"
+    }
+  ],
+  "results": [
+    {
+      "route": "index",
+      "viewport": [
+        393,
+        658
+      ],
+      "menu": {
+        "label": "Menu",
+        "panel": {
+          "x": 61,
+          "y": 66,
+          "w": 318,
+          "h": 466,
+          "scrollWidth": 318,
+          "scrollHeight": 466
+        },
+        "links": [
+          {
+            "text": "Email Signup\n\u2192",
+            "x": 78,
+            "y": 121,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "1px solid rgba(181, 160, 135, 0.467)",
+            "visible": true
+          },
+          {
+            "text": "Headquarters\n\u2192",
+            "x": 78,
+            "y": 173,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "",
+            "visible": true
+          },
+          {
+            "text": "Boutique\n\u2192",
+            "x": 78,
+            "y": 217,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "",
+            "visible": true
+          },
+          {
+            "text": "Dark Room\n\u2192",
+            "x": 78,
+            "y": 261,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "",
+            "visible": true
+          },
+          {
+            "text": "Library",
+            "x": 78,
+            "y": 313,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "0px none rgb(238, 229, 215)",
+            "visible": true
+          },
+          {
+            "text": "Start Here",
+            "x": 78,
+            "y": 357,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "0px none rgb(238, 229, 215)",
+            "visible": true
+          }
+        ],
+        "credit": "Created by\nFruitful Assets",
+        "overflow": false
+      },
+      "pan": [
+        {
+          "view": "left",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1169.15625,
+            "height": 658
+          }
+        },
+        {
+          "view": "right",
+          "bounds": {
+            "x": -776.140625,
+            "y": 0,
+            "width": 1169.15625,
+            "height": 658
+          }
+        }
+      ],
+      "nativePlayback": [
+        [
+          {
+            "id": "exterior",
+            "time": 13.895009,
+            "paused": false,
+            "ready": 4
+          },
+          {
+            "id": "",
+            "time": 11.783883,
+            "paused": false,
+            "ready": 4
+          },
+          {
+            "id": "",
+            "time": 0,
+            "paused": true,
+            "ready": 0
+          },
+          {
+            "id": "",
+            "time": 0,
+            "paused": true,
+            "ready": 0
+          }
+        ],
+        [
+          {
+            "id": "exterior",
+            "time": 16.104327,
+            "paused": false,
+            "ready": 4
+          },
+          {
+            "id": "",
+            "time": 13.976757,
+            "paused": false,
+            "ready": 4
+          },
+          {
+            "id": "",
+            "time": 0,
+            "paused": true,
+            "ready": 0
+          },
+          {
+            "id": "",
+            "time": 0,
+            "paused": true,
+            "ready": 0
+          }
+        ]
+      ],
+      "galaxy": [
+        18.347821,
+        19.773086
+      ]
+    },
+    {
+      "route": "boutique",
+      "viewport": [
+        393,
+        658
+      ],
+      "menu": {
+        "label": "Menu",
+        "panel": {
+          "x": 61,
+          "y": 66,
+          "w": 318,
+          "h": 466,
+          "scrollWidth": 318,
+          "scrollHeight": 466
+        },
+        "links": [
+          {
+            "text": "Email Signup\n\u2192",
+            "x": 78,
+            "y": 121,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "1px solid rgba(181, 160, 135, 0.467)",
+            "visible": true
+          },
+          {
+            "text": "Headquarters\n\u2192",
+            "x": 78,
+            "y": 173,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "",
+            "visible": true
+          },
+          {
+            "text": "Boutique\n\u2192",
+            "x": 78,
+            "y": 217,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "",
+            "visible": true
+          },
+          {
+            "text": "Dark Room\n\u2192",
+            "x": 78,
+            "y": 261,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "",
+            "visible": true
+          },
+          {
+            "text": "Library",
+            "x": 78,
+            "y": 313,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "0px none rgb(238, 229, 215)",
+            "visible": true
+          },
+          {
+            "text": "Start Here",
+            "x": 78,
+            "y": 357,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "0px none rgb(238, 229, 215)",
+            "visible": true
+          }
+        ],
+        "credit": "Created by\nFruitful Assets",
+        "overflow": false
+      },
+      "pan": [
+        {
+          "view": "left",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1633.421875,
+            "height": 658
+          }
+        },
+        {
+          "view": "right",
+          "bounds": {
+            "x": -1240.421875,
+            "y": 0,
+            "width": 1633.421875,
+            "height": 658
+          }
+        }
+      ],
+      "nativePlayback": [
+        [
+          {
+            "id": "boutique-exterior",
+            "time": 30.731207,
+            "paused": false,
+            "ready": 4
+          },
+          {
+            "id": "",
+            "time": 0,
+            "paused": true,
+            "ready": 0
+          }
+        ],
+        [
+          {
+            "id": "boutique-exterior",
+            "time": 32.940362,
+            "paused": false,
+            "ready": 4
+          },
+          {
+            "id": "",
+            "time": 0,
+            "paused": true,
+            "ready": 0
+          }
+        ]
+      ],
+      "galaxy": [
+        35.526888,
+        36.949181
+      ]
+    },
+    {
+      "route": "voidwalk",
+      "viewport": [
+        393,
+        658
+      ],
+      "menu": {
+        "label": "Menu",
+        "panel": {
+          "x": 61,
+          "y": 66,
+          "w": 318,
+          "h": 466,
+          "scrollWidth": 318,
+          "scrollHeight": 466
+        },
+        "links": [
+          {
+            "text": "Email Signup\n\u2192",
+            "x": 78,
+            "y": 121,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "1px solid rgba(181, 160, 135, 0.467)",
+            "visible": true
+          },
+          {
+            "text": "Headquarters\n\u2192",
+            "x": 78,
+            "y": 173,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "",
+            "visible": true
+          },
+          {
+            "text": "Boutique\n\u2192",
+            "x": 78,
+            "y": 217,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "",
+            "visible": true
+          },
+          {
+            "text": "Dark Room\n\u2192",
+            "x": 78,
+            "y": 261,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "",
+            "visible": true
+          },
+          {
+            "text": "Library",
+            "x": 78,
+            "y": 313,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "0px none rgb(238, 229, 215)",
+            "visible": true
+          },
+          {
+            "text": "Start Here",
+            "x": 78,
+            "y": 357,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "0px none rgb(238, 229, 215)",
+            "visible": true
+          }
+        ],
+        "credit": "Created by\nFruitful Assets",
+        "overflow": false
+      },
+      "pan": [
+        {
+          "view": "left",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1169.15625,
+            "height": 658
+          }
+        },
+        {
+          "view": "right",
+          "bounds": {
+            "x": -670.6158447265625,
+            "y": 0,
+            "width": 1169.15625,
+            "height": 658
+          }
+        }
+      ],
+      "nativePlayback": [
+        [
+          {
+            "id": "",
+            "time": 10.592026,
+            "paused": false,
+            "ready": 4
+          },
+          {
+            "id": "",
+            "time": 0,
+            "paused": true,
+            "ready": 0
+          }
+        ],
+        [
+          {
+            "id": "",
+            "time": 12.809444,
+            "paused": false,
+            "ready": 4
+          },
+          {
+            "id": "",
+            "time": 0,
+            "paused": true,
+            "ready": 0
+          }
+        ]
+      ],
+      "galaxy": [
+        2.087292,
+        3.506567
+      ]
+    },
+    {
+      "route": "library",
+      "viewport": [
+        393,
+        658
+      ],
+      "menu": {
+        "label": "Menu",
+        "panel": {
+          "x": 61,
+          "y": 66,
+          "w": 318,
+          "h": 466,
+          "scrollWidth": 318,
+          "scrollHeight": 466
+        },
+        "links": [
+          {
+            "text": "Email Signup\n\u2192",
+            "x": 78,
+            "y": 121,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "1px solid rgba(181, 160, 135, 0.467)",
+            "visible": true
+          },
+          {
+            "text": "Headquarters\n\u2192",
+            "x": 78,
+            "y": 173,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "",
+            "visible": true
+          },
+          {
+            "text": "Boutique\n\u2192",
+            "x": 78,
+            "y": 217,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "",
+            "visible": true
+          },
+          {
+            "text": "Dark Room\n\u2192",
+            "x": 78,
+            "y": 261,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "",
+            "visible": true
+          },
+          {
+            "text": "Library",
+            "x": 78,
+            "y": 313,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "0px none rgb(246, 230, 201)",
+            "visible": true
+          },
+          {
+            "text": "Start Here",
+            "x": 78,
+            "y": 357,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "0px none rgb(238, 229, 215)",
+            "visible": true
+          }
+        ],
+        "credit": "Created by\nFruitful Assets",
+        "overflow": false
+      }
+    },
+    {
+      "route": "books",
+      "viewport": [
+        393,
+        658
+      ],
+      "menu": {
+        "label": "Menu",
+        "panel": {
+          "x": 61,
+          "y": 66,
+          "w": 318,
+          "h": 466,
+          "scrollWidth": 318,
+          "scrollHeight": 466
+        },
+        "links": [
+          {
+            "text": "Email Signup\n\u2192",
+            "x": 78,
+            "y": 121,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "1px solid rgba(181, 160, 135, 0.467)",
+            "visible": true
+          },
+          {
+            "text": "Headquarters\n\u2192",
+            "x": 78,
+            "y": 173,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "",
+            "visible": true
+          },
+          {
+            "text": "Boutique\n\u2192",
+            "x": 78,
+            "y": 217,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "",
+            "visible": true
+          },
+          {
+            "text": "Dark Room\n\u2192",
+            "x": 78,
+            "y": 261,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "",
+            "visible": true
+          },
+          {
+            "text": "Library",
+            "x": 78,
+            "y": 313,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "0px none rgb(238, 229, 215)",
+            "visible": true
+          },
+          {
+            "text": "Start Here",
+            "x": 78,
+            "y": 357,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "0px none rgb(238, 229, 215)",
+            "visible": true
+          }
+        ],
+        "credit": "Created by\nFruitful Assets",
+        "overflow": false
+      }
+    },
+    {
+      "route": "start",
+      "viewport": [
+        393,
+        658
+      ],
+      "menu": {
+        "label": "Menu",
+        "panel": {
+          "x": 61,
+          "y": 66,
+          "w": 318,
+          "h": 466,
+          "scrollWidth": 318,
+          "scrollHeight": 466
+        },
+        "links": [
+          {
+            "text": "Email Signup\n\u2192",
+            "x": 78,
+            "y": 121,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "1px solid rgba(181, 160, 135, 0.467)",
+            "visible": true
+          },
+          {
+            "text": "Headquarters\n\u2192",
+            "x": 78,
+            "y": 173,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "",
+            "visible": true
+          },
+          {
+            "text": "Boutique\n\u2192",
+            "x": 78,
+            "y": 217,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "",
+            "visible": true
+          },
+          {
+            "text": "Dark Room\n\u2192",
+            "x": 78,
+            "y": 261,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "",
+            "visible": true
+          },
+          {
+            "text": "Library",
+            "x": 78,
+            "y": 313,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "0px none rgb(238, 229, 215)",
+            "visible": true
+          },
+          {
+            "text": "Start Here",
+            "x": 78,
+            "y": 357,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "0px none rgb(246, 230, 201)",
+            "visible": true
+          }
+        ],
+        "credit": "Created by\nFruitful Assets",
+        "overflow": false
+      }
+    },
+    {
+      "route": "shop",
+      "viewport": [
+        393,
+        658
+      ],
+      "menu": {
+        "label": "Menu",
+        "panel": {
+          "x": 61,
+          "y": 66,
+          "w": 318,
+          "h": 417,
+          "scrollWidth": 318,
+          "scrollHeight": 417
+        },
+        "links": [
+          {
+            "text": "Email Signup\n\u2192",
+            "x": 78,
+            "y": 121,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "1px solid rgba(181, 160, 135, 0.467)",
+            "visible": true
+          },
+          {
+            "text": "Headquarters\n\u2192",
+            "x": 78,
+            "y": 173,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "",
+            "visible": true
+          },
+          {
+            "text": "Boutique\n\u2192",
+            "x": 78,
+            "y": 217,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "",
+            "visible": true
+          },
+          {
+            "text": "Dark Room\n\u2192",
+            "x": 78,
+            "y": 261,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "",
+            "visible": true
+          },
+          {
+            "text": "Library",
+            "x": 78,
+            "y": 313,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "0px none rgb(238, 229, 215)",
+            "visible": true
+          },
+          {
+            "text": "Start Here",
+            "x": 78,
+            "y": 357,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "0px none rgb(238, 229, 215)",
+            "visible": true
+          }
+        ],
+        "credit": "Created by\nFruitful Assets",
+        "overflow": false
+      }
+    },
+    {
+      "route": "join",
+      "viewport": [
+        393,
+        658
+      ],
+      "menu": {
+        "label": "Menu",
+        "panel": {
+          "x": 61,
+          "y": 66,
+          "w": 318,
+          "h": 417,
+          "scrollWidth": 318,
+          "scrollHeight": 417
+        },
+        "links": [
+          {
+            "text": "Email Signup\n\u2192",
+            "x": 78,
+            "y": 121,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "1px solid rgba(181, 160, 135, 0.467)",
+            "visible": true
+          },
+          {
+            "text": "Headquarters\n\u2192",
+            "x": 78,
+            "y": 173,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "",
+            "visible": true
+          },
+          {
+            "text": "Boutique\n\u2192",
+            "x": 78,
+            "y": 217,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "",
+            "visible": true
+          },
+          {
+            "text": "Dark Room\n\u2192",
+            "x": 78,
+            "y": 261,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "",
+            "visible": true
+          },
+          {
+            "text": "Library",
+            "x": 78,
+            "y": 313,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "0px none rgb(238, 229, 215)",
+            "visible": true
+          },
+          {
+            "text": "Start Here",
+            "x": 78,
+            "y": 357,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "0px none rgb(238, 229, 215)",
+            "visible": true
+          }
+        ],
+        "credit": "Created by\nFruitful Assets",
+        "overflow": false
+      },
+      "form": {
+        "sha256": "628af2bb5bbd81a33080016e01a3ba35808bd056ac6d73c9c83817114bb13023",
+        "consentChecked": false,
+        "endpointGET": {
+          "ready": true
+        }
+      }
+    },
+    {
+      "route": "index",
+      "viewport": [
+        1440,
+        900
+      ],
+      "menu": {
+        "label": "Menu",
+        "panel": {
+          "x": 1102,
+          "y": 66,
+          "w": 318,
+          "h": 466,
+          "scrollWidth": 318,
+          "scrollHeight": 466
+        },
+        "links": [
+          {
+            "text": "Email Signup\n\u2192",
+            "x": 1119,
+            "y": 121,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "1px solid rgba(181, 160, 135, 0.467)",
+            "visible": true
+          },
+          {
+            "text": "Headquarters\n\u2192",
+            "x": 1119,
+            "y": 173,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "",
+            "visible": true
+          },
+          {
+            "text": "Boutique\n\u2192",
+            "x": 1119,
+            "y": 217,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "",
+            "visible": true
+          },
+          {
+            "text": "Dark Room\n\u2192",
+            "x": 1119,
+            "y": 261,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "",
+            "visible": true
+          },
+          {
+            "text": "Library",
+            "x": 1119,
+            "y": 313,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "0px none rgb(238, 229, 215)",
+            "visible": true
+          },
+          {
+            "text": "Start Here",
+            "x": 1119,
+            "y": 357,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "0px none rgb(238, 229, 215)",
+            "visible": true
+          }
+        ],
+        "credit": "Created by\nFruitful Assets",
+        "overflow": false
+      }
+    },
+    {
+      "route": "boutique",
+      "viewport": [
+        1440,
+        900
+      ],
+      "menu": {
+        "label": "Menu",
+        "panel": {
+          "x": 1102,
+          "y": 66,
+          "w": 318,
+          "h": 466,
+          "scrollWidth": 318,
+          "scrollHeight": 466
+        },
+        "links": [
+          {
+            "text": "Email Signup\n\u2192",
+            "x": 1119,
+            "y": 121,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "1px solid rgba(181, 160, 135, 0.467)",
+            "visible": true
+          },
+          {
+            "text": "Headquarters\n\u2192",
+            "x": 1119,
+            "y": 173,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "",
+            "visible": true
+          },
+          {
+            "text": "Boutique\n\u2192",
+            "x": 1119,
+            "y": 217,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "",
+            "visible": true
+          },
+          {
+            "text": "Dark Room\n\u2192",
+            "x": 1119,
+            "y": 261,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "",
+            "visible": true
+          },
+          {
+            "text": "Library",
+            "x": 1119,
+            "y": 313,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "0px none rgb(238, 229, 215)",
+            "visible": true
+          },
+          {
+            "text": "Start Here",
+            "x": 1119,
+            "y": 357,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "0px none rgb(238, 229, 215)",
+            "visible": true
+          }
+        ],
+        "credit": "Created by\nFruitful Assets",
+        "overflow": false
+      }
+    },
+    {
+      "route": "voidwalk",
+      "viewport": [
+        1440,
+        900
+      ],
+      "menu": {
+        "label": "Menu",
+        "panel": {
+          "x": 1102,
+          "y": 66,
+          "w": 318,
+          "h": 466,
+          "scrollWidth": 318,
+          "scrollHeight": 466
+        },
+        "links": [
+          {
+            "text": "Email Signup\n\u2192",
+            "x": 1119,
+            "y": 121,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "1px solid rgba(181, 160, 135, 0.467)",
+            "visible": true
+          },
+          {
+            "text": "Headquarters\n\u2192",
+            "x": 1119,
+            "y": 173,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "",
+            "visible": true
+          },
+          {
+            "text": "Boutique\n\u2192",
+            "x": 1119,
+            "y": 217,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "",
+            "visible": true
+          },
+          {
+            "text": "Dark Room\n\u2192",
+            "x": 1119,
+            "y": 261,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "",
+            "visible": true
+          },
+          {
+            "text": "Library",
+            "x": 1119,
+            "y": 313,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "0px none rgb(238, 229, 215)",
+            "visible": true
+          },
+          {
+            "text": "Start Here",
+            "x": 1119,
+            "y": 357,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "0px none rgb(238, 229, 215)",
+            "visible": true
+          }
+        ],
+        "credit": "Created by\nFruitful Assets",
+        "overflow": false
+      }
+    },
+    {
+      "route": "library",
+      "viewport": [
+        1440,
+        900
+      ],
+      "menu": {
+        "label": "Menu",
+        "panel": {
+          "x": 1102,
+          "y": 66,
+          "w": 318,
+          "h": 466,
+          "scrollWidth": 318,
+          "scrollHeight": 466
+        },
+        "links": [
+          {
+            "text": "Email Signup\n\u2192",
+            "x": 1119,
+            "y": 121,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "1px solid rgba(181, 160, 135, 0.467)",
+            "visible": true
+          },
+          {
+            "text": "Headquarters\n\u2192",
+            "x": 1119,
+            "y": 173,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "",
+            "visible": true
+          },
+          {
+            "text": "Boutique\n\u2192",
+            "x": 1119,
+            "y": 217,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "",
+            "visible": true
+          },
+          {
+            "text": "Dark Room\n\u2192",
+            "x": 1119,
+            "y": 261,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "",
+            "visible": true
+          },
+          {
+            "text": "Library",
+            "x": 1119,
+            "y": 313,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "0px none rgb(246, 230, 201)",
+            "visible": true
+          },
+          {
+            "text": "Start Here",
+            "x": 1119,
+            "y": 357,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "0px none rgb(238, 229, 215)",
+            "visible": true
+          }
+        ],
+        "credit": "Created by\nFruitful Assets",
+        "overflow": false
+      }
+    },
+    {
+      "route": "books",
+      "viewport": [
+        1440,
+        900
+      ],
+      "menu": {
+        "label": "Menu",
+        "panel": {
+          "x": 1102,
+          "y": 66,
+          "w": 318,
+          "h": 466,
+          "scrollWidth": 318,
+          "scrollHeight": 466
+        },
+        "links": [
+          {
+            "text": "Email Signup\n\u2192",
+            "x": 1119,
+            "y": 121,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "1px solid rgba(181, 160, 135, 0.467)",
+            "visible": true
+          },
+          {
+            "text": "Headquarters\n\u2192",
+            "x": 1119,
+            "y": 173,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "",
+            "visible": true
+          },
+          {
+            "text": "Boutique\n\u2192",
+            "x": 1119,
+            "y": 217,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "",
+            "visible": true
+          },
+          {
+            "text": "Dark Room\n\u2192",
+            "x": 1119,
+            "y": 261,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "",
+            "visible": true
+          },
+          {
+            "text": "Library",
+            "x": 1119,
+            "y": 313,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "0px none rgb(238, 229, 215)",
+            "visible": true
+          },
+          {
+            "text": "Start Here",
+            "x": 1119,
+            "y": 357,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "0px none rgb(238, 229, 215)",
+            "visible": true
+          }
+        ],
+        "credit": "Created by\nFruitful Assets",
+        "overflow": false
+      }
+    },
+    {
+      "route": "start",
+      "viewport": [
+        1440,
+        900
+      ],
+      "menu": {
+        "label": "Menu",
+        "panel": {
+          "x": 1102,
+          "y": 66,
+          "w": 318,
+          "h": 466,
+          "scrollWidth": 318,
+          "scrollHeight": 466
+        },
+        "links": [
+          {
+            "text": "Email Signup\n\u2192",
+            "x": 1119,
+            "y": 121,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "1px solid rgba(181, 160, 135, 0.467)",
+            "visible": true
+          },
+          {
+            "text": "Headquarters\n\u2192",
+            "x": 1119,
+            "y": 173,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "",
+            "visible": true
+          },
+          {
+            "text": "Boutique\n\u2192",
+            "x": 1119,
+            "y": 217,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "",
+            "visible": true
+          },
+          {
+            "text": "Dark Room\n\u2192",
+            "x": 1119,
+            "y": 261,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "",
+            "visible": true
+          },
+          {
+            "text": "Library",
+            "x": 1119,
+            "y": 313,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "0px none rgb(238, 229, 215)",
+            "visible": true
+          },
+          {
+            "text": "Start Here",
+            "x": 1119,
+            "y": 357,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "0px none rgb(246, 230, 201)",
+            "visible": true
+          }
+        ],
+        "credit": "Created by\nFruitful Assets",
+        "overflow": false
+      }
+    },
+    {
+      "route": "shop",
+      "viewport": [
+        1440,
+        900
+      ],
+      "menu": {
+        "label": "Menu",
+        "panel": {
+          "x": 1102,
+          "y": 66,
+          "w": 318,
+          "h": 417,
+          "scrollWidth": 318,
+          "scrollHeight": 417
+        },
+        "links": [
+          {
+            "text": "Email Signup\n\u2192",
+            "x": 1119,
+            "y": 121,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "1px solid rgba(181, 160, 135, 0.467)",
+            "visible": true
+          },
+          {
+            "text": "Headquarters\n\u2192",
+            "x": 1119,
+            "y": 173,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "",
+            "visible": true
+          },
+          {
+            "text": "Boutique\n\u2192",
+            "x": 1119,
+            "y": 217,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "",
+            "visible": true
+          },
+          {
+            "text": "Dark Room\n\u2192",
+            "x": 1119,
+            "y": 261,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "",
+            "visible": true
+          },
+          {
+            "text": "Library",
+            "x": 1119,
+            "y": 313,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "0px none rgb(238, 229, 215)",
+            "visible": true
+          },
+          {
+            "text": "Start Here",
+            "x": 1119,
+            "y": 357,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "0px none rgb(238, 229, 215)",
+            "visible": true
+          }
+        ],
+        "credit": "Created by\nFruitful Assets",
+        "overflow": false
+      }
+    },
+    {
+      "route": "join",
+      "viewport": [
+        1440,
+        900
+      ],
+      "menu": {
+        "label": "Menu",
+        "panel": {
+          "x": 1102,
+          "y": 66,
+          "w": 318,
+          "h": 417,
+          "scrollWidth": 318,
+          "scrollHeight": 417
+        },
+        "links": [
+          {
+            "text": "Email Signup\n\u2192",
+            "x": 1119,
+            "y": 121,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "1px solid rgba(181, 160, 135, 0.467)",
+            "visible": true
+          },
+          {
+            "text": "Headquarters\n\u2192",
+            "x": 1119,
+            "y": 173,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "",
+            "visible": true
+          },
+          {
+            "text": "Boutique\n\u2192",
+            "x": 1119,
+            "y": 217,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "",
+            "visible": true
+          },
+          {
+            "text": "Dark Room\n\u2192",
+            "x": 1119,
+            "y": 261,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "",
+            "visible": true
+          },
+          {
+            "text": "Library",
+            "x": 1119,
+            "y": 313,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "0px none rgb(238, 229, 215)",
+            "visible": true
+          },
+          {
+            "text": "Start Here",
+            "x": 1119,
+            "y": 357,
+            "w": 286,
+            "h": 44,
+            "font": "14px / 19.6px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "spacing": "normal",
+            "border": "0px none rgb(238, 229, 215)",
+            "visible": true
+          }
+        ],
+        "credit": "Created by\nFruitful Assets",
+        "overflow": false
+      }
+    },
+    {
+      "firstEntryFrames": [
+        {
+          "seconds": 0.258,
+          "url": "http://localhost:8080/index.html",
+          "opaquePanel": 0,
+          "bodyOpacity": "1",
+          "art": [
+            {
+              "complete": true,
+              "width": 1672
+            }
+          ]
+        },
+        {
+          "seconds": 0.593,
+          "url": "http://localhost:8080/index.html",
+          "opaquePanel": 0,
+          "bodyOpacity": "1",
+          "art": [
+            {
+              "complete": true,
+              "width": 1672
+            }
+          ]
+        },
+        {
+          "seconds": 1.175,
+          "url": "http://localhost:8080/index.html",
+          "opaquePanel": 0,
+          "bodyOpacity": "1",
+          "art": [
+            {
+              "complete": true,
+              "width": 1672
+            }
+          ]
+        },
+        {
+          "seconds": 3.114,
+          "url": "http://localhost:8080/boutique.html",
+          "opaquePanel": 0,
+          "bodyOpacity": "1",
+          "art": []
+        },
+        {
+          "seconds": 4.849,
+          "url": "http://localhost:8080/boutique.html",
+          "opaquePanel": 0,
+          "bodyOpacity": "1",
+          "art": []
+        }
+      ],
+      "localArtDelaySeconds": 1.2
+    },
+    {
+      "returnHQSeconds": 1.572
+    },
+    {
+      "cachedBoutiqueSeconds": 3.423
+    },
+    {
+      "portalSeconds": 9.822
+    },
+    {
+      "signupMenuNavigation": "http://localhost:8080/join.html",
+      "checked": false
+    }
+  ],
+  "pageErrors": [],
+  "blockedNonGETRequests": [],
+  "limits": [
+    "Chromium mobile emulation, not physical iPhone",
+    "Reading pages captured as actual viewport scroll sections, not stitched full-page images",
+    "Sampled transition frames, not continuous recording; cannot rule out a sub-frame flash.",
+    "Constrained first and repeat navigation retained a local 1.2s artwork request delay; timings are not a production speed guarantee.",
+    "Approved close-up immersive framing intentionally unchanged.",
+    "No physical iPhone/Safari checks; public site unchanged until owner publishes."
+  ],
+  "installed_sha256": {
+    "public/assets/immersive-proof.js": "de0f916f21841d9ffb78fac5b6787e247d46b6076d17a4270b1f414db4e6ef30",
+    "public/assets/immersive-proof.css": "e8384a9090e7301fc0f823b8ba6d54f3415a50e0983f9cc6c154410444baa185",
+    "src/lib/room-journey.ts": "c210babc044c6e2a7ac18422057acca2ac866d6aa1d9d5a34711f439b588b4db",
+    "public/voidwalk.html": "fa2d64e296c6a10e4c5fc58768559d8af50347cebf3825f5ce4c012f83294266",
+    "public/shop.html": "ceaeaaab4b8660e7c830f0ba32fa4358db59d06a61568683ea8caf75d2a4b0c3",
+    "src/content/event-page.ts": "500fa54cf30a9c65622b1729b97010aeffd2bafbb0d8369997023a664981830c",
+    "qa/render-rooms.cjs": "e77d06feb83dd3daca6486202c2228cc791e5e5c699ef122365554700131152c",
+    "qa/room-tests/immersive-proof.test.mjs": "390578442ee3c91ec66a09f99aa16c7456cbe51e6c02931b90275e8ef5b09c40",
+    "qa/room-tests/entrance-portal.test.mjs": "963cd1649c87004ce6ab9b30edcfcaca62df3974d72696e4f873370e9955e657",
+    "public/assets/site-menu.js": "7994bcd4f3e93315642bf72f80426e40163fe57bcf89df28ed981ae5a09e3111",
+    "public/assets/site-menu.css": "d2ff4db12d42cb0709196e30c4dac98e30d85ab1d4bcab80e0c04b1343c6ce40",
+    "qa/room-tests/site-menu.test.mjs": "661b58566563bf475c3dd1a321270fb39a30b0c168f0c4d5490f8b2f3bf2dd61"
+  },
+  "verification": {
+    "base_commit": "c7af68b10187b15d5830b8d86e11512535456280",
+    "supplied_before_and_final_hashes": "12/12 passed",
+    "unrelated_tracked_files_preserved": 418,
+    "signup_form_and_client_identical": true,
+    "types": "tsgo --noEmit passed",
+    "vitest": 84,
+    "room_node": 81,
+    "existing_node": 14,
+    "production_build": "automatic harness build OK 2026-11-08T19:14:48Z",
+    "writes": "no signup submissions, POSTs, database writes or publication"
+  },
+  "public_before": {
+    "frames": "/tmp/browser/uniform-menu/public-entry-0.jpg through public-entry-4.jpg",
+    "observed": "Opaque nearly empty panels initially; rendered close-up Boutique by 2.76 seconds; blank post-navigation frame by 5.88 seconds with body opacity 0.220734. This is distinct from the fully rendered close-up."
+  },
+  "defects": [],
+  "credit_status": "Exact task cost unavailable: billing attribution permission denied; observed remaining balance 57.16 credits."
+}
