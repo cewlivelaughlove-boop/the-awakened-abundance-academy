@@ -1,0 +1,376 @@
+{
+  "publicURL": "https://awakened-abundance-academy.lovable.app",
+  "release": "c79c3de570aa3e045a362bb747c47ba1cf09d710",
+  "deployment": "553de3ac-54a3-42be-ba5f-f8c0458be01a",
+  "viewport": [
+    393,
+    658
+  ],
+  "menuVersion": "menu-20261108-12",
+  "css_sha256": "fd64d44ce1218757e03ad166ceb06d67a8886831533b479e168500b6781fc326",
+  "verification": [
+    {
+      "page": "index",
+      "publicURL": "https://awakened-abundance-academy.lovable.app/index.html",
+      "status": 200,
+      "filename": "menu-index.jpg.b64.txt",
+      "jpeg_sha256": "eee9ad10fe3a987b9d5cc958ab0ed8b296c3b3683f0a73f9a98924fe666983ae",
+      "base64_sha256": "582c54436f3257cbe6a2e137be0501b76dae6bff60aeb466e612cedf51e9ddb9",
+      "cards": [
+        {
+          "href": "https://awakened-abundance-academy.lovable.app/join.html",
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "href": "https://awakened-abundance-academy.lovable.app/index.html",
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "href": "https://awakened-abundance-academy.lovable.app/boutique.html",
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "href": "https://awakened-abundance-academy.lovable.app/voidwalk.html",
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "href": "https://awakened-abundance-academy.lovable.app/library.html",
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "href": "https://awakened-abundance-academy.lovable.app/start.html",
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        }
+      ],
+      "horizontalOverflow": false,
+      "documentOverflow": false,
+      "emailSignupDirect": true,
+      "consentUnchecked": true
+    },
+    {
+      "page": "library",
+      "publicURL": "https://awakened-abundance-academy.lovable.app/library.html",
+      "status": 200,
+      "filename": "menu-library.jpg.b64.txt",
+      "jpeg_sha256": "7863c78370782e621e0b92c96e39eab65b19ce6b7dc32b5962bb9cd7f3619ac8",
+      "base64_sha256": "05a6501adc9f8b1f486141dbb6d3fed3d288cef062405d3d60c1ce31024c8075",
+      "cards": [
+        {
+          "href": "https://awakened-abundance-academy.lovable.app/join.html",
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "href": "https://awakened-abundance-academy.lovable.app/index.html",
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "href": "https://awakened-abundance-academy.lovable.app/boutique.html",
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "href": "https://awakened-abundance-academy.lovable.app/voidwalk.html",
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "href": "https://awakened-abundance-academy.lovable.app/library.html",
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "href": "https://awakened-abundance-academy.lovable.app/start.html",
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        }
+      ],
+      "horizontalOverflow": false,
+      "documentOverflow": false,
+      "emailSignupDirect": true,
+      "consentUnchecked": true
+    },
+    {
+      "page": "shop",
+      "publicURL": "https://awakened-abundance-academy.lovable.app/shop.html",
+      "status": 200,
+      "filename": "menu-shop.jpg.b64.txt",
+      "jpeg_sha256": "3b9d564e700d5ed2ec55c73b0c77233fcebf8ff730d62ee84843944f563e0e61",
+      "base64_sha256": "53dd03679a6a3d53f3f2739b192ff201abe021db54280e16c6d74e8aa539eab3",
+      "cards": [
+        {
+          "href": "https://awakened-abundance-academy.lovable.app/join.html",
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "href": "https://awakened-abundance-academy.lovable.app/index.html",
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "href": "https://awakened-abundance-academy.lovable.app/boutique.html",
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "href": "https://awakened-abundance-academy.lovable.app/voidwalk.html",
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "href": "https://awakened-abundance-academy.lovable.app/library.html",
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "href": "https://awakened-abundance-academy.lovable.app/start.html",
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        }
+      ],
+      "horizontalOverflow": false,
+      "documentOverflow": false,
+      "emailSignupDirect": true,
+      "consentUnchecked": true
+    },
+    {
+      "page": "join",
+      "publicURL": "https://awakened-abundance-academy.lovable.app/join.html",
+      "status": 200,
+      "filename": "menu-join.jpg.b64.txt",
+      "jpeg_sha256": "7dac14bfd07ac4f5ecc36fcf9b90b4b49dce56adce97d4d2d2e52940283da2f3",
+      "base64_sha256": "6bb351796fb6c7448a39ff583e4d99134c9fbc4c34249cdc100ef7ae6c803e9e",
+      "cards": [
+        {
+          "href": "https://awakened-abundance-academy.lovable.app/join.html",
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "href": "https://awakened-abundance-academy.lovable.app/index.html",
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "href": "https://awakened-abundance-academy.lovable.app/boutique.html",
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "href": "https://awakened-abundance-academy.lovable.app/voidwalk.html",
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "href": "https://awakened-abundance-academy.lovable.app/library.html",
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        },
+        {
+          "href": "https://awakened-abundance-academy.lovable.app/start.html",
+          "height": 58,
+          "image": [
+            40,
+            40
+          ],
+          "loaded": true,
+          "clip": "inset(0px round 5px)",
+          "overflow": "hidden"
+        }
+      ],
+      "horizontalOverflow": false,
+      "documentOverflow": false,
+      "emailSignupDirect": true,
+      "consentUnchecked": true
+    }
+  ],
+  "pixelInspection": "PASS: inspected all four actual public JPEGs; six thumbnails visibly clipped inside rounded 40x40 frames, equal 58px cards, no spills or clipping defects.",
+  "limitations": [
+    "Chromium phone emulation; not a physical iPhone",
+    "Focused four-page verification only"
+  ],
+  "submissions": 0,
+  "privateLeadReads": 0,
+  "blockedNonGETRequests": [
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    },
+    {
+      "method": "POST",
+      "url": "https://awakened-abundance-academy.lovable.app/__l5e/trackevents"
+    }
+  ],
+  "websiteChanges": false,
+  "publicationPerformed": false
+}
