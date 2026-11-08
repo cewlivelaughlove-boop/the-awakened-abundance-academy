@@ -27,7 +27,7 @@ export function withRoomJourney(html: string): string {
   if (!result.includes("immersive-proof.js")) {
     const assetVersion = "menu-20261108-11";
     const styles =
-      '<link rel="stylesheet" href="./assets/site-menu.css?v=menu-20261108-11">' +
+      '<link rel="stylesheet" href="./assets/site-menu.css?v=menu-20261108-12">' +
       `<link rel="stylesheet" href="./assets/immersive-proof.css?v=${assetVersion}">` +
       (room === "boutique"
         ? '<link rel="stylesheet" href="./assets/boutique-doorway-proof.css?v=menu-20261108-11">'
@@ -35,7 +35,7 @@ export function withRoomJourney(html: string): string {
     result = result.replace("</head>", styles + "</head>");
     result = result.replace(
       "</body>",
-      `<script src="./assets/site-menu.js?v=menu-20261108-11"></script><script type="module" src="./assets/immersive-proof.js?v=${assetVersion}"></script></body>`,
+      `<script src="./assets/site-menu.js?v=menu-20261108-12"></script><script type="module" src="./assets/immersive-proof.js?v=${assetVersion}"></script></body>`,
     );
   }
   return result.replace(
