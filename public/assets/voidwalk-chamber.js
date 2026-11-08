@@ -10,7 +10,7 @@ export const STATIONS = [
 const room=document.querySelector('.voidwalk'),view=document.querySelector('.chamber-view'),plane=document.querySelector('.chamber-plane');
 const question=document.querySelector('#step-question'),title=document.querySelector('#step-title'),label=document.querySelector('#step-label'),response=document.querySelector('#step-response'),actions=document.querySelector('#console-actions');
 const reduce=matchMedia('(prefers-reduced-motion: reduce)');
-let active=-1,answers=Array(5).fill(null),wide=view.clientWidth>700,focusPoint=[.5,.5],zoom=1,paused=reduce.matches,soundOn=false,audio=null,panGesture=null,suppressClick=false,note='';
+let active=-1,answers=Array(5).fill(null),wide=view.clientWidth>=1024,focusPoint=[.5,.5],zoom=1,paused=reduce.matches,soundOn=false,audio=null,panGesture=null,suppressClick=false,note='';
 room.classList.toggle('paused',paused);document.querySelector('#motion').setAttribute('aria-pressed',String(paused));document.querySelector('#motion').textContent=paused?'Resume motion':'Pause motion';
 
 function fit(){
@@ -26,7 +26,7 @@ function fit(){
 new ResizeObserver(fit).observe(view);window.addEventListener('resize',fit);fit();
 
 function go(i,focus=true){
- question.hidden=false;active=i;wide=i===2&&view.clientWidth>700;focusPoint=[...STATIONS[i].point];zoom=STATIONS[i].zoom;
+ question.hidden=false;active=i;wide=i===2&&view.clientWidth>=1024;focusPoint=[...STATIONS[i].point];zoom=STATIONS[i].zoom;
  document.querySelector('#wide').textContent='Whole room';
  const station=STATIONS[i];
  label.textContent=`${i+1} of 5 · ${station.object}`;title.textContent=station.title;question.textContent=station.question;response.hidden=true;response.classList.toggle('labyrinth-response',i===2);
@@ -73,7 +73,7 @@ function showAnswer(i,choice,focus){
 }
 
 function finish(){
- active=-2;wide=view.clientWidth>700;focusPoint=[.5,.35];zoom=1;fit();label.textContent='Five choices. Your own path.';title.textContent='A constellation, made by you.';question.hidden=false;question.textContent='Every small choice added a light. What is one thing you would like to carry into your day?';response.hidden=true;
+ active=-2;wide=view.clientWidth>=1024;focusPoint=[.5,.35];zoom=1;fit();label.textContent='Five choices. Your own path.';title.textContent='A constellation, made by you.';question.hidden=false;question.textContent='Every small choice added a light. What is one thing you would like to carry into your day?';response.hidden=true;
  actions.innerHTML='<label class="note-label" for="carry-note">One small thing to carry with you (optional)</label><textarea id="carry-note" rows="2" maxlength="400" placeholder="Today, I could…"></textarea><p class="note-privacy">Private to this page. Nothing is sent or saved.</p>';
  const input=document.querySelector('#carry-note');input.value=note;input.addEventListener('input',()=>{note=input.value});
  document.querySelectorAll('[data-select]').forEach(b=>b.setAttribute('aria-current','false'));
@@ -82,7 +82,7 @@ function finish(){
 
 function reset(){
  setLabyrinthLight(false);
- active=-1;answers=Array(5).fill(null);note='';wide=view.clientWidth>700;focusPoint=[.5,.5];zoom=1;fit();
+ active=-1;answers=Array(5).fill(null);note='';wide=view.clientWidth>=1024;focusPoint=[.5,.5];zoom=1;fit();
  document.querySelectorAll('.lit,.visited').forEach(e=>e.classList.remove('lit','visited'));document.querySelectorAll('[data-select]').forEach(b=>b.setAttribute('aria-current','false'));
  label.textContent='A room of possibility';title.textContent='A little wonder. A path of your own.';question.hidden=false;question.textContent='Explore five objects. Make a small choice at each one. Watch your path become a constellation.';response.hidden=true;
  actions.innerHTML='<button class="primary-action" id="begin" type="button">Begin the walk <span aria-hidden="true">↗</span></button><p class="console-aside">About two minutes. No right answers.</p>';document.querySelector('#begin').onclick=()=>go(0);document.querySelector('#restart').hidden=true;document.querySelector('#room-announcement').textContent='A new walk is ready. Your previous choices and note have been cleared.';title.focus({preventScroll:true});
