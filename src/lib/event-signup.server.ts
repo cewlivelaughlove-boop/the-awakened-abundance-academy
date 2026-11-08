@@ -76,7 +76,8 @@ export async function handleEventSignup(request: Request, env: unknown, fetcher:
   try {
     const response = await fetcher(config.url + "/rest/v1/rpc/record_event_signup", {
       method: "POST",
-      headers: { "Content-Type": "application/json", apikey: config.key, Authorization: "Bearer " + config.key },
+      // Managed opaque keys use apikey only; legacy JWT service keys also use Bearer.
+      headers: { "Content-Type": "application/json", apikey: config.key, ...(!config.key.startsWith("sb_") ? { Authorization: "Bearer " + config.key } : {}) },
       body: JSON.stringify({ p_email: email, p_request_id: body.requestId, p_consent_version: EVENT_CONSENT_VERSION, p_source: body.source, p_client_hash: await clientDigest(request, config.key) }),
       signal: AbortSignal.timeout(10000),
     });

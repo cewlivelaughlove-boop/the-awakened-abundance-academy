@@ -42,9 +42,11 @@ describe("event signup server boundary", () => {
     const response=await handleEventSignup(post(),env,fetcher);
     expect(response.status).toBe(200);
     expect(await response.json()).toEqual({ok:true});
-    const [url, options]=fetcher.mock.calls[0]!;
+    const call=fetcher.mock.calls[0];
+    if (!call) throw new Error("RPC was not called");
+    const [url, options]=call;
     expect(url).toBe(env.SUPABASE_URL+"/rest/v1/rpc/record_event_signup");
-    const sent=JSON.parse(options!.body as string);
+    const sent=JSON.parse(options?.body as string);
     expect(sent.p_email).toBe("visitor@example.com");
     expect(sent.p_client_hash).toMatch(/^[a-f0-9]{64}$/);
     expect(JSON.stringify(sent)).not.toContain("192.0.2.1");
@@ -59,6 +61,17 @@ describe("event signup server boundary", () => {
   });
   it("honors durable rate limiting", async () => {
     expect((await handleEventSignup(post(),env,upstream({ok:false,code:"rate_limit"}))).status).toBe(429);
+  });
+  it("rejects missing consent", async () => {
+    const { consent: _consent, ...withoutConsent } = payload;
+    expect((await handleEventSignup(post(withoutConsent),env,upstream())).status).toBe(400);
+  });
+  it("uses apikey without an opaque credential bearer", async () => {
+    const fetcher=upstream();
+    expect((await handleEventSignup(post(),{...env,SUPABASE_SERVICE_ROLE_KEY:"sb_secret_test"},fetcher)).status).toBe(200);
+    const headers=new Headers(fetcher.mock.calls[0]?.[1]?.headers);
+    expect(headers.get("apikey")).toBe("sb_secret_test");
+    expect(headers.has("Authorization")).toBe(false);
   });
   it("does not enable list reads or unsupported methods", async () => {
     const result=await handleEventSignup(new Request(base+"/api/event-signup",{method:"DELETE"}),env,upstream());

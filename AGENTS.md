@@ -14,3 +14,4 @@
 - Add approved standalone pages with escaped-dot .html GET routes using approvedDocument and approvedHead; match the existing HTML-only address convention without introducing unrelated aliases.
 - Serve the supplied media parts as public static bytes and let the supplied browser loader reconstruct Blob URLs: this preserves original media without oversized repository files or external hosting.
 - Extend approved rooms additively through rooms.js-loaded standalone modules and independent styles/data, never edit approved HTML for previews: this preserves source fidelity and existing room interactions.
+- Event signups use a server-only entry handler and the existing private RPC via request-time managed environment credentials; opaque keys use apikey without Bearer, preserving private tables and immutable book HTML via response-only markup.
