@@ -1,0 +1,322 @@
+{
+  "checks": {
+    "public_before": {
+      "camera": 0.94,
+      "width": 1535.40625,
+      "height": 618.515625,
+      "left": -571.203125,
+      "top": 39.46875,
+      "bottom": 657.984375,
+      "right": 964.203125,
+      "ratio": 2.4824049513704685,
+      "viewport": [
+        393,
+        658
+      ],
+      "fullWidth": true,
+      "overflow": false
+    },
+    "fresh_default": {
+      "camera": 0.85,
+      "width": 1388.40625,
+      "height": 559.296875,
+      "left": -497.703125,
+      "top": 98.6875,
+      "bottom": 657.984375,
+      "right": 890.703125,
+      "ratio": 2.482413744936444,
+      "viewport": [
+        393,
+        658
+      ],
+      "fullWidth": true,
+      "overflow": false
+    },
+    "panning": true,
+    "steps": [
+      0.82,
+      0.79,
+      0.76,
+      0.79,
+      0.82,
+      0.85,
+      0.88,
+      0.91,
+      0.94,
+      0.97,
+      1
+    ],
+    "bounds_disabled": true,
+    "new_preference_persists_after_reload": true,
+    "signup": {
+      "url": "http://localhost:8080/join.html",
+      "consent_checked": false,
+      "form_sha256": "2719c2bd4767f60961475ca47035b82f0fb75738e14da798577a74c4b87629e4"
+    },
+    "legacy_94_ignored": true,
+    "tall-center-85": {
+      "camera": 0.85,
+      "width": 1780.875,
+      "height": 717.390625,
+      "left": -695.4375,
+      "top": 126.59375,
+      "bottom": 843.984375,
+      "right": 1085.4375,
+      "ratio": 2.482434168971751,
+      "viewport": [
+        390,
+        844
+      ],
+      "fullWidth": true,
+      "overflow": false
+    },
+    "landscape-center-85": {
+      "camera": 0.85,
+      "width": 844,
+      "height": 339.984375,
+      "left": 0,
+      "top": 50,
+      "bottom": 389.984375,
+      "right": 844,
+      "ratio": 2.482467025139023,
+      "viewport": [
+        844,
+        390
+      ],
+      "fullWidth": true,
+      "overflow": false
+    },
+    "landscape_back_disabled_at_full_width": true
+  },
+  "screenshots": [
+    {
+      "filename": "public-center-94.jpg",
+      "sha256": "6ed79c38b8101be859961efd11966378d97622d8574fa6c5d462d527096efe63",
+      "route": "https://awakened-abundance-academy.lovable.app/boutique.html",
+      "source": "PUBLIC",
+      "geometry": {
+        "camera": 0.94,
+        "width": 1535.40625,
+        "height": 618.515625,
+        "left": -571.203125,
+        "top": 39.46875,
+        "bottom": 657.984375,
+        "right": 964.203125,
+        "ratio": 2.4824049513704685,
+        "viewport": [
+          393,
+          658
+        ],
+        "fullWidth": true,
+        "overflow": false
+      }
+    },
+    {
+      "filename": "center-85.jpg",
+      "sha256": "2ca1a90c86ce701b7e1ffe778996243506dbad8a568f96e513840c0f044d1c0e",
+      "route": "http://localhost:8080/boutique.html",
+      "source": "preview",
+      "geometry": {
+        "camera": 0.85,
+        "width": 1388.40625,
+        "height": 559.296875,
+        "left": -497.703125,
+        "top": 98.6875,
+        "bottom": 657.984375,
+        "right": 890.703125,
+        "ratio": 2.482413744936444,
+        "viewport": [
+          393,
+          658
+        ],
+        "fullWidth": true,
+        "overflow": false
+      }
+    },
+    {
+      "filename": "apparel-left-85.jpg",
+      "sha256": "a1eabb624aa8acb87cfdf0edc6136c10bf2432e0a73ab25a53c98af4f40593c7",
+      "route": "http://localhost:8080/boutique.html",
+      "source": "preview",
+      "geometry": {
+        "camera": 0.85,
+        "width": 1388.40625,
+        "height": 559.296875,
+        "left": 0,
+        "top": 98.6875,
+        "bottom": 657.984375,
+        "right": 1388.40625,
+        "ratio": 2.482413744936444,
+        "viewport": [
+          393,
+          658
+        ],
+        "fullWidth": true,
+        "overflow": false
+      }
+    },
+    {
+      "filename": "doorway-right-85.jpg",
+      "sha256": "915f6b64caadb54ed8b591b165d8d74e839fa543efa1f2084b632cf1f99c8bac",
+      "route": "http://localhost:8080/boutique.html",
+      "source": "preview",
+      "geometry": {
+        "camera": 0.85,
+        "width": 1388.40625,
+        "height": 559.296875,
+        "left": -995.40625,
+        "top": 98.6875,
+        "bottom": 657.984375,
+        "right": 393,
+        "ratio": 2.482413744936444,
+        "viewport": [
+          393,
+          658
+        ],
+        "fullWidth": true,
+        "overflow": false
+      }
+    },
+    {
+      "filename": "center-minimum-76.jpg",
+      "sha256": "2bafa9bc58b967fec0d19a3071a52f2912e80445b9b1065cdd5e9f862f3bbf94",
+      "route": "http://localhost:8080/boutique.html",
+      "source": "preview",
+      "geometry": {
+        "camera": 0.76,
+        "width": 1241.390625,
+        "height": 500.078125,
+        "left": -425.15625,
+        "top": 157.90625,
+        "bottom": 657.984375,
+        "right": 816.234375,
+        "ratio": 2.4823933760349943,
+        "viewport": [
+          393,
+          658
+        ],
+        "fullWidth": true,
+        "overflow": false
+      }
+    },
+    {
+      "filename": "camera-controls-open-76.jpg",
+      "sha256": "8035a31298cba9671de739cc9763495e9a3864051fc02f6dbca13c9f32bfb8d0",
+      "route": "http://localhost:8080/boutique.html",
+      "source": "preview",
+      "geometry": {
+        "camera": 0.76,
+        "width": 1241.390625,
+        "height": 500.078125,
+        "left": -424.203125,
+        "top": 157.90625,
+        "bottom": 657.984375,
+        "right": 817.1875,
+        "ratio": 2.4823933760349943,
+        "viewport": [
+          393,
+          658
+        ],
+        "fullWidth": true,
+        "overflow": false
+      }
+    },
+    {
+      "filename": "tall-center-85.jpg",
+      "sha256": "a98c2984e5e2d438112db1eb8a45fd1a6ec0a751f2b547488429da69c76a7e70",
+      "route": "http://localhost:8080/boutique.html",
+      "source": "preview",
+      "geometry": {
+        "camera": 0.85,
+        "width": 1780.875,
+        "height": 717.390625,
+        "left": -695.4375,
+        "top": 126.59375,
+        "bottom": 843.984375,
+        "right": 1085.4375,
+        "ratio": 2.482434168971751,
+        "viewport": [
+          390,
+          844
+        ],
+        "fullWidth": true,
+        "overflow": false
+      }
+    },
+    {
+      "filename": "landscape-center-85.jpg",
+      "sha256": "9464ff1630bae553711d2c01073a182adf83b02caa8a4c89ebd468ca2b885238",
+      "route": "http://localhost:8080/boutique.html",
+      "source": "preview",
+      "geometry": {
+        "camera": 0.85,
+        "width": 844,
+        "height": 339.984375,
+        "left": 0,
+        "top": 50,
+        "bottom": 389.984375,
+        "right": 844,
+        "ratio": 2.482467025139023,
+        "viewport": [
+          844,
+          390
+        ],
+        "fullWidth": true,
+        "overflow": false
+      }
+    }
+  ],
+  "limitations": [
+    "Chromium phone emulation, not physical iPhone.",
+    "Focused requested camera checks only; no submissions or private record reads.",
+    "All non-GET requests blocked."
+  ],
+  "tested_source_commit": "12274169659dfd2c3d8da2c9963e19a4c96bb754",
+  "verdict": "ACCEPT with ceiling-margin concern: noticeably farther back at 85%, still immersive and full-width; no distortion, duplicate/blurred fill, narrow strip or lower floor gap. At user-selected 76%, the 24% black ceiling margin is conspicuous but the room still occupies 76% of the viewport, not a thin image strip. Owner should inspect before publishing.",
+  "observations": [
+    "393\u00d7658 default: room height 559.30px (85%), ceiling margin 98.69px; original 1976:796 ratio and bottom 657.98px retained.",
+    "Compared directly with new public 94% capture and previous public 88% photo: default 85% visibly smaller than 94% (~9.6% scale reduction), modestly smaller than 88% (~3.4%). More shelving/sofa/table context is visible.",
+    "Minimum 76%: room occupies 500.08px with ~157.91px black ceiling margin; clean floor/rug to bottom. The large ceiling margin is the main visual concern.",
+    "Tall 390\u00d7844: room occupies 717.39px, 126.59px ceiling margin; clean bottom and original proportions.",
+    "Landscape 844\u00d7390: artwork already fully visible at 844px width/339.98px height; Move back disabled as requested. Camera setting is .85 but actual height is ~87.18% due to full-width floor.",
+    "Controls and all six menu cards retained; signup direct link works and consent remains unchecked. Rendered signup contract hash passed in the 88-test suite. Live browser DOM hash differs after its existing scripts initialize; no signup source file changed."
+  ],
+  "tests": "88/88 rendered room regressions passed",
+  "lint": "Scoped renderer ESLint passed; compact tests not reformatted",
+  "build": "Automatic build OK 2026-11-08T21:30:26Z",
+  "published": false,
+  "previous_88_comparison": {
+    "path": "qa/public-boutique-camera-evidence/boutique-center-minimum-88.jpg.b64.txt",
+    "decoded_jpeg_sha256": "3a5eab87e2db715677a3c053126b77f9850febe7e7ca1ab6865a6a201fe76e7c"
+  },
+  "preservation": {
+    "unrelated_files_unchanged": 597,
+    "payload": [
+      {
+        "path": "public/assets/boutique.js",
+        "expected_before_sha256": "ad198c6fde98006c0018e21a4d000465ce31f8e7f4fb82ba29ec186590299fbf",
+        "sha256": "e4d7bfe7b839d1602af54facb46740885bb0edb16a753825a6c63f4b3beec429"
+      },
+      {
+        "path": "src/lib/room-journey.ts",
+        "expected_before_sha256": "c05bd8d561537b9d891e526cb7011afa6f8aef3837ebc3daaaff7fffff25770c",
+        "sha256": "bfcf00c2fd3327f5acf36ad011df91ce7494f373d06083d12e6e831a7ea91fdb"
+      },
+      {
+        "path": "qa/room-tests/boutique-lookaround.test.mjs",
+        "expected_before_sha256": "5009998e3d467e4be786b89ef60e57b0778c1cdb5a4fd963ea2e50e8bf0c1afc",
+        "sha256": "860e59805ee88aef9af20e802968584b6c5d1b2ed27f5b77bb490417a3ab3ced"
+      },
+      {
+        "path": "qa/room-tests/portrait-room.test.mjs",
+        "expected_before_sha256": "5c1895decd1ee32ecc8a397a685507ae4468e56ed9524b2f85aede1b296d4013",
+        "sha256": "158d69e225f07139cc1b23e840e060304d136b3e1f4ee89763d286e61ef9053c"
+      },
+      {
+        "path": "qa/room-tests/camera.test.mjs",
+        "expected_before_sha256": "f9e9d477b8902735cc004ec80caf892ed68a647bd448e9cea34940fb41009df0",
+        "sha256": "69a19bb9871d91cd19d08a70af32aae0be67c4b17acd28f980469434bfca81e5"
+      }
+    ]
+  }
+}
