@@ -843,3 +843,58 @@
     height: 100%;
   }
 }
+
+/* Actual existing planet journey: no static sanctuary image or drawn effect. */
+.event-page .event-art .event-scene {
+  object-position: 50% center;
+}
+.event-page .event-motion {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 40px;
+  padding: 8px 13px;
+  border: 1px solid #d5c3a95c;
+  border-radius: 3px;
+  background: #100b18c9;
+  color: #efe3d4;
+  font:
+    11px/1.5 Arial,
+    sans-serif;
+  cursor: pointer;
+}
+.event-page .event-motion[hidden] {
+  display: none;
+}
+.event-page .event-motion:hover {
+  background: #20152bea;
+}
+@media (max-width: 760px) {
+  .event-page .event-art .event-scene {
+    object-position: 50% center;
+  }
+  .event-page .event-motion {
+    left: 16px;
+    top: 16px;
+  }
+}
+@media (max-width: 760px) {
+  /* Keep the moving planets visible above the form on a portrait phone. */
+  .event-page .event-main {
+    padding-top: 225px;
+  }
+  .event-page .event-art .event-scene {
+    height: 310px;
+    object-fit: cover;
+  }
+  .event-page .event-art:after {
+    bottom: auto;
+    height: 320px;
+    box-shadow: none;
+    background: linear-gradient(180deg, transparent 55%, #0a080f 100%);
+  }
+}
