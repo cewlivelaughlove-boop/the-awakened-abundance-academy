@@ -53,7 +53,7 @@ export function mountGalaxyJourney() {
   const planetVideo = dialog.querySelector('.gj-planet-video');
   planetVideo.muted = planetVideo.defaultMuted = true;
   planetVideo.playsInline = true;
-  planetVideo.poster = new URL('./planet-journey-poster-v4.png', import.meta.url).href;
+  planetVideo.poster = new URL('./optimized/planet-journey-poster-v4-lossless-v1.webp', import.meta.url).href;
   const ctx = canvas.getContext('2d', { alpha: false });
   const status = dialog.querySelector('.gj-status');
   const toggle = dialog.querySelector('.gj-toggle');

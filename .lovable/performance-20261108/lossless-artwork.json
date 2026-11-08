@@ -1,0 +1,83 @@
+[
+  {
+    "original": "public/assets/sanctuary-polished-v5.png",
+    "optimized": "public/assets/optimized/sanctuary-polished-v5-lossless-v1.webp",
+    "originalBytes": 2440860,
+    "optimizedBytes": 1682300,
+    "originalSha256": "2e3e0e6a44a05406ee4cb73cad49343b8d2e1d32d00d3deef3c89d65326b18dc",
+    "optimizedSha256": "784c9f0292485ad0bb9c45e65219365066d8ecb95b501a7bf361fca1cc33ec92",
+    "pixelIdentical": true
+  },
+  {
+    "original": "public/assets/boutique-polished-hq-v2.png",
+    "optimized": "public/assets/optimized/boutique-polished-hq-v2-lossless-v1.webp",
+    "originalBytes": 2135061,
+    "optimizedBytes": 1505808,
+    "originalSha256": "748dd526cb76ca24f04f4ee727984f2dbccffa1a848bfef5eeb0ae8056627795",
+    "optimizedSha256": "8412bc2b499444dbdf42aa756a47b8d4ca5cac78f38c2cf558a4e125b3a8c2f1",
+    "pixelIdentical": true
+  },
+  {
+    "original": "public/assets/voidwalk-chamber-v3.png",
+    "optimized": "public/assets/optimized/voidwalk-chamber-v3-lossless-v1.webp",
+    "originalBytes": 2040289,
+    "optimizedBytes": 1409362,
+    "originalSha256": "1dddb45d4cfe587cc8dc68b625a81c6cbed9aa594930f833908429d6d46cbc33",
+    "optimizedSha256": "44e7784b9be9c11c3220cbfac57cbcfb94eccd2fd21ef4ef36dbbdce60193c4e",
+    "pixelIdentical": true
+  },
+  {
+    "original": "public/assets/planet-journey-poster-v4.png",
+    "optimized": "public/assets/optimized/planet-journey-poster-v4-lossless-v1.webp",
+    "originalBytes": 1802413,
+    "optimizedBytes": 986286,
+    "originalSha256": "b38d530b9d7abb7f00b918676268ae797916326c677a26704885ff819d0a5507",
+    "optimizedSha256": "1330d73be6e0034d1d101f0559f9350b9464b4cfc2d601e5e54328d96e36ec4d",
+    "pixelIdentical": true
+  },
+  {
+    "original": "public/assets/cosmic-guide-organic-v5.png",
+    "optimized": "public/assets/optimized/cosmic-guide-organic-v5-lossless-v1.webp",
+    "originalBytes": 2940105,
+    "optimizedBytes": 2122188,
+    "originalSha256": "7329ba4542eeb4a7d1aecf69fa36f1cb65e1bea88d2539f56c9742c18263a2a2",
+    "optimizedSha256": "9eded2c4088eafc83fb586f4a582de1ee768670d12a5f2223c1779a71e979c78",
+    "pixelIdentical": true
+  },
+  {
+    "original": "public/assets/observatory-slender-refractor-v4.png",
+    "optimized": "public/assets/optimized/observatory-slender-refractor-v4-lossless-v1.webp",
+    "originalBytes": 1656694,
+    "optimizedBytes": 1044520,
+    "originalSha256": "be37cc3dcb07cb71d38f231f8753e127501c9d7ec903f947c194ebf8c515cdec",
+    "optimizedSha256": "ed92fdf133e00ae10605d55e1978f9454ea8733278a0db736dc1430bf121af58",
+    "pixelIdentical": true
+  },
+  {
+    "original": "public/assets/boutique-journals-tree-v3.png",
+    "optimized": "public/assets/optimized/boutique-journals-tree-v3-lossless-v1.webp",
+    "originalBytes": 1536981,
+    "optimizedBytes": 923548,
+    "originalSha256": "5c39a486cd85cb617e5103a3290457ec675444d3bd64eca58c0a78e7b7cb64a2",
+    "optimizedSha256": "c5273d169779fff2df65f49d64c211b5c290b28ece228f13ae390190e7d20328",
+    "pixelIdentical": true
+  },
+  {
+    "original": "public/assets/voidwalker-wall-plaque.png",
+    "optimized": "public/assets/optimized/voidwalker-wall-plaque-lossless-v1.webp",
+    "originalBytes": 2210441,
+    "optimizedBytes": 1475124,
+    "originalSha256": "a7659c24ac4a7150a0033948b21d954d5a860a50cbae4b7402b2363702e22e93",
+    "optimizedSha256": "283935df0de6b94296acb80af205deec8afc433c8d7d0e309324503793b940f5",
+    "pixelIdentical": true
+  },
+  {
+    "original": "public/assets/beyond-the-script-public-cover.png",
+    "optimized": "public/assets/optimized/beyond-the-script-public-cover-lossless-v1.webp",
+    "originalBytes": 2572647,
+    "optimizedBytes": 1770532,
+    "originalSha256": "034befc686d09a7be74ca87d57ebff4c8573cc84f14714195ea3a313a425b7ae",
+    "optimizedSha256": "d21e895ebd8d5f6f27c511e55f6f16ec35ef668791cbd0b6857f5c46b0d6e359",
+    "pixelIdentical": true
+  }
+]

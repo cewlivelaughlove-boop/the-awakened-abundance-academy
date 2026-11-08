@@ -60,7 +60,7 @@
   }
   if(video.readyState>=1)restore();else video.addEventListener('loadedmetadata',restore,{once:true});
   function save(){
-    try {sessionStorage.setItem('academy-journey',JSON.stringify({time:restoring?saved.time:video.currentTime,paused:motionPaused()}));}catch{}
+    try {sessionStorage.setItem('academy-journey',JSON.stringify({time:restoring?saved.time:video.currentTime,paused:video.dataset.autoplayBlocked==='true'?false:motionPaused()}));}catch{}
   }
   window.addEventListener('pagehide',e=>{save();if(objectURL&&!e.persisted)URL.revokeObjectURL(objectURL);});
   document.addEventListener('click',e=>{if(e.target.closest?.('a[href]'))save();},true);

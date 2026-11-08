@@ -1,6 +1,6 @@
 /* Shared quiet exterior, behind—not over—the approved reading furniture. */
 body.celestial-reading{background:#090a10;isolation:isolate}
-.reading-universe{position:fixed;inset:0;z-index:-1;overflow:hidden;background:#080a15 url('./planet-journey-poster-v4.png') center/cover no-repeat;pointer-events:none}
+.reading-universe{position:fixed;inset:0;z-index:-1;overflow:hidden;background:#080a15 url('./optimized/planet-journey-poster-v4-lossless-v1.webp') center/cover no-repeat;pointer-events:none}
 .reading-universe video{width:100%;height:100%;object-fit:cover;opacity:.68}
 .reading-universe:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#080b16a8,#100e1d4d 50%,#060914ad),linear-gradient(#05070b55,#05060a18 40%,#06070ba6)}
 .celestial-reading>.shell>.site-header,.celestial-reading>.site-header{background:#11131bd9;backdrop-filter:blur(14px);padding-inline:20px}
